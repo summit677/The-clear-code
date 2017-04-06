@@ -1,0 +1,9 @@
+.\objects\drvpwm.o: Drivers\src\DrvPWM.c
+.\objects\drvpwm.o: .\Drivers\inc\DrvPWM.h
+.\objects\drvpwm.o: .\CMSIS\NUC1xx.h
+.\objects\drvpwm.o: .\CMSIS\core_cm0.h
+.\objects\drvpwm.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvpwm.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvpwm.o: .\CMSIS\SysInfra.h
+.\objects\drvpwm.o: .\Drivers\inc\ModuleID.h
+.\objects\drvpwm.o: .\Drivers\inc\DrvSYS.h

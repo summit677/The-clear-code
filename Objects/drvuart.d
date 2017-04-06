@@ -1,0 +1,10 @@
+.\objects\drvuart.o: Drivers\src\DrvUART.c
+.\objects\drvuart.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvuart.o: .\CMSIS\NUC1xx.h
+.\objects\drvuart.o: .\CMSIS\core_cm0.h
+.\objects\drvuart.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvuart.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvuart.o: .\CMSIS\SysInfra.h
+.\objects\drvuart.o: .\Drivers\inc\ModuleID.h
+.\objects\drvuart.o: .\Drivers\inc\DrvUART.h
+.\objects\drvuart.o: .\Drivers\inc\DrvSYS.h

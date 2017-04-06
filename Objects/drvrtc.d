@@ -1,0 +1,10 @@
+.\objects\drvrtc.o: Drivers\src\DrvRTC.c
+.\objects\drvrtc.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvrtc.o: .\Drivers\inc\DrvRTC.h
+.\objects\drvrtc.o: .\CMSIS\NUC1xx.h
+.\objects\drvrtc.o: .\CMSIS\core_cm0.h
+.\objects\drvrtc.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvrtc.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvrtc.o: .\CMSIS\SysInfra.h
+.\objects\drvrtc.o: .\Drivers\inc\ModuleID.h
+.\objects\drvrtc.o: .\Drivers\inc\DrvGPIO.h

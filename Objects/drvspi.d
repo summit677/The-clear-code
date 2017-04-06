@@ -1,0 +1,10 @@
+.\objects\drvspi.o: Drivers\src\DrvSPI.c
+.\objects\drvspi.o: .\CMSIS\NUC1xx.h
+.\objects\drvspi.o: .\CMSIS\core_cm0.h
+.\objects\drvspi.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvspi.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvspi.o: .\CMSIS\SysInfra.h
+.\objects\drvspi.o: .\Drivers\inc\ModuleID.h
+.\objects\drvspi.o: .\Drivers\inc\DrvSPI.h
+.\objects\drvspi.o: .\Drivers\inc\SysInfra.h
+.\objects\drvspi.o: .\Drivers\inc\DrvSYS.h

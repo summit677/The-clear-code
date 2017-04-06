@@ -1,0 +1,12 @@
+.\objects\lcd_driver.o: NUC1xx-LB_002\src\LCD_Driver.c
+.\objects\lcd_driver.o: .\CMSIS\NUC1xx.h
+.\objects\lcd_driver.o: .\CMSIS\core_cm0.h
+.\objects\lcd_driver.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd_driver.o: .\CMSIS\system_NUC1xx.h
+.\objects\lcd_driver.o: .\CMSIS\SysInfra.h
+.\objects\lcd_driver.o: .\Drivers\inc\ModuleID.h
+.\objects\lcd_driver.o: .\Drivers\inc\DrvSYS.h
+.\objects\lcd_driver.o: .\Drivers\inc\DrvSPI.h
+.\objects\lcd_driver.o: .\Drivers\inc\SysInfra.h
+.\objects\lcd_driver.o: .\Drivers\inc\DrvGPIO.h
+.\objects\lcd_driver.o: .\NUC1xx-LB_002\inc\LCD_Driver.h

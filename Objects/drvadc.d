@@ -1,0 +1,10 @@
+.\objects\drvadc.o: Drivers\src\DrvADC.c
+.\objects\drvadc.o: .\CMSIS\NUC1xx.h
+.\objects\drvadc.o: .\CMSIS\core_cm0.h
+.\objects\drvadc.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvadc.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvadc.o: .\CMSIS\SysInfra.h
+.\objects\drvadc.o: .\Drivers\inc\ModuleID.h
+.\objects\drvadc.o: .\Drivers\inc\DrvADC.h
+.\objects\drvadc.o: .\Drivers\inc\SysInfra.h
+.\objects\drvadc.o: .\Drivers\inc\DrvSYS.h

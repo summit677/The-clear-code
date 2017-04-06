@@ -1,0 +1,9 @@
+.\objects\drvpdma.o: Drivers\src\DrvPDMA.c
+.\objects\drvpdma.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvpdma.o: .\CMSIS\NUC1xx.h
+.\objects\drvpdma.o: .\CMSIS\core_cm0.h
+.\objects\drvpdma.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvpdma.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvpdma.o: .\CMSIS\SysInfra.h
+.\objects\drvpdma.o: .\Drivers\inc\ModuleID.h
+.\objects\drvpdma.o: .\Drivers\inc\DrvPDMA.h

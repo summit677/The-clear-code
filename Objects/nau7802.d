@@ -1,0 +1,12 @@
+.\objects\nau7802.o: NUC1xx-LB_002\src\NAU7802.c
+.\objects\nau7802.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\nau7802.o: .\Drivers\inc\DrvGPIO.h
+.\objects\nau7802.o: .\CMSIS\NUC1xx.h
+.\objects\nau7802.o: .\CMSIS\core_cm0.h
+.\objects\nau7802.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\nau7802.o: .\CMSIS\system_NUC1xx.h
+.\objects\nau7802.o: .\CMSIS\SysInfra.h
+.\objects\nau7802.o: .\Drivers\inc\ModuleID.h
+.\objects\nau7802.o: .\Drivers\inc\DrvI2C.h
+.\objects\nau7802.o: .\Drivers\inc\DrvSYS.h
+.\objects\nau7802.o: .\NUC1xx-LB_002\inc\NAU7802.h

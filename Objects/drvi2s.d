@@ -1,0 +1,10 @@
+.\objects\drvi2s.o: Drivers\src\DrvI2S.c
+.\objects\drvi2s.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvi2s.o: .\Drivers\inc\DrvI2S.h
+.\objects\drvi2s.o: .\CMSIS\NUC1xx.h
+.\objects\drvi2s.o: .\CMSIS\core_cm0.h
+.\objects\drvi2s.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvi2s.o: .\CMSIS\system_NUC1xx.h
+.\objects\drvi2s.o: .\CMSIS\SysInfra.h
+.\objects\drvi2s.o: .\Drivers\inc\ModuleID.h
+.\objects\drvi2s.o: .\Drivers\inc\DrvSYS.h
