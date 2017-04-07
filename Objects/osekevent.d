@@ -3,6 +3,7 @@
 .\objects\osekevent.o: .\OSEKos\inc\osapi.h
 .\objects\osekevent.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekevent.o: .\OSEKos\inc\osekTarget.h
+.\objects\osekevent.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\osekevent.o: .\OSEKos\inc\osapi.h
 .\objects\osekevent.o: .\OSEKos\inc\cfg.h
 .\objects\osekevent.o: .\OSEKos\inc\userMSG.h

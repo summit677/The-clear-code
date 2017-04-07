@@ -3,6 +3,7 @@
 .\objects\osektask.o: .\OSEKos\inc\osapi.h
 .\objects\osektask.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osektask.o: .\OSEKos\inc\osekTarget.h
+.\objects\osektask.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\osektask.o: .\OSEKos\inc\osapi.h
 .\objects\osektask.o: .\OSEKos\inc\cfg.h
 .\objects\osektask.o: .\OSEKos\inc\userMSG.h

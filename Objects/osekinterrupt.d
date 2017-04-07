@@ -3,6 +3,7 @@
 .\objects\osekinterrupt.o: .\OSEKos\inc\osapi.h
 .\objects\osekinterrupt.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekinterrupt.o: .\OSEKos\inc\osekTarget.h
+.\objects\osekinterrupt.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\osekinterrupt.o: .\OSEKos\inc\osapi.h
 .\objects\osekinterrupt.o: .\OSEKos\inc\cfg.h
 .\objects\osekinterrupt.o: .\OSEKos\inc\userMSG.h

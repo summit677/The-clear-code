@@ -38,6 +38,7 @@
 ".\objects\osektarget.o"
 ".\objects\osektask.o"
 ".\objects\main.o"
---ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict
+--map --first='startup_NUC1xx.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --libpath "F:\LouisSoftware\Keil5\ARM\ARMCC\lib" --summary_stderr --info summarysizes --map --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\TestProject.map" -o .\Objects\TestProject.axf

@@ -2,6 +2,7 @@
 .\objects\main.o: .\OSEKos\inc\osapi.h
 .\objects\main.o: .\OSEKos\inc\osekTurboConfig.h
 .\objects\main.o: .\OSEKos\inc\osekTarget.h
+.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: .\OSEKos\inc\osprop.h
 .\objects\main.o: .\OSEKos\inc\osapi.h
 .\objects\main.o: .\OSEKos\inc\osekOccConfig.h
@@ -21,7 +22,6 @@
 .\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\ctype.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\main.o: .\BSP\Init.h

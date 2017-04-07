@@ -1,7 +1,9 @@
-//#include "osprop.h"
+
 #include "osapi.h"
 #include "cfg.h"
 #include "includes.h"
+#include "system_NUC1xx.h"
+
 void ErrorHook( StatusType error )
 {
 	/*

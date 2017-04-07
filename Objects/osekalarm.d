@@ -4,6 +4,7 @@
 .\objects\osekalarm.o: .\OSEKos\inc\osapi.h
 .\objects\osekalarm.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekalarm.o: .\OSEKos\inc\osekTarget.h
+.\objects\osekalarm.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\osekalarm.o: .\OSEKos\inc\osapi.h
 .\objects\osekalarm.o: .\OSEKos\inc\cfg.h
 .\objects\osekalarm.o: .\OSEKos\inc\userMSG.h

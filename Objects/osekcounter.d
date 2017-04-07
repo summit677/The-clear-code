@@ -3,6 +3,7 @@
 .\objects\osekcounter.o: .\OSEKos\inc\osapi.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekTarget.h
+.\objects\osekcounter.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\osekcounter.o: .\OSEKos\inc\osapi.h
 .\objects\osekcounter.o: .\OSEKos\inc\cfg.h
 .\objects\osekcounter.o: .\OSEKos\inc\userMSG.h

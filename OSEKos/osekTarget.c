@@ -739,6 +739,7 @@ OSWORD osekTarget_SavedBTSP;
 // OSœ‡πÿ÷–∂œ—⁄¬Î
 OSWORD osekTarget_OSIntMask;
 
+OSWORD	osIntSave_en;
 OSWORD osIntSave_pending;
 
 OSWORD osekTarget_AllIntMask_en;
@@ -751,7 +752,7 @@ OSWORD osekTarget_NestedOsIntMask_en;
 OSWORD osekTarget_NestedOsIntMask_pending;
 
 
-
+//==========================================================================================
 __asm OSDWORD osekTarget_SaveContext( void *context) 
 {
 	
@@ -822,14 +823,117 @@ __asm void osekTarget_RestoreContext( void *context )
 		BX LR;
 
 } 
-/*  
+  
 __asm void osekTarget_LoadBTSP()
 {	
 	LDR r0,=__cpp(&osekTarget_SavedBTSP);
 	LDR r1,[r0];
 	MOV r1,SP
 }
-*/
+
+__asm void osekTarget_LoadETSP(void* sp)
+{
+	LDR r1,[r0]
+	MOV r1,SP
+}
+
+__asm void OSEK_TARGET_DisableOSInt_func()
+{
+	LDR r0,=0xE000E100
+	LDR r1,[r0]
+	;LDR r0,=__cpp(&osIntSave_en)
+	STR r1,[r0]
+	LDR r0,=0xE000E200
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osIntSave_pending)
+	STR r1,[r0]
+	CPSID I
+}	
+__asm void OSEK_TARGET_EnableOSInt(OSWORD osIntSave)
+{
+	;LDR r0,=__cpp(&osIntSave)
+	;LDR r1,[r0]
+	LDR r1,=0xE000E100
+	STR r0,[r1]
+	LDR r0,=__cpp(&osIntSave_pending)
+	LDR r1,[r0]
+	LDR r0,=0xE000E200
+	STR r1,[r0]
+	CPSIE I
+}
+__asm void OSEK_TARGET_DisableAllInt()
+{
+	LDR r0,=0xE000E100
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_AllIntMask_en)
+	STR r1,[r0]
+	LDR r0,=0xE000E200
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_AllIntMask_pending)
+	STR r1,[r0]
+	CPSID I
+}
+__asm void OSEK_TARGET_EnableAllInt()
+{
+	LDR r0,=__cpp(&osekTarget_AllIntMask_en)
+	LDR r1,[r0]
+	LDR r0,=0xE000E100
+	STR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_AllIntMask_pending)
+	LDR r1,[r0]
+	LDR r0,=0xE000E200
+	STR r1,[r0]
+	CPSIE I
+}
+__asm void OSEK_TARGET_DisableNestedAllInt()
+{
+	LDR r0,=0xE000E100
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedAllIntMask_en)
+	STR r1,[r0]
+	LDR r0,=0xE000E200
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedAllIntMask_pending)
+	STR r1,[r0]
+	CPSID I
+}
+__asm void OSEK_TARGET_EnableNestedAllInt()
+{
+	LDR r0,=__cpp(&osekTarget_NestedAllIntMask_en)
+	LDR r1,[r0]
+	LDR r0,=0xE000E100
+	STR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedAllIntMask_pending)
+	LDR r1,[r0]
+	LDR r0,=0xE000E200
+	STR r1,[r0]
+	CPSIE I
+}
+__asm void OSEK_TARGET_DisableNestedOsInt()
+{
+	LDR r0,=0xE000E100
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedOsIntMask_en)
+	STR r1,[r0]
+	LDR r0,=0xE000E200
+	LDR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedOsIntMask_pending)
+	STR r1,[r0]
+	CPSID I
+}
+__asm void OSEK_TARGET_EnableNestedOsInt()
+{
+	LDR r0,=__cpp(&osekTarget_NestedOsIntMask_en)
+	LDR r1,[r0]
+	LDR r0,=0xE000E100
+	STR r1,[r0]
+	LDR r0,=__cpp(&osekTarget_NestedOsIntMask_pending)
+	LDR r1,[r0]
+	LDR r0,=0xE000E200
+	STR r1,[r0]
+	CPSIE I
+}
+//==========================================================================================
 void int_mask_save(unsigned int *value) {
 
   *value=1;
