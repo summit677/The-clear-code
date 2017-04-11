@@ -716,6 +716,9 @@ void osekTask_Dispatch( void )
 	if( oldTask != osekTask_RunningTask )
 	{
 		// 保存离去任务的上下文
+		
+		//__asm("LDR r0,#__cpp(oldTask->taskControlBlock->context)");
+		
 		if( osekTarget_SaveContext(oldTask->taskControlBlock->context) != 0)
 		{
 			// 任务又切换回来，先检查是否需要根据内部资源来调整优先级，然后进行任务进入的扩展调用。

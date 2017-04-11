@@ -310,7 +310,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>0</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -342,7 +342,7 @@
             <interw>1</interw>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <thumb>0</thumb>
+            <thumb>1</thumb>
             <SplitLS>0</SplitLS>
             <SwStkChk>0</SwStkChk>
             <NoWarn>0</NoWarn>
@@ -602,6 +602,96 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Main\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>OSEKinc</GroupName>
+          <Files>
+            <File>
+              <FileName>cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>osapi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osapi.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekAlarm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekAlarm.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekCounter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekCounter.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekDebug.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekDebug.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekEvent.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekEvent.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekExecution.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekExecution.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekHook.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekHook.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekInterrupt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekInterrupt.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekMessage.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekMessage.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekOccConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekOccConfig.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekResource.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekResource.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekTarget.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekTarget.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekTask.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekTask.h</FilePath>
+            </File>
+            <File>
+              <FileName>osekTurboConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osekTurboConfig.h</FilePath>
+            </File>
+            <File>
+              <FileName>osprop.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\osprop.h</FilePath>
+            </File>
+            <File>
+              <FileName>userMSG.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OSEKos\inc\userMSG.h</FilePath>
             </File>
           </Files>
         </Group>

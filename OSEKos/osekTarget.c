@@ -734,55 +734,66 @@ void int_vector_save(unsigned int *value){
 
 // 全局变量
 // 用于记录基本任务的当前可用栈位置
-OSWORD osekTarget_SavedBTSP;
+OSDWORD osekTarget_SavedBTSP;
 
 // OS相关中断掩码
-OSWORD osekTarget_OSIntMask;
-
-OSWORD	osIntSave_en;
-OSWORD osIntSave_pending;
-
-OSWORD osekTarget_AllIntMask_en;
-OSWORD osekTarget_AllIntMask_pending;
-
-OSWORD osekTarget_NestedAllIntMask_en;
-OSWORD osekTarget_NestedAllIntMask_pending;
-
-OSWORD osekTarget_NestedOsIntMask_en;
-OSWORD osekTarget_NestedOsIntMask_pending;
+OSDWORD osekTarget_OSIntMask;
+  
+OSDWORD	osIntSave_en;
+OSDWORD osIntSave_pending;
+  
+OSDWORD osekTarget_AllIntMask_en;
+OSDWORD osekTarget_AllIntMask_pending;
+  
+OSDWORD osekTarget_NestedAllIntMask_en;
+OSDWORD osekTarget_NestedAllIntMask_pending;
+  
+OSDWORD osekTarget_NestedOsIntMask_en;
+OSDWORD osekTarget_NestedOsIntMask_pending;
 
 
 //==========================================================================================
+void OSEK_TARGET_SaveBTSP(OSDWORD sp)
+{	
+	osekTarget_SavedBTSP = sp - (OSDWORD)0x20;
+}
 __asm OSDWORD osekTarget_SaveContext( void *context) 
 {
-	
-	MOV SP,r1
+	MRS r1, msp
 	STR r1,[r0,#0] ;store sp
 	
-	MOV lr,r1
+	MOV R1,lr
 	STR r1,[r0,#4] ;store LR
 	
-	MOV pc,r1
+	MOV r1,pc
 	STR r1,[r0,#8] ;store PC
 	
 	STR r4,[r0,#16] ;store R4
 	STR r5,[r0,#20] ;store R5
 	STR r6,[r0,#24] ;store R6
 	STR r7,[r0,#28] ;store R7
-	MOV r8,r1
+	MOV r1,r8
 	STR r1,[r0,#32] ;store R8
-	MOV r9,r1
+	MOV r1,r9
 	STR r1,[r0,#36] ;store R9
-	MOV r10,r1
+	MOV r1,r10
 	STR r1,[r0,#40] ;store R10
-	MOV r11,r1
+	MOV r1,r11
 	STR r1,[r0,#44] ;store R11
 	
-	MRS r4,XPSR ;	store xPSR
-	STR r4,[r0,#12] ;store xPSR
+	;MRS r4,APSR ;	store APSR
+	;STR r4,[r0,#12] ;store APSR
 	
-	MRS r4,PRIMASK ;	store primask
-	STR r4,[r0,#48] ;store primask
+	;MRS r4,IPSR ;	store IPSR
+	;STR r4,[r0,#52] ;store IPSR
+	
+	;MRS r4,EPSR ;	store EPSR
+	;STR r4,[r0,#56] ;store EPSR
+	
+	;MRS r4,PRIMASK ;	store primask
+	;STR r4,[r0,#48] ;store primask
+	
+	MOVS r0,#0 ;函数返回值是0
 	BX LR;
 	
 }
@@ -791,16 +802,22 @@ __asm OSDWORD osekTarget_SaveContext( void *context)
 __asm void osekTarget_RestoreContext( void *context )
 {
 		LDR r1,[r0,#0] ;Restore sp
-		MOV r1,SP
+	  msr msp,r1
 		
 		LDR r1,[r0,#4] ;Restore LR
-		MOV r1,lr
+		MOV lr,r1
 	
-		LDR r1,[r0,#12] ;Restore xPSR
-		MSR XPSR,r1 ;	Restore xPSR
+		;LDR r1,[r0,#12] ;Restore APSR
+		;MSR APSR,r1 ;	Restore APSR
+	
+		;LDR r1,[r0,#52] ;Restore IPSR
+		;MSR IPSR,r1 ;	Restore IPSR
+	
+		;LDR r1,[r0,#56] ;Restore EPSR
+		;MSR EPSR,r1 ;	Restore EPSR
 		
-		LDR r1,[r0,#48] ;Restore primask
-		MSR PRIMASK,r1 ;	Restore primask
+		;LDR r1,[r0,#48] ;Restore primask
+		;MSR PRIMASK,r1 ;	Restore primask
 			
 		LDR r4,[r0,#16] ;Restore R4
 		LDR r5,[r0,#20] ;Restore R5
@@ -808,13 +825,13 @@ __asm void osekTarget_RestoreContext( void *context )
 		LDR r7,[r0,#28] ;Restore R7
 	
 		LDR r1,[r0,#32] ;Restore R8
-		MOV r1,r8
+		MOV r8,r1
 		LDR r1,[r0,#36] ;Restore R9
-		MOV r1,r9
+		MOV r9,r1
 		LDR r1,[r0,#40] ;Restore R10
-		MOV r1,r10
+		MOV r10,r1
 		LDR r1,[r0,#44] ;Restore R11
-		MOV r1,r11
+		MOV r11,r1
 		
 		LDR r1,[r0,#8] ;Restore pc
 		PUSH {r1} ;Restore pc
@@ -823,18 +840,19 @@ __asm void osekTarget_RestoreContext( void *context )
 		BX LR;
 
 } 
-  
+
+
 __asm void osekTarget_LoadBTSP()
 {	
 	LDR r0,=__cpp(&osekTarget_SavedBTSP);
 	LDR r1,[r0];
-	MOV r1,SP
+	msr msp,r1
 }
 
-__asm void osekTarget_LoadETSP(void* sp)
+__asm void osekTarget_LoadETSP(OSBYTEPTR sp)
 {
-	LDR r1,[r0]
-	MOV r1,SP
+	;LDR r1,[r0]
+	msr msp,r0
 }
 
 __asm void OSEK_TARGET_DisableOSInt_func()

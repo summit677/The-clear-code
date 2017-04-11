@@ -550,158 +550,159 @@ ARM Macro Assembler    Page 9
 ]
   298 00000022                 IF               SEMIHOSTED
   310                          ENDIF
-  311 00000022 E7FE            B                .
-  312 00000024                 ENDP
-  313 00000024         SVC_Handler
+  311 00000022         ;B       .
+  312 00000022 4770            BX               LR
+  313 00000024                 ENDP
+  314 00000024         SVC_Handler
                                PROC
-  314 00000024                 EXPORT           SVC_Handler               [WEAK
+  315 00000024                 EXPORT           SVC_Handler               [WEAK
 ]
-  315 00000024 E7FE            B                .
-  316 00000026                 ENDP
-  317 00000026         PendSV_Handler
+  316 00000024 E7FE            B                .
+  317 00000026                 ENDP
+  318 00000026         PendSV_Handler
                                PROC
-  318 00000026                 EXPORT           PendSV_Handler            [WEAK
+  319 00000026                 EXPORT           PendSV_Handler            [WEAK
 ]
-  319 00000026 E7FE            B                .
-  320 00000028                 ENDP
-  321 00000028         SysTick_Handler
+  320 00000026 E7FE            B                .
+  321 00000028                 ENDP
+  322 00000028         SysTick_Handler
                                PROC
-  322 00000028                 EXPORT           SysTick_Handler           [WEAK
+  323 00000028                 EXPORT           SysTick_Handler           [WEAK
 ]
-  323 00000028 E7FE            B                .
-  324 0000002A                 ENDP
-  325 0000002A         
-  326 0000002A         Default_Handler
+  324 00000028 E7FE            B                .
+  325 0000002A                 ENDP
+  326 0000002A         
+  327 0000002A         Default_Handler
                                PROC
-  327 0000002A         
-  328 0000002A                 EXPORT           BOD_IRQHandler            [WEAK
+  328 0000002A         
+  329 0000002A                 EXPORT           BOD_IRQHandler            [WEAK
 ]
-  329 0000002A                 EXPORT           WDT_IRQHandler            [WEAK
+  330 0000002A                 EXPORT           WDT_IRQHandler            [WEAK
 ]
-  330 0000002A                 EXPORT           EINT0_IRQHandler          [WEAK
+  331 0000002A                 EXPORT           EINT0_IRQHandler          [WEAK
 ]
-  331 0000002A                 EXPORT           EINT1_IRQHandler          [WEAK
+  332 0000002A                 EXPORT           EINT1_IRQHandler          [WEAK
 ]
-  332 0000002A                 EXPORT           GPAB_IRQHandler           [WEAK
 
 
 
 ARM Macro Assembler    Page 10 
 
 
+  333 0000002A                 EXPORT           GPAB_IRQHandler           [WEAK
 ]
-  333 0000002A                 EXPORT           GPCDE_IRQHandler          [WEAK
+  334 0000002A                 EXPORT           GPCDE_IRQHandler          [WEAK
 ]
-  334 0000002A                 EXPORT           PWMA_IRQHandler           [WEAK
+  335 0000002A                 EXPORT           PWMA_IRQHandler           [WEAK
 ]
-  335 0000002A                 EXPORT           PWMB_IRQHandler           [WEAK
+  336 0000002A                 EXPORT           PWMB_IRQHandler           [WEAK
 ]
-  336 0000002A                 EXPORT           TMR0_IRQHandler           [WEAK
+  337 0000002A                 EXPORT           TMR0_IRQHandler           [WEAK
 ]
-  337 0000002A                 EXPORT           TMR1_IRQHandler           [WEAK
+  338 0000002A                 EXPORT           TMR1_IRQHandler           [WEAK
 ]
-  338 0000002A                 EXPORT           TMR2_IRQHandler           [WEAK
+  339 0000002A                 EXPORT           TMR2_IRQHandler           [WEAK
 ]
-  339 0000002A                 EXPORT           TMR3_IRQHandler           [WEAK
+  340 0000002A                 EXPORT           TMR3_IRQHandler           [WEAK
 ]
-  340 0000002A                 EXPORT           UART02_IRQHandler         [WEAK
+  341 0000002A                 EXPORT           UART02_IRQHandler         [WEAK
 ]
-  341 0000002A                 EXPORT           UART1_IRQHandler          [WEAK
+  342 0000002A                 EXPORT           UART1_IRQHandler          [WEAK
 ]
-  342 0000002A                 EXPORT           SPI0_IRQHandler           [WEAK
+  343 0000002A                 EXPORT           SPI0_IRQHandler           [WEAK
 ]
-  343 0000002A                 EXPORT           SPI1_IRQHandler           [WEAK
+  344 0000002A                 EXPORT           SPI1_IRQHandler           [WEAK
 ]
-  344 0000002A                 EXPORT           SPI2_IRQHandler           [WEAK
+  345 0000002A                 EXPORT           SPI2_IRQHandler           [WEAK
 ]
-  345 0000002A                 EXPORT           SPI3_IRQHandler           [WEAK
+  346 0000002A                 EXPORT           SPI3_IRQHandler           [WEAK
 ]
-  346 0000002A                 EXPORT           I2C0_IRQHandler           [WEAK
+  347 0000002A                 EXPORT           I2C0_IRQHandler           [WEAK
 ]
-  347 0000002A                 EXPORT           I2C1_IRQHandler           [WEAK
+  348 0000002A                 EXPORT           I2C1_IRQHandler           [WEAK
 ]
-  348 0000002A                 EXPORT           CAN0_IRQHandler           [WEAK
+  349 0000002A                 EXPORT           CAN0_IRQHandler           [WEAK
 ]
-  349 0000002A                 EXPORT           USBD_IRQHandler           [WEAK
+  350 0000002A                 EXPORT           USBD_IRQHandler           [WEAK
 ]
-  350 0000002A                 EXPORT           PS2_IRQHandler            [WEAK
+  351 0000002A                 EXPORT           PS2_IRQHandler            [WEAK
 ]
-  351 0000002A                 EXPORT           ACMP_IRQHandler           [WEAK
+  352 0000002A                 EXPORT           ACMP_IRQHandler           [WEAK
 ]
-  352 0000002A                 EXPORT           PDMA_IRQHandler           [WEAK
+  353 0000002A                 EXPORT           PDMA_IRQHandler           [WEAK
 ]
-  353 0000002A                 EXPORT           I2S_IRQHandler            [WEAK
+  354 0000002A                 EXPORT           I2S_IRQHandler            [WEAK
 ]
-  354 0000002A                 EXPORT           PWRWU_IRQHandler          [WEAK
+  355 0000002A                 EXPORT           PWRWU_IRQHandler          [WEAK
 ]
-  355 0000002A                 EXPORT           ADC_IRQHandler            [WEAK
+  356 0000002A                 EXPORT           ADC_IRQHandler            [WEAK
 ]
-  356 0000002A                 EXPORT           RTC_IRQHandler            [WEAK
+  357 0000002A                 EXPORT           RTC_IRQHandler            [WEAK
 ]
-  357 0000002A         
-  358 0000002A         BOD_IRQHandler
-  359 0000002A         WDT_IRQHandler
-  360 0000002A         EINT0_IRQHandler
-  361 0000002A         EINT1_IRQHandler
-  362 0000002A         GPAB_IRQHandler
-  363 0000002A         GPCDE_IRQHandler
-  364 0000002A         PWMA_IRQHandler
-  365 0000002A         PWMB_IRQHandler
-  366 0000002A         TMR0_IRQHandler
+  358 0000002A         
+  359 0000002A         BOD_IRQHandler
+  360 0000002A         WDT_IRQHandler
+  361 0000002A         EINT0_IRQHandler
+  362 0000002A         EINT1_IRQHandler
+  363 0000002A         GPAB_IRQHandler
+  364 0000002A         GPCDE_IRQHandler
+  365 0000002A         PWMA_IRQHandler
+  366 0000002A         PWMB_IRQHandler
 
 
 
 ARM Macro Assembler    Page 11 
 
 
-  367 0000002A         TMR1_IRQHandler
-  368 0000002A         TMR2_IRQHandler
-  369 0000002A         TMR3_IRQHandler
-  370 0000002A         UART02_IRQHandler
-  371 0000002A         UART1_IRQHandler
-  372 0000002A         SPI0_IRQHandler
-  373 0000002A         SPI1_IRQHandler
-  374 0000002A         SPI2_IRQHandler
-  375 0000002A         SPI3_IRQHandler
-  376 0000002A         I2C0_IRQHandler
-  377 0000002A         I2C1_IRQHandler
-  378 0000002A         CAN0_IRQHandler
-  379 0000002A         USBD_IRQHandler
-  380 0000002A         PS2_IRQHandler
-  381 0000002A         ACMP_IRQHandler
-  382 0000002A         PDMA_IRQHandler
-  383 0000002A         I2S_IRQHandler
-  384 0000002A         PWRWU_IRQHandler
-  385 0000002A         ADC_IRQHandler
-  386 0000002A         RTC_IRQHandler
-  387 0000002A E7FE            B                .
-  388 0000002C                 ENDP
-  389 0000002C         
+  367 0000002A         TMR0_IRQHandler
+  368 0000002A         TMR1_IRQHandler
+  369 0000002A         TMR2_IRQHandler
+  370 0000002A         TMR3_IRQHandler
+  371 0000002A         UART02_IRQHandler
+  372 0000002A         UART1_IRQHandler
+  373 0000002A         SPI0_IRQHandler
+  374 0000002A         SPI1_IRQHandler
+  375 0000002A         SPI2_IRQHandler
+  376 0000002A         SPI3_IRQHandler
+  377 0000002A         I2C0_IRQHandler
+  378 0000002A         I2C1_IRQHandler
+  379 0000002A         CAN0_IRQHandler
+  380 0000002A         USBD_IRQHandler
+  381 0000002A         PS2_IRQHandler
+  382 0000002A         ACMP_IRQHandler
+  383 0000002A         PDMA_IRQHandler
+  384 0000002A         I2S_IRQHandler
+  385 0000002A         PWRWU_IRQHandler
+  386 0000002A         ADC_IRQHandler
+  387 0000002A         RTC_IRQHandler
+  388 0000002A E7FE            B                .
+  389 0000002C                 ENDP
   390 0000002C         
-  391 0000002C                 ALIGN
-  392 0000002C         
+  391 0000002C         
+  392 0000002C                 ALIGN
   393 0000002C         
-  394 0000002C         ; User Initial Stack & Heap
-  395 0000002C         
-  396 0000002C                 IF               :DEF:__MICROLIB
-  403 0000002C         
-  404 0000002C                 IMPORT           __use_two_region_memory
-  405 0000002C                 EXPORT           __user_initial_stackheap
-  406 0000002C         __user_initial_stackheap
-  407 0000002C         
-  408 0000002C 480A            LDR              R0, =  Heap_Mem
-  409 0000002E 490B            LDR              R1, = (Stack_Mem + Stack_Size)
-  410 00000030 4A09            LDR              R2, = (Heap_Mem +  Heap_Size)
-  411 00000032 4B0B            LDR              R3, = Stack_Mem
-  412 00000034 4770            BX               LR
-  413 00000036         
-  414 00000036 00 00           ALIGN
-  415 00000038         
-  416 00000038                 ENDIF
-  417 00000038         
-  418 00000038                 IF               SEMIHOSTED
-  450                          ENDIF
-  451 00000038                 END
+  394 0000002C         
+  395 0000002C         ; User Initial Stack & Heap
+  396 0000002C         
+  397 0000002C                 IF               :DEF:__MICROLIB
+  404 0000002C         
+  405 0000002C                 IMPORT           __use_two_region_memory
+  406 0000002C                 EXPORT           __user_initial_stackheap
+  407 0000002C         __user_initial_stackheap
+  408 0000002C         
+  409 0000002C 480A            LDR              R0, =  Heap_Mem
+  410 0000002E 490B            LDR              R1, = (Stack_Mem + Stack_Size)
+  411 00000030 4A09            LDR              R2, = (Heap_Mem +  Heap_Size)
+  412 00000032 4B0B            LDR              R3, = Stack_Mem
+  413 00000034 4770            BX               LR
+  414 00000036         
+  415 00000036 00 00           ALIGN
+  416 00000038         
+  417 00000038                 ENDIF
+  418 00000038         
+  419 00000038                 IF               SEMIHOSTED
+  451                          ENDIF
+  452 00000038                 END
               50000100 
               00000059 
               00000016 
@@ -712,20 +713,20 @@ ARM Macro Assembler    Page 11
               00000000 
               00000000 
               00000400 
-              00000000 
 
 
 
 ARM Macro Assembler    Page 12 
 
 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
-ork --depend=.\objects\startup_nuc1xx.d -o.\objects\startup_nuc1xx.o -IF:\Louis
-Software\Keil5\ARM\RV31\INC -I.\RTE\_Target_1 -IF:\LouisSoftware\Keil5\ARM\PACK
-\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include -IF:\LouisSoftware\Keil5\ARM\CMSIS\I
-nclude --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 523" --p
-redefine="ARMCM0 SETA 1" --list=.\listings\startup_nuc1xx.lst CMSIS\startup_NUC
-1xx.s
+              00000000 
+Command Line: --16 --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=i
+nterwork --depend=.\objects\startup_nuc1xx.d -o.\objects\startup_nuc1xx.o -IF:\
+LouisSoftware\Keil5\ARM\RV31\INC -I.\RTE\_Target_1 -IF:\LouisSoftware\Keil5\ARM
+\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include -IF:\LouisSoftware\Keil5\ARM\CM
+SIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 523
+" --predefine="ARMCM0 SETA 1" --list=.\listings\startup_nuc1xx.lst CMSIS\startu
+p_NUC1xx.s
 
 
 
@@ -746,8 +747,8 @@ Symbol: Stack_Mem
    Definitions
       At line 169 in file CMSIS\startup_NUC1xx.s
    Uses
-      At line 409 in file CMSIS\startup_NUC1xx.s
-      At line 411 in file CMSIS\startup_NUC1xx.s
+      At line 410 in file CMSIS\startup_NUC1xx.s
+      At line 412 in file CMSIS\startup_NUC1xx.s
 
 __initial_sp 00000400
 
@@ -778,8 +779,8 @@ Symbol: Heap_Mem
    Definitions
       At line 181 in file CMSIS\startup_NUC1xx.s
    Uses
-      At line 408 in file CMSIS\startup_NUC1xx.s
-      At line 410 in file CMSIS\startup_NUC1xx.s
+      At line 409 in file CMSIS\startup_NUC1xx.s
+      At line 411 in file CMSIS\startup_NUC1xx.s
 
 __heap_base 00000000
 
@@ -839,43 +840,43 @@ ACMP_IRQHandler 0000002A
 
 Symbol: ACMP_IRQHandler
    Definitions
-      At line 381 in file CMSIS\startup_NUC1xx.s
+      At line 382 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 237 in file CMSIS\startup_NUC1xx.s
-      At line 351 in file CMSIS\startup_NUC1xx.s
+      At line 352 in file CMSIS\startup_NUC1xx.s
 
 ADC_IRQHandler 0000002A
 
 Symbol: ADC_IRQHandler
    Definitions
-      At line 385 in file CMSIS\startup_NUC1xx.s
+      At line 386 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 241 in file CMSIS\startup_NUC1xx.s
-      At line 355 in file CMSIS\startup_NUC1xx.s
+      At line 356 in file CMSIS\startup_NUC1xx.s
 
 BOD_IRQHandler 0000002A
 
 Symbol: BOD_IRQHandler
    Definitions
-      At line 358 in file CMSIS\startup_NUC1xx.s
+      At line 359 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 212 in file CMSIS\startup_NUC1xx.s
-      At line 328 in file CMSIS\startup_NUC1xx.s
+      At line 329 in file CMSIS\startup_NUC1xx.s
 
 CAN0_IRQHandler 0000002A
 
 Symbol: CAN0_IRQHandler
    Definitions
-      At line 378 in file CMSIS\startup_NUC1xx.s
+      At line 379 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 232 in file CMSIS\startup_NUC1xx.s
-      At line 348 in file CMSIS\startup_NUC1xx.s
+      At line 349 in file CMSIS\startup_NUC1xx.s
 
 Default_Handler 0000002A
 
 Symbol: Default_Handler
    Definitions
-      At line 326 in file CMSIS\startup_NUC1xx.s
+      At line 327 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 233 in file CMSIS\startup_NUC1xx.s
       At line 234 in file CMSIS\startup_NUC1xx.s
@@ -885,7 +886,7 @@ EINT0_IRQHandler 0000002A
 
 Symbol: EINT0_IRQHandler
    Definitions
-      At line 360 in file CMSIS\startup_NUC1xx.s
+      At line 361 in file CMSIS\startup_NUC1xx.s
 
 
 
@@ -894,34 +895,34 @@ Relocatable symbols
 
    Uses
       At line 214 in file CMSIS\startup_NUC1xx.s
-      At line 330 in file CMSIS\startup_NUC1xx.s
+      At line 331 in file CMSIS\startup_NUC1xx.s
 
 EINT1_IRQHandler 0000002A
 
 Symbol: EINT1_IRQHandler
    Definitions
-      At line 361 in file CMSIS\startup_NUC1xx.s
+      At line 362 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 215 in file CMSIS\startup_NUC1xx.s
-      At line 331 in file CMSIS\startup_NUC1xx.s
+      At line 332 in file CMSIS\startup_NUC1xx.s
 
 GPAB_IRQHandler 0000002A
 
 Symbol: GPAB_IRQHandler
    Definitions
-      At line 362 in file CMSIS\startup_NUC1xx.s
+      At line 363 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 216 in file CMSIS\startup_NUC1xx.s
-      At line 332 in file CMSIS\startup_NUC1xx.s
+      At line 333 in file CMSIS\startup_NUC1xx.s
 
 GPCDE_IRQHandler 0000002A
 
 Symbol: GPCDE_IRQHandler
    Definitions
-      At line 363 in file CMSIS\startup_NUC1xx.s
+      At line 364 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 217 in file CMSIS\startup_NUC1xx.s
-      At line 333 in file CMSIS\startup_NUC1xx.s
+      At line 334 in file CMSIS\startup_NUC1xx.s
 
 HardFault_Handler 00000022
 
@@ -936,19 +937,19 @@ I2C0_IRQHandler 0000002A
 
 Symbol: I2C0_IRQHandler
    Definitions
-      At line 376 in file CMSIS\startup_NUC1xx.s
+      At line 377 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 230 in file CMSIS\startup_NUC1xx.s
-      At line 346 in file CMSIS\startup_NUC1xx.s
+      At line 347 in file CMSIS\startup_NUC1xx.s
 
 I2C1_IRQHandler 0000002A
 
 Symbol: I2C1_IRQHandler
    Definitions
-      At line 377 in file CMSIS\startup_NUC1xx.s
+      At line 378 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 231 in file CMSIS\startup_NUC1xx.s
-      At line 347 in file CMSIS\startup_NUC1xx.s
+      At line 348 in file CMSIS\startup_NUC1xx.s
 
 I2S_IRQHandler 0000002A
 
@@ -960,10 +961,10 @@ Relocatable symbols
 
 Symbol: I2S_IRQHandler
    Definitions
-      At line 383 in file CMSIS\startup_NUC1xx.s
+      At line 384 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 239 in file CMSIS\startup_NUC1xx.s
-      At line 353 in file CMSIS\startup_NUC1xx.s
+      At line 354 in file CMSIS\startup_NUC1xx.s
 
 NMI_Handler 00000020
 
@@ -978,43 +979,43 @@ PDMA_IRQHandler 0000002A
 
 Symbol: PDMA_IRQHandler
    Definitions
-      At line 382 in file CMSIS\startup_NUC1xx.s
+      At line 383 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 238 in file CMSIS\startup_NUC1xx.s
-      At line 352 in file CMSIS\startup_NUC1xx.s
+      At line 353 in file CMSIS\startup_NUC1xx.s
 
 PS2_IRQHandler 0000002A
 
 Symbol: PS2_IRQHandler
    Definitions
-      At line 380 in file CMSIS\startup_NUC1xx.s
+      At line 381 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 236 in file CMSIS\startup_NUC1xx.s
-      At line 350 in file CMSIS\startup_NUC1xx.s
+      At line 351 in file CMSIS\startup_NUC1xx.s
 
 PWMA_IRQHandler 0000002A
 
 Symbol: PWMA_IRQHandler
    Definitions
-      At line 364 in file CMSIS\startup_NUC1xx.s
+      At line 365 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 218 in file CMSIS\startup_NUC1xx.s
-      At line 334 in file CMSIS\startup_NUC1xx.s
+      At line 335 in file CMSIS\startup_NUC1xx.s
 
 PWMB_IRQHandler 0000002A
 
 Symbol: PWMB_IRQHandler
    Definitions
-      At line 365 in file CMSIS\startup_NUC1xx.s
+      At line 366 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 219 in file CMSIS\startup_NUC1xx.s
-      At line 335 in file CMSIS\startup_NUC1xx.s
+      At line 336 in file CMSIS\startup_NUC1xx.s
 
 PWRWU_IRQHandler 0000002A
 
 Symbol: PWRWU_IRQHandler
    Definitions
-      At line 384 in file CMSIS\startup_NUC1xx.s
+      At line 385 in file CMSIS\startup_NUC1xx.s
    Uses
 
 
@@ -1023,25 +1024,25 @@ ARM Macro Assembler    Page 4 Alphabetic symbol ordering
 Relocatable symbols
 
       At line 240 in file CMSIS\startup_NUC1xx.s
-      At line 354 in file CMSIS\startup_NUC1xx.s
+      At line 355 in file CMSIS\startup_NUC1xx.s
 
 PendSV_Handler 00000026
 
 Symbol: PendSV_Handler
    Definitions
-      At line 317 in file CMSIS\startup_NUC1xx.s
+      At line 318 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 207 in file CMSIS\startup_NUC1xx.s
-      At line 318 in file CMSIS\startup_NUC1xx.s
+      At line 319 in file CMSIS\startup_NUC1xx.s
 
 RTC_IRQHandler 0000002A
 
 Symbol: RTC_IRQHandler
    Definitions
-      At line 386 in file CMSIS\startup_NUC1xx.s
+      At line 387 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 243 in file CMSIS\startup_NUC1xx.s
-      At line 356 in file CMSIS\startup_NUC1xx.s
+      At line 357 in file CMSIS\startup_NUC1xx.s
 
 Reset_Handler 00000000
 
@@ -1056,28 +1057,28 @@ SPI0_IRQHandler 0000002A
 
 Symbol: SPI0_IRQHandler
    Definitions
-      At line 372 in file CMSIS\startup_NUC1xx.s
+      At line 373 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 226 in file CMSIS\startup_NUC1xx.s
-      At line 342 in file CMSIS\startup_NUC1xx.s
+      At line 343 in file CMSIS\startup_NUC1xx.s
 
 SPI1_IRQHandler 0000002A
 
 Symbol: SPI1_IRQHandler
    Definitions
-      At line 373 in file CMSIS\startup_NUC1xx.s
+      At line 374 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 227 in file CMSIS\startup_NUC1xx.s
-      At line 343 in file CMSIS\startup_NUC1xx.s
+      At line 344 in file CMSIS\startup_NUC1xx.s
 
 SPI2_IRQHandler 0000002A
 
 Symbol: SPI2_IRQHandler
    Definitions
-      At line 374 in file CMSIS\startup_NUC1xx.s
+      At line 375 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 228 in file CMSIS\startup_NUC1xx.s
-      At line 344 in file CMSIS\startup_NUC1xx.s
+      At line 345 in file CMSIS\startup_NUC1xx.s
 
 SPI3_IRQHandler 0000002A
 
@@ -1089,61 +1090,61 @@ Relocatable symbols
 
 Symbol: SPI3_IRQHandler
    Definitions
-      At line 375 in file CMSIS\startup_NUC1xx.s
+      At line 376 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 229 in file CMSIS\startup_NUC1xx.s
-      At line 345 in file CMSIS\startup_NUC1xx.s
+      At line 346 in file CMSIS\startup_NUC1xx.s
 
 SVC_Handler 00000024
 
 Symbol: SVC_Handler
    Definitions
-      At line 313 in file CMSIS\startup_NUC1xx.s
+      At line 314 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 204 in file CMSIS\startup_NUC1xx.s
-      At line 314 in file CMSIS\startup_NUC1xx.s
+      At line 315 in file CMSIS\startup_NUC1xx.s
 
 SysTick_Handler 00000028
 
 Symbol: SysTick_Handler
    Definitions
-      At line 321 in file CMSIS\startup_NUC1xx.s
+      At line 322 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 208 in file CMSIS\startup_NUC1xx.s
-      At line 322 in file CMSIS\startup_NUC1xx.s
+      At line 323 in file CMSIS\startup_NUC1xx.s
 
 TMR0_IRQHandler 0000002A
 
 Symbol: TMR0_IRQHandler
    Definitions
-      At line 366 in file CMSIS\startup_NUC1xx.s
+      At line 367 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 220 in file CMSIS\startup_NUC1xx.s
-      At line 336 in file CMSIS\startup_NUC1xx.s
+      At line 337 in file CMSIS\startup_NUC1xx.s
 
 TMR1_IRQHandler 0000002A
 
 Symbol: TMR1_IRQHandler
    Definitions
-      At line 367 in file CMSIS\startup_NUC1xx.s
+      At line 368 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 221 in file CMSIS\startup_NUC1xx.s
-      At line 337 in file CMSIS\startup_NUC1xx.s
+      At line 338 in file CMSIS\startup_NUC1xx.s
 
 TMR2_IRQHandler 0000002A
 
 Symbol: TMR2_IRQHandler
    Definitions
-      At line 368 in file CMSIS\startup_NUC1xx.s
+      At line 369 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 222 in file CMSIS\startup_NUC1xx.s
-      At line 338 in file CMSIS\startup_NUC1xx.s
+      At line 339 in file CMSIS\startup_NUC1xx.s
 
 TMR3_IRQHandler 0000002A
 
 Symbol: TMR3_IRQHandler
    Definitions
-      At line 369 in file CMSIS\startup_NUC1xx.s
+      At line 370 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 223 in file CMSIS\startup_NUC1xx.s
 
@@ -1152,51 +1153,51 @@ Symbol: TMR3_IRQHandler
 ARM Macro Assembler    Page 6 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 339 in file CMSIS\startup_NUC1xx.s
+      At line 340 in file CMSIS\startup_NUC1xx.s
 
 UART02_IRQHandler 0000002A
 
 Symbol: UART02_IRQHandler
    Definitions
-      At line 370 in file CMSIS\startup_NUC1xx.s
+      At line 371 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 224 in file CMSIS\startup_NUC1xx.s
-      At line 340 in file CMSIS\startup_NUC1xx.s
+      At line 341 in file CMSIS\startup_NUC1xx.s
 
 UART1_IRQHandler 0000002A
 
 Symbol: UART1_IRQHandler
    Definitions
-      At line 371 in file CMSIS\startup_NUC1xx.s
+      At line 372 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 225 in file CMSIS\startup_NUC1xx.s
-      At line 341 in file CMSIS\startup_NUC1xx.s
+      At line 342 in file CMSIS\startup_NUC1xx.s
 
 USBD_IRQHandler 0000002A
 
 Symbol: USBD_IRQHandler
    Definitions
-      At line 379 in file CMSIS\startup_NUC1xx.s
+      At line 380 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 235 in file CMSIS\startup_NUC1xx.s
-      At line 349 in file CMSIS\startup_NUC1xx.s
+      At line 350 in file CMSIS\startup_NUC1xx.s
 
 WDT_IRQHandler 0000002A
 
 Symbol: WDT_IRQHandler
    Definitions
-      At line 359 in file CMSIS\startup_NUC1xx.s
+      At line 360 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 213 in file CMSIS\startup_NUC1xx.s
-      At line 329 in file CMSIS\startup_NUC1xx.s
+      At line 330 in file CMSIS\startup_NUC1xx.s
 
 __user_initial_stackheap 0000002C
 
 Symbol: __user_initial_stackheap
    Definitions
-      At line 406 in file CMSIS\startup_NUC1xx.s
+      At line 407 in file CMSIS\startup_NUC1xx.s
    Uses
-      At line 405 in file CMSIS\startup_NUC1xx.s
+      At line 406 in file CMSIS\startup_NUC1xx.s
 Comment: __user_initial_stackheap used once
 38 symbols
 
@@ -1624,7 +1625,7 @@ Symbol: Heap_Size
       At line 177 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 181 in file CMSIS\startup_NUC1xx.s
-      At line 410 in file CMSIS\startup_NUC1xx.s
+      At line 411 in file CMSIS\startup_NUC1xx.s
 
 INT_BA_base 50000300
 
@@ -1951,7 +1952,7 @@ Symbol: Stack_Size
       At line 166 in file CMSIS\startup_NUC1xx.s
    Uses
       At line 169 in file CMSIS\startup_NUC1xx.s
-      At line 409 in file CMSIS\startup_NUC1xx.s
+      At line 410 in file CMSIS\startup_NUC1xx.s
 
 TEST_S 00000030
 
@@ -2128,7 +2129,7 @@ __use_two_region_memory 00000000
 
 Symbol: __use_two_region_memory
    Definitions
-      At line 404 in file CMSIS\startup_NUC1xx.s
+      At line 405 in file CMSIS\startup_NUC1xx.s
    Uses
       None
 Comment: __use_two_region_memory unused

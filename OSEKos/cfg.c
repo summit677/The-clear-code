@@ -9,6 +9,12 @@
 #include "osapi.h"
 #include "cfg.h"
 /************************* 声明部分 ***********************************/
+#define TASK_STACK_SIZE		120 		//栈大小定义
+#define	MESSAGE_BUF_SIZE	30			//消息缓冲大小定义
+
+OSBYTE	taskStack[CONFIG_OSEK_TASK_NUMBER][TASK_STACK_SIZE]; //任务堆栈定义
+OSBYTE	messageBuf[OCC_NMSGS][MESSAGE_BUF_SIZE];			 //消息缓冲定义
+OSBYTE	messageQueue[OCC_NMSGS][MESSAGE_BUF_SIZE];			 //消息队列定义
 
 
 /************************* 定义部分 ***********************************/
@@ -302,19 +308,27 @@ const		T_OSEK_TASK_ConfigTable_Struct		osekConfig_TaskTable[OCC_NTSKS]=
 {
 	{
 		(T_OSEK_TASK_Entry)FuncTaskError,  TaskError,
-		0 | OSEK_TASK_ACTIVE,
+		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED | OSEK_TASK_NONPREEMPT,
+		&taskStack[TaskError][TASK_STACK_SIZE-1], //?????
+		&taskStack[TaskError][0]				  //?????
 	},			/*TaskError	*/
 	{
 		(T_OSEK_TASK_Entry)FuncTask1,  Task1,
-		0 | OSEK_TASK_ACTIVE ,
+		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED | OSEK_TASK_NONPREEMPT,
+		&taskStack[Task1][TASK_STACK_SIZE-1], //?????
+		&taskStack[Task1][0]				  //?????
 	},			/*Task1	*/
 	{
 		(T_OSEK_TASK_Entry)FuncTask2,  Task2,
-		0 | OSEK_TASK_ACTIVE,
+		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED | OSEK_TASK_NONPREEMPT,
+		&taskStack[Task2][TASK_STACK_SIZE-1], //?????
+		&taskStack[Task2][0]				  //?????
 	},			/*Task2	*/
 	{
 		(T_OSEK_TASK_Entry)FuncTask3,  Task3,
-		0 | OSEK_TASK_ACTIVE,
+		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED | OSEK_TASK_NONPREEMPT,
+		&taskStack[Task3][TASK_STACK_SIZE-1], //?????
+		&taskStack[Task3][0]				  //?????
 	},			/*Task3	*/
 	{
 		0, OSEK_TASK_IDLE_ID,

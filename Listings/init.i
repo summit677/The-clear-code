@@ -1564,45 +1564,49 @@ extern		unsigned char		osekMsg_Msg4Object;
 
 
 
+	
 OSDWORD osekTarget_SaveContext( void * savedContext );
 void osekTarget_RestoreContext( void * restoredContext );
+	
 
 
 
-void osekTarget_LoadETSP(void* sp) ;
+void osekTarget_LoadETSP(OSBYTEPTR sp) ;
 void osekTarget_LoadBTSP( void );
-void osekTarget_SaveBTSP(OSWORD sp );
+void osekTarget_SaveBTSP(OSDWORD sp );
 
 
-extern OSWORD	osIntSave_en;
-extern OSWORD osIntSave_pending;
-extern OSWORD osekTarget_AllIntMask_en;
-extern OSWORD osekTarget_AllIntMask_pending;
-extern OSWORD osekTarget_NestedAllIntMask_en;
-extern OSWORD osekTarget_NestedAllIntMask_pending;
-extern OSWORD osekTarget_NestedOsIntMask_en;
-extern OSWORD osekTarget_NestedOsIntMask_pending;
+extern OSDWORD	osIntSave_en;
+extern OSDWORD osIntSave_pending;
+extern OSDWORD osekTarget_AllIntMask_en;
+extern OSDWORD osekTarget_AllIntMask_pending;
+extern OSDWORD osekTarget_NestedAllIntMask_en;
+extern OSDWORD osekTarget_NestedAllIntMask_pending;
+extern OSDWORD osekTarget_NestedOsIntMask_en;
+extern OSDWORD osekTarget_NestedOsIntMask_pending;
 
-extern OSWORD osekTarget_SavedBTSP;
+extern OSDWORD osekTarget_SavedBTSP;
 
 
 typedef struct T_OSEK_TARGET_TaskContext_struct
 {
-	OSWORD sp;
-	OSWORD LR;
-	OSWORD pc;
-	OSWORD xPSR;
+	OSDWORD sp;	
+	OSDWORD LR;	
+	OSDWORD pc;	
+	OSDWORD APSR;	
 	
-	OSWORD r4;
-	OSWORD r5;
-	OSWORD r6;
-	OSWORD r7;
-	OSWORD r8;
-	OSWORD r9;
-	OSWORD r10;
-	OSWORD r11;
+	OSDWORD r4;	
+	OSDWORD r5;	
+	OSDWORD r6;	
+	OSDWORD r7;	
+	OSDWORD r8;	
+	OSDWORD r9;	
+	OSDWORD r10;	
+	OSDWORD r11;	
 
-	OSWORD primask;
+	OSDWORD primask;	
+	OSDWORD IPSR;	
+	OSDWORD EPSR;	
 
 }T_OSEK_TARGET_TaskContext_struct;  
 
@@ -1611,7 +1615,7 @@ typedef struct T_OSEK_TARGET_TaskContext_struct
 
 
 
-
+void OSEK_TARGET_SaveBTSP(OSDWORD sp);
 
 
 
@@ -1622,12 +1626,12 @@ void OSEK_TARGET_DisableOSInt_func();
 
 
 
-#line 109 ".\\OSEKos\\inc\\osekTarget.h"
+#line 113 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableOSInt(OSWORD osIntSave);
 
 
-#line 121 ".\\OSEKos\\inc\\osekTarget.h"
+#line 125 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1642,12 +1646,12 @@ void OSEK_TARGET_EnableOSInt(OSWORD osIntSave);
 void OSEK_TARGET_DisableAllInt();
 
 
-#line 143 ".\\OSEKos\\inc\\osekTarget.h"
+#line 147 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableAllInt();
 
 
-#line 155 ".\\OSEKos\\inc\\osekTarget.h"
+#line 159 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1656,12 +1660,12 @@ void OSEK_TARGET_EnableAllInt();
 void OSEK_TARGET_DisableNestedAllInt();
 
 
-#line 171 ".\\OSEKos\\inc\\osekTarget.h"
+#line 175 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableNestedAllInt();
 
 
-#line 183 ".\\OSEKos\\inc\\osekTarget.h"
+#line 187 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1670,12 +1674,12 @@ void OSEK_TARGET_EnableNestedAllInt();
 void OSEK_TARGET_DisableNestedOsInt();
 
 
-#line 199 ".\\OSEKos\\inc\\osekTarget.h"
+#line 203 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableNestedOsInt();
 
 
-#line 211 ".\\OSEKos\\inc\\osekTarget.h"
+#line 215 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1880,22 +1884,10 @@ void ResumeOSInterrupts( void );
 #line 79 ".\\OSEKos\\inc\\osekHook.h"
 
 
+#line 88 ".\\OSEKos\\inc\\osekHook.h"
 
 
-void StartupHook( void );
-
-
-
-
-
-
-
-
-void ShutdownHook( StatusType error );
-
-
-
-
+#line 97 ".\\OSEKos\\inc\\osekHook.h"
 
 
 #line 106 ".\\OSEKos\\inc\\osekHook.h"
@@ -2097,7 +2089,12 @@ typedef struct T_OSEK_TASK_ConfigTable_Struct
 	OSBYTE property;
 
 
-#line 177 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	OSBYTEPTR stackTop;
+	
+	OSBYTEPTR stackBottom;
+
 
 
 
@@ -2130,7 +2127,12 @@ typedef struct T_OSEK_TASK_ControlBlock_Struct
     T_OSEK_TASK_ConfigTable configTable;
 
 
-#line 220 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	EventMaskType waitEvent;
+	
+	EventMaskType setEvent;
+
 
 	
 	T_OSEK_TARGET_TaskContext      *context;
@@ -14329,7 +14331,7 @@ void OSEK_CPU_INIT()
 
 	
   DrvTIMER_Init();
-  DrvTIMER_Open(E_TMR0, osekConfig_CounterTable[0].ticksperbase, E_PERIODIC_MODE);
+  DrvTIMER_Open(E_TMR0, 100, E_PERIODIC_MODE);
   DrvTIMER_EnableInt(E_TMR0);
   
   Initial_pannel();

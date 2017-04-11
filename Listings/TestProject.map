@@ -23,492 +23,592 @@ Inlined total of 6 calls.
 Removing Unused input sections from the image.
 
     Removing core_cm0.o(.emb_text), (32 bytes).
-    Removing system_nuc1xx.o(i.SystemCoreClockUpdate), (132 bytes).
+    Removing system_nuc1xx.o(i.SystemCoreClockUpdate), (160 bytes).
     Removing system_nuc1xx.o(.data), (28 bytes).
-    Removing init.o(i.Delay), (6 bytes).
-    Removing drvadc.o(i.DrvADC_Close), (76 bytes).
-    Removing drvadc.o(i.DrvADC_ConfigADCChannel7), (48 bytes).
-    Removing drvadc.o(i.DrvADC_DiffModeOutputFormat), (20 bytes).
-    Removing drvadc.o(i.DrvADC_DisableADCCmp0), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableADCCmp0Int), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableADCCmp1), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableADCCmp1Int), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableADCInt), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableExtTrigger), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisablePDMA), (16 bytes).
-    Removing drvadc.o(i.DrvADC_DisableSelfCalibration), (16 bytes).
-    Removing drvadc.o(i.DrvADC_EnableADCCmp0), (104 bytes).
-    Removing drvadc.o(i.DrvADC_EnableADCCmp0Int), (64 bytes).
-    Removing drvadc.o(i.DrvADC_EnableADCCmp1), (104 bytes).
-    Removing drvadc.o(i.DrvADC_EnableADCCmp1Int), (64 bytes).
-    Removing drvadc.o(i.DrvADC_EnableADCInt), (64 bytes).
-    Removing drvadc.o(i.DrvADC_EnableExtTrigger), (56 bytes).
-    Removing drvadc.o(i.DrvADC_EnablePDMA), (24 bytes).
-    Removing drvadc.o(i.DrvADC_EnableSelfCalibration), (16 bytes).
-    Removing drvadc.o(i.DrvADC_GetConversionData), (52 bytes).
-    Removing drvadc.o(i.DrvADC_GetConversionRate), (108 bytes).
+    Removing init.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing init.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing init.o(i.AddaReadyBlock), (128 bytes).
+    Removing init.o(i.ClearPriorityMap), (72 bytes).
+    Removing init.o(i.Delay), (12 bytes).
+    Removing init.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing init.o(i.OSEK_TIMER_START), (10 bytes).
+    Removing init.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing drvadc.o(i.DrvADC_Close), (112 bytes).
+    Removing drvadc.o(i.DrvADC_ConfigADCChannel7), (72 bytes).
+    Removing drvadc.o(i.DrvADC_DiffModeOutputFormat), (28 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp0), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp0Int), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp1), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp1Int), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCInt), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableExtTrigger), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisablePDMA), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableSelfCalibration), (20 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp0), (148 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp0Int), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp1), (148 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp1Int), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCInt), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableExtTrigger), (80 bytes).
+    Removing drvadc.o(i.DrvADC_EnablePDMA), (32 bytes).
+    Removing drvadc.o(i.DrvADC_EnableSelfCalibration), (20 bytes).
+    Removing drvadc.o(i.DrvADC_GetConversionData), (92 bytes).
+    Removing drvadc.o(i.DrvADC_GetConversionRate), (168 bytes).
     Removing drvadc.o(i.DrvADC_GetVersion), (8 bytes).
-    Removing drvadc.o(i.DrvADC_IsCalibrationDone), (20 bytes).
-    Removing drvadc.o(i.DrvADC_IsConversionDone), (16 bytes).
-    Removing drvadc.o(i.DrvADC_IsDataOverrun), (52 bytes).
-    Removing drvadc.o(i.DrvADC_IsDataValid), (52 bytes).
-    Removing drvadc.o(i.DrvADC_Open), (132 bytes).
-    Removing drvadc.o(i.DrvADC_SetADCChannel), (20 bytes).
-    Removing drvadc.o(i.DrvADC_SetADCClkSrc), (24 bytes).
-    Removing drvadc.o(i.DrvADC_SetADCDivisor), (24 bytes).
-    Removing drvadc.o(i.DrvADC_SetADCInputMode), (24 bytes).
-    Removing drvadc.o(i.DrvADC_SetADCOperationMode), (36 bytes).
-    Removing drvadc.o(i.DrvADC_StartConvert), (28 bytes).
+    Removing drvadc.o(i.DrvADC_IsCalibrationDone), (24 bytes).
+    Removing drvadc.o(i.DrvADC_IsConversionDone), (24 bytes).
+    Removing drvadc.o(i.DrvADC_IsDataOverrun), (60 bytes).
+    Removing drvadc.o(i.DrvADC_IsDataValid), (60 bytes).
+    Removing drvadc.o(i.DrvADC_Open), (224 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCChannel), (24 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCClkSrc), (28 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCDivisor), (32 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCInputMode), (44 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCOperationMode), (60 bytes).
+    Removing drvadc.o(i.DrvADC_StartConvert), (36 bytes).
     Removing drvadc.o(i.DrvADC_StopConvert), (20 bytes).
-    Removing drvadc.o(i.NVIC_SetPriority), (68 bytes).
-    Removing drvcan.o(i.DrvCAN_BasicReceiveMsg), (144 bytes).
-    Removing drvcan.o(i.DrvCAN_BasicSendMsg), (200 bytes).
-    Removing drvcan.o(i.DrvCAN_Close), (56 bytes).
-    Removing drvcan.o(i.DrvCAN_DisableInt), (56 bytes).
+    Removing drvadc.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvadc.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvcan.o(i.DrvCAN_BasicReceiveMsg), (200 bytes).
+    Removing drvcan.o(i.DrvCAN_BasicSendMsg), (296 bytes).
+    Removing drvcan.o(i.DrvCAN_Close), (76 bytes).
+    Removing drvcan.o(i.DrvCAN_DisableInt), (80 bytes).
     Removing drvcan.o(i.DrvCAN_DisableWakeUp), (12 bytes).
-    Removing drvcan.o(i.DrvCAN_EnableInt), (84 bytes).
+    Removing drvcan.o(i.DrvCAN_EnableInt), (104 bytes).
     Removing drvcan.o(i.DrvCAN_EnableWakeUp), (12 bytes).
-    Removing drvcan.o(i.DrvCAN_EnterInitMode), (24 bytes).
-    Removing drvcan.o(i.DrvCAN_EnterTestMode), (20 bytes).
-    Removing drvcan.o(i.DrvCAN_GetCANBitRate), (60 bytes).
+    Removing drvcan.o(i.DrvCAN_EnterInitMode), (36 bytes).
+    Removing drvcan.o(i.DrvCAN_EnterTestMode), (24 bytes).
+    Removing drvcan.o(i.DrvCAN_GetCANBitRate), (80 bytes).
     Removing drvcan.o(i.DrvCAN_GetRxErrCount), (16 bytes).
     Removing drvcan.o(i.DrvCAN_GetTxErrCount), (12 bytes).
     Removing drvcan.o(i.DrvCAN_GetVersion), (8 bytes).
-    Removing drvcan.o(i.DrvCAN_Init), (32 bytes).
-    Removing drvcan.o(i.DrvCAN_InstallCallback), (56 bytes).
-    Removing drvcan.o(i.DrvCAN_IsIntPending), (28 bytes).
-    Removing drvcan.o(i.DrvCAN_IsNewDataReceived), (28 bytes).
-    Removing drvcan.o(i.DrvCAN_IsObjectValid), (28 bytes).
-    Removing drvcan.o(i.DrvCAN_IsTxRqstPending), (28 bytes).
-    Removing drvcan.o(i.DrvCAN_LeaveInitMode), (32 bytes).
-    Removing drvcan.o(i.DrvCAN_LeaveTestMode), (32 bytes).
-    Removing drvcan.o(i.DrvCAN_Open), (180 bytes).
-    Removing drvcan.o(i.DrvCAN_ReadMsgObj), (172 bytes).
-    Removing drvcan.o(i.DrvCAN_ResetAllMsgObj), (18 bytes).
-    Removing drvcan.o(i.DrvCAN_ResetIF), (44 bytes).
-    Removing drvcan.o(i.DrvCAN_ResetMsgObj), (68 bytes).
-    Removing drvcan.o(i.DrvCAN_SetMsgObjMask), (140 bytes).
-    Removing drvcan.o(i.DrvCAN_SetRxMsgObj), (128 bytes).
-    Removing drvcan.o(i.DrvCAN_SetTiming), (76 bytes).
-    Removing drvcan.o(i.DrvCAN_SetTxMsgObj), (172 bytes).
-    Removing drvcan.o(i.DrvCAN_SetTxRqst), (36 bytes).
-    Removing drvcan.o(i.DrvCAN_UninstallCallback), (60 bytes).
-    Removing drvcan.o(i.DrvCAN_WaitEndOfTx), (16 bytes).
-    Removing drvcan.o(i.DrvCAN_WaitMsg), (28 bytes).
-    Removing drvebi.o(i.DrvEBI_Close), (32 bytes).
-    Removing drvebi.o(i.DrvEBI_GetBusTiming), (56 bytes).
+    Removing drvcan.o(i.DrvCAN_Init), (56 bytes).
+    Removing drvcan.o(i.DrvCAN_InstallCallback), (72 bytes).
+    Removing drvcan.o(i.DrvCAN_IsIntPending), (40 bytes).
+    Removing drvcan.o(i.DrvCAN_IsNewDataReceived), (40 bytes).
+    Removing drvcan.o(i.DrvCAN_IsObjectValid), (40 bytes).
+    Removing drvcan.o(i.DrvCAN_IsTxRqstPending), (40 bytes).
+    Removing drvcan.o(i.DrvCAN_LeaveInitMode), (44 bytes).
+    Removing drvcan.o(i.DrvCAN_LeaveTestMode), (44 bytes).
+    Removing drvcan.o(i.DrvCAN_Open), (244 bytes).
+    Removing drvcan.o(i.DrvCAN_ReadMsgObj), (240 bytes).
+    Removing drvcan.o(i.DrvCAN_ResetAllMsgObj), (22 bytes).
+    Removing drvcan.o(i.DrvCAN_ResetIF), (124 bytes).
+    Removing drvcan.o(i.DrvCAN_ResetMsgObj), (148 bytes).
+    Removing drvcan.o(i.DrvCAN_SetMsgObjMask), (236 bytes).
+    Removing drvcan.o(i.DrvCAN_SetRxMsgObj), (284 bytes).
+    Removing drvcan.o(i.DrvCAN_SetTiming), (100 bytes).
+    Removing drvcan.o(i.DrvCAN_SetTxMsgObj), (296 bytes).
+    Removing drvcan.o(i.DrvCAN_SetTxRqst), (40 bytes).
+    Removing drvcan.o(i.DrvCAN_UninstallCallback), (84 bytes).
+    Removing drvcan.o(i.DrvCAN_WaitEndOfTx), (24 bytes).
+    Removing drvcan.o(i.DrvCAN_WaitMsg), (44 bytes).
+    Removing drvcan.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvebi.o(i.DrvEBI_Close), (36 bytes).
+    Removing drvebi.o(i.DrvEBI_GetBusTiming), (68 bytes).
     Removing drvebi.o(i.DrvEBI_GetVersion), (8 bytes).
-    Removing drvebi.o(i.DrvEBI_Open), (84 bytes).
-    Removing drvebi.o(i.DrvEBI_SetBusTiming), (120 bytes).
-    Removing drvfmc.o(i.DrvFMC_BootSelect), (24 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisableAPUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisableConfigUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisableISP), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisableLDUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisableLowFreqOptMode), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_DisablePowerSaving), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnableAPUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnableConfigUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnableISP), (52 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnableLDUpdate), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnableLowFreqOptMode), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_EnablePowerSaving), (16 bytes).
-    Removing drvfmc.o(i.DrvFMC_Erase), (88 bytes).
+    Removing drvebi.o(i.DrvEBI_Open), (108 bytes).
+    Removing drvebi.o(i.DrvEBI_SetBusTiming), (164 bytes).
+    Removing drvfmc.o(i.DrvFMC_BootSelect), (36 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisableAPUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisableConfigUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisableISP), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisableLDUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisableLowFreqOptMode), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_DisablePowerSaving), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnableAPUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnableConfigUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnableISP), (72 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnableLDUpdate), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnableLowFreqOptMode), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_EnablePowerSaving), (20 bytes).
+    Removing drvfmc.o(i.DrvFMC_Erase), (132 bytes).
     Removing drvfmc.o(i.DrvFMC_GetBootSelect), (16 bytes).
     Removing drvfmc.o(i.DrvFMC_GetVersion), (8 bytes).
-    Removing drvfmc.o(i.DrvFMC_Read), (96 bytes).
+    Removing drvfmc.o(i.DrvFMC_Read), (140 bytes).
     Removing drvfmc.o(i.DrvFMC_ReadDataFlashBaseAddr), (12 bytes).
-    Removing drvfmc.o(i.DrvFMC_Write), (92 bytes).
-    Removing drvfmc.o(i.DrvFMC_WriteConfig), (56 bytes).
-    Removing drvgpio.o(i.DrvGPIO_Close), (60 bytes).
-    Removing drvgpio.o(i.DrvGPIO_ClrBit), (36 bytes).
-    Removing drvgpio.o(i.DrvGPIO_ClrBitMask), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_ClrPortMask), (20 bytes).
-    Removing drvgpio.o(i.DrvGPIO_DisableDebounce), (44 bytes).
-    Removing drvgpio.o(i.DrvGPIO_DisableDigitalInputBit), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_DisableEINT0), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_DisableEINT1), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_DisableInt), (76 bytes).
-    Removing drvgpio.o(i.DrvGPIO_EnableDebounce), (44 bytes).
-    Removing drvgpio.o(i.DrvGPIO_EnableDigitalInputBit), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_EnableEINT0), (124 bytes).
-    Removing drvgpio.o(i.DrvGPIO_EnableEINT1), (124 bytes).
-    Removing drvgpio.o(i.DrvGPIO_EnableInt), (184 bytes).
-    Removing drvgpio.o(i.DrvGPIO_GetBit), (36 bytes).
-    Removing drvgpio.o(i.DrvGPIO_GetBitMask), (24 bytes).
+    Removing drvfmc.o(i.DrvFMC_Write), (136 bytes).
+    Removing drvfmc.o(i.DrvFMC_WriteConfig), (60 bytes).
+    Removing drvfmc.o(i.__set_PRIMASK), (6 bytes).
+    Removing drvgpio.o(i.DrvGPIO_Close), (68 bytes).
+    Removing drvgpio.o(i.DrvGPIO_ClrBit), (44 bytes).
+    Removing drvgpio.o(i.DrvGPIO_ClrBitMask), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_ClrPortMask), (32 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableDebounce), (52 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableDigitalInputBit), (40 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableEINT0), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableEINT1), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableInt), (80 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableDebounce), (52 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableDigitalInputBit), (40 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableEINT0), (152 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableEINT1), (152 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableInt), (240 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetBit), (44 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetBitMask), (28 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetDebounceSampleCycle), (16 bytes).
-    Removing drvgpio.o(i.DrvGPIO_GetDoutBit), (32 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetDoutBit), (40 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetIntStatus), (16 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetPortBits), (16 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetPortDoutBits), (28 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetPortMask), (16 bytes).
     Removing drvgpio.o(i.DrvGPIO_GetVersion), (8 bytes).
-    Removing drvgpio.o(i.DrvGPIO_Open), (100 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetBit), (36 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetBitMask), (32 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetDebounceTime), (52 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetIntCallback), (12 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetPortBits), (16 bytes).
-    Removing drvgpio.o(i.DrvGPIO_SetPortMask), (20 bytes).
+    Removing drvgpio.o(i.DrvGPIO_Open), (136 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetBit), (44 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetBitMask), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetDebounceTime), (64 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetIntCallback), (20 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetPortBits), (20 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetPortMask), (32 bytes).
     Removing drvgpio.o(i.NVIC_DisableIRQ), (20 bytes).
     Removing drvgpio.o(i.NVIC_EnableIRQ), (20 bytes).
-    Removing drvgpio.o(i.NVIC_SetPriority), (68 bytes).
-    Removing drvi2c.o(i.DrvI2C_ClearIntFlag), (28 bytes).
-    Removing drvi2c.o(i.DrvI2C_ClearTimeoutFlag), (28 bytes).
-    Removing drvi2c.o(i.DrvI2C_Close), (72 bytes).
-    Removing drvi2c.o(i.DrvI2C_Ctrl), (68 bytes).
-    Removing drvi2c.o(i.DrvI2C_DisableInt), (52 bytes).
-    Removing drvi2c.o(i.DrvI2C_EnableInt), (72 bytes).
-    Removing drvi2c.o(i.DrvI2C_GetClockFreq), (40 bytes).
-    Removing drvi2c.o(i.DrvI2C_GetIntFlag), (28 bytes).
-    Removing drvi2c.o(i.DrvI2C_GetStatus), (24 bytes).
+    Removing drvgpio.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvi2c.o(i.DrvI2C_ClearIntFlag), (44 bytes).
+    Removing drvi2c.o(i.DrvI2C_ClearTimeoutFlag), (44 bytes).
+    Removing drvi2c.o(i.DrvI2C_Close), (144 bytes).
+    Removing drvi2c.o(i.DrvI2C_Ctrl), (84 bytes).
+    Removing drvi2c.o(i.DrvI2C_DisableInt), (60 bytes).
+    Removing drvi2c.o(i.DrvI2C_EnableInt), (80 bytes).
+    Removing drvi2c.o(i.DrvI2C_GetClockFreq), (48 bytes).
+    Removing drvi2c.o(i.DrvI2C_GetIntFlag), (36 bytes).
+    Removing drvi2c.o(i.DrvI2C_GetStatus), (28 bytes).
     Removing drvi2c.o(i.DrvI2C_GetVersion), (8 bytes).
-    Removing drvi2c.o(i.DrvI2C_InstallCallback), (68 bytes).
-    Removing drvi2c.o(i.DrvI2C_Open), (120 bytes).
-    Removing drvi2c.o(i.DrvI2C_ReadData), (24 bytes).
-    Removing drvi2c.o(i.DrvI2C_SetAddress), (136 bytes).
-    Removing drvi2c.o(i.DrvI2C_SetAddressMask), (108 bytes).
-    Removing drvi2c.o(i.DrvI2C_SetClockFreq), (64 bytes).
-    Removing drvi2c.o(i.DrvI2C_SetTimeoutCounter), (52 bytes).
-    Removing drvi2c.o(i.DrvI2C_UninstallCallBack), (68 bytes).
+    Removing drvi2c.o(i.DrvI2C_InstallCallback), (124 bytes).
+    Removing drvi2c.o(i.DrvI2C_Open), (208 bytes).
+    Removing drvi2c.o(i.DrvI2C_ReadData), (32 bytes).
+    Removing drvi2c.o(i.DrvI2C_SetAddress), (392 bytes).
+    Removing drvi2c.o(i.DrvI2C_SetAddressMask), (252 bytes).
+    Removing drvi2c.o(i.DrvI2C_SetClockFreq), (72 bytes).
+    Removing drvi2c.o(i.DrvI2C_SetTimeoutCounter), (104 bytes).
+    Removing drvi2c.o(i.DrvI2C_UninstallCallBack), (140 bytes).
     Removing drvi2c.o(i.DrvI2C_WriteData), (24 bytes).
-    Removing drvi2c.o(i.NVIC_SetPriority), (68 bytes).
-    Removing drvi2s.o(i.DrvI2S_ClearRxFIFO), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_ClearTxFIFO), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_Close), (48 bytes).
-    Removing drvi2s.o(i.DrvI2S_DisableInt), (92 bytes).
+    Removing drvi2c.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvi2c.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvi2c.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvi2s.o(i.DrvI2S_ClearRxFIFO), (24 bytes).
+    Removing drvi2s.o(i.DrvI2S_ClearTxFIFO), (24 bytes).
+    Removing drvi2s.o(i.DrvI2S_Close), (72 bytes).
+    Removing drvi2s.o(i.DrvI2S_DisableInt), (128 bytes).
     Removing drvi2s.o(i.DrvI2S_DisableMCLK), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_DisableRx), (16 bytes).
+    Removing drvi2s.o(i.DrvI2S_DisableRx), (20 bytes).
     Removing drvi2s.o(i.DrvI2S_DisableRxDMA), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_DisableTx), (16 bytes).
+    Removing drvi2s.o(i.DrvI2S_DisableTx), (20 bytes).
     Removing drvi2s.o(i.DrvI2S_DisableTxDMA), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_DisableTxMute), (16 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableInt), (116 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableMCLK), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableRx), (16 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableRxDMA), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableTx), (16 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableTxDMA), (20 bytes).
-    Removing drvi2s.o(i.DrvI2S_EnableTxMute), (16 bytes).
-    Removing drvi2s.o(i.DrvI2S_GetBCLKFreq), (28 bytes).
-    Removing drvi2s.o(i.DrvI2S_GetMCLKFreq), (32 bytes).
-    Removing drvi2s.o(i.DrvI2S_GetSourceClockFreq), (60 bytes).
+    Removing drvi2s.o(i.DrvI2S_DisableTxMute), (20 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableInt), (136 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableMCLK), (24 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableRx), (20 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableRxDMA), (24 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableTx), (20 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableTxDMA), (24 bytes).
+    Removing drvi2s.o(i.DrvI2S_EnableTxMute), (20 bytes).
+    Removing drvi2s.o(i.DrvI2S_GetBCLKFreq), (32 bytes).
+    Removing drvi2s.o(i.DrvI2S_GetMCLKFreq), (40 bytes).
+    Removing drvi2s.o(i.DrvI2S_GetSourceClockFreq), (76 bytes).
     Removing drvi2s.o(i.DrvI2S_GetVersion), (8 bytes).
-    Removing drvi2s.o(i.DrvI2S_Open), (212 bytes).
+    Removing drvi2s.o(i.DrvI2S_Open), (288 bytes).
     Removing drvi2s.o(i.DrvI2S_SelectClockSource), (24 bytes).
-    Removing drvi2s.o(i.DrvI2S_SetBCLKFreq), (52 bytes).
-    Removing drvi2s.o(i.DrvI2S_SetChannelZeroCrossDetect), (56 bytes).
-    Removing drvi2s.o(i.DrvI2S_SetMCLKFreq), (48 bytes).
-    Removing drvpdma.o(i.DrvPDMA_CHEnableTransfer), (44 bytes).
-    Removing drvpdma.o(i.DrvPDMA_CHSoftwareReset), (36 bytes).
+    Removing drvi2s.o(i.DrvI2S_SetBCLKFreq), (68 bytes).
+    Removing drvi2s.o(i.DrvI2S_SetChannelZeroCrossDetect), (76 bytes).
+    Removing drvi2s.o(i.DrvI2S_SetMCLKFreq), (56 bytes).
+    Removing drvi2s.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvpdma.o(i.DrvPDMA_CHEnableTransfer), (48 bytes).
+    Removing drvpdma.o(i.DrvPDMA_CHSoftwareReset), (40 bytes).
     Removing drvpdma.o(i.DrvPDMA_ClearIntFlag), (20 bytes).
     Removing drvpdma.o(i.DrvPDMA_Close), (28 bytes).
-    Removing drvpdma.o(i.DrvPDMA_DisableInt), (52 bytes).
-    Removing drvpdma.o(i.DrvPDMA_EnableInt), (64 bytes).
+    Removing drvpdma.o(i.DrvPDMA_DisableInt), (64 bytes).
+    Removing drvpdma.o(i.DrvPDMA_EnableInt), (84 bytes).
     Removing drvpdma.o(i.DrvPDMA_GetAPBTransferWidth), (32 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetCHForAPBDevice), (120 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetCurrentDestAddr), (20 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetCurrentSourceAddr), (20 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetCHForAPBDevice), (220 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetCurrentDestAddr), (24 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetCurrentSourceAddr), (24 bytes).
     Removing drvpdma.o(i.DrvPDMA_GetDestAddress), (28 bytes).
     Removing drvpdma.o(i.DrvPDMA_GetInternalBufPointer), (28 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetRemainTransferCount), (20 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetSharedBufData), (20 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetRemainTransferCount), (24 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetSharedBufData), (24 bytes).
     Removing drvpdma.o(i.DrvPDMA_GetSourceAddress), (28 bytes).
-    Removing drvpdma.o(i.DrvPDMA_GetTransferLength), (32 bytes).
+    Removing drvpdma.o(i.DrvPDMA_GetTransferLength), (36 bytes).
     Removing drvpdma.o(i.DrvPDMA_GetVersion), (8 bytes).
-    Removing drvpdma.o(i.DrvPDMA_Init), (16 bytes).
-    Removing drvpdma.o(i.DrvPDMA_InstallCallBack), (36 bytes).
+    Removing drvpdma.o(i.DrvPDMA_Init), (20 bytes).
+    Removing drvpdma.o(i.DrvPDMA_InstallCallBack), (40 bytes).
     Removing drvpdma.o(i.DrvPDMA_IsCHBusy), (32 bytes).
-    Removing drvpdma.o(i.DrvPDMA_IsIntEnabled), (52 bytes).
-    Removing drvpdma.o(i.DrvPDMA_Open), (148 bytes).
-    Removing drvpdma.o(i.DrvPDMA_PollInt), (20 bytes).
-    Removing drvpdma.o(i.DrvPDMA_SetAPBTransferWidth), (44 bytes).
-    Removing drvpdma.o(i.DrvPDMA_SetCHForAPBDevice), (272 bytes).
-    Removing drvpdma.o(i.DrvPDMA_SetDestAddress), (28 bytes).
-    Removing drvpdma.o(i.DrvPDMA_SetSourceAddress), (28 bytes).
-    Removing drvps2.o(i.DrvPS2_ClearInt), (28 bytes).
-    Removing drvps2.o(i.DrvPS2_Close), (56 bytes).
-    Removing drvps2.o(i.DrvPS2_DisableInt), (56 bytes).
-    Removing drvps2.o(i.DrvPS2_EnableInt), (80 bytes).
-    Removing drvps2.o(i.DrvPS2_GetIntStatus), (40 bytes).
+    Removing drvpdma.o(i.DrvPDMA_IsIntEnabled), (60 bytes).
+    Removing drvpdma.o(i.DrvPDMA_Open), (168 bytes).
+    Removing drvpdma.o(i.DrvPDMA_PollInt), (24 bytes).
+    Removing drvpdma.o(i.DrvPDMA_SetAPBTransferWidth), (52 bytes).
+    Removing drvpdma.o(i.DrvPDMA_SetCHForAPBDevice), (444 bytes).
+    Removing drvpdma.o(i.DrvPDMA_SetDestAddress), (32 bytes).
+    Removing drvpdma.o(i.DrvPDMA_SetSourceAddress), (32 bytes).
+    Removing drvps2.o(i.DrvPS2_ClearInt), (36 bytes).
+    Removing drvps2.o(i.DrvPS2_Close), (80 bytes).
+    Removing drvps2.o(i.DrvPS2_DisableInt), (72 bytes).
+    Removing drvps2.o(i.DrvPS2_EnableInt), (92 bytes).
+    Removing drvps2.o(i.DrvPS2_GetIntStatus), (60 bytes).
     Removing drvps2.o(i.DrvPS2_GetVersion), (8 bytes).
-    Removing drvps2.o(i.DrvPS2_IsIntEnabled), (16 bytes).
-    Removing drvps2.o(i.DrvPS2_Open), (76 bytes).
+    Removing drvps2.o(i.DrvPS2_IsIntEnabled), (20 bytes).
+    Removing drvps2.o(i.DrvPS2_Open), (116 bytes).
     Removing drvps2.o(i.DrvPS2_Read), (16 bytes).
     Removing drvps2.o(i.DrvPS2_SetTxFIFODepth), (28 bytes).
-    Removing drvps2.o(i.DrvPS2_Write), (124 bytes).
-    Removing drvpwm.o(i.DrvPWM_ClearCaptureIntStatus), (300 bytes).
-    Removing drvpwm.o(i.DrvPWM_ClearInt), (228 bytes).
-    Removing drvpwm.o(i.DrvPWM_Close), (76 bytes).
-    Removing drvpwm.o(i.DrvPWM_DisableInt), (384 bytes).
-    Removing drvpwm.o(i.DrvPWM_Enable), (300 bytes).
-    Removing drvpwm.o(i.DrvPWM_EnableDeadZone), (140 bytes).
-    Removing drvpwm.o(i.DrvPWM_EnableInt), (684 bytes).
-    Removing drvpwm.o(i.DrvPWM_GetCaptureIntStatus), (112 bytes).
-    Removing drvpwm.o(i.DrvPWM_GetFallingCounter), (36 bytes).
-    Removing drvpwm.o(i.DrvPWM_GetIntFlag), (112 bytes).
-    Removing drvpwm.o(i.DrvPWM_GetRisingCounter), (36 bytes).
-    Removing drvpwm.o(i.DrvPWM_GetTimerCounter), (44 bytes).
+    Removing drvps2.o(i.DrvPS2_Write), (172 bytes).
+    Removing drvps2.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvpwm.o(i.DrvPWM_ClearCaptureIntStatus), (688 bytes).
+    Removing drvpwm.o(i.DrvPWM_ClearInt), (388 bytes).
+    Removing drvpwm.o(i.DrvPWM_Close), (92 bytes).
+    Removing drvpwm.o(i.DrvPWM_DisableInt), (680 bytes).
+    Removing drvpwm.o(i.DrvPWM_Enable), (608 bytes).
+    Removing drvpwm.o(i.DrvPWM_EnableDeadZone), (220 bytes).
+    Removing drvpwm.o(i.DrvPWM_EnableInt), (1116 bytes).
+    Removing drvpwm.o(i.DrvPWM_GetCaptureIntStatus), (248 bytes).
+    Removing drvpwm.o(i.DrvPWM_GetFallingCounter), (44 bytes).
+    Removing drvpwm.o(i.DrvPWM_GetIntFlag), (192 bytes).
+    Removing drvpwm.o(i.DrvPWM_GetRisingCounter), (44 bytes).
+    Removing drvpwm.o(i.DrvPWM_GetTimerCounter), (52 bytes).
     Removing drvpwm.o(i.DrvPWM_GetVersion), (8 bytes).
-    Removing drvpwm.o(i.DrvPWM_IsTimerEnabled), (64 bytes).
-    Removing drvpwm.o(i.DrvPWM_Open), (40 bytes).
-    Removing drvpwm.o(i.DrvPWM_SelectClearLatchFlagOption), (72 bytes).
-    Removing drvpwm.o(i.DrvPWM_SelectClockSource), (84 bytes).
-    Removing drvpwm.o(i.DrvPWM_SetTimerClk), (1188 bytes).
-    Removing drvpwm.o(i.DrvPWM_SetTimerCounter), (44 bytes).
-    Removing drvpwm.o(i.DrvPWM_SetTimerIO), (132 bytes).
-    Removing drvpwm.o(i.NVIC_SetPriority), (68 bytes).
-    Removing drvrtc.o(i.DrcRTC_IsLeapYear), (16 bytes).
-    Removing drvrtc.o(i.DrvRTC_Close), (36 bytes).
-    Removing drvrtc.o(i.DrvRTC_DisableInt), (76 bytes).
-    Removing drvrtc.o(i.DrvRTC_EnableInt), (88 bytes).
+    Removing drvpwm.o(i.DrvPWM_IsTimerEnabled), (100 bytes).
+    Removing drvpwm.o(i.DrvPWM_Open), (56 bytes).
+    Removing drvpwm.o(i.DrvPWM_SelectClearLatchFlagOption), (92 bytes).
+    Removing drvpwm.o(i.DrvPWM_SelectClockSource), (132 bytes).
+    Removing drvpwm.o(i.DrvPWM_SetTimerClk), (2072 bytes).
+    Removing drvpwm.o(i.DrvPWM_SetTimerCounter), (48 bytes).
+    Removing drvpwm.o(i.DrvPWM_SetTimerIO), (212 bytes).
+    Removing drvpwm.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvpwm.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvpwm.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvrtc.o(i.DrcRTC_IsLeapYear), (20 bytes).
+    Removing drvrtc.o(i.DrvRTC_Close), (48 bytes).
+    Removing drvrtc.o(i.DrvRTC_DisableInt), (108 bytes).
+    Removing drvrtc.o(i.DrvRTC_EnableInt), (124 bytes).
     Removing drvrtc.o(i.DrvRTC_GetIntTick), (12 bytes).
     Removing drvrtc.o(i.DrvRTC_GetVersion), (8 bytes).
-    Removing drvrtc.o(i.DrvRTC_Init), (108 bytes).
-    Removing drvrtc.o(i.DrvRTC_Open), (388 bytes).
-    Removing drvrtc.o(i.DrvRTC_Read), (348 bytes).
+    Removing drvrtc.o(i.DrvRTC_Init), (156 bytes).
+    Removing drvrtc.o(i.DrvRTC_Open), (516 bytes).
+    Removing drvrtc.o(i.DrvRTC_Read), (584 bytes).
     Removing drvrtc.o(i.DrvRTC_ResetIntTick), (12 bytes).
-    Removing drvrtc.o(i.DrvRTC_SetFrequencyCompensation), (72 bytes).
-    Removing drvrtc.o(i.DrvRTC_SetTickMode), (64 bytes).
-    Removing drvrtc.o(i.DrvRTC_Write), (512 bytes).
-    Removing drvrtc.o(i.DrvRTC_WriteEnable), (76 bytes).
-    Removing drvspi.o(i.DrvSPI_3WireAbort), (24 bytes).
-    Removing drvspi.o(i.DrvSPI_BurstRead), (48 bytes).
-    Removing drvspi.o(i.DrvSPI_BurstTransfer), (88 bytes).
-    Removing drvspi.o(i.DrvSPI_BurstWrite), (48 bytes).
-    Removing drvspi.o(i.DrvSPI_Close), (148 bytes).
-    Removing drvspi.o(i.DrvSPI_Clr3WireStartIntFlag), (24 bytes).
-    Removing drvspi.o(i.DrvSPI_ClrGo), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_ClrIntFlag), (24 bytes).
-    Removing drvspi.o(i.DrvSPI_ClrSS), (32 bytes).
-    Removing drvspi.o(i.DrvSPI_Disable3Wire), (24 bytes).
-    Removing drvspi.o(i.DrvSPI_Disable3WireStartInt), (72 bytes).
-    Removing drvspi.o(i.DrvSPI_DisableAutoSS), (32 bytes).
-    Removing drvspi.o(i.DrvSPI_DisableDivOne), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_DisableInt), (72 bytes).
-    Removing drvspi.o(i.DrvSPI_DumpRxRegister), (44 bytes).
-    Removing drvspi.o(i.DrvSPI_Enable3Wire), (24 bytes).
-    Removing drvspi.o(i.DrvSPI_Enable3WireStartInt), (108 bytes).
-    Removing drvspi.o(i.DrvSPI_EnableAutoSS), (40 bytes).
-    Removing drvspi.o(i.DrvSPI_EnableDivOne), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_EnableInt), (108 bytes).
+    Removing drvrtc.o(i.DrvRTC_SetFrequencyCompensation), (92 bytes).
+    Removing drvrtc.o(i.DrvRTC_SetTickMode), (68 bytes).
+    Removing drvrtc.o(i.DrvRTC_Write), (756 bytes).
+    Removing drvrtc.o(i.DrvRTC_WriteEnable), (104 bytes).
+    Removing drvrtc.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvspi.o(i.DrvSPI_3WireAbort), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstRead), (72 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstTransfer), (112 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstWrite), (72 bytes).
+    Removing drvspi.o(i.DrvSPI_Close), (324 bytes).
+    Removing drvspi.o(i.DrvSPI_Clr3WireStartIntFlag), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrGo), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrIntFlag), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrSS), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_Disable3Wire), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_Disable3WireStartInt), (100 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableAutoSS), (44 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableDivOne), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableInt), (100 bytes).
+    Removing drvspi.o(i.DrvSPI_DumpRxRegister), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_Enable3Wire), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_Enable3WireStartInt), (140 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableAutoSS), (56 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableDivOne), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableInt), (140 bytes).
     Removing drvspi.o(i.DrvSPI_Get3WireStartIntFlag), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_GetClock1Freq), (32 bytes).
-    Removing drvspi.o(i.DrvSPI_GetClock2Freq), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_GetClock1Freq), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_GetClock2Freq), (36 bytes).
     Removing drvspi.o(i.DrvSPI_GetIntFlag), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_GetLevelTriggerStatus), (24 bytes).
+    Removing drvspi.o(i.DrvSPI_GetLevelTriggerStatus), (32 bytes).
     Removing drvspi.o(i.DrvSPI_GetVersion), (8 bytes).
     Removing drvspi.o(i.DrvSPI_IsBusy), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_Open), (364 bytes).
-    Removing drvspi.o(i.DrvSPI_Set2BitTransferMode), (44 bytes).
-    Removing drvspi.o(i.DrvSPI_SetBitLength), (48 bytes).
-    Removing drvspi.o(i.DrvSPI_SetByteReorder), (64 bytes).
-    Removing drvspi.o(i.DrvSPI_SetClockFreq), (148 bytes).
-    Removing drvspi.o(i.DrvSPI_SetEndian), (32 bytes).
-    Removing drvspi.o(i.DrvSPI_SetGo), (20 bytes).
-    Removing drvspi.o(i.DrvSPI_SetPDMA), (52 bytes).
-    Removing drvspi.o(i.DrvSPI_SetSS), (28 bytes).
-    Removing drvspi.o(i.DrvSPI_SetSlaveSelectActiveLevel), (28 bytes).
-    Removing drvspi.o(i.DrvSPI_SetSuspendCycle), (60 bytes).
-    Removing drvspi.o(i.DrvSPI_SetTriggerMode), (28 bytes).
-    Removing drvspi.o(i.DrvSPI_SetTxRegister), (40 bytes).
-    Removing drvspi.o(i.DrvSPI_SetVariableClockFunction), (40 bytes).
-    Removing drvspi.o(i.DrvSPI_SingleRead), (40 bytes).
-    Removing drvspi.o(i.DrvSPI_SingleWrite), (40 bytes).
+    Removing drvspi.o(i.DrvSPI_Open), (972 bytes).
+    Removing drvspi.o(i.DrvSPI_Set2BitTransferMode), (80 bytes).
+    Removing drvspi.o(i.DrvSPI_SetBitLength), (64 bytes).
+    Removing drvspi.o(i.DrvSPI_SetByteReorder), (112 bytes).
+    Removing drvspi.o(i.DrvSPI_SetClockFreq), (212 bytes).
+    Removing drvspi.o(i.DrvSPI_SetEndian), (60 bytes).
+    Removing drvspi.o(i.DrvSPI_SetGo), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_SetPDMA), (112 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSS), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSlaveSelectActiveLevel), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSuspendCycle), (88 bytes).
+    Removing drvspi.o(i.DrvSPI_SetTriggerMode), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetTxRegister), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_SetVariableClockFunction), (68 bytes).
+    Removing drvspi.o(i.DrvSPI_SingleRead), (64 bytes).
+    Removing drvspi.o(i.DrvSPI_SingleWrite), (64 bytes).
     Removing drvspi.o(i.NVIC_DisableIRQ), (20 bytes).
     Removing drvspi.o(i.NVIC_EnableIRQ), (20 bytes).
-    Removing drvspi.o(i.NVIC_SetPriority), (68 bytes).
+    Removing drvspi.o(i.NVIC_SetPriority), (120 bytes).
     Removing drvspi.o(.data), (16 bytes).
-    Removing drvsys.o(i.DrvSYS_ClearClockSwitchStatus), (16 bytes).
-    Removing drvsys.o(i.DrvSYS_ClearResetSource), (10 bytes).
-    Removing drvsys.o(i.DrvSYS_Delay), (36 bytes).
-    Removing drvsys.o(i.DrvSYS_DisableBODLowPowerMode), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_DisableHighPerformanceMode), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_DisableLowVoltReset), (14 bytes).
+    Removing drvsys.o(i.DrvSYS_ClearClockSwitchStatus), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ClearResetSource), (12 bytes).
+    Removing drvsys.o(i.DrvSYS_Delay), (44 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableBODLowPowerMode), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableHighPerformanceMode), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableLowVoltReset), (18 bytes).
     Removing drvsys.o(i.DrvSYS_DisablePOR), (12 bytes).
-    Removing drvsys.o(i.DrvSYS_DisableTemperatureSensor), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_EnableBODLowPowerMode), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_EnableHighPerformanceMode), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_EnableLowVoltReset), (14 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableTemperatureSensor), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableBODLowPowerMode), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableHighPerformanceMode), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableLowVoltReset), (20 bytes).
     Removing drvsys.o(i.DrvSYS_EnablePOR), (10 bytes).
-    Removing drvsys.o(i.DrvSYS_EnableTemperatureSensor), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_EnterPowerDown), (40 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableTemperatureSensor), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnterPowerDown), (56 bytes).
     Removing drvsys.o(i.DrvSYS_GetBODState), (12 bytes).
-    Removing drvsys.o(i.DrvSYS_GetChipClockSourceStatus), (64 bytes).
+    Removing drvsys.o(i.DrvSYS_GetChipClockSourceStatus), (88 bytes).
     Removing drvsys.o(i.DrvSYS_GetClockSwitchStatus), (16 bytes).
-    Removing drvsys.o(i.DrvSYS_GetPLLContent), (168 bytes).
+    Removing drvsys.o(i.DrvSYS_GetPLLContent), (196 bytes).
     Removing drvsys.o(i.DrvSYS_GetResetSource), (8 bytes).
     Removing drvsys.o(i.DrvSYS_GetVersion), (8 bytes).
     Removing drvsys.o(i.DrvSYS_IsProtectedRegLocked), (16 bytes).
-    Removing drvsys.o(i.DrvSYS_LockProtectedReg), (28 bytes).
-    Removing drvsys.o(i.DrvSYS_Open), (148 bytes).
+    Removing drvsys.o(i.DrvSYS_LockProtectedReg), (36 bytes).
+    Removing drvsys.o(i.DrvSYS_Open), (192 bytes).
     Removing drvsys.o(i.DrvSYS_ReadProductID), (8 bytes).
-    Removing drvsys.o(i.DrvSYS_ResetCPU), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_ResetChip), (14 bytes).
-    Removing drvsys.o(i.DrvSYS_ResetIP), (62 bytes).
-    Removing drvsys.o(i.DrvSYS_SelectBODVolt), (20 bytes).
-    Removing drvsys.o(i.DrvSYS_SelectHCLKSource), (48 bytes).
-    Removing drvsys.o(i.DrvSYS_SelectIPClockSource), (204 bytes).
-    Removing drvsys.o(i.DrvSYS_SelectPLLSource), (24 bytes).
-    Removing drvsys.o(i.DrvSYS_SelectSysTickSource), (44 bytes).
-    Removing drvsys.o(i.DrvSYS_SetBODFunction), (76 bytes).
-    Removing drvsys.o(i.DrvSYS_SetClockDivider), (100 bytes).
-    Removing drvsys.o(i.DrvSYS_SetFreqDividerOutput), (64 bytes).
-    Removing drvsys.o(i.DrvSYS_SetIPClock), (84 bytes).
-    Removing drvsys.o(i.DrvSYS_SetOscCtrl), (84 bytes).
-    Removing drvsys.o(i.DrvSYS_SetPLLContent), (60 bytes).
-    Removing drvsys.o(i.DrvSYS_SetPLLMode), (36 bytes).
-    Removing drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt), (84 bytes).
-    Removing drvsys.o(i.DrvSYS_UnlockProtectedReg), (40 bytes).
-    Removing drvsys.o(i.NVIC_SetPriority), (68 bytes).
-    Removing drvtimer.o(i.DrvTIMER_ClearCaptureIntFlag), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_ClearIntFlag), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_ClearTimerEvent), (120 bytes).
-    Removing drvtimer.o(i.DrvTIMER_Close), (124 bytes).
-    Removing drvtimer.o(i.DrvTIMER_CloseCapture), (52 bytes).
-    Removing drvtimer.o(i.DrvTIMER_Delay), (28 bytes).
-    Removing drvtimer.o(i.DrvTIMER_DisableCapture), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_DisableCaptureDebounce), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_DisableCaptureInt), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_DisableCounterDebounce), (56 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetCPU), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetChip), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetIP), (110 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectBODVolt), (26 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectHCLKSource), (56 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectIPClockSource), (352 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectPLLSource), (32 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectSysTickSource), (52 bytes).
+    Removing drvsys.o(i.DrvSYS_SetBODFunction), (92 bytes).
+    Removing drvsys.o(i.DrvSYS_SetClockDivider), (136 bytes).
+    Removing drvsys.o(i.DrvSYS_SetFreqDividerOutput), (76 bytes).
+    Removing drvsys.o(i.DrvSYS_SetIPClock), (120 bytes).
+    Removing drvsys.o(i.DrvSYS_SetOscCtrl), (128 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPLLContent), (76 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPLLMode), (52 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt), (108 bytes).
+    Removing drvsys.o(i.DrvSYS_UnlockProtectedReg), (44 bytes).
+    Removing drvsys.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvsys.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvsys.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvtimer.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing drvtimer.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing drvtimer.o(i.AddaReadyBlock), (128 bytes).
+    Removing drvtimer.o(i.ClearPriorityMap), (72 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearCaptureIntFlag), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearIntFlag), (100 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearTimerEvent), (212 bytes).
+    Removing drvtimer.o(i.DrvTIMER_Close), (212 bytes).
+    Removing drvtimer.o(i.DrvTIMER_CloseCapture), (60 bytes).
+    Removing drvtimer.o(i.DrvTIMER_Delay), (38 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCapture), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCaptureDebounce), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCaptureInt), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCounterDebounce), (64 bytes).
     Removing drvtimer.o(i.DrvTIMER_DisableInt), (76 bytes).
-    Removing drvtimer.o(i.DrvTIMER_EnableCapture), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_EnableCaptureDebounce), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_EnableCaptureInt), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_EnableCounterDebounce), (56 bytes).
-    Removing drvtimer.o(i.DrvTIMER_GetCaptureData), (48 bytes).
-    Removing drvtimer.o(i.DrvTIMER_GetCaptureIntFlag), (52 bytes).
-    Removing drvtimer.o(i.DrvTIMER_GetCounters), (48 bytes).
-    Removing drvtimer.o(i.DrvTIMER_GetIntFlag), (48 bytes).
-    Removing drvtimer.o(i.DrvTIMER_GetIntTicks), (48 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCapture), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCaptureDebounce), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCaptureInt), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCounterDebounce), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCaptureData), (56 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCaptureIntFlag), (60 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCounters), (56 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetIntFlag), (72 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetIntTicks), (68 bytes).
     Removing drvtimer.o(i.DrvTIMER_GetVersion), (8 bytes).
-    Removing drvtimer.o(i.DrvTIMER_OpenCapture), (84 bytes).
-    Removing drvtimer.o(i.DrvTIMER_OpenCounter), (392 bytes).
-    Removing drvtimer.o(i.DrvTIMER_ResetIntTicks), (52 bytes).
-    Removing drvtimer.o(i.DrvTIMER_SelectCaptureEdge), (60 bytes).
-    Removing drvtimer.o(i.DrvTIMER_SelectCounterDetectPhase), (60 bytes).
-    Removing drvtimer.o(i.DrvTIMER_SelectExternalMode), (60 bytes).
-    Removing drvtimer.o(i.DrvTIMER_SetTimerEvent), (252 bytes).
-    Removing drvtimer.o(i.DrvTIMER_StartCounter), (76 bytes).
-    Removing drvtimer.o(i.DrvWDT_Close), (72 bytes).
-    Removing drvtimer.o(i.DrvWDT_InstallISR), (24 bytes).
-    Removing drvtimer.o(i.DrvWDT_Ioctl), (148 bytes).
-    Removing drvtimer.o(i.DrvWDT_Open), (72 bytes).
+    Removing drvtimer.o(i.DrvTIMER_OpenCapture), (96 bytes).
+    Removing drvtimer.o(i.DrvTIMER_OpenCounter), (564 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ResetIntTicks), (84 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectCaptureEdge), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectCounterDetectPhase), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectExternalMode), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SetTimerEvent), (600 bytes).
+    Removing drvtimer.o(i.DrvTIMER_Start), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_StartCounter), (92 bytes).
+    Removing drvtimer.o(i.DrvWDT_Close), (80 bytes).
+    Removing drvtimer.o(i.DrvWDT_InstallISR), (28 bytes).
+    Removing drvtimer.o(i.DrvWDT_Ioctl), (224 bytes).
+    Removing drvtimer.o(i.DrvWDT_Open), (88 bytes).
     Removing drvtimer.o(i.Initial_Timer), (32 bytes).
+    Removing drvtimer.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing drvtimer.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvtimer.o(i.ReleaseReadyBlock), (16 bytes).
     Removing drvtimer.o(i.Timer_Start), (10 bytes).
-    Removing drvtimer.o(.data), (4 bytes).
-    Removing drvuart.o(i.BaudRateCalculator), (144 bytes).
-    Removing drvuart.o(i.DrvUART_ClearIntFlag), (108 bytes).
-    Removing drvuart.o(i.DrvUART_Close), (120 bytes).
-    Removing drvuart.o(i.DrvUART_DisableInt), (104 bytes).
-    Removing drvuart.o(i.DrvUART_DisablePDMA), (44 bytes).
-    Removing drvuart.o(i.DrvUART_EnableInt), (216 bytes).
-    Removing drvuart.o(i.DrvUART_EnablePDMA), (44 bytes).
+    Removing drvuart.o(i.BaudRateCalculator), (212 bytes).
+    Removing drvuart.o(i.DrvUART_ClearIntFlag), (164 bytes).
+    Removing drvuart.o(i.DrvUART_Close), (176 bytes).
+    Removing drvuart.o(i.DrvUART_DisableInt), (184 bytes).
+    Removing drvuart.o(i.DrvUART_DisablePDMA), (76 bytes).
+    Removing drvuart.o(i.DrvUART_EnableInt), (256 bytes).
+    Removing drvuart.o(i.DrvUART_EnablePDMA), (84 bytes).
     Removing drvuart.o(i.DrvUART_GetCTSInfo), (28 bytes).
-    Removing drvuart.o(i.DrvUART_GetIntStatus), (16 bytes).
+    Removing drvuart.o(i.DrvUART_GetIntStatus), (20 bytes).
     Removing drvuart.o(i.DrvUART_GetVersion), (8 bytes).
-    Removing drvuart.o(i.DrvUART_Open), (444 bytes).
-    Removing drvuart.o(i.DrvUART_Read), (56 bytes).
-    Removing drvuart.o(i.DrvUART_SetFnIRDA), (72 bytes).
-    Removing drvuart.o(i.DrvUART_SetFnLIN), (68 bytes).
-    Removing drvuart.o(i.DrvUART_SetFnRS485), (148 bytes).
-    Removing drvuart.o(i.DrvUART_SetRTS), (44 bytes).
-    Removing drvuart.o(i.DrvUART_Write), (56 bytes).
+    Removing drvuart.o(i.DrvUART_Open), (616 bytes).
+    Removing drvuart.o(i.DrvUART_Read), (64 bytes).
+    Removing drvuart.o(i.DrvUART_SetFnIRDA), (88 bytes).
+    Removing drvuart.o(i.DrvUART_SetFnLIN), (76 bytes).
+    Removing drvuart.o(i.DrvUART_SetFnRS485), (196 bytes).
+    Removing drvuart.o(i.DrvUART_SetRTS), (52 bytes).
+    Removing drvuart.o(i.DrvUART_Write), (64 bytes).
+    Removing drvuart.o(i.GetUartClk), (72 bytes).
     Removing drvuart.o(i.NVIC_DisableIRQ), (20 bytes).
-    Removing retarget.o(i.GetChar), (20 bytes).
+    Removing drvuart.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing retarget.o(i.GetChar), (28 bytes).
     Removing retarget.o(i.IsDebugFifoEmpty), (16 bytes).
-    Removing retarget.o(i.SendChar), (8 bytes).
-    Removing retarget.o(i.SendChar_ToUART), (32 bytes).
-    Removing retarget.o(i._ttywrch), (8 bytes).
-    Removing retarget.o(i.ferror), (6 bytes).
-    Removing retarget.o(i.fgetc), (8 bytes).
-    Removing retarget.o(i.fputc), (12 bytes).
-    Removing retarget.o(i.kbhit), (16 bytes).
-    Removing retarget.o(.data), (4 bytes).
-    Removing retarget.o(.data), (4 bytes).
+    Removing retarget.o(i.SendChar), (12 bytes).
+    Removing retarget.o(i.SendChar_ToUART), (48 bytes).
+    Removing retarget.o(i._ttywrch), (12 bytes).
+    Removing retarget.o(i.ferror), (8 bytes).
+    Removing retarget.o(i.fgetc), (10 bytes).
+    Removing retarget.o(i.fputc), (16 bytes).
+    Removing retarget.o(i.kbhit), (20 bytes).
+    Removing retarget.o(.data), (8 bytes).
     Removing ascii_table.o(.data), (1520 bytes).
-    Removing eeprom_24lc64.o(i.Read_24LC64), (236 bytes).
-    Removing eeprom_24lc64.o(i.Write_24LC64), (216 bytes).
+    Removing eeprom_24lc64.o(i.Read_24LC64), (316 bytes).
+    Removing eeprom_24lc64.o(i.Write_24LC64), (280 bytes).
     Removing lcd_driver.o(i.Disable_Buzzer), (22 bytes).
-    Removing lcd_driver.o(i.Show_Word), (84 bytes).
-    Removing lcd_driver.o(i.SysTimerDelay), (28 bytes).
-    Removing lcd_driver.o(i.print_lcd), (34 bytes).
-    Removing nau7802.o(i.GetADCResult_NAU7802), (54 bytes).
-    Removing nau7802.o(i.I2C0_Callback_NAU7802), (212 bytes).
-    Removing nau7802.o(i.InitNAU7802), (136 bytes).
-    Removing nau7802.o(i.rNAU7802), (40 bytes).
-    Removing nau7802.o(i.rNAU7802_B), (52 bytes).
-    Removing nau7802.o(i.wNAU7802), (40 bytes).
-    Removing nau7802.o(i.wNAU7802_B), (48 bytes).
-    Removing nau7802.o(.data), (8 bytes).
-    Removing scankey.o(i.CloseKeyPad), (22 bytes).
-    Removing scankey.o(i.OpenKeyPad), (24 bytes).
-    Removing scankey.o(i.Scankey), (116 bytes).
-    Removing scankey.o(i.delay), (14 bytes).
+    Removing lcd_driver.o(i.Show_Word), (120 bytes).
+    Removing lcd_driver.o(i.SysTimerDelay), (40 bytes).
+    Removing lcd_driver.o(i.print_lcd), (40 bytes).
+    Removing nau7802.o(i.GetADCResult_NAU7802), (72 bytes).
+    Removing nau7802.o(i.I2C0_Callback_NAU7802), (408 bytes).
+    Removing nau7802.o(i.InitNAU7802), (144 bytes).
+    Removing nau7802.o(i.rNAU7802), (68 bytes).
+    Removing nau7802.o(i.rNAU7802_B), (76 bytes).
+    Removing nau7802.o(i.wNAU7802), (68 bytes).
+    Removing nau7802.o(i.wNAU7802_B), (72 bytes).
+    Removing nau7802.o(.data), (11 bytes).
+    Removing scankey.o(i.CloseKeyPad), (24 bytes).
+    Removing scankey.o(i.OpenKeyPad), (26 bytes).
+    Removing scankey.o(i.Scankey), (132 bytes).
+    Removing scankey.o(i.delay), (16 bytes).
     Removing scankey.o(.constdata), (4 bytes).
     Removing seven_segment.o(i.close_seven_segment), (36 bytes).
-    Removing seven_segment.o(i.show_seven_segment), (56 bytes).
+    Removing seven_segment.o(i.show_seven_segment), (64 bytes).
     Removing seven_segment.o(.data), (10 bytes).
-    Removing cfg.o(i.Ir_RealTimInt), (10 bytes).
+    Removing cfg.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing cfg.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing cfg.o(i.AddaReadyBlock), (128 bytes).
+    Removing cfg.o(i.ClearPriorityMap), (72 bytes).
     Removing cfg.o(i.MessageInit), (2 bytes).
-    Removing cfg.o(.constdata), (32 bytes).
-    Removing cfg.o(.data), (128 bytes).
-    Removing cfg.o(.data), (512 bytes).
-    Removing cfg.o(.data), (6 bytes).
-    Removing cfg.o(.data), (1 bytes).
-    Removing osekalarm.o(i.CancelAlarm), (68 bytes).
-    Removing osekalarm.o(i.GetAlarm), (88 bytes).
-    Removing osekalarm.o(i.GetAlarmBase), (36 bytes).
-    Removing osekalarm.o(i.SetAbsAlarm), (100 bytes).
-    Removing osekalarm.o(i.SetAlarm), (60 bytes).
-    Removing osekalarm.o(i.SetRelAlarm), (116 bytes).
-    Removing osekcounter.o(i.GetCounterInfo), (24 bytes).
-    Removing osekcounter.o(i.GetCounterValue), (24 bytes).
-    Removing osekcounter.o(i.InitCounter), (48 bytes).
-    Removing osekdebug.o(i.GetRunningStackUsage), (6 bytes).
-    Removing osekdebug.o(i.GetStackUsage), (6 bytes).
+    Removing cfg.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing cfg.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekalarm.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekalarm.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekalarm.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekalarm.o(i.CancelAlarm), (76 bytes).
+    Removing osekalarm.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekalarm.o(i.GetAlarm), (108 bytes).
+    Removing osekalarm.o(i.GetAlarmBase), (40 bytes).
+    Removing osekalarm.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekalarm.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekalarm.o(i.SetAbsAlarm), (124 bytes).
+    Removing osekalarm.o(i.SetAlarm), (92 bytes).
+    Removing osekalarm.o(i.SetRelAlarm), (188 bytes).
+    Removing osekcounter.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekcounter.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekcounter.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekcounter.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekcounter.o(i.GetCounterInfo), (36 bytes).
+    Removing osekcounter.o(i.GetCounterValue), (32 bytes).
+    Removing osekcounter.o(i.InitCounter), (64 bytes).
+    Removing osekcounter.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekcounter.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekdebug.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekdebug.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekdebug.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekdebug.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekdebug.o(i.GetRunningStackUsage), (52 bytes).
+    Removing osekdebug.o(i.GetStackUsage), (52 bytes).
     Removing osekdebug.o(i.GetTimeStamp), (12 bytes).
-    Removing osekexecution.o(i.ShutdownOS), (12 bytes).
+    Removing osekdebug.o(i.GetUsage), (20 bytes).
+    Removing osekdebug.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekdebug.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekevent.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekevent.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekevent.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekevent.o(i.ClearEvent), (88 bytes).
+    Removing osekevent.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekevent.o(i.GetEvent), (68 bytes).
+    Removing osekevent.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekevent.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekevent.o(i.SetEvent), (88 bytes).
+    Removing osekevent.o(i.WaitEvent), (112 bytes).
+    Removing osekevent.o(i.osekEvent_SetEvent), (64 bytes).
+    Removing osekexecution.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekexecution.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekexecution.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekexecution.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekexecution.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekexecution.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekexecution.o(i.ShutdownOS), (10 bytes).
+    Removing osekhook.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekhook.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekhook.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekhook.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekhook.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekhook.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekinterrupt.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekinterrupt.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekinterrupt.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekinterrupt.o(i.ClearPriorityMap), (72 bytes).
     Removing osekinterrupt.o(i.DisableAllInterrupts), (8 bytes).
     Removing osekinterrupt.o(i.EnableAllInterrupts), (8 bytes).
-    Removing osekinterrupt.o(i.ResumeAllInterrupts), (28 bytes).
-    Removing osekinterrupt.o(i.ResumeOSInterrupts), (28 bytes).
-    Removing osekinterrupt.o(i.SuspendAllInterrupts), (28 bytes).
-    Removing osekinterrupt.o(i.SuspendOSInterrupts), (28 bytes).
+    Removing osekinterrupt.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekinterrupt.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekinterrupt.o(i.ResumeAllInterrupts), (44 bytes).
+    Removing osekinterrupt.o(i.ResumeOSInterrupts), (44 bytes).
+    Removing osekinterrupt.o(i.SuspendAllInterrupts), (32 bytes).
+    Removing osekinterrupt.o(i.SuspendOSInterrupts), (32 bytes).
+    Removing osekmessage.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekmessage.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekmessage.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekmessage.o(i.ClearPriorityMap), (72 bytes).
     Removing osekmessage.o(i.CloseCOM), (4 bytes).
-    Removing osekmessage.o(i.Msg_Init), (48 bytes).
-    Removing osekmessage.o(i.ReceiveMessage), (128 bytes).
-    Removing osekmessage.o(i.SendMessage), (160 bytes).
-    Removing osekmessage.o(i.StartCOM), (12 bytes).
-    Removing osekmessage.o(i.StopCOM), (36 bytes).
-    Removing osekmessage.o(i.msg_LockMessage), (20 bytes).
-    Removing osekmessage.o(i.msg_SignalMessage), (24 bytes).
+    Removing osekmessage.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekmessage.o(i.Msg_Init), (56 bytes).
+    Removing osekmessage.o(i.ReceiveMessage), (132 bytes).
+    Removing osekmessage.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osekmessage.o(i.SendMessage), (172 bytes).
+    Removing osekmessage.o(i.StartCOM), (16 bytes).
+    Removing osekmessage.o(i.StopCOM), (44 bytes).
+    Removing osekmessage.o(i.msg_LockMessage), (28 bytes).
+    Removing osekmessage.o(i.msg_SignalMessage), (28 bytes).
     Removing osekmessage.o(.bss), (40 bytes).
+    Removing osekresource.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osekresource.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osekresource.o(i.AddaReadyBlock), (128 bytes).
+    Removing osekresource.o(i.ClearPriorityMap), (72 bytes).
+    Removing osekresource.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osekresource.o(i.ReleaseReadyBlock), (16 bytes).
+    Removing osektarget.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osektarget.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing osektarget.o(i.AddaReadyBlock), (128 bytes).
+    Removing osektarget.o(i.ClearPriorityMap), (72 bytes).
+    Removing osektarget.o(i.MoveTaskFromReadyTable), (28 bytes).
+    Removing osektarget.o(i.ReleaseReadyBlock), (16 bytes).
     Removing osektarget.o(i.int_fit_restore), (2 bytes).
     Removing osektarget.o(i.int_mask_restore), (2 bytes).
     Removing osektarget.o(i.int_mask_save), (6 bytes).
     Removing osektarget.o(i.int_vector_save), (2 bytes).
-    Removing osektarget.o(.data), (2 bytes).
-    Removing osektask.o(i.ActivateTask), (76 bytes).
-    Removing osektask.o(i.ChainTask), (168 bytes).
-    Removing osektask.o(i.ClearPriorityMap), (56 bytes).
-    Removing osektask.o(i.GetTaskID), (28 bytes).
-    Removing osektask.o(i.GetTaskState), (52 bytes).
-    Removing osektask.o(i.MoveTaskFromReadyTable), (24 bytes).
+    Removing osektask.o(i.ActivateTask), (80 bytes).
+    Removing osektask.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing osektask.o(i.ChainTask), (196 bytes).
+    Removing osektask.o(i.ClearPriorityMap), (72 bytes).
+    Removing osektask.o(i.GetTaskID), (32 bytes).
+    Removing osektask.o(i.GetTaskState), (56 bytes).
+    Removing osektask.o(i.MoveTaskFromReadyTable), (28 bytes).
     Removing osektask.o(i.ReleaseReadyBlock), (16 bytes).
-    Removing osektask.o(i.Schedule), (44 bytes).
-    Removing osektask.o(i.TerminateTask), (76 bytes).
-    Removing osektask.o(i.osekTask_ChangeRunningTaskPriority), (96 bytes).
-    Removing osektask.o(i.osekTask_TerminateDispatch), (88 bytes).
-    Removing osektask.o(i.osekTask_WaitTask), (44 bytes).
-    Removing osektask.o(i.osekTask_WakeTask), (68 bytes).
+    Removing osektask.o(i.Schedule), (56 bytes).
+    Removing osektask.o(i.TerminateTask), (84 bytes).
+    Removing osektask.o(i.osekTask_ChangeRunningTaskPriority), (92 bytes).
+    Removing osektask.o(i.osekTask_TerminateDispatch), (148 bytes).
+    Removing osektask.o(i.osekTask_WaitTask), (48 bytes).
+    Removing osektask.o(i.osekTask_WakeTask), (88 bytes).
+    Removing main.o(i.AddTask2ReadyTableAtHead), (32 bytes).
+    Removing main.o(i.AddTask2ReadyTableAtTail), (44 bytes).
+    Removing main.o(i.AddaReadyBlock), (128 bytes).
+    Removing main.o(i.ClearPriorityMap), (72 bytes).
     Removing main.o(i.ErrorHook), (2 bytes).
     Removing main.o(i.FuncTask4), (2 bytes).
+    Removing main.o(i.MoveTaskFromReadyTable), (28 bytes).
     Removing main.o(i.PostTaskHook), (2 bytes).
+    Removing main.o(i.ReleaseReadyBlock), (16 bytes).
     Removing main.o(i.ShutdownHook), (2 bytes).
+    Removing main.o(i.StartupHook), (2 bytes).
     Removing main.o(i.read_timer_value), (14 bytes).
 
-485 unused section(s) (total 30545 bytes) removed from the image.
+585 unused section(s) (total 48699 bytes) removed from the image.
 
 ==============================================================================
 
@@ -519,60 +619,62 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      192  startup_nuc1xx.o(RESET)
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
     ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
     ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
-    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
     ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
     ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
     ../clib/memcpset.c                       0x00000000   Number         0  rt_memcpy.o ABSOLUTE
+    ../clib/memcpset.c                       0x00000000   Number         0  rt_memclr.o ABSOLUTE
+    ../clib/memcpset.c                       0x00000000   Number         0  aeabi_memset.o ABSOLUTE
     ../clib/memcpset.c                       0x00000000   Number         0  rt_memcpy.o ABSOLUTE
     ../clib/misc.s                           0x00000000   Number         0  printf_stubs.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
     ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
@@ -662,93 +764,101 @@ Image Symbol Table
     .ARM.Collect$$rtexit$$00000002           0x00000158   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     .ARM.Collect$$rtexit$$00000003           0x00000158   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
     .ARM.Collect$$rtexit$$00000004           0x0000015c   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
-    .emb_text                                0x00000164   Section      388  osektarget.o(.emb_text)
-    .text                                    0x000002e8   Section      100  startup_nuc1xx.o(.text)
-    Default_Handler                          0x00000313   Thumb Code     2  startup_nuc1xx.o(.text)
-    .text                                    0x0000034c   Section      346  aeabi_sdiv.o(.text)
-    .text                                    0x000004a6   Section        0  heapauxi.o(.text)
-    .text                                    0x000004ac   Section       62  sys_stackheap_outer.o(.text)
-    .text                                    0x000004ea   Section        0  exit.o(.text)
-    .text                                    0x000004fc   Section        8  libspace.o(.text)
-    .text                                    0x00000504   Section        0  sys_exit.o(.text)
-    .text                                    0x00000510   Section        2  use_no_semi.o(.text)
-    .text                                    0x00000512   Section        0  indicate_semi.o(.text)
-    i.ADC_IRQHandler                         0x00000514   Section        0  drvadc.o(i.ADC_IRQHandler)
-    i.AddTask2ReadyTableAtTail               0x00000578   Section        0  osektask.o(i.AddTask2ReadyTableAtTail)
-    AddTask2ReadyTableAtTail                 0x00000579   Thumb Code    36  osektask.o(i.AddTask2ReadyTableAtTail)
-    i.AddaReadyBlock                         0x000005a0   Section        0  osektask.o(i.AddaReadyBlock)
-    AddaReadyBlock                           0x000005a1   Thumb Code    78  osektask.o(i.AddaReadyBlock)
-    i.BOD_IRQHandler                         0x000005f4   Section        0  drvsys.o(i.BOD_IRQHandler)
-    i.CAN0_IRQHandler                        0x00000610   Section        0  drvcan.o(i.CAN0_IRQHandler)
-    i.CalTimerInitValue                      0x000006ac   Section        0  drvtimer.o(i.CalTimerInitValue)
-    CalTimerInitValue                        0x000006ad   Thumb Code    58  drvtimer.o(i.CalTimerInitValue)
-    i.CounterTrigger                         0x000006ec   Section        0  osekcounter.o(i.CounterTrigger)
-    i.DrvCAN_ClrIntPnd                       0x0000072c   Section        0  drvcan.o(i.DrvCAN_ClrIntPnd)
-    i.DrvGPIO_InitFunction                   0x0000075c   Section        0  drvgpio.o(i.DrvGPIO_InitFunction)
-    i.DrvSYS_GetExtClockFreq                 0x00000b08   Section        0  drvsys.o(i.DrvSYS_GetExtClockFreq)
-    i.DrvSYS_GetHCLKFreq                     0x00000b10   Section        0  drvsys.o(i.DrvSYS_GetHCLKFreq)
-    i.DrvSYS_GetPLLClockFreq                 0x00000b6c   Section        0  drvsys.o(i.DrvSYS_GetPLLClockFreq)
-    i.DrvTIMER_EnableInt                     0x00000bc8   Section        0  drvtimer.o(i.DrvTIMER_EnableInt)
-    i.DrvTIMER_Init                          0x00000c20   Section        0  drvtimer.o(i.DrvTIMER_Init)
-    i.DrvTIMER_Open                          0x00000c34   Section        0  drvtimer.o(i.DrvTIMER_Open)
-    i.DrvTIMER_Start                         0x00000e20   Section        0  drvtimer.o(i.DrvTIMER_Start)
-    i.EINT0_IRQHandler                       0x00000e58   Section        0  drvgpio.o(i.EINT0_IRQHandler)
-    i.EINT1_IRQHandler                       0x00000e74   Section        0  drvgpio.o(i.EINT1_IRQHandler)
-    i.FuncTask1                              0x00000e90   Section        0  main.o(i.FuncTask1)
-    i.FuncTask2                              0x00000e92   Section        0  main.o(i.FuncTask2)
-    i.FuncTask3                              0x00000e94   Section        0  main.o(i.FuncTask3)
-    i.FuncTaskError                          0x00000e96   Section        0  main.o(i.FuncTaskError)
-    i.GPAB_IRQHandler                        0x00000e98   Section        0  drvgpio.o(i.GPAB_IRQHandler)
-    i.GPCDE_IRQHandler                       0x00000ed4   Section        0  drvgpio.o(i.GPCDE_IRQHandler)
-    i.GetFreeIF                              0x00000f18   Section        0  drvcan.o(i.GetFreeIF)
-    GetFreeIF                                0x00000f19   Thumb Code    30  drvcan.o(i.GetFreeIF)
-    i.GetTimerClock                          0x00000f3c   Section        0  drvtimer.o(i.GetTimerClock)
-    GetTimerClock                            0x00000f3d   Thumb Code    98  drvtimer.o(i.GetTimerClock)
-    i.I2C0_IRQHandler                        0x00000fac   Section        0  drvi2c.o(i.I2C0_IRQHandler)
-    i.I2C1_IRQHandler                        0x00000fec   Section        0  drvi2c.o(i.I2C1_IRQHandler)
-    i.I2S_IRQHandler                         0x0000102c   Section        0  drvi2s.o(i.I2S_IRQHandler)
-    i.InitCOM                                0x000010f0   Section        0  osekmessage.o(i.InitCOM)
-    i.Initial_pannel                         0x000010f4   Section        0  lcd_driver.o(i.Initial_pannel)
-    i.NVIC_SetPriority                       0x00001214   Section        0  drvtimer.o(i.NVIC_SetPriority)
-    NVIC_SetPriority                         0x00001215   Thumb Code    60  drvtimer.o(i.NVIC_SetPriority)
-    i.OSEK_CPU_INIT                          0x00001258   Section        0  init.o(i.OSEK_CPU_INIT)
-    i.OSEK_TIMER_START                       0x00001280   Section        0  init.o(i.OSEK_TIMER_START)
-    i.PDMA_IRQHandler                        0x0000128c   Section        0  drvpdma.o(i.PDMA_IRQHandler)
-    i.PS2_IRQHandler                         0x000012fc   Section        0  drvps2.o(i.PS2_IRQHandler)
-    i.PWMA_IRQHandler                        0x00001318   Section        0  drvpwm.o(i.PWMA_IRQHandler)
-    i.PWMB_IRQHandler                        0x00001408   Section        0  drvpwm.o(i.PWMB_IRQHandler)
-    i.PWRWU_IRQHandler                       0x000014f8   Section        0  drvsys.o(i.PWRWU_IRQHandler)
-    i.RTC_IRQHandler                         0x00001518   Section        0  drvrtc.o(i.RTC_IRQHandler)
-    i.SPI0_IRQHandler                        0x00001554   Section        0  drvspi.o(i.SPI0_IRQHandler)
-    i.SPI1_IRQHandler                        0x00001598   Section        0  drvspi.o(i.SPI1_IRQHandler)
-    i.SPI2_IRQHandler                        0x000015dc   Section        0  drvspi.o(i.SPI2_IRQHandler)
-    i.SPI3_IRQHandler                        0x00001620   Section        0  drvspi.o(i.SPI3_IRQHandler)
-    i.SetPACA                                0x00001664   Section        0  lcd_driver.o(i.SetPACA)
-    i.StartOS                                0x000016f0   Section        0  osekexecution.o(i.StartOS)
-    i.StartupHook                            0x0000172c   Section        0  main.o(i.StartupHook)
-    i.SystemInit                             0x0000172e   Section        0  system_nuc1xx.o(i.SystemInit)
-    i.TMR0_IRQHandler                        0x00001730   Section        0  drvtimer.o(i.TMR0_IRQHandler)
-    i.TMR1_IRQHandler                        0x0000173c   Section        0  drvtimer.o(i.TMR1_IRQHandler)
-    i.TMR2_IRQHandler                        0x000017a0   Section        0  drvtimer.o(i.TMR2_IRQHandler)
-    i.TMR3_IRQHandler                        0x00001804   Section        0  drvtimer.o(i.TMR3_IRQHandler)
-    i.UART02_IRQHandler                      0x00001868   Section        0  drvuart.o(i.UART02_IRQHandler)
-    i.UART1_IRQHandler                       0x00001894   Section        0  drvuart.o(i.UART1_IRQHandler)
-    i.WDT_IRQHandler                         0x000018ac   Section        0  drvtimer.o(i.WDT_IRQHandler)
-    i.WriteData                              0x000018dc   Section        0  lcd_driver.o(i.WriteData)
-    i.__ARM_common_switch8                   0x00001910   Section        0  drvcan.o(i.__ARM_common_switch8)
-    i.clr_all_pannal                         0x0000192a   Section        0  lcd_driver.o(i.clr_all_pannal)
-    i.main                                   0x0000194e   Section        0  main.o(i.main)
-    i.osekAlarm_Check1                       0x00001964   Section        0  osekalarm.o(i.osekAlarm_Check1)
-    i.osekAlarm_Check2                       0x00001998   Section        0  osekalarm.o(i.osekAlarm_Check2)
-    i.osekAlarm_Initialize                   0x000019f0   Section        0  osekalarm.o(i.osekAlarm_Initialize)
-    i.osekCounter_Initialize                 0x00001a1c   Section        0  osekcounter.o(i.osekCounter_Initialize)
-    i.osekInterrupt_Initialize               0x00001a48   Section        0  osekinterrupt.o(i.osekInterrupt_Initialize)
-    i.osekTask_ActiveTask                    0x00001a58   Section        0  osektask.o(i.osekTask_ActiveTask)
-    i.osekTask_Dispatch                      0x00001aa8   Section        0  osektask.o(i.osekTask_Dispatch)
-    i.osekTask_Initialize                    0x00001b30   Section        0  osektask.o(i.osekTask_Initialize)
-    .constdata                               0x00001bac   Section       16  drvsys.o(.constdata)
-    .constdata                               0x00001bbc   Section       16  drvtimer.o(.constdata)
-    .constdata                               0x00001bcc   Section       60  cfg.o(.constdata)
+    .emb_text                                0x00000164   Section      372  osektarget.o(.emb_text)
+    .emb_text                                0x000002d8   Section       56  rt_memcpy.o(.emb_text)
+    .text                                    0x00000310   Section      100  startup_nuc1xx.o(.text)
+    Default_Handler                          0x0000033b   Thumb Code     2  startup_nuc1xx.o(.text)
+    .text                                    0x00000374   Section        0  aeabi_memset.o(.text)
+    .text                                    0x00000386   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x000004e0   Section        0  heapauxi.o(.text)
+    .text                                    0x000004e6   Section        0  rt_memclr.o(.text)
+    .text                                    0x00000526   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x00000564   Section        0  exit.o(.text)
+    .text                                    0x00000574   Section        8  libspace.o(.text)
+    .text                                    0x0000057c   Section        0  sys_exit.o(.text)
+    .text                                    0x00000588   Section        2  use_no_semi.o(.text)
+    .text                                    0x0000058a   Section        0  indicate_semi.o(.text)
+    i.ADC_IRQHandler                         0x0000058c   Section        0  drvadc.o(i.ADC_IRQHandler)
+    i.AddTask2ReadyTableAtTail               0x00000628   Section        0  osektask.o(i.AddTask2ReadyTableAtTail)
+    AddTask2ReadyTableAtTail                 0x00000629   Thumb Code    38  osektask.o(i.AddTask2ReadyTableAtTail)
+    i.AddaReadyBlock                         0x00000654   Section        0  osektask.o(i.AddaReadyBlock)
+    AddaReadyBlock                           0x00000655   Thumb Code   116  osektask.o(i.AddaReadyBlock)
+    i.BOD_IRQHandler                         0x000006d4   Section        0  drvsys.o(i.BOD_IRQHandler)
+    i.CAN0_IRQHandler                        0x000006fc   Section        0  drvcan.o(i.CAN0_IRQHandler)
+    i.CalTimerInitValue                      0x000007ec   Section        0  drvtimer.o(i.CalTimerInitValue)
+    CalTimerInitValue                        0x000007ed   Thumb Code    70  drvtimer.o(i.CalTimerInitValue)
+    i.CounterTrigger                         0x00000834   Section        0  osekcounter.o(i.CounterTrigger)
+    i.DrvCAN_ClrIntPnd                       0x00000880   Section        0  drvcan.o(i.DrvCAN_ClrIntPnd)
+    i.DrvGPIO_InitFunction                   0x000008b8   Section        0  drvgpio.o(i.DrvGPIO_InitFunction)
+    i.DrvSYS_GetExtClockFreq                 0x00001010   Section        0  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    i.DrvSYS_GetHCLKFreq                     0x00001018   Section        0  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    i.DrvSYS_GetPLLClockFreq                 0x00001088   Section        0  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    i.DrvTIMER_EnableInt                     0x00001100   Section        0  drvtimer.o(i.DrvTIMER_EnableInt)
+    i.DrvTIMER_Init                          0x0000115c   Section        0  drvtimer.o(i.DrvTIMER_Init)
+    i.DrvTIMER_Open                          0x00001180   Section        0  drvtimer.o(i.DrvTIMER_Open)
+    i.EINT0_IRQHandler                       0x00001474   Section        0  drvgpio.o(i.EINT0_IRQHandler)
+    i.EINT1_IRQHandler                       0x00001498   Section        0  drvgpio.o(i.EINT1_IRQHandler)
+    i.FuncTask1                              0x000014bc   Section        0  main.o(i.FuncTask1)
+    i.FuncTask2                              0x00001524   Section        0  main.o(i.FuncTask2)
+    i.FuncTask3                              0x00001526   Section        0  main.o(i.FuncTask3)
+    i.FuncTaskError                          0x00001528   Section        0  main.o(i.FuncTaskError)
+    i.GPAB_IRQHandler                        0x00001590   Section        0  drvgpio.o(i.GPAB_IRQHandler)
+    i.GPCDE_IRQHandler                       0x000015d4   Section        0  drvgpio.o(i.GPCDE_IRQHandler)
+    i.GetFreeIF                              0x00001620   Section        0  drvcan.o(i.GetFreeIF)
+    GetFreeIF                                0x00001621   Thumb Code    36  drvcan.o(i.GetFreeIF)
+    i.GetTimerClock                          0x00001648   Section        0  drvtimer.o(i.GetTimerClock)
+    GetTimerClock                            0x00001649   Thumb Code   114  drvtimer.o(i.GetTimerClock)
+    i.I2C0_IRQHandler                        0x000016c8   Section        0  drvi2c.o(i.I2C0_IRQHandler)
+    i.I2C1_IRQHandler                        0x00001744   Section        0  drvi2c.o(i.I2C1_IRQHandler)
+    i.I2S_IRQHandler                         0x000017c0   Section        0  drvi2s.o(i.I2S_IRQHandler)
+    i.InitCOM                                0x0000193c   Section        0  osekmessage.o(i.InitCOM)
+    i.Initial_pannel                         0x00001940   Section        0  lcd_driver.o(i.Initial_pannel)
+    i.Ir_RealTimInt                          0x00001b58   Section        0  cfg.o(i.Ir_RealTimInt)
+    i.NVIC_EnableIRQ                         0x00001b64   Section        0  drvtimer.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x00001b65   Thumb Code    14  drvtimer.o(i.NVIC_EnableIRQ)
+    i.NVIC_SetPriority                       0x00001b78   Section        0  drvtimer.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00001b79   Thumb Code   110  drvtimer.o(i.NVIC_SetPriority)
+    i.NotifyAlarm                            0x00001bf0   Section        0  osekalarm.o(i.NotifyAlarm)
+    NotifyAlarm                              0x00001bf1   Thumb Code    22  osekalarm.o(i.NotifyAlarm)
+    i.OSEK_CPU_INIT                          0x00001c0c   Section        0  init.o(i.OSEK_CPU_INIT)
+    i.OSEK_TARGET_SaveBTSP                   0x00001c2c   Section        0  osektarget.o(i.OSEK_TARGET_SaveBTSP)
+    i.PDMA_IRQHandler                        0x00001c3c   Section        0  drvpdma.o(i.PDMA_IRQHandler)
+    i.PS2_IRQHandler                         0x00001ce4   Section        0  drvps2.o(i.PS2_IRQHandler)
+    i.PWMA_IRQHandler                        0x00001d0c   Section        0  drvpwm.o(i.PWMA_IRQHandler)
+    i.PWMB_IRQHandler                        0x00001e88   Section        0  drvpwm.o(i.PWMB_IRQHandler)
+    i.PWRWU_IRQHandler                       0x00002004   Section        0  drvsys.o(i.PWRWU_IRQHandler)
+    i.RTC_IRQHandler                         0x0000202c   Section        0  drvrtc.o(i.RTC_IRQHandler)
+    i.SPI0_IRQHandler                        0x0000208c   Section        0  drvspi.o(i.SPI0_IRQHandler)
+    i.SPI1_IRQHandler                        0x000020f0   Section        0  drvspi.o(i.SPI1_IRQHandler)
+    i.SPI2_IRQHandler                        0x00002154   Section        0  drvspi.o(i.SPI2_IRQHandler)
+    i.SPI3_IRQHandler                        0x000021b8   Section        0  drvspi.o(i.SPI3_IRQHandler)
+    i.SetPACA                                0x0000221c   Section        0  lcd_driver.o(i.SetPACA)
+    i.StartOS                                0x00002310   Section        0  osekexecution.o(i.StartOS)
+    i.SystemInit                             0x0000234c   Section        0  system_nuc1xx.o(i.SystemInit)
+    i.TMR0_IRQHandler                        0x0000234e   Section        0  drvtimer.o(i.TMR0_IRQHandler)
+    i.TMR1_IRQHandler                        0x00002358   Section        0  drvtimer.o(i.TMR1_IRQHandler)
+    i.TMR2_IRQHandler                        0x000023f4   Section        0  drvtimer.o(i.TMR2_IRQHandler)
+    i.TMR3_IRQHandler                        0x00002490   Section        0  drvtimer.o(i.TMR3_IRQHandler)
+    i.UART02_IRQHandler                      0x0000252c   Section        0  drvuart.o(i.UART02_IRQHandler)
+    i.UART1_IRQHandler                       0x00002568   Section        0  drvuart.o(i.UART1_IRQHandler)
+    i.WDT_IRQHandler                         0x00002588   Section        0  drvtimer.o(i.WDT_IRQHandler)
+    i.WriteData                              0x000025bc   Section        0  lcd_driver.o(i.WriteData)
+    i.__ARM_common_switch8                   0x00002614   Section        0  drvcan.o(i.__ARM_common_switch8)
+    i.clr_all_pannal                         0x00002630   Section        0  lcd_driver.o(i.clr_all_pannal)
+    i.draw_LCD                               0x00002658   Section        0  lcd_driver.o(i.draw_LCD)
+    i.main                                   0x0000269c   Section        0  main.o(i.main)
+    i.osekAlarm_Check1                       0x000026e4   Section        0  osekalarm.o(i.osekAlarm_Check1)
+    i.osekAlarm_Check2                       0x00002720   Section        0  osekalarm.o(i.osekAlarm_Check2)
+    i.osekAlarm_Initialize                   0x00002774   Section        0  osekalarm.o(i.osekAlarm_Initialize)
+    i.osekCounter_Initialize                 0x000027b0   Section        0  osekcounter.o(i.osekCounter_Initialize)
+    i.osekInterrupt_Initialize               0x000027dc   Section        0  osekinterrupt.o(i.osekInterrupt_Initialize)
+    i.osekTask_ActiveTask                    0x000027ec   Section        0  osektask.o(i.osekTask_ActiveTask)
+    i.osekTask_Dispatch                      0x00002854   Section        0  osektask.o(i.osekTask_Dispatch)
+    i.osekTask_Initialize                    0x00002920   Section        0  osektask.o(i.osekTask_Initialize)
+    .constdata                               0x000029dc   Section       16  drvsys.o(.constdata)
+    .constdata                               0x000029ec   Section       16  drvtimer.o(.constdata)
+    .constdata                               0x000029fc   Section      132  cfg.o(.constdata)
+    .constdata                               0x00002a80   Section     1024  main.o(.constdata)
     .data                                    0x20000000   Section       12  drvadc.o(.data)
     g_ptADCCallBack                          0x20000000   Data           4  drvadc.o(.data)
     g_ptADCMP0CallBack                       0x20000004   Data           4  drvadc.o(.data)
@@ -762,98 +872,90 @@ Image Symbol Table
     g_pfnPS2callback                         0x2000001c   Data           4  drvps2.o(.data)
     .data                                    0x20000020   Section        4  drvpwm.o(.data)
     s_i32Option                              0x20000020   Data           4  drvpwm.o(.data)
-    .data                                    0x20000024   Section       72  drvrtc.o(.data)
-    g_chHourMode                             0x20000024   Data           1  drvrtc.o(.data)
-    g_bIsEnableAlarmInt                      0x20000025   Data           1  drvrtc.o(.data)
-    g_pfnRTCCallBack_Tick                    0x20000028   Data           4  drvrtc.o(.data)
-    g_pfnRTCCallBack_Alarm                   0x2000002c   Data           4  drvrtc.o(.data)
-    g_u32RTC_Count                           0x20000030   Data           4  drvrtc.o(.data)
+    .data                                    0x20000024   Section       80  drvrtc.o(.data)
+    g_pfnRTCCallBack_Tick                    0x20000024   Data           4  drvrtc.o(.data)
+    g_pfnRTCCallBack_Alarm                   0x20000028   Data           4  drvrtc.o(.data)
+    g_u32RTC_Count                           0x2000002c   Data           4  drvrtc.o(.data)
+    g_chHourMode                             0x20000030   Data           1  drvrtc.o(.data)
     g_bIsEnableTickInt                       0x20000034   Data           4  drvrtc.o(.data)
-    g_u32Reg                                 0x20000038   Data           4  drvrtc.o(.data)
-    g_u32hiYear                              0x2000003c   Data           4  drvrtc.o(.data)
-    g_u32loYear                              0x20000040   Data           4  drvrtc.o(.data)
-    g_u32hiMonth                             0x20000044   Data           4  drvrtc.o(.data)
-    g_u32loMonth                             0x20000048   Data           4  drvrtc.o(.data)
-    g_u32hiDay                               0x2000004c   Data           4  drvrtc.o(.data)
-    g_u32loDay                               0x20000050   Data           4  drvrtc.o(.data)
-    g_u32hiHour                              0x20000054   Data           4  drvrtc.o(.data)
-    g_u32loHour                              0x20000058   Data           4  drvrtc.o(.data)
-    g_u32hiMin                               0x2000005c   Data           4  drvrtc.o(.data)
-    g_u32loMin                               0x20000060   Data           4  drvrtc.o(.data)
-    g_u32hiSec                               0x20000064   Data           4  drvrtc.o(.data)
-    g_u32loSec                               0x20000068   Data           4  drvrtc.o(.data)
-    .data                                    0x2000006c   Section        8  drvsys.o(.data)
-    BOD_callbackFn                           0x2000006c   Data           4  drvsys.o(.data)
-    PWRWU_callbackFn                         0x20000070   Data           4  drvsys.o(.data)
-    .data                                    0x20000074   Section      100  drvtimer.o(.data)
-    uTimer0Tick                              0x200000a4   Data           4  drvtimer.o(.data)
-    uTimer1Tick                              0x200000a8   Data           4  drvtimer.o(.data)
-    uTimer2Tick                              0x200000ac   Data           4  drvtimer.o(.data)
-    uTimer3Tick                              0x200000b0   Data           4  drvtimer.o(.data)
-    uTime0EventCount                         0x200000b4   Data           4  drvtimer.o(.data)
-    uTime1EventCount                         0x200000b8   Data           4  drvtimer.o(.data)
-    uTime2EventCount                         0x200000bc   Data           4  drvtimer.o(.data)
-    uTime3EventCount                         0x200000c0   Data           4  drvtimer.o(.data)
-    _sys_uTimer0TickPerSecond                0x200000c4   Data           4  drvtimer.o(.data)
-    _sys_uTimer1TickPerSecond                0x200000c8   Data           4  drvtimer.o(.data)
-    _sys_uTimer2TickPerSecond                0x200000cc   Data           4  drvtimer.o(.data)
-    _sys_uTimer3TickPerSecond                0x200000d0   Data           4  drvtimer.o(.data)
-    fnCallBack_WDT                           0x200000d4   Data           4  drvtimer.o(.data)
-    .data                                    0x200000d8   Section       12  drvuart.o(.data)
-    g_pfnUART0callback                       0x200000d8   Data           4  drvuart.o(.data)
-    g_pfnUART1callback                       0x200000dc   Data           4  drvuart.o(.data)
-    g_pfnUART2callback                       0x200000e0   Data           4  drvuart.o(.data)
-    .data                                    0x200000e4   Section       16  lcd_driver.o(.data)
-    .data                                    0x200000f4   Section       12  cfg.o(.data)
-    .data                                    0x20000100   Section        8  cfg.o(.data)
-    .data                                    0x20000108   Section        1  osekexecution.o(.data)
-    .data                                    0x2000010c   Section        4  osekinterrupt.o(.data)
-    .data                                    0x20000110   Section       12  osekinterrupt.o(.data)
-    osekInterrupt_NestedAllInt               0x20000114   Data           4  osekinterrupt.o(.data)
-    osekInterrupt_NestedOsInt                0x20000118   Data           4  osekinterrupt.o(.data)
-    .data                                    0x2000011c   Section        2  osektarget.o(.data)
-    .data                                    0x2000011e   Section        2  osektarget.o(.data)
-    .data                                    0x20000120   Section        2  osektarget.o(.data)
-    .data                                    0x20000122   Section        2  osektarget.o(.data)
-    .data                                    0x20000124   Section        2  osektarget.o(.data)
-    .data                                    0x20000126   Section        2  osektarget.o(.data)
-    .data                                    0x20000128   Section        2  osektarget.o(.data)
-    .data                                    0x2000012a   Section        2  osektarget.o(.data)
-    .data                                    0x2000012c   Section        2  osektarget.o(.data)
-    .data                                    0x20000130   Section      280  osektask.o(.data)
-    .bss                                     0x20000248   Section       12  drvadc.o(.bss)
-    g_pu32UserData                           0x20000248   Data          12  drvadc.o(.bss)
-    .bss                                     0x20000254   Section       24  drvcan.o(.bss)
-    CANHandler                               0x20000254   Data          24  drvcan.o(.bss)
-    .bss                                     0x2000026c   Section       32  drvi2c.o(.bss)
-    I2CHandler0                              0x2000026c   Data          16  drvi2c.o(.bss)
-    I2CHandler1                              0x2000027c   Data          16  drvi2c.o(.bss)
-    .bss                                     0x2000028c   Section       32  drvi2s.o(.bss)
-    I2SHandler                               0x2000028c   Data          32  drvi2s.o(.bss)
-    .bss                                     0x200002ac   Section      108  drvpdma.o(.bss)
-    g_pfnPDMACallback                        0x200002ac   Data         108  drvpdma.o(.bss)
-    .bss                                     0x20000318   Section       64  drvpwm.o(.bss)
-    g_sDrvPWMAHandler                        0x20000318   Data          32  drvpwm.o(.bss)
-    g_sDrvPWMBHandler                        0x20000338   Data          32  drvpwm.o(.bss)
-    .bss                                     0x20000358   Section       80  drvspi.o(.bss)
-    g_sSpiHandler                            0x20000358   Data          80  drvspi.o(.bss)
-    .bss                                     0x200003a8   Section       80  drvtimer.o(.bss)
-    tTime0Event                              0x200003a8   Data          20  drvtimer.o(.bss)
-    tTime1Event                              0x200003bc   Data          20  drvtimer.o(.bss)
-    tTime2Event                              0x200003d0   Data          20  drvtimer.o(.bss)
-    tTime3Event                              0x200003e4   Data          20  drvtimer.o(.bss)
-    .bss                                     0x200003f8   Section       28  osekalarm.o(.bss)
-    .bss                                     0x20000414   Section       20  osekcounter.o(.bss)
-    .bss                                     0x20000428   Section     1024  osekinterrupt.o(.bss)
-    isr2Stack                                0x20000428   Data        1024  osekinterrupt.o(.bss)
-    .bss                                     0x20000828   Section      528  osektask.o(.bss)
-    osekTask_ContextTable                    0x2000098c   Data         130  osektask.o(.bss)
-    .bss                                     0x20000a38   Section       96  libspace.o(.bss)
-    HEAP                                     0x20000a98   Section        0  startup_nuc1xx.o(HEAP)
-    STACK                                    0x20000a98   Section     1024  startup_nuc1xx.o(STACK)
-    Heap_Mem                                 0x20000a98   Data           0  startup_nuc1xx.o(HEAP)
-    Stack_Mem                                0x20000a98   Data        1024  startup_nuc1xx.o(STACK)
-    __initial_sp                             0x20000e98   Data           0  startup_nuc1xx.o(STACK)
+    g_bIsEnableAlarmInt                      0x20000038   Data           1  drvrtc.o(.data)
+    g_u32Reg                                 0x2000003c   Data           4  drvrtc.o(.data)
+    g_u32Reg1                                0x20000040   Data           4  drvrtc.o(.data)
+    g_u32hiYear                              0x20000044   Data           4  drvrtc.o(.data)
+    g_u32loYear                              0x20000048   Data           4  drvrtc.o(.data)
+    g_u32hiMonth                             0x2000004c   Data           4  drvrtc.o(.data)
+    g_u32loMonth                             0x20000050   Data           4  drvrtc.o(.data)
+    g_u32hiDay                               0x20000054   Data           4  drvrtc.o(.data)
+    g_u32loDay                               0x20000058   Data           4  drvrtc.o(.data)
+    g_u32hiHour                              0x2000005c   Data           4  drvrtc.o(.data)
+    g_u32loHour                              0x20000060   Data           4  drvrtc.o(.data)
+    g_u32hiMin                               0x20000064   Data           4  drvrtc.o(.data)
+    g_u32loMin                               0x20000068   Data           4  drvrtc.o(.data)
+    g_u32hiSec                               0x2000006c   Data           4  drvrtc.o(.data)
+    g_u32loSec                               0x20000070   Data           4  drvrtc.o(.data)
+    .data                                    0x20000074   Section        8  drvsys.o(.data)
+    BOD_callbackFn                           0x20000074   Data           4  drvsys.o(.data)
+    PWRWU_callbackFn                         0x20000078   Data           4  drvsys.o(.data)
+    .data                                    0x2000007c   Section      104  drvtimer.o(.data)
+    uTimer0Tick                              0x200000ac   Data           4  drvtimer.o(.data)
+    uTimer1Tick                              0x200000b0   Data           4  drvtimer.o(.data)
+    uTimer2Tick                              0x200000b4   Data           4  drvtimer.o(.data)
+    uTimer3Tick                              0x200000b8   Data           4  drvtimer.o(.data)
+    uTime0EventCount                         0x200000bc   Data           4  drvtimer.o(.data)
+    uTime1EventCount                         0x200000c0   Data           4  drvtimer.o(.data)
+    uTime2EventCount                         0x200000c4   Data           4  drvtimer.o(.data)
+    uTime3EventCount                         0x200000c8   Data           4  drvtimer.o(.data)
+    _sys_uTimer0TickPerSecond                0x200000cc   Data           4  drvtimer.o(.data)
+    _sys_uTimer1TickPerSecond                0x200000d0   Data           4  drvtimer.o(.data)
+    _sys_uTimer2TickPerSecond                0x200000d4   Data           4  drvtimer.o(.data)
+    _sys_uTimer3TickPerSecond                0x200000d8   Data           4  drvtimer.o(.data)
+    fnCallBack_WDT                           0x200000e0   Data           4  drvtimer.o(.data)
+    .data                                    0x200000e4   Section       12  drvuart.o(.data)
+    g_pfnUART0callback                       0x200000e4   Data           4  drvuart.o(.data)
+    g_pfnUART1callback                       0x200000e8   Data           4  drvuart.o(.data)
+    g_pfnUART2callback                       0x200000ec   Data           4  drvuart.o(.data)
+    .data                                    0x200000f0   Section       16  lcd_driver.o(.data)
+    .data                                    0x20000100   Section      667  cfg.o(.data)
+    .data                                    0x2000039b   Section        1  osekexecution.o(.data)
+    .data                                    0x2000039c   Section       14  osekinterrupt.o(.data)
+    osekInterrupt_NestedAllInt               0x200003a0   Data           4  osekinterrupt.o(.data)
+    osekInterrupt_NestedOsInt                0x200003a4   Data           4  osekinterrupt.o(.data)
+    .data                                    0x200003ac   Section       40  osektarget.o(.data)
+    .data                                    0x200003d4   Section      277  osektask.o(.data)
+    .bss                                     0x200004ec   Section       12  drvadc.o(.bss)
+    g_pu32UserData                           0x200004ec   Data          12  drvadc.o(.bss)
+    .bss                                     0x200004f8   Section       24  drvcan.o(.bss)
+    CANHandler                               0x200004f8   Data          24  drvcan.o(.bss)
+    .bss                                     0x20000510   Section       32  drvi2c.o(.bss)
+    I2CHandler0                              0x20000510   Data          16  drvi2c.o(.bss)
+    I2CHandler1                              0x20000520   Data          16  drvi2c.o(.bss)
+    .bss                                     0x20000530   Section       32  drvi2s.o(.bss)
+    I2SHandler                               0x20000530   Data          32  drvi2s.o(.bss)
+    .bss                                     0x20000550   Section      108  drvpdma.o(.bss)
+    g_pfnPDMACallback                        0x20000550   Data         108  drvpdma.o(.bss)
+    .bss                                     0x200005bc   Section       64  drvpwm.o(.bss)
+    g_sDrvPWMAHandler                        0x200005bc   Data          32  drvpwm.o(.bss)
+    g_sDrvPWMBHandler                        0x200005dc   Data          32  drvpwm.o(.bss)
+    .bss                                     0x200005fc   Section       80  drvspi.o(.bss)
+    g_sSpiHandler                            0x200005fc   Data          80  drvspi.o(.bss)
+    .bss                                     0x2000064c   Section       80  drvtimer.o(.bss)
+    tTime0Event                              0x2000064c   Data          20  drvtimer.o(.bss)
+    tTime1Event                              0x20000660   Data          20  drvtimer.o(.bss)
+    tTime2Event                              0x20000674   Data          20  drvtimer.o(.bss)
+    tTime3Event                              0x20000688   Data          20  drvtimer.o(.bss)
+    .bss                                     0x2000069c   Section      720  cfg.o(.bss)
+    .bss                                     0x2000096c   Section       28  osekalarm.o(.bss)
+    .bss                                     0x20000988   Section       20  osekcounter.o(.bss)
+    .bss                                     0x2000099c   Section     1024  osekinterrupt.o(.bss)
+    isr2Stack                                0x2000099c   Data        1024  osekinterrupt.o(.bss)
+    .bss                                     0x20000d9c   Section      776  osektask.o(.bss)
+    osekTask_ContextTable                    0x20000f50   Data         300  osektask.o(.bss)
+    .bss                                     0x200010a4   Section       96  libspace.o(.bss)
+    HEAP                                     0x20001108   Section        0  startup_nuc1xx.o(HEAP)
+    STACK                                    0x20001108   Section     1024  startup_nuc1xx.o(STACK)
+    Heap_Mem                                 0x20001108   Data           0  startup_nuc1xx.o(HEAP)
+    Stack_Mem                                0x20001108   Data        1024  startup_nuc1xx.o(STACK)
+    __initial_sp                             0x20001508   Data           0  startup_nuc1xx.o(STACK)
 
     Global Symbols
 
@@ -942,149 +1044,169 @@ Image Symbol Table
     __rt_exit_ls                             0x00000159   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
     __rt_exit_prels_1                        0x00000159   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     __rt_exit_exit                           0x0000015d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
-    osekTarget_SaveContext                   0x00000165   Thumb Code    50  osektarget.o(.emb_text)
-    osekTarget_RestoreContext                0x00000197   Thumb Code    52  osektarget.o(.emb_text)
-    osekTarget_LoadBTSP                      0x000001cb   Thumb Code     6  osektarget.o(.emb_text)
-    osekTarget_LoadETSP                      0x000001d5   Thumb Code     4  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableOSInt_func            0x000001d9   Thumb Code    16  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableOSInt                  0x000001f5   Thumb Code    14  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableAllInt                0x00000211   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableAllInt                 0x00000235   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableNestedAllInt          0x00000259   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableNestedAllInt           0x0000027d   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableNestedOsInt           0x000002a1   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableNestedOsInt            0x000002c5   Thumb Code    18  osektarget.o(.emb_text)
-    Reset_Handler                            0x000002e9   Thumb Code    32  startup_nuc1xx.o(.text)
-    NMI_Handler                              0x00000309   Thumb Code     2  startup_nuc1xx.o(.text)
-    HardFault_Handler                        0x0000030b   Thumb Code     2  startup_nuc1xx.o(.text)
-    SVC_Handler                              0x0000030d   Thumb Code     2  startup_nuc1xx.o(.text)
-    PendSV_Handler                           0x0000030f   Thumb Code     2  startup_nuc1xx.o(.text)
-    SysTick_Handler                          0x00000311   Thumb Code     2  startup_nuc1xx.o(.text)
-    ACMP_IRQHandler                          0x00000313   Thumb Code     0  startup_nuc1xx.o(.text)
-    USBD_IRQHandler                          0x00000313   Thumb Code     0  startup_nuc1xx.o(.text)
-    __user_initial_stackheap                 0x00000315   Thumb Code     0  startup_nuc1xx.o(.text)
-    __aeabi_uidiv                            0x0000034d   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_uidivmod                         0x0000034d   Thumb Code    20  aeabi_sdiv.o(.text)
-    __aeabi_idiv                             0x00000361   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_idivmod                          0x00000361   Thumb Code   326  aeabi_sdiv.o(.text)
-    __use_two_region_memory                  0x000004a7   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_escrow$2region                 0x000004a9   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_expand$2region                 0x000004ab   Thumb Code     2  heapauxi.o(.text)
-    __user_setup_stackheap                   0x000004ad   Thumb Code    62  sys_stackheap_outer.o(.text)
-    exit                                     0x000004eb   Thumb Code    16  exit.o(.text)
-    __user_libspace                          0x000004fd   Thumb Code     8  libspace.o(.text)
-    __user_perproc_libspace                  0x000004fd   Thumb Code     0  libspace.o(.text)
-    __user_perthread_libspace                0x000004fd   Thumb Code     0  libspace.o(.text)
-    _sys_exit                                0x00000505   Thumb Code     8  sys_exit.o(.text)
-    __I$use$semihosting                      0x00000511   Thumb Code     0  use_no_semi.o(.text)
-    __use_no_semihosting_swi                 0x00000511   Thumb Code     2  use_no_semi.o(.text)
-    __semihosting_library_function           0x00000513   Thumb Code     0  indicate_semi.o(.text)
-    ADC_IRQHandler                           0x00000515   Thumb Code    88  drvadc.o(i.ADC_IRQHandler)
-    BOD_IRQHandler                           0x000005f5   Thumb Code    24  drvsys.o(i.BOD_IRQHandler)
-    CAN0_IRQHandler                          0x00000611   Thumb Code   144  drvcan.o(i.CAN0_IRQHandler)
-    CounterTrigger                           0x000006ed   Thumb Code    54  osekcounter.o(i.CounterTrigger)
-    DrvCAN_ClrIntPnd                         0x0000072d   Thumb Code    38  drvcan.o(i.DrvCAN_ClrIntPnd)
-    DrvGPIO_InitFunction                     0x0000075d   Thumb Code   922  drvgpio.o(i.DrvGPIO_InitFunction)
-    DrvSYS_GetExtClockFreq                   0x00000b09   Thumb Code     4  drvsys.o(i.DrvSYS_GetExtClockFreq)
-    DrvSYS_GetHCLKFreq                       0x00000b11   Thumb Code    76  drvsys.o(i.DrvSYS_GetHCLKFreq)
-    DrvSYS_GetPLLClockFreq                   0x00000b6d   Thumb Code    76  drvsys.o(i.DrvSYS_GetPLLClockFreq)
-    DrvTIMER_EnableInt                       0x00000bc9   Thumb Code    70  drvtimer.o(i.DrvTIMER_EnableInt)
-    DrvTIMER_Init                            0x00000c21   Thumb Code    14  drvtimer.o(i.DrvTIMER_Init)
-    DrvTIMER_Open                            0x00000c35   Thumb Code   468  drvtimer.o(i.DrvTIMER_Open)
-    DrvTIMER_Start                           0x00000e21   Thumb Code    44  drvtimer.o(i.DrvTIMER_Start)
-    EINT0_IRQHandler                         0x00000e59   Thumb Code    20  drvgpio.o(i.EINT0_IRQHandler)
-    EINT1_IRQHandler                         0x00000e75   Thumb Code    20  drvgpio.o(i.EINT1_IRQHandler)
-    FuncTask1                                0x00000e91   Thumb Code     2  main.o(i.FuncTask1)
-    FuncTask2                                0x00000e93   Thumb Code     2  main.o(i.FuncTask2)
-    FuncTask3                                0x00000e95   Thumb Code     2  main.o(i.FuncTask3)
-    FuncTaskError                            0x00000e97   Thumb Code     2  main.o(i.FuncTaskError)
-    GPAB_IRQHandler                          0x00000e99   Thumb Code    50  drvgpio.o(i.GPAB_IRQHandler)
-    GPCDE_IRQHandler                         0x00000ed5   Thumb Code    58  drvgpio.o(i.GPCDE_IRQHandler)
-    I2C0_IRQHandler                          0x00000fad   Thumb Code    56  drvi2c.o(i.I2C0_IRQHandler)
-    I2C1_IRQHandler                          0x00000fed   Thumb Code    56  drvi2c.o(i.I2C1_IRQHandler)
-    I2S_IRQHandler                           0x0000102d   Thumb Code   188  drvi2s.o(i.I2S_IRQHandler)
-    InitCOM                                  0x000010f1   Thumb Code     4  osekmessage.o(i.InitCOM)
-    Initial_pannel                           0x000010f5   Thumb Code   280  lcd_driver.o(i.Initial_pannel)
-    OSEK_CPU_INIT                            0x00001259   Thumb Code    34  init.o(i.OSEK_CPU_INIT)
-    OSEK_TIMER_START                         0x00001281   Thumb Code    10  init.o(i.OSEK_TIMER_START)
-    PDMA_IRQHandler                          0x0000128d   Thumb Code   100  drvpdma.o(i.PDMA_IRQHandler)
-    PS2_IRQHandler                           0x000012fd   Thumb Code    20  drvps2.o(i.PS2_IRQHandler)
-    PWMA_IRQHandler                          0x00001319   Thumb Code   220  drvpwm.o(i.PWMA_IRQHandler)
-    PWMB_IRQHandler                          0x00001409   Thumb Code   220  drvpwm.o(i.PWMB_IRQHandler)
-    PWRWU_IRQHandler                         0x000014f9   Thumb Code    22  drvsys.o(i.PWRWU_IRQHandler)
-    RTC_IRQHandler                           0x00001519   Thumb Code    50  drvrtc.o(i.RTC_IRQHandler)
-    SPI0_IRQHandler                          0x00001555   Thumb Code    60  drvspi.o(i.SPI0_IRQHandler)
-    SPI1_IRQHandler                          0x00001599   Thumb Code    60  drvspi.o(i.SPI1_IRQHandler)
-    SPI2_IRQHandler                          0x000015dd   Thumb Code    60  drvspi.o(i.SPI2_IRQHandler)
-    SPI3_IRQHandler                          0x00001621   Thumb Code    60  drvspi.o(i.SPI3_IRQHandler)
-    SetPACA                                  0x00001665   Thumb Code   134  lcd_driver.o(i.SetPACA)
-    StartOS                                  0x000016f1   Thumb Code    46  osekexecution.o(i.StartOS)
-    StartupHook                              0x0000172d   Thumb Code     2  main.o(i.StartupHook)
-    SystemInit                               0x0000172f   Thumb Code     2  system_nuc1xx.o(i.SystemInit)
-    TMR0_IRQHandler                          0x00001731   Thumb Code    10  drvtimer.o(i.TMR0_IRQHandler)
-    TMR1_IRQHandler                          0x0000173d   Thumb Code    86  drvtimer.o(i.TMR1_IRQHandler)
-    TMR2_IRQHandler                          0x000017a1   Thumb Code    86  drvtimer.o(i.TMR2_IRQHandler)
-    TMR3_IRQHandler                          0x00001805   Thumb Code    86  drvtimer.o(i.TMR3_IRQHandler)
-    UART02_IRQHandler                        0x00001869   Thumb Code    32  drvuart.o(i.UART02_IRQHandler)
-    UART1_IRQHandler                         0x00001895   Thumb Code    16  drvuart.o(i.UART1_IRQHandler)
-    WDT_IRQHandler                           0x000018ad   Thumb Code    38  drvtimer.o(i.WDT_IRQHandler)
-    WriteData                                0x000018dd   Thumb Code    48  lcd_driver.o(i.WriteData)
-    __ARM_common_switch8                     0x00001911   Thumb Code    26  drvcan.o(i.__ARM_common_switch8)
-    clr_all_pannal                           0x0000192b   Thumb Code    36  lcd_driver.o(i.clr_all_pannal)
-    main                                     0x0000194f   Thumb Code    22  main.o(i.main)
-    osekAlarm_Check1                         0x00001965   Thumb Code    46  osekalarm.o(i.osekAlarm_Check1)
-    osekAlarm_Check2                         0x00001999   Thumb Code    82  osekalarm.o(i.osekAlarm_Check2)
-    osekAlarm_Initialize                     0x000019f1   Thumb Code    34  osekalarm.o(i.osekAlarm_Initialize)
-    osekCounter_Initialize                   0x00001a1d   Thumb Code    34  osekcounter.o(i.osekCounter_Initialize)
-    osekInterrupt_Initialize                 0x00001a49   Thumb Code     8  osekinterrupt.o(i.osekInterrupt_Initialize)
-    osekTask_ActiveTask                      0x00001a59   Thumb Code    72  osektask.o(i.osekTask_ActiveTask)
-    osekTask_Dispatch                        0x00001aa9   Thumb Code   118  osektask.o(i.osekTask_Dispatch)
-    osekTask_Initialize                      0x00001b31   Thumb Code   110  osektask.o(i.osekTask_Initialize)
-    CH_OFFSET                                0x00001bbc   Data          16  drvtimer.o(.constdata)
-    osekConfig_TaskTable                     0x00001bcc   Data          60  cfg.o(.constdata)
-    Region$$Table$$Base                      0x00001c08   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00001c28   Number         0  anon$$obj.o(Region$$Table)
-    bIsTimer0Initial                         0x20000074   Data           4  drvtimer.o(.data)
-    bIsTimer1Initial                         0x20000078   Data           4  drvtimer.o(.data)
-    bIsTimer2Initial                         0x2000007c   Data           4  drvtimer.o(.data)
-    bIsTimer3Initial                         0x20000080   Data           4  drvtimer.o(.data)
-    bIsTimer0Used                            0x20000084   Data           4  drvtimer.o(.data)
-    bIsTimer1Used                            0x20000088   Data           4  drvtimer.o(.data)
-    bIsTimer2Used                            0x2000008c   Data           4  drvtimer.o(.data)
-    bIsTimer3Used                            0x20000090   Data           4  drvtimer.o(.data)
-    bIsSetTime0Event                         0x20000094   Data           4  drvtimer.o(.data)
-    bIsSetTime1Event                         0x20000098   Data           4  drvtimer.o(.data)
-    bIsSetTime2Event                         0x2000009c   Data           4  drvtimer.o(.data)
-    bIsSetTime3Event                         0x200000a0   Data           4  drvtimer.o(.data)
-    SPI_PORT                                 0x200000e4   Data          16  lcd_driver.o(.data)
-    osekConfig_CounterTable                  0x200000f4   Data          12  cfg.o(.data)
-    osekConfig_AlarmTable                    0x20000100   Data           8  cfg.o(.data)
-    osekExecution_CurrentAppMode             0x20000108   Data           1  osekexecution.o(.data)
-    osekInterrupt_NestedLevl                 0x2000010c   Data           4  osekinterrupt.o(.data)
-    osekInterrupt_IsrStackTop                0x20000110   Data           2  osekinterrupt.o(.data)
-    osekTarget_SavedBTSP                     0x2000011c   Data           2  osektarget.o(.data)
-    osIntSave_en                             0x2000011e   Data           2  osektarget.o(.data)
-    osIntSave_pending                        0x20000120   Data           2  osektarget.o(.data)
-    osekTarget_AllIntMask_en                 0x20000122   Data           2  osektarget.o(.data)
-    osekTarget_AllIntMask_pending            0x20000124   Data           2  osektarget.o(.data)
-    osekTarget_NestedAllIntMask_en           0x20000126   Data           2  osektarget.o(.data)
-    osekTarget_NestedAllIntMask_pending      0x20000128   Data           2  osektarget.o(.data)
-    osekTarget_NestedOsIntMask_en            0x2000012a   Data           2  osektarget.o(.data)
-    osekTarget_NestedOsIntMask_pending       0x2000012c   Data           2  osektarget.o(.data)
-    osekTask_PriorityBitMapMajor             0x20000130   Data           1  osektask.o(.data)
-    osekTask_RunningTask                     0x20000134   Data           4  osektask.o(.data)
-    osekTask_SchedulerLockLevel              0x20000138   Data           4  osektask.o(.data)
-    osekTask_IsrTriggeredTaskSwitchNecessary 0x2000013c   Data           4  osektask.o(.data)
-    osekTask_FreeReadyBlock                  0x20000140   Data           4  osektask.o(.data)
-    osekTask_PriorityBitMap                  0x20000144   Data           4  osektask.o(.data)
-    osekTask_PriorityIndexTable              0x20000148   Data         256  osektask.o(.data)
-    osekAlarm_AlarmTable                     0x200003f8   Data          28  osekalarm.o(.bss)
-    osekCounter_CounterTable                 0x20000414   Data          20  osekcounter.o(.bss)
-    osekTask_ReadyTaskTable                  0x20000828   Data         256  osektask.o(.bss)
-    osekTask_TaskTable                       0x20000928   Data         100  osektask.o(.bss)
-    osekTask_ReadyBlock                      0x20000a10   Data          40  osektask.o(.bss)
-    __libspace_start                         0x20000a38   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20000a98   Data           0  libspace.o(.bss)
+    osekTarget_SaveContext                   0x00000165   Thumb Code    42  osektarget.o(.emb_text)
+    osekTarget_RestoreContext                0x0000018f   Thumb Code    42  osektarget.o(.emb_text)
+    osekTarget_LoadBTSP                      0x000001b9   Thumb Code     8  osektarget.o(.emb_text)
+    osekTarget_LoadETSP                      0x000001c5   Thumb Code     4  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableOSInt_func            0x000001c9   Thumb Code    16  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableOSInt                  0x000001e5   Thumb Code    14  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableAllInt                0x00000201   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableAllInt                 0x00000225   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableNestedAllInt          0x00000249   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableNestedAllInt           0x0000026d   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableNestedOsInt           0x00000291   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableNestedOsInt            0x000002b5   Thumb Code    18  osektarget.o(.emb_text)
+    __aeabi_memcpy4                          0x000002d9   Thumb Code    56  rt_memcpy.o(.emb_text)
+    __aeabi_memcpy8                          0x000002d9   Thumb Code     0  rt_memcpy.o(.emb_text)
+    Reset_Handler                            0x00000311   Thumb Code    32  startup_nuc1xx.o(.text)
+    NMI_Handler                              0x00000331   Thumb Code     2  startup_nuc1xx.o(.text)
+    HardFault_Handler                        0x00000333   Thumb Code     2  startup_nuc1xx.o(.text)
+    SVC_Handler                              0x00000335   Thumb Code     2  startup_nuc1xx.o(.text)
+    PendSV_Handler                           0x00000337   Thumb Code     2  startup_nuc1xx.o(.text)
+    SysTick_Handler                          0x00000339   Thumb Code     2  startup_nuc1xx.o(.text)
+    ACMP_IRQHandler                          0x0000033b   Thumb Code     0  startup_nuc1xx.o(.text)
+    USBD_IRQHandler                          0x0000033b   Thumb Code     0  startup_nuc1xx.o(.text)
+    __user_initial_stackheap                 0x0000033d   Thumb Code     0  startup_nuc1xx.o(.text)
+    __aeabi_memset                           0x00000375   Thumb Code    18  aeabi_memset.o(.text)
+    __aeabi_uidiv                            0x00000387   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x00000387   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x0000039b   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x0000039b   Thumb Code   326  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x000004e1   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x000004e3   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x000004e5   Thumb Code     2  heapauxi.o(.text)
+    _memset_w                                0x000004e7   Thumb Code    26  rt_memclr.o(.text)
+    _memset                                  0x00000501   Thumb Code    30  rt_memclr.o(.text)
+    __aeabi_memclr                           0x0000051f   Thumb Code     4  rt_memclr.o(.text)
+    __rt_memclr                              0x0000051f   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr4                          0x00000523   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr8                          0x00000523   Thumb Code     0  rt_memclr.o(.text)
+    __rt_memclr_w                            0x00000523   Thumb Code     4  rt_memclr.o(.text)
+    __user_setup_stackheap                   0x00000527   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x00000565   Thumb Code    16  exit.o(.text)
+    __user_libspace                          0x00000575   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x00000575   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x00000575   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x0000057d   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000589   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000589   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0000058b   Thumb Code     0  indicate_semi.o(.text)
+    ADC_IRQHandler                           0x0000058d   Thumb Code   136  drvadc.o(i.ADC_IRQHandler)
+    BOD_IRQHandler                           0x000006d5   Thumb Code    36  drvsys.o(i.BOD_IRQHandler)
+    CAN0_IRQHandler                          0x000006fd   Thumb Code   228  drvcan.o(i.CAN0_IRQHandler)
+    CounterTrigger                           0x00000835   Thumb Code    66  osekcounter.o(i.CounterTrigger)
+    DrvCAN_ClrIntPnd                         0x00000881   Thumb Code    48  drvcan.o(i.DrvCAN_ClrIntPnd)
+    DrvGPIO_InitFunction                     0x000008b9   Thumb Code  1864  drvgpio.o(i.DrvGPIO_InitFunction)
+    DrvSYS_GetExtClockFreq                   0x00001011   Thumb Code     4  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    DrvSYS_GetHCLKFreq                       0x00001019   Thumb Code    94  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    DrvSYS_GetPLLClockFreq                   0x00001089   Thumb Code   104  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    DrvTIMER_EnableInt                       0x00001101   Thumb Code    78  drvtimer.o(i.DrvTIMER_EnableInt)
+    DrvTIMER_Init                            0x0000115d   Thumb Code    20  drvtimer.o(i.DrvTIMER_Init)
+    DrvTIMER_Open                            0x00001181   Thumb Code   660  drvtimer.o(i.DrvTIMER_Open)
+    EINT0_IRQHandler                         0x00001475   Thumb Code    26  drvgpio.o(i.EINT0_IRQHandler)
+    EINT1_IRQHandler                         0x00001499   Thumb Code    26  drvgpio.o(i.EINT1_IRQHandler)
+    FuncTask1                                0x000014bd   Thumb Code    90  main.o(i.FuncTask1)
+    FuncTask2                                0x00001525   Thumb Code     2  main.o(i.FuncTask2)
+    FuncTask3                                0x00001527   Thumb Code     2  main.o(i.FuncTask3)
+    FuncTaskError                            0x00001529   Thumb Code    90  main.o(i.FuncTaskError)
+    GPAB_IRQHandler                          0x00001591   Thumb Code    60  drvgpio.o(i.GPAB_IRQHandler)
+    GPCDE_IRQHandler                         0x000015d5   Thumb Code    68  drvgpio.o(i.GPCDE_IRQHandler)
+    I2C0_IRQHandler                          0x000016c9   Thumb Code   114  drvi2c.o(i.I2C0_IRQHandler)
+    I2C1_IRQHandler                          0x00001745   Thumb Code   114  drvi2c.o(i.I2C1_IRQHandler)
+    I2S_IRQHandler                           0x000017c1   Thumb Code   370  drvi2s.o(i.I2S_IRQHandler)
+    InitCOM                                  0x0000193d   Thumb Code     4  osekmessage.o(i.InitCOM)
+    Initial_pannel                           0x00001941   Thumb Code   526  lcd_driver.o(i.Initial_pannel)
+    Ir_RealTimInt                            0x00001b59   Thumb Code    10  cfg.o(i.Ir_RealTimInt)
+    OSEK_CPU_INIT                            0x00001c0d   Thumb Code    32  init.o(i.OSEK_CPU_INIT)
+    OSEK_TARGET_SaveBTSP                     0x00001c2d   Thumb Code    10  osektarget.o(i.OSEK_TARGET_SaveBTSP)
+    PDMA_IRQHandler                          0x00001c3d   Thumb Code   156  drvpdma.o(i.PDMA_IRQHandler)
+    PS2_IRQHandler                           0x00001ce5   Thumb Code    30  drvps2.o(i.PS2_IRQHandler)
+    PWMA_IRQHandler                          0x00001d0d   Thumb Code   358  drvpwm.o(i.PWMA_IRQHandler)
+    PWMB_IRQHandler                          0x00001e89   Thumb Code   358  drvpwm.o(i.PWMB_IRQHandler)
+    PWRWU_IRQHandler                         0x00002005   Thumb Code    32  drvsys.o(i.PWRWU_IRQHandler)
+    RTC_IRQHandler                           0x0000202d   Thumb Code    78  drvrtc.o(i.RTC_IRQHandler)
+    SPI0_IRQHandler                          0x0000208d   Thumb Code    92  drvspi.o(i.SPI0_IRQHandler)
+    SPI1_IRQHandler                          0x000020f1   Thumb Code    92  drvspi.o(i.SPI1_IRQHandler)
+    SPI2_IRQHandler                          0x00002155   Thumb Code    92  drvspi.o(i.SPI2_IRQHandler)
+    SPI3_IRQHandler                          0x000021b9   Thumb Code    92  drvspi.o(i.SPI3_IRQHandler)
+    SetPACA                                  0x0000221d   Thumb Code   240  lcd_driver.o(i.SetPACA)
+    StartOS                                  0x00002311   Thumb Code    46  osekexecution.o(i.StartOS)
+    SystemInit                               0x0000234d   Thumb Code     2  system_nuc1xx.o(i.SystemInit)
+    TMR0_IRQHandler                          0x0000234f   Thumb Code    10  drvtimer.o(i.TMR0_IRQHandler)
+    TMR1_IRQHandler                          0x00002359   Thumb Code   144  drvtimer.o(i.TMR1_IRQHandler)
+    TMR2_IRQHandler                          0x000023f5   Thumb Code   144  drvtimer.o(i.TMR2_IRQHandler)
+    TMR3_IRQHandler                          0x00002491   Thumb Code   144  drvtimer.o(i.TMR3_IRQHandler)
+    UART02_IRQHandler                        0x0000252d   Thumb Code    44  drvuart.o(i.UART02_IRQHandler)
+    UART1_IRQHandler                         0x00002569   Thumb Code    24  drvuart.o(i.UART1_IRQHandler)
+    WDT_IRQHandler                           0x00002589   Thumb Code    44  drvtimer.o(i.WDT_IRQHandler)
+    WriteData                                0x000025bd   Thumb Code    82  lcd_driver.o(i.WriteData)
+    __ARM_common_switch8                     0x00002615   Thumb Code    28  drvcan.o(i.__ARM_common_switch8)
+    clr_all_pannal                           0x00002631   Thumb Code    40  lcd_driver.o(i.clr_all_pannal)
+    draw_LCD                                 0x00002659   Thumb Code    68  lcd_driver.o(i.draw_LCD)
+    main                                     0x0000269d   Thumb Code    64  main.o(i.main)
+    osekAlarm_Check1                         0x000026e5   Thumb Code    56  osekalarm.o(i.osekAlarm_Check1)
+    osekAlarm_Check2                         0x00002721   Thumb Code    84  osekalarm.o(i.osekAlarm_Check2)
+    osekAlarm_Initialize                     0x00002775   Thumb Code    50  osekalarm.o(i.osekAlarm_Initialize)
+    osekCounter_Initialize                   0x000027b1   Thumb Code    36  osekcounter.o(i.osekCounter_Initialize)
+    osekInterrupt_Initialize                 0x000027dd   Thumb Code     8  osekinterrupt.o(i.osekInterrupt_Initialize)
+    osekTask_ActiveTask                      0x000027ed   Thumb Code    92  osektask.o(i.osekTask_ActiveTask)
+    osekTask_Dispatch                        0x00002855   Thumb Code   176  osektask.o(i.osekTask_Dispatch)
+    osekTask_Initialize                      0x00002921   Thumb Code   154  osektask.o(i.osekTask_Initialize)
+    CH_OFFSET                                0x000029ec   Data          16  drvtimer.o(.constdata)
+    osekConfig_TaskTable                     0x000029fc   Data         100  cfg.o(.constdata)
+    osekConfig_MsgTable                      0x00002a60   Data          32  cfg.o(.constdata)
+    Region$$Table$$Base                      0x00002e80   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00002ea0   Number         0  anon$$obj.o(Region$$Table)
+    bIsTimer0Initial                         0x2000007c   Data           4  drvtimer.o(.data)
+    bIsTimer1Initial                         0x20000080   Data           4  drvtimer.o(.data)
+    bIsTimer2Initial                         0x20000084   Data           4  drvtimer.o(.data)
+    bIsTimer3Initial                         0x20000088   Data           4  drvtimer.o(.data)
+    bIsTimer0Used                            0x2000008c   Data           4  drvtimer.o(.data)
+    bIsTimer1Used                            0x20000090   Data           4  drvtimer.o(.data)
+    bIsTimer2Used                            0x20000094   Data           4  drvtimer.o(.data)
+    bIsTimer3Used                            0x20000098   Data           4  drvtimer.o(.data)
+    bIsSetTime0Event                         0x2000009c   Data           4  drvtimer.o(.data)
+    bIsSetTime1Event                         0x200000a0   Data           4  drvtimer.o(.data)
+    bIsSetTime2Event                         0x200000a4   Data           4  drvtimer.o(.data)
+    bIsSetTime3Event                         0x200000a8   Data           4  drvtimer.o(.data)
+    u32EXTClockFreq                          0x200000dc   Data           4  drvtimer.o(.data)
+    SPI_PORT                                 0x200000f0   Data          16  lcd_driver.o(.data)
+    osekConfig_InterruptTypeTable            0x20000100   Data         128  cfg.o(.data)
+    osekConfig_InterruptEntryTable           0x20000180   Data         512  cfg.o(.data)
+    osekConfig_CounterTable                  0x20000380   Data          12  cfg.o(.data)
+    osekConfig_AlarmTable                    0x2000038c   Data           8  cfg.o(.data)
+    osekMsg_Msg1Object                       0x20000394   Data           6  cfg.o(.data)
+    osekMsg_Msg4Object                       0x2000039a   Data           1  cfg.o(.data)
+    osekExecution_CurrentAppMode             0x2000039b   Data           1  osekexecution.o(.data)
+    osekInterrupt_NestedLevl                 0x2000039c   Data           4  osekinterrupt.o(.data)
+    osekInterrupt_IsrStackTop                0x200003a8   Data           2  osekinterrupt.o(.data)
+    osekTarget_SavedBTSP                     0x200003ac   Data           4  osektarget.o(.data)
+    osekTarget_OSIntMask                     0x200003b0   Data           4  osektarget.o(.data)
+    osIntSave_en                             0x200003b4   Data           4  osektarget.o(.data)
+    osIntSave_pending                        0x200003b8   Data           4  osektarget.o(.data)
+    osekTarget_AllIntMask_en                 0x200003bc   Data           4  osektarget.o(.data)
+    osekTarget_AllIntMask_pending            0x200003c0   Data           4  osektarget.o(.data)
+    osekTarget_NestedAllIntMask_en           0x200003c4   Data           4  osektarget.o(.data)
+    osekTarget_NestedAllIntMask_pending      0x200003c8   Data           4  osektarget.o(.data)
+    osekTarget_NestedOsIntMask_en            0x200003cc   Data           4  osektarget.o(.data)
+    osekTarget_NestedOsIntMask_pending       0x200003d0   Data           4  osektarget.o(.data)
+    osekTask_RunningTask                     0x200003d4   Data           4  osektask.o(.data)
+    osekTask_SchedulerLockLevel              0x200003d8   Data           4  osektask.o(.data)
+    osekTask_IsrTriggeredTaskSwitchNecessary 0x200003dc   Data           4  osektask.o(.data)
+    osekTask_FreeReadyBlock                  0x200003e0   Data           4  osektask.o(.data)
+    osekTask_PriorityBitMap                  0x200003e4   Data           4  osektask.o(.data)
+    osekTask_PriorityBitMapMajor             0x200003e8   Data           1  osektask.o(.data)
+    osekTask_PriorityIndexTable              0x200003e9   Data         256  osektask.o(.data)
+    taskStack                                0x2000069c   Data         600  cfg.o(.bss)
+    messageBuf                               0x200008f4   Data          60  cfg.o(.bss)
+    messageQueue                             0x20000930   Data          60  cfg.o(.bss)
+    osekAlarm_AlarmTable                     0x2000096c   Data          28  osekalarm.o(.bss)
+    osekCounter_CounterTable                 0x20000988   Data          20  osekcounter.o(.bss)
+    osekTask_ReadyTaskTable                  0x20000d9c   Data         256  osektask.o(.bss)
+    osekTask_TaskTable                       0x20000e9c   Data         180  osektask.o(.bss)
+    osekTask_ReadyBlock                      0x2000107c   Data          40  osektask.o(.bss)
+    __libspace_start                         0x200010a4   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20001104   Data           0  libspace.o(.bss)
 
 
 
@@ -1092,200 +1214,196 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x000002e9
+  Image Entry point : 0x00000311
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00001e70, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x0000338c, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x00000000, Size: 0x00001c28, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00002ea0, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x000000c0   Data   RO           19    RESET               startup_nuc1xx.o
-    0x000000c0   0x00000008   Code   RO         3983  * !!!main             c_p.l(__main.o)
-    0x000000c8   0x0000003c   Code   RO         4150    !!!scatter          c_p.l(__scatter.o)
-    0x00000104   0x0000001a   Code   RO         4152    !!handler_copy      c_p.l(__scatter_copy.o)
+    0x000000c0   0x00000008   Code   RO         4534  * !!!main             c_p.l(__main.o)
+    0x000000c8   0x0000003c   Code   RO         4703    !!!scatter          c_p.l(__scatter.o)
+    0x00000104   0x0000001a   Code   RO         4705    !!handler_copy      c_p.l(__scatter_copy.o)
     0x0000011e   0x00000002   PAD
-    0x00000120   0x0000001c   Code   RO         4154    !!handler_zi        c_p.l(__scatter_zi.o)
-    0x0000013c   0x00000002   Code   RO         4021    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
-    0x0000013e   0x00000000   Code   RO         4035    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4037    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4040    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4042    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4044    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4047    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4049    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4051    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4053    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4055    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4057    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4059    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4061    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4063    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4065    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4067    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4071    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4073    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4075    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         4077    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
-    0x0000013e   0x00000002   Code   RO         4078    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
-    0x00000140   0x00000002   Code   RO         4107    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
-    0x00000142   0x00000000   Code   RO         4133    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         4135    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         4138    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         4141    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         4143    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         4146    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
-    0x00000142   0x00000002   Code   RO         4147    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
-    0x00000144   0x00000000   Code   RO         3985    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
-    0x00000144   0x00000000   Code   RO         3991    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
-    0x00000144   0x00000006   Code   RO         4003    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
-    0x0000014a   0x00000000   Code   RO         3993    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
-    0x0000014a   0x00000004   Code   RO         3994    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
-    0x0000014e   0x00000000   Code   RO         3996    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
-    0x0000014e   0x00000008   Code   RO         3997    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
-    0x00000156   0x00000002   Code   RO         4026    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
-    0x00000158   0x00000000   Code   RO         4082    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
-    0x00000158   0x00000004   Code   RO         4083    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
-    0x0000015c   0x00000006   Code   RO         4084    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x00000120   0x0000001c   Code   RO         4707    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x0000013c   0x00000002   Code   RO         4574    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x0000013e   0x00000000   Code   RO         4588    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4590    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4593    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4595    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4597    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4600    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4602    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4604    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4606    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4608    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4610    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4612    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4614    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4616    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4618    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4620    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4624    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4626    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4628    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         4630    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x0000013e   0x00000002   Code   RO         4631    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x00000140   0x00000002   Code   RO         4660    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x00000142   0x00000000   Code   RO         4686    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         4688    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         4691    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         4694    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         4696    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         4699    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x00000142   0x00000002   Code   RO         4700    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
+    0x00000144   0x00000000   Code   RO         4536    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x00000144   0x00000000   Code   RO         4544    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x00000144   0x00000006   Code   RO         4556    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x0000014a   0x00000000   Code   RO         4546    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x0000014a   0x00000004   Code   RO         4547    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x0000014e   0x00000000   Code   RO         4549    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x0000014e   0x00000008   Code   RO         4550    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x00000156   0x00000002   Code   RO         4579    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x00000158   0x00000000   Code   RO         4635    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x00000158   0x00000004   Code   RO         4636    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x0000015c   0x00000006   Code   RO         4637    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
     0x00000162   0x00000002   PAD
-    0x00000164   0x00000184   Code   RO         3675    .emb_text           osektarget.o
-    0x000002e8   0x00000064   Code   RO           20  * .text               startup_nuc1xx.o
-    0x0000034c   0x0000015a   Code   RO         3977    .text               c_p.l(aeabi_sdiv.o)
-    0x000004a6   0x00000006   Code   RO         3981    .text               c_p.l(heapauxi.o)
-    0x000004ac   0x0000003e   Code   RO         4007    .text               c_p.l(sys_stackheap_outer.o)
-    0x000004ea   0x00000010   Code   RO         4010    .text               c_p.l(exit.o)
-    0x000004fa   0x00000002   PAD
-    0x000004fc   0x00000008   Code   RO         4022    .text               c_p.l(libspace.o)
-    0x00000504   0x0000000c   Code   RO         4079    .text               c_p.l(sys_exit.o)
-    0x00000510   0x00000002   Code   RO         4096    .text               c_p.l(use_no_semi.o)
-    0x00000512   0x00000000   Code   RO         4098    .text               c_p.l(indicate_semi.o)
-    0x00000512   0x00000002   PAD
-    0x00000514   0x00000064   Code   RO          194    i.ADC_IRQHandler    drvadc.o
-    0x00000578   0x00000028   Code   RO         3755    i.AddTask2ReadyTableAtTail  osektask.o
-    0x000005a0   0x00000054   Code   RO         3756    i.AddaReadyBlock    osektask.o
-    0x000005f4   0x0000001c   Code   RO         2214    i.BOD_IRQHandler    drvsys.o
-    0x00000610   0x0000009c   Code   RO          427    i.CAN0_IRQHandler   drvcan.o
-    0x000006ac   0x00000040   Code   RO         2503    i.CalTimerInitValue  drvtimer.o
-    0x000006ec   0x00000040   Code   RO         3384    i.CounterTrigger    osekcounter.o
-    0x0000072c   0x00000030   Code   RO          431    i.DrvCAN_ClrIntPnd  drvcan.o
-    0x0000075c   0x000003ac   Code   RO          859    i.DrvGPIO_InitFunction  drvgpio.o
-    0x00000b08   0x00000008   Code   RO         2232    i.DrvSYS_GetExtClockFreq  drvsys.o
-    0x00000b10   0x0000005c   Code   RO         2233    i.DrvSYS_GetHCLKFreq  drvsys.o
-    0x00000b6c   0x0000005c   Code   RO         2234    i.DrvSYS_GetPLLClockFreq  drvsys.o
-    0x00000bc8   0x00000058   Code   RO         2519    i.DrvTIMER_EnableInt  drvtimer.o
-    0x00000c20   0x00000014   Code   RO         2526    i.DrvTIMER_Init     drvtimer.o
-    0x00000c34   0x000001ec   Code   RO         2527    i.DrvTIMER_Open     drvtimer.o
-    0x00000e20   0x00000038   Code   RO         2535    i.DrvTIMER_Start    drvtimer.o
-    0x00000e58   0x0000001c   Code   RO          867    i.EINT0_IRQHandler  drvgpio.o
-    0x00000e74   0x0000001c   Code   RO          868    i.EINT1_IRQHandler  drvgpio.o
-    0x00000e90   0x00000002   Code   RO         3902    i.FuncTask1         main.o
-    0x00000e92   0x00000002   Code   RO         3903    i.FuncTask2         main.o
-    0x00000e94   0x00000002   Code   RO         3904    i.FuncTask3         main.o
-    0x00000e96   0x00000002   Code   RO         3906    i.FuncTaskError     main.o
-    0x00000e98   0x0000003c   Code   RO          869    i.GPAB_IRQHandler   drvgpio.o
-    0x00000ed4   0x00000044   Code   RO          870    i.GPCDE_IRQHandler  drvgpio.o
-    0x00000f18   0x00000024   Code   RO          463    i.GetFreeIF         drvcan.o
-    0x00000f3c   0x00000070   Code   RO         2541    i.GetTimerClock     drvtimer.o
-    0x00000fac   0x00000040   Code   RO         1091    i.I2C0_IRQHandler   drvi2c.o
-    0x00000fec   0x00000040   Code   RO         1092    i.I2C1_IRQHandler   drvi2c.o
-    0x0000102c   0x000000c4   Code   RO         1240    i.I2S_IRQHandler    drvi2s.o
-    0x000010f0   0x00000004   Code   RO         3574    i.InitCOM           osekmessage.o
-    0x000010f4   0x00000120   Code   RO         3051    i.Initial_pannel    lcd_driver.o
-    0x00001214   0x00000044   Code   RO         2543    i.NVIC_SetPriority  drvtimer.o
-    0x00001258   0x00000028   Code   RO           61    i.OSEK_CPU_INIT     init.o
-    0x00001280   0x0000000a   Code   RO           62    i.OSEK_TIMER_START  init.o
-    0x0000128a   0x00000002   PAD
-    0x0000128c   0x00000070   Code   RO         1417    i.PDMA_IRQHandler   drvpdma.o
-    0x000012fc   0x0000001c   Code   RO         1583    i.PS2_IRQHandler    drvps2.o
-    0x00001318   0x000000f0   Code   RO         1676    i.PWMA_IRQHandler   drvpwm.o
-    0x00001408   0x000000f0   Code   RO         1677    i.PWMB_IRQHandler   drvpwm.o
-    0x000014f8   0x00000020   Code   RO         2260    i.PWRWU_IRQHandler  drvsys.o
-    0x00001518   0x0000003c   Code   RO         1818    i.RTC_IRQHandler    drvrtc.o
-    0x00001554   0x00000044   Code   RO         1951    i.SPI0_IRQHandler   drvspi.o
-    0x00001598   0x00000044   Code   RO         1952    i.SPI1_IRQHandler   drvspi.o
-    0x000015dc   0x00000044   Code   RO         1953    i.SPI2_IRQHandler   drvspi.o
-    0x00001620   0x00000044   Code   RO         1954    i.SPI3_IRQHandler   drvspi.o
-    0x00001664   0x0000008c   Code   RO         3052    i.SetPACA           lcd_driver.o
-    0x000016f0   0x0000003c   Code   RO         3488    i.StartOS           osekexecution.o
-    0x0000172c   0x00000002   Code   RO         3909    i.StartupHook       main.o
-    0x0000172e   0x00000002   Code   RO           25    i.SystemInit        system_nuc1xx.o
-    0x00001730   0x0000000a   Code   RO         2544    i.TMR0_IRQHandler   drvtimer.o
-    0x0000173a   0x00000002   PAD
-    0x0000173c   0x00000064   Code   RO         2545    i.TMR1_IRQHandler   drvtimer.o
-    0x000017a0   0x00000064   Code   RO         2546    i.TMR2_IRQHandler   drvtimer.o
-    0x00001804   0x00000064   Code   RO         2547    i.TMR3_IRQHandler   drvtimer.o
-    0x00001868   0x0000002c   Code   RO         2845    i.UART02_IRQHandler  drvuart.o
-    0x00001894   0x00000018   Code   RO         2846    i.UART1_IRQHandler  drvuart.o
-    0x000018ac   0x00000030   Code   RO         2549    i.WDT_IRQHandler    drvtimer.o
-    0x000018dc   0x00000034   Code   RO         3055    i.WriteData         lcd_driver.o
-    0x00001910   0x0000001a   Code   RO          649    i.__ARM_common_switch8  drvcan.o
-    0x0000192a   0x00000024   Code   RO         3056    i.clr_all_pannal    lcd_driver.o
-    0x0000194e   0x00000016   Code   RO         3910    i.main              main.o
-    0x00001964   0x00000034   Code   RO         3291    i.osekAlarm_Check1  osekalarm.o
-    0x00001998   0x00000058   Code   RO         3292    i.osekAlarm_Check2  osekalarm.o
-    0x000019f0   0x0000002c   Code   RO         3293    i.osekAlarm_Initialize  osekalarm.o
-    0x00001a1c   0x0000002c   Code   RO         3388    i.osekCounter_Initialize  osekcounter.o
-    0x00001a48   0x00000010   Code   RO         3523    i.osekInterrupt_Initialize  osekinterrupt.o
-    0x00001a58   0x00000050   Code   RO         3765    i.osekTask_ActiveTask  osektask.o
-    0x00001aa8   0x00000088   Code   RO         3767    i.osekTask_Dispatch  osektask.o
-    0x00001b30   0x0000007c   Code   RO         3768    i.osekTask_Initialize  osektask.o
-    0x00001bac   0x00000010   Data   RO         2261    .constdata          drvsys.o
-    0x00001bbc   0x00000010   Data   RO         2551    .constdata          drvtimer.o
-    0x00001bcc   0x0000003c   Data   RO         3222    .constdata          cfg.o
-    0x00001c08   0x00000020   Data   RO         4148    Region$$Table       anon$$obj.o
+    0x00000164   0x00000174   Code   RO         4161    .emb_text           osektarget.o
+    0x000002d8   0x00000038   Code   RO         4522    .emb_text           c_p.l(rt_memcpy.o)
+    0x00000310   0x00000064   Code   RO           20  * .text               startup_nuc1xx.o
+    0x00000374   0x00000012   Code   RO         4526    .text               c_p.l(aeabi_memset.o)
+    0x00000386   0x0000015a   Code   RO         4528    .text               c_p.l(aeabi_sdiv.o)
+    0x000004e0   0x00000006   Code   RO         4532    .text               c_p.l(heapauxi.o)
+    0x000004e6   0x00000040   Code   RO         4541    .text               c_p.l(rt_memclr.o)
+    0x00000526   0x0000003e   Code   RO         4560    .text               c_p.l(sys_stackheap_outer.o)
+    0x00000564   0x00000010   Code   RO         4563    .text               c_p.l(exit.o)
+    0x00000574   0x00000008   Code   RO         4575    .text               c_p.l(libspace.o)
+    0x0000057c   0x0000000c   Code   RO         4632    .text               c_p.l(sys_exit.o)
+    0x00000588   0x00000002   Code   RO         4649    .text               c_p.l(use_no_semi.o)
+    0x0000058a   0x00000000   Code   RO         4651    .text               c_p.l(indicate_semi.o)
+    0x0000058a   0x00000002   PAD
+    0x0000058c   0x0000009c   Code   RO          224    i.ADC_IRQHandler    drvadc.o
+    0x00000628   0x0000002c   Code   RO         4269    i.AddTask2ReadyTableAtTail  osektask.o
+    0x00000654   0x00000080   Code   RO         4270    i.AddaReadyBlock    osektask.o
+    0x000006d4   0x00000028   Code   RO         2297    i.BOD_IRQHandler    drvsys.o
+    0x000006fc   0x000000f0   Code   RO          462    i.CAN0_IRQHandler   drvcan.o
+    0x000007ec   0x00000046   Code   RO         2600    i.CalTimerInitValue  drvtimer.o
+    0x00000832   0x00000002   PAD
+    0x00000834   0x0000004c   Code   RO         3599    i.CounterTrigger    osekcounter.o
+    0x00000880   0x00000038   Code   RO          466    i.DrvCAN_ClrIntPnd  drvcan.o
+    0x000008b8   0x00000758   Code   RO          907    i.DrvGPIO_InitFunction  drvgpio.o
+    0x00001010   0x00000008   Code   RO         2315    i.DrvSYS_GetExtClockFreq  drvsys.o
+    0x00001018   0x00000070   Code   RO         2316    i.DrvSYS_GetHCLKFreq  drvsys.o
+    0x00001088   0x00000078   Code   RO         2317    i.DrvSYS_GetPLLClockFreq  drvsys.o
+    0x00001100   0x0000005c   Code   RO         2617    i.DrvTIMER_EnableInt  drvtimer.o
+    0x0000115c   0x00000024   Code   RO         2624    i.DrvTIMER_Init     drvtimer.o
+    0x00001180   0x000002f4   Code   RO         2625    i.DrvTIMER_Open     drvtimer.o
+    0x00001474   0x00000024   Code   RO          915    i.EINT0_IRQHandler  drvgpio.o
+    0x00001498   0x00000024   Code   RO          916    i.EINT1_IRQHandler  drvgpio.o
+    0x000014bc   0x00000068   Code   RO         4424    i.FuncTask1         main.o
+    0x00001524   0x00000002   Code   RO         4425    i.FuncTask2         main.o
+    0x00001526   0x00000002   Code   RO         4426    i.FuncTask3         main.o
+    0x00001528   0x00000068   Code   RO         4428    i.FuncTaskError     main.o
+    0x00001590   0x00000044   Code   RO          917    i.GPAB_IRQHandler   drvgpio.o
+    0x000015d4   0x0000004c   Code   RO          918    i.GPCDE_IRQHandler  drvgpio.o
+    0x00001620   0x00000028   Code   RO          498    i.GetFreeIF         drvcan.o
+    0x00001648   0x00000080   Code   RO         2639    i.GetTimerClock     drvtimer.o
+    0x000016c8   0x0000007c   Code   RO         1139    i.I2C0_IRQHandler   drvi2c.o
+    0x00001744   0x0000007c   Code   RO         1140    i.I2C1_IRQHandler   drvi2c.o
+    0x000017c0   0x0000017c   Code   RO         1298    i.I2S_IRQHandler    drvi2s.o
+    0x0000193c   0x00000004   Code   RO         4003    i.InitCOM           osekmessage.o
+    0x00001940   0x00000218   Code   RO         3196    i.Initial_pannel    lcd_driver.o
+    0x00001b58   0x0000000a   Code   RO         3375    i.Ir_RealTimInt     cfg.o
+    0x00001b62   0x00000002   PAD
+    0x00001b64   0x00000014   Code   RO         2643    i.NVIC_EnableIRQ    drvtimer.o
+    0x00001b78   0x00000078   Code   RO         2644    i.NVIC_SetPriority  drvtimer.o
+    0x00001bf0   0x0000001c   Code   RO         3469    i.NotifyAlarm       osekalarm.o
+    0x00001c0c   0x00000020   Code   RO           66    i.OSEK_CPU_INIT     init.o
+    0x00001c2c   0x00000010   Code   RO         4167    i.OSEK_TARGET_SaveBTSP  osektarget.o
+    0x00001c3c   0x000000a8   Code   RO         1480    i.PDMA_IRQHandler   drvpdma.o
+    0x00001ce4   0x00000028   Code   RO         1647    i.PS2_IRQHandler    drvps2.o
+    0x00001d0c   0x0000017c   Code   RO         1746    i.PWMA_IRQHandler   drvpwm.o
+    0x00001e88   0x0000017c   Code   RO         1747    i.PWMB_IRQHandler   drvpwm.o
+    0x00002004   0x00000028   Code   RO         2345    i.PWRWU_IRQHandler  drvsys.o
+    0x0000202c   0x00000060   Code   RO         1897    i.RTC_IRQHandler    drvrtc.o
+    0x0000208c   0x00000064   Code   RO         2034    i.SPI0_IRQHandler   drvspi.o
+    0x000020f0   0x00000064   Code   RO         2035    i.SPI1_IRQHandler   drvspi.o
+    0x00002154   0x00000064   Code   RO         2036    i.SPI2_IRQHandler   drvspi.o
+    0x000021b8   0x00000064   Code   RO         2037    i.SPI3_IRQHandler   drvspi.o
+    0x0000221c   0x000000f4   Code   RO         3197    i.SetPACA           lcd_driver.o
+    0x00002310   0x0000003c   Code   RO         3830    i.StartOS           osekexecution.o
+    0x0000234c   0x00000002   Code   RO           25    i.SystemInit        system_nuc1xx.o
+    0x0000234e   0x0000000a   Code   RO         2646    i.TMR0_IRQHandler   drvtimer.o
+    0x00002358   0x0000009c   Code   RO         2647    i.TMR1_IRQHandler   drvtimer.o
+    0x000023f4   0x0000009c   Code   RO         2648    i.TMR2_IRQHandler   drvtimer.o
+    0x00002490   0x0000009c   Code   RO         2649    i.TMR3_IRQHandler   drvtimer.o
+    0x0000252c   0x0000003c   Code   RO         2981    i.UART02_IRQHandler  drvuart.o
+    0x00002568   0x00000020   Code   RO         2982    i.UART1_IRQHandler  drvuart.o
+    0x00002588   0x00000034   Code   RO         2651    i.WDT_IRQHandler    drvtimer.o
+    0x000025bc   0x00000058   Code   RO         3200    i.WriteData         lcd_driver.o
+    0x00002614   0x0000001c   Code   RO          693    i.__ARM_common_switch8  drvcan.o
+    0x00002630   0x00000028   Code   RO         3201    i.clr_all_pannal    lcd_driver.o
+    0x00002658   0x00000044   Code   RO         3202    i.draw_LCD          lcd_driver.o
+    0x0000269c   0x00000048   Code   RO         4434    i.main              main.o
+    0x000026e4   0x0000003c   Code   RO         3474    i.osekAlarm_Check1  osekalarm.o
+    0x00002720   0x00000054   Code   RO         3475    i.osekAlarm_Check2  osekalarm.o
+    0x00002774   0x0000003c   Code   RO         3476    i.osekAlarm_Initialize  osekalarm.o
+    0x000027b0   0x0000002c   Code   RO         3605    i.osekCounter_Initialize  osekcounter.o
+    0x000027dc   0x00000010   Code   RO         3925    i.osekInterrupt_Initialize  osekinterrupt.o
+    0x000027ec   0x00000068   Code   RO         4279    i.osekTask_ActiveTask  osektask.o
+    0x00002854   0x000000cc   Code   RO         4281    i.osekTask_Dispatch  osektask.o
+    0x00002920   0x000000bc   Code   RO         4282    i.osekTask_Initialize  osektask.o
+    0x000029dc   0x00000010   Data   RO         2346    .constdata          drvsys.o
+    0x000029ec   0x00000010   Data   RO         2653    .constdata          drvtimer.o
+    0x000029fc   0x00000084   Data   RO         3380    .constdata          cfg.o
+    0x00002a80   0x00000400   Data   RO         4436    .constdata          main.o
+    0x00002e80   0x00000020   Data   RO         4701    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000248, Max: 0xffffffff, ABSOLUTE)
-
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20000000   0x0000000c   Data   RW          231    .data               drvadc.o
-    0x2000000c   0x00000010   Data   RW          874    .data               drvgpio.o
-    0x2000001c   0x00000004   Data   RW         1584    .data               drvps2.o
-    0x20000020   0x00000004   Data   RW         1679    .data               drvpwm.o
-    0x20000024   0x00000048   Data   RW         1819    .data               drvrtc.o
-    0x2000006c   0x00000008   Data   RW         2262    .data               drvsys.o
-    0x20000074   0x00000064   Data   RW         2552    .data               drvtimer.o
-    0x200000d8   0x0000000c   Data   RW         2847    .data               drvuart.o
-    0x200000e4   0x00000010   Data   RW         3058    .data               lcd_driver.o
-    0x200000f4   0x0000000c   Data   RW         3226    .data               cfg.o
-    0x20000100   0x00000008   Data   RW         3227    .data               cfg.o
-    0x20000108   0x00000001   Data   RW         3489    .data               osekexecution.o
-    0x20000109   0x00000003   PAD
-    0x2000010c   0x00000004   Data   RW         3525    .data               osekinterrupt.o
-    0x20000110   0x0000000c   Data   RW         3526    .data               osekinterrupt.o
-    0x2000011c   0x00000002   Data   RW         3680    .data               osektarget.o
-    0x2000011e   0x00000002   Data   RW         3682    .data               osektarget.o
-    0x20000120   0x00000002   Data   RW         3683    .data               osektarget.o
-    0x20000122   0x00000002   Data   RW         3684    .data               osektarget.o
-    0x20000124   0x00000002   Data   RW         3685    .data               osektarget.o
-    0x20000126   0x00000002   Data   RW         3686    .data               osektarget.o
-    0x20000128   0x00000002   Data   RW         3687    .data               osektarget.o
-    0x2000012a   0x00000002   Data   RW         3688    .data               osektarget.o
-    0x2000012c   0x00000002   Data   RW         3689    .data               osektarget.o
-    0x2000012e   0x00000002   PAD
-    0x20000130   0x00000118   Data   RW         3773    .data               osektask.o
-
-
-    Execution Region ER_ZI (Base: 0x20000248, Size: 0x00000c50, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x000004ec, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000248   0x0000000c   Zero   RW          230    .bss                drvadc.o
-    0x20000254   0x00000018   Zero   RW          464    .bss                drvcan.o
-    0x2000026c   0x00000020   Zero   RW         1094    .bss                drvi2c.o
-    0x2000028c   0x00000020   Zero   RW         1241    .bss                drvi2s.o
-    0x200002ac   0x0000006c   Zero   RW         1418    .bss                drvpdma.o
-    0x20000318   0x00000040   Zero   RW         1678    .bss                drvpwm.o
-    0x20000358   0x00000050   Zero   RW         1955    .bss                drvspi.o
-    0x200003a8   0x00000050   Zero   RW         2550    .bss                drvtimer.o
-    0x200003f8   0x0000001c   Zero   RW         3294    .bss                osekalarm.o
-    0x20000414   0x00000014   Zero   RW         3389    .bss                osekcounter.o
-    0x20000428   0x00000400   Zero   RW         3524    .bss                osekinterrupt.o
-    0x20000828   0x00000210   Zero   RW         3772    .bss                osektask.o
-    0x20000a38   0x00000060   Zero   RW         4023    .bss                c_p.l(libspace.o)
-    0x20000a98   0x00000000   Zero   RW           18    HEAP                startup_nuc1xx.o
-    0x20000a98   0x00000400   Zero   RW           17    STACK               startup_nuc1xx.o
+    0x20000000   0x0000000c   Data   RW          262    .data               drvadc.o
+    0x2000000c   0x00000010   Data   RW          922    .data               drvgpio.o
+    0x2000001c   0x00000004   Data   RW         1648    .data               drvps2.o
+    0x20000020   0x00000004   Data   RW         1749    .data               drvpwm.o
+    0x20000024   0x00000050   Data   RW         1898    .data               drvrtc.o
+    0x20000074   0x00000008   Data   RW         2347    .data               drvsys.o
+    0x2000007c   0x00000068   Data   RW         2654    .data               drvtimer.o
+    0x200000e4   0x0000000c   Data   RW         2983    .data               drvuart.o
+    0x200000f0   0x00000010   Data   RW         3204    .data               lcd_driver.o
+    0x20000100   0x0000029b   Data   RW         3381    .data               cfg.o
+    0x2000039b   0x00000001   Data   RW         3831    .data               osekexecution.o
+    0x2000039c   0x0000000e   Data   RW         3927    .data               osekinterrupt.o
+    0x200003aa   0x00000002   PAD
+    0x200003ac   0x00000028   Data   RW         4173    .data               osektarget.o
+    0x200003d4   0x00000115   Data   RW         4287    .data               osektask.o
+
+
+    Execution Region ER_ZI (Base: 0x200004ec, Size: 0x0000101c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200004ec   0x0000000c   Zero   RW          261    .bss                drvadc.o
+    0x200004f8   0x00000018   Zero   RW          500    .bss                drvcan.o
+    0x20000510   0x00000020   Zero   RW         1144    .bss                drvi2c.o
+    0x20000530   0x00000020   Zero   RW         1300    .bss                drvi2s.o
+    0x20000550   0x0000006c   Zero   RW         1481    .bss                drvpdma.o
+    0x200005bc   0x00000040   Zero   RW         1748    .bss                drvpwm.o
+    0x200005fc   0x00000050   Zero   RW         2038    .bss                drvspi.o
+    0x2000064c   0x00000050   Zero   RW         2652    .bss                drvtimer.o
+    0x2000069c   0x000002d0   Zero   RW         3379    .bss                cfg.o
+    0x2000096c   0x0000001c   Zero   RW         3477    .bss                osekalarm.o
+    0x20000988   0x00000014   Zero   RW         3606    .bss                osekcounter.o
+    0x2000099c   0x00000400   Zero   RW         3926    .bss                osekinterrupt.o
+    0x20000d9c   0x00000308   Zero   RW         4286    .bss                osektask.o
+    0x200010a4   0x00000060   Zero   RW         4576    .bss                c_p.l(libspace.o)
+    0x20001104   0x00000004   PAD
+    0x20001108   0x00000000   Zero   RW           18    HEAP                startup_nuc1xx.o
+    0x20001108   0x00000400   Zero   RW           17    STACK               startup_nuc1xx.o
 
 
 ==============================================================================
@@ -1295,36 +1413,36 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-         0          0         60         20          0      11202   cfg.o
+        10          0        132        667        720      11492   cfg.o
          0          0          0          0          0       4564   core_cm0.o
-       100         12          0         12         12     127349   drvadc.o
-       266         28          0          0         24       5232   drvcan.o
-      1124        118          0         16          0       4076   drvgpio.o
-       128         16          0          0         32       2020   drvi2c.o
-       196          8          0          0         32       2865   drvi2s.o
-       112         12          0          0        108       2994   drvpdma.o
-        28          8          0          4          0       3333   drvps2.o
-       480         40          0          4         64       3424   drvpwm.o
-        60         10          0         72          0       3517   drvrtc.o
-       272         32          0          0         80       4164   drvspi.o
-       252         50         16          8          0       2535   drvsys.o
-      1258        140         16        100         80      19122   drvtimer.o
-        68         20          0         12          0       1703   drvuart.o
-        50          6          0          0          0     130227   init.o
-       516         18          0         16          0       2715   lcd_driver.o
-        32          0          0          0          0       2085   main.o
-       184         22          0          0         28      12836   osekalarm.o
-       108         20          0          0         20      12045   osekcounter.o
-        60         14          0          1          0        665   osekexecution.o
-        16          8          0         16       1024       1036   osekinterrupt.o
-         4          0          0          0          0      10786   osekmessage.o
-       388        138          0         18          0      11702   osektarget.o
-       464         50          0        280        528      13655   osektask.o
+       156         20          0         12         12     127329   drvadc.o
+       364         24          0          0         24       4517   drvcan.o
+      2096        120          0         16          0       3862   drvgpio.o
+       248         20          0          0         32       1944   drvi2c.o
+       380         10          0          0         32       2797   drvi2s.o
+       168         12          0          0        108       2942   drvpdma.o
+        40         10          0          4          0       3353   drvps2.o
+       760         44          0          4         64       3400   drvpwm.o
+        96         18          0         80          0       3517   drvrtc.o
+       400         32          0          0         80       4100   drvspi.o
+       320         50         16          8          0       2487   drvsys.o
+      1752        200         16        104         80      18439   drvtimer.o
+        92         24          0         12          0       1583   drvuart.o
+        32          0          0          0          0     129852   init.o
+       976         20          0         16          0       3230   lcd_driver.o
+       284         36       1024          0          0       2315   main.o
+       232         20          0          0         28      12784   osekalarm.o
+       120         18          0          0         20      11709   osekcounter.o
+        60         14          0          1          0        677   osekexecution.o
+        16          8          0         14       1024       1036   osekinterrupt.o
+         4          0          0          0          0      10482   osekmessage.o
+       388        144          0         40          0      11813   osektarget.o
+       668         92          0        277        776      13415   osektask.o
        100         46        192          0       1024        580   startup_nuc1xx.o
          2          0          0          0          0        361   system_nuc1xx.o
 
     ----------------------------------------------------------------------
-      6272        816        316        584       3056     396793   Object Totals
+      9768        982       1412       1260       4024     394580   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          5          0          0   (incl. Padding)
 
@@ -1339,6 +1457,7 @@ Image component sizes
         60          8          0          0          0          0   __scatter.o
         26          0          0          0          0          0   __scatter_copy.o
         28          0          0          0          0          0   __scatter_zi.o
+        18          0          0          0          0         68   aeabi_memset.o
        346          0          0          0          0         92   aeabi_sdiv.o
         16          0          0          0          0         68   exit.o
          6          0          0          0          0        136   heapauxi.o
@@ -1348,6 +1467,8 @@ Image component sizes
          2          0          0          0          0          0   libshutdown.o
          2          0          0          0          0          0   libshutdown2.o
          8          4          0          0         96         68   libspace.o
+        64          0          0          0          0        108   rt_memclr.o
+        56          0          0          0          0         68   rt_memcpy.o
          2          0          0          0          0          0   rtexit.o
         10          0          0          0          0          0   rtexit2.o
         12          4          0          0          0         60   sys_exit.o
@@ -1355,17 +1476,17 @@ Image component sizes
          2          0          0          0          0         68   use_no_semi.o
 
     ----------------------------------------------------------------------
-       620         16          0          0         96        640   Library Totals
-         8          0          0          0          0          0   (incl. Padding)
+       756         16          0          0        100        884   Library Totals
+         6          0          0          0          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-       612         16          0          0         96        640   c_p.l
+       750         16          0          0         96        884   c_p.l
 
     ----------------------------------------------------------------------
-       620         16          0          0         96        640   Library Totals
+       756         16          0          0        100        884   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -1374,15 +1495,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6892        832        316        584       3152     394465   Grand Totals
-      6892        832        316        584       3152     394465   ELF Image Totals
-      6892        832        316        584          0          0   ROM Totals
+     10524        998       1412       1260       4124     392268   Grand Totals
+     10524        998       1412       1260       4124     392268   ELF Image Totals
+     10524        998       1412       1260          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 7208 (   7.04kB)
-    Total RW  Size (RW Data + ZI Data)              3736 (   3.65kB)
-    Total ROM Size (Code + RO Data + RW Data)       7792 (   7.61kB)
+    Total RO  Size (Code + RO Data)                11936 (  11.66kB)
+    Total RW  Size (RW Data + ZI Data)              5384 (   5.26kB)
+    Total ROM Size (Code + RO Data + RW Data)      13196 (  12.89kB)
 
 ==============================================================================
 

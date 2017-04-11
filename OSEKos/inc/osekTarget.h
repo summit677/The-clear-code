@@ -40,45 +40,49 @@ extern "C" {
 #if defined(CONFIG_OSEK_TARGET_CORTEXM0)
 
 // 内部函数
+	
 OSDWORD osekTarget_SaveContext( void * savedContext );
 void osekTarget_RestoreContext( void * restoredContext );
+	
 //int fun(void * savedContext );
 
 // 下面的函数用于第一次启动扩展任务和基本任务时调整任务的栈
-void osekTarget_LoadETSP(void* sp) ;
+void osekTarget_LoadETSP(OSBYTEPTR sp) ;
 void osekTarget_LoadBTSP( void );
-void osekTarget_SaveBTSP(OSWORD sp );
+void osekTarget_SaveBTSP(OSDWORD sp );
 
 // 变量声明
-extern OSWORD	osIntSave_en;
-extern OSWORD osIntSave_pending;
-extern OSWORD osekTarget_AllIntMask_en;
-extern OSWORD osekTarget_AllIntMask_pending;
-extern OSWORD osekTarget_NestedAllIntMask_en;
-extern OSWORD osekTarget_NestedAllIntMask_pending;
-extern OSWORD osekTarget_NestedOsIntMask_en;
-extern OSWORD osekTarget_NestedOsIntMask_pending;
+extern OSDWORD	osIntSave_en;
+extern OSDWORD osIntSave_pending;
+extern OSDWORD osekTarget_AllIntMask_en;
+extern OSDWORD osekTarget_AllIntMask_pending;
+extern OSDWORD osekTarget_NestedAllIntMask_en;
+extern OSDWORD osekTarget_NestedAllIntMask_pending;
+extern OSDWORD osekTarget_NestedOsIntMask_en;
+extern OSDWORD osekTarget_NestedOsIntMask_pending;
 
-extern OSWORD osekTarget_SavedBTSP;
+extern OSDWORD osekTarget_SavedBTSP;
 
 //Cortex M0的任务上下文结构
 typedef struct T_OSEK_TARGET_TaskContext_struct
 {
-	OSWORD sp;
-	OSWORD LR;
-	OSWORD pc;
-	OSWORD xPSR;
+	OSDWORD sp;	//0
+	OSDWORD LR;	//4
+	OSDWORD pc;	//8
+	OSDWORD APSR;	//12
 	
-	OSWORD r4;
-	OSWORD r5;
-	OSWORD r6;
-	OSWORD r7;
-	OSWORD r8;
-	OSWORD r9;
-	OSWORD r10;
-	OSWORD r11;
+	OSDWORD r4;	//16
+	OSDWORD r5;	//20
+	OSDWORD r6;	//24
+	OSDWORD r7;	//28
+	OSDWORD r8;	//32
+	OSDWORD r9;	//36
+	OSDWORD r10;	//40
+	OSDWORD r11;	//44
 
-	OSWORD primask;
+	OSDWORD primask;	//48
+	OSDWORD IPSR;	//52
+	OSDWORD EPSR;	//56
 
 }T_OSEK_TARGET_TaskContext_struct;  
 
@@ -86,8 +90,8 @@ typedef struct T_OSEK_TARGET_TaskContext_struct
 
 
 
-#define OSEK_TARGET_SaveBTSP(sp) (osekTarget_SavedBTSP = (sp) - (OSWORD)0x20)	  	
-
+//#define OSEK_TARGET_SaveBTSP(sp) (osekTarget_SavedBTSP = (sp) - (OSWORD)0x20)	  	
+void OSEK_TARGET_SaveBTSP(OSDWORD sp);
 //#define osekTarget_LoadETSP(sp) {unsigned char*temp=sp;asm("LDR r0,=__cpp(&temp);" "LDR r1,[r0];" "MOV r1,SP");}  		
 
 

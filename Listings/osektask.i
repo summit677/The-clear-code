@@ -1250,45 +1250,49 @@ extern		unsigned char		osekMsg_Msg4Object;
 
 
 
+	
 OSDWORD osekTarget_SaveContext( void * savedContext );
 void osekTarget_RestoreContext( void * restoredContext );
+	
 
 
 
-void osekTarget_LoadETSP(void* sp) ;
+void osekTarget_LoadETSP(OSBYTEPTR sp) ;
 void osekTarget_LoadBTSP( void );
-void osekTarget_SaveBTSP(OSWORD sp );
+void osekTarget_SaveBTSP(OSDWORD sp );
 
 
-extern OSWORD	osIntSave_en;
-extern OSWORD osIntSave_pending;
-extern OSWORD osekTarget_AllIntMask_en;
-extern OSWORD osekTarget_AllIntMask_pending;
-extern OSWORD osekTarget_NestedAllIntMask_en;
-extern OSWORD osekTarget_NestedAllIntMask_pending;
-extern OSWORD osekTarget_NestedOsIntMask_en;
-extern OSWORD osekTarget_NestedOsIntMask_pending;
+extern OSDWORD	osIntSave_en;
+extern OSDWORD osIntSave_pending;
+extern OSDWORD osekTarget_AllIntMask_en;
+extern OSDWORD osekTarget_AllIntMask_pending;
+extern OSDWORD osekTarget_NestedAllIntMask_en;
+extern OSDWORD osekTarget_NestedAllIntMask_pending;
+extern OSDWORD osekTarget_NestedOsIntMask_en;
+extern OSDWORD osekTarget_NestedOsIntMask_pending;
 
-extern OSWORD osekTarget_SavedBTSP;
+extern OSDWORD osekTarget_SavedBTSP;
 
 
 typedef struct T_OSEK_TARGET_TaskContext_struct
 {
-	OSWORD sp;
-	OSWORD LR;
-	OSWORD pc;
-	OSWORD xPSR;
+	OSDWORD sp;	
+	OSDWORD LR;	
+	OSDWORD pc;	
+	OSDWORD APSR;	
 	
-	OSWORD r4;
-	OSWORD r5;
-	OSWORD r6;
-	OSWORD r7;
-	OSWORD r8;
-	OSWORD r9;
-	OSWORD r10;
-	OSWORD r11;
+	OSDWORD r4;	
+	OSDWORD r5;	
+	OSDWORD r6;	
+	OSDWORD r7;	
+	OSDWORD r8;	
+	OSDWORD r9;	
+	OSDWORD r10;	
+	OSDWORD r11;	
 
-	OSWORD primask;
+	OSDWORD primask;	
+	OSDWORD IPSR;	
+	OSDWORD EPSR;	
 
 }T_OSEK_TARGET_TaskContext_struct;  
 
@@ -1297,7 +1301,7 @@ typedef struct T_OSEK_TARGET_TaskContext_struct
 
 
 
-
+void OSEK_TARGET_SaveBTSP(OSDWORD sp);
 
 
 
@@ -1308,12 +1312,12 @@ void OSEK_TARGET_DisableOSInt_func();
 
 
 
-#line 109 ".\\OSEKos\\inc\\osekTarget.h"
+#line 113 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableOSInt(OSWORD osIntSave);
 
 
-#line 121 ".\\OSEKos\\inc\\osekTarget.h"
+#line 125 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1328,12 +1332,12 @@ void OSEK_TARGET_EnableOSInt(OSWORD osIntSave);
 void OSEK_TARGET_DisableAllInt();
 
 
-#line 143 ".\\OSEKos\\inc\\osekTarget.h"
+#line 147 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableAllInt();
 
 
-#line 155 ".\\OSEKos\\inc\\osekTarget.h"
+#line 159 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1342,12 +1346,12 @@ void OSEK_TARGET_EnableAllInt();
 void OSEK_TARGET_DisableNestedAllInt();
 
 
-#line 171 ".\\OSEKos\\inc\\osekTarget.h"
+#line 175 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableNestedAllInt();
 
 
-#line 183 ".\\OSEKos\\inc\\osekTarget.h"
+#line 187 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1356,12 +1360,12 @@ void OSEK_TARGET_EnableNestedAllInt();
 void OSEK_TARGET_DisableNestedOsInt();
 
 
-#line 199 ".\\OSEKos\\inc\\osekTarget.h"
+#line 203 ".\\OSEKos\\inc\\osekTarget.h"
  
 void OSEK_TARGET_EnableNestedOsInt();
 
 
-#line 211 ".\\OSEKos\\inc\\osekTarget.h"
+#line 215 ".\\OSEKos\\inc\\osekTarget.h"
  
 
 
@@ -1566,22 +1570,10 @@ void ResumeOSInterrupts( void );
 #line 79 ".\\OSEKos\\inc\\osekHook.h"
 
 
+#line 88 ".\\OSEKos\\inc\\osekHook.h"
 
 
-void StartupHook( void );
-
-
-
-
-
-
-
-
-void ShutdownHook( StatusType error );
-
-
-
-
+#line 97 ".\\OSEKos\\inc\\osekHook.h"
 
 
 #line 106 ".\\OSEKos\\inc\\osekHook.h"
@@ -1783,7 +1775,12 @@ typedef struct T_OSEK_TASK_ConfigTable_Struct
 	OSBYTE property;
 
 
-#line 177 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	OSBYTEPTR stackTop;
+	
+	OSBYTEPTR stackBottom;
+
 
 
 
@@ -1816,7 +1813,12 @@ typedef struct T_OSEK_TASK_ControlBlock_Struct
     T_OSEK_TASK_ConfigTable configTable;
 
 
-#line 220 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	EventMaskType waitEvent;
+	
+	EventMaskType setEvent;
+
 
 	
 	T_OSEK_TARGET_TaskContext      *context;
@@ -3585,8 +3587,8 @@ StatusType osekTask_ActiveTask(T_OSEK_TASK_ControlBlock *tcbPtr)
 
 
 
-
-
+	
+	tcbPtr->setEvent = 0;
 
 
 	
@@ -3895,8 +3897,8 @@ StatusType ChainTask( TaskType taskId )
 		}
 	}
 
-
-
+	
+	tcbPtr->setEvent = 0;
 
 
    	osekTask_TerminateDispatch();
@@ -3990,10 +3992,13 @@ void osekTask_Dispatch( void )
 	if( oldTask != osekTask_RunningTask )
 	{
 		
+		
+		
+		
 		if( osekTarget_SaveContext(oldTask->taskControlBlock->context) != 0)
 		{
 			
-#line 728 "OSEKos\\osekTask.c"
+#line 731 "OSEKos\\osekTask.c"
 
 			;
 			return;
@@ -4003,7 +4008,7 @@ void osekTask_Dispatch( void )
 		
 		if( (oldTask->taskControlBlock->configTable.property & ( (OSBYTE)0x80 )) == 0  )
 		{
-			(osekTarget_SavedBTSP = ((oldTask->taskControlBlock->context)->sp) - (OSWORD)0x20);
+			OSEK_TARGET_SaveBTSP((oldTask->taskControlBlock->context)->sp);
 		}
 
 		
@@ -4013,13 +4018,19 @@ void osekTask_Dispatch( void )
 			tcbPtr->status &= (~((TaskStateType)4));
 
 			
-#line 754 "OSEKos\\osekTask.c"
+
+			if((tcbPtr->configTable.property & ( (OSBYTE)0x80 )) != 0)
+			{
+				osekTarget_LoadETSP(tcbPtr->configTable.stackTop);
+			}
+			else
+
 			{
 				osekTarget_LoadBTSP();
 			}
 
 			
-#line 765 "OSEKos\\osekTask.c"
+#line 768 "OSEKos\\osekTask.c"
 
 			;
 
@@ -4038,7 +4049,7 @@ void osekTask_Dispatch( void )
 
 	}  
 
-#line 792 "OSEKos\\osekTask.c"
+#line 795 "OSEKos\\osekTask.c"
 }
 
 
@@ -4065,13 +4076,19 @@ void osekTask_TerminateDispatch( void )
 		tcbPtr->status &= (~((TaskStateType)4));
 
 		
-#line 825 "OSEKos\\osekTask.c"
+
+		if((tcbPtr->configTable.property & ( (OSBYTE)0x80 )) != 0)
+		{
+			osekTarget_LoadETSP(tcbPtr->configTable.stackTop);
+		}
+		else
+
 		{
 			osekTarget_LoadBTSP();
 		}
 
 		
-#line 836 "OSEKos\\osekTask.c"
+#line 839 "OSEKos\\osekTask.c"
 
 		
 		;
@@ -4081,10 +4098,10 @@ void osekTask_TerminateDispatch( void )
 	else	
 	{
 
-
+		if( (tcbPtr->configTable.property & ( (OSBYTE)0x80 )) == 0  )
 
 		{
-			(osekTarget_SavedBTSP = ((tcbPtr->context)->sp) - (OSWORD)0x20);
+			OSEK_TARGET_SaveBTSP((tcbPtr->context)->sp);
 		}
 		osekTarget_RestoreContext(tcbPtr->context);
 	}
@@ -4164,7 +4181,7 @@ void osekTask_Initialize( void )
 	osekTask_SchedulerLockLevel = 0;
 
 	
-#line 934 "OSEKos\\osekTask.c"
+#line 937 "OSEKos\\osekTask.c"
 
 
 	
@@ -4220,7 +4237,14 @@ void osekTask_Initialize( void )
 		tcbPtr->context = &osekTask_ContextTable[i];
 
 		
-#line 997 "OSEKos\\osekTask.c"
+
+
+		if( (tcbPtr->configTable.property & ( (OSBYTE)0x80 ) ) != 0 )
+		{
+			memset(tcbPtr->configTable.stackBottom,0x55555555,(tcbPtr->configTable.stackTop - tcbPtr->configTable.stackBottom));
+		}
+
+
 
 		tcbPtr++;
 

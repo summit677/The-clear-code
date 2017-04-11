@@ -169,3 +169,16 @@ void clr_all_pannal(void)
 	WriteData(0x0f);
 }
 
+void draw_LCD(unsigned char *buffer)
+{
+int X_max = 64;
+int Y_max =128;
+int x=0;
+int y=0;
+	for (y=0; y< Y_max; y++) {
+    	for (x=0; x< (X_max/8); x++) {
+			SetPACA(x,(129-y));
+			WriteData(buffer[y*8+x]);
+			}
+		}			
+}

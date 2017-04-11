@@ -8,7 +8,7 @@ void OSEK_CPU_INIT()
 //  STR_UART_T sParam;
 	
   DrvTIMER_Init();
-  DrvTIMER_Open(E_TMR0, osekConfig_CounterTable[SysCounter].ticksperbase, E_PERIODIC_MODE);
+  DrvTIMER_Open(E_TMR0, 100, E_PERIODIC_MODE);
   DrvTIMER_EnableInt(E_TMR0);
   
   Initial_pannel();

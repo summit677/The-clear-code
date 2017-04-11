@@ -24,7 +24,7 @@
 #define		OCC_EXTSTATUS
 
 //符合类定义
-#define		OCC_BCC1
+#define		OCC_ECC1
 
 //调试级别定义
 #define		OCC_ORTIDEBUGLEVEL		
@@ -33,10 +33,10 @@
 #define		OCC_STKCHECK
 
 //HOOKSTARTUP定义
-#define		OCC_HOOKSTARTUP
+//#define		OCC_HOOKSTARTUP
 
 //HOOKSHUTDOWN定义
-#define		OCC_HOOKSHUTDOWN
+//#define		OCC_HOOKSHUTDOWN
 
 //中断总数
 #define		OCC_ISRLEVELNUM		128
