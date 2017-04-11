@@ -28,10 +28,11 @@ extern		void		Ir_RealTimInt(void);
 
 /* 任务对象定义 */
 //Task对象序号定义
-#define		TaskError		0
-#define		Task1		4
-#define		Task2		2
-#define		Task3		3
+#define		TaskError		3
+#define		Task1		0
+#define		Task2		1
+#define		Task3		2
+#define		Task4		3
 
 //任务入口函数引用
 extern	void	FuncTaskError(void);

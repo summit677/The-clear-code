@@ -1106,6 +1106,7 @@ extern		void		Ir_RealTimInt(void);
 
 
 
+
 extern	void	FuncTaskError(void);
 extern	void	FuncTask1(void);
 extern	void	FuncTask2(void);
@@ -1174,7 +1175,7 @@ typedef struct
 
 
 
-#line 65 ".\\OSEKos\\inc\\cfg.h"
+#line 66 ".\\OSEKos\\inc\\cfg.h"
 
 
 extern		string		osekMsg_Msg1Object;

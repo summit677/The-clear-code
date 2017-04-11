@@ -14,13 +14,13 @@ I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekTurboConfig.h)(0x58E48C54)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -180,15 +180,15 @@ I (.\CMSIS\SysInfra.h)(0x58DA0EDF)
 I (.\Drivers\inc\ModuleID.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvSYS.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvGPIO.h)(0x58DA0EE0)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -272,17 +272,17 @@ I (.\Drivers\inc\ModuleID.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvGPIO.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvSYS.h)(0x58DA0EE0)
 I (.\NUC1xx-LB_002\inc\Seven_Segment.h)(0x58DA0EE0)
-F (.\OSEKos\cfg.c)(0x58EC7A21)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\cfg.o --omf_browse .\objects\cfg.crf --depend .\objects\cfg.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+F (.\OSEKos\cfg.c)(0x58EC9757)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\cfg.o --omf_browse .\objects\cfg.crf --depend .\objects\cfg.d)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -292,16 +292,16 @@ I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekAlarm.c)(0x58E60983)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekalarm.o --omf_browse .\objects\osekalarm.crf --depend .\objects\osekalarm.d)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -310,16 +310,16 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekCounter.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekcounter.o --omf_browse .\objects\osekcounter.crf --depend .\objects\osekcounter.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -329,16 +329,16 @@ I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
 F (.\OSEKos\osekDebug.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekdebug.o --omf_browse .\objects\osekdebug.crf --depend .\objects\osekdebug.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -347,16 +347,16 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekEvent.c)(0x58DB127F)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekevent.o --omf_browse .\objects\osekevent.crf --depend .\objects\osekevent.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -365,16 +365,16 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekExecution.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekexecution.o --omf_browse .\objects\osekexecution.crf --depend .\objects\osekexecution.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -384,16 +384,16 @@ I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
 F (.\OSEKos\osekHook.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekhook.o --omf_browse .\objects\osekhook.crf --depend .\objects\osekhook.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -402,16 +402,16 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekInterrupt.c)(0x58E60983)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekinterrupt.o --omf_browse .\objects\osekinterrupt.crf --depend .\objects\osekinterrupt.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -420,16 +420,16 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 F (.\OSEKos\osekMessage.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekmessage.o --omf_browse .\objects\osekmessage.crf --depend .\objects\osekmessage.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -439,16 +439,16 @@ I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
 F (.\OSEKos\osekResource.c)(0x58DA0EE0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osekresource.o --omf_browse .\objects\osekresource.crf --depend .\objects\osekresource.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -458,16 +458,16 @@ I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
 F (.\OSEKos\osekTarget.c)(0x58EC8071)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osektarget.o --omf_browse .\objects\osektarget.crf --depend .\objects\osektarget.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -481,16 +481,16 @@ I (.\CMSIS\system_NUC1xx.h)(0x58DA0EDF)
 I (.\CMSIS\SysInfra.h)(0x58DA0EDF)
 I (.\Drivers\inc\ModuleID.h)(0x58DA0EE0)
 F (.\OSEKos\osekTask.c)(0x58EC62E7)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osektask.o --omf_browse .\objects\osektask.crf --depend .\objects\osektask.d)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -499,18 +499,18 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
-F (.\Main\main.c)(0x58EC81A0)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Main\main.c)(0x58EC98FA)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekTurboConfig.h)(0x58E48C54)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (.\OSEKos\inc\osprop.h)(0x58EC7C09)
+I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
-I (.\OSEKos\inc\cfg.h)(0x58DA0EE0)
+I (.\OSEKos\inc\cfg.h)(0x58EC9436)
 I (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekInterrupt.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekHook.h)(0x58E60E7D)
-I (.\OSEKos\inc\osekTask.h)(0x58EC7F26)
+I (.\OSEKos\inc\osekTask.h)(0x58EC97A9)
 I (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekExecution.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)
@@ -535,7 +535,7 @@ I (.\Drivers\inc\ModuleID.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvUART.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvGPIO.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvSYS.h)(0x58DA0EE0)
-F (.\OSEKos\inc\cfg.h)(0x58DA0EE0)()
+F (.\OSEKos\inc\cfg.h)(0x58EC9436)()
 F (.\OSEKos\inc\osapi.h)(0x58DA0EE0)()
 F (.\OSEKos\inc\osekAlarm.h)(0x58DA0EE0)()
 F (.\OSEKos\inc\osekCounter.h)(0x58DA0EE0)()
@@ -548,7 +548,7 @@ F (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)()
 F (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)()
 F (.\OSEKos\inc\osekResource.h)(0x58DA0EE0)()
 F (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)()
-F (.\OSEKos\inc\osekTask.h)(0x58EC7F26)()
+F (.\OSEKos\inc\osekTask.h)(0x58EC97A9)()
 F (.\OSEKos\inc\osekTurboConfig.h)(0x58E48C54)()
-F (.\OSEKos\inc\osprop.h)(0x58EC7C09)()
+F (.\OSEKos\inc\osprop.h)(0x58EC97C3)()
 F (.\OSEKos\inc\userMSG.h)(0x58DA0EE0)()

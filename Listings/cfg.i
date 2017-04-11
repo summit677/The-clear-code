@@ -1088,6 +1088,7 @@ extern		void		Ir_RealTimInt(void);
 
 
 
+
 extern	void	FuncTaskError(void);
 extern	void	FuncTask1(void);
 extern	void	FuncTask2(void);
@@ -1156,7 +1157,7 @@ typedef struct
 
 
 
-#line 65 ".\\OSEKos\\inc\\cfg.h"
+#line 66 ".\\OSEKos\\inc\\cfg.h"
 
 
 extern		string		osekMsg_Msg1Object;
@@ -3326,28 +3327,28 @@ T_OSEK_TASK_Entry	osekConfig_InterruptEntryTable[128] =
 const		T_OSEK_TASK_ConfigTable_Struct		osekConfig_TaskTable[5]=	
 {
 	{
-		(T_OSEK_TASK_Entry)FuncTaskError,  0,
-		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) | ( (OSBYTE)0x40 ),
+		(T_OSEK_TASK_Entry)FuncTask1,  0,
+		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) ,
 		&taskStack[0][120-1], 
-		&taskStack[0][0]				  
+		&taskStack[0][0]
 	},			 
 	{
-		(T_OSEK_TASK_Entry)FuncTask1,  4,
-		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) | ( (OSBYTE)0x40 ),
-		&taskStack[4][120-1], 
-		&taskStack[4][0]				  
+		(T_OSEK_TASK_Entry)FuncTask2,  1,
+		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) ,
+		&taskStack[1][120-1], 
+		&taskStack[1][0]
 	},			 
 	{
-		(T_OSEK_TASK_Entry)FuncTask2,  2,
-		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) | ( (OSBYTE)0x40 ),
+		(T_OSEK_TASK_Entry)FuncTask3,  2,
+		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) ,
 		&taskStack[2][120-1], 
-		&taskStack[2][0]				  
+		&taskStack[2][0]
 	},			 
 	{
-		(T_OSEK_TASK_Entry)FuncTask3,  3,
-		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) | ( (OSBYTE)0x40 ),
+		(T_OSEK_TASK_Entry)FuncTaskError,  3,
+		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) ,
 		&taskStack[3][120-1], 
-		&taskStack[3][0]				  
+		&taskStack[3][0]
 	},			 
 	{
 		0, ((OSDWORD)(5 - 1)),
@@ -3378,7 +3379,7 @@ T_OSEK_COUNTER_ConfigTable osekConfig_CounterTable[1] =
 T_OSEK_ALARM_ConfigTable osekConfig_AlarmTable[1] = 
 {
 	{
-		4,
+		0,
 
 
 
@@ -3405,7 +3406,7 @@ const	T_OSEK_MESSAGE_ConfigTable	osekConfig_MsgTable[2]=
 		&osekMsg_Msg1Object,
 		sizeof(string),
 
-		4,
+		0,
 #line 404 "OSEKos\\cfg.c"
 	},
 	{
@@ -3413,7 +3414,7 @@ const	T_OSEK_MESSAGE_ConfigTable	osekConfig_MsgTable[2]=
 		&osekMsg_Msg4Object,
 		sizeof(unsigned char),
 
-		2,
+		1,
 #line 425 "OSEKos\\cfg.c"
 	},
 };
