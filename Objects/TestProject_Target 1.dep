@@ -1,7 +1,7 @@
 Dependencies for Project 'TestProject', Target 'Target 1': (DO NOT MODIFY !)
 F (.\CMSIS\core_cm0.c)(0x58DA0EDF)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\core_cm0.o --omf_browse .\objects\core_cm0.crf --depend .\objects\core_cm0.d)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-F (.\CMSIS\startup_NUC1xx.s)(0x58EB2C15)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --16 --apcs=interwork -I F:\LouisSoftware\Keil5\ARM\RV31\INC -I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "ARMCM0 SETA 1"--list .\listings\startup_nuc1xx.lst --xref -o .\objects\startup_nuc1xx.o --depend .\objects\startup_nuc1xx.d)
+F (.\CMSIS\startup_NUC1xx.s)(0x58EF2AD7)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --16 --apcs=interwork -I F:\LouisSoftware\Keil5\ARM\RV31\INC -I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "ARMCM0 SETA 1"--list .\listings\startup_nuc1xx.lst --xref -o .\objects\startup_nuc1xx.o --depend .\objects\startup_nuc1xx.d)
 F (.\CMSIS\system_NUC1xx.c)(0x58DA0EDF)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\system_nuc1xx.o --omf_browse .\objects\system_nuc1xx.crf --depend .\objects\system_nuc1xx.d)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 I (CMSIS\NUC1xx.h)(0x58DA0EDF)
@@ -272,7 +272,7 @@ I (.\Drivers\inc\ModuleID.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvGPIO.h)(0x58DA0EE0)
 I (.\Drivers\inc\DrvSYS.h)(0x58DA0EE0)
 I (.\NUC1xx-LB_002\inc\Seven_Segment.h)(0x58DA0EE0)
-F (.\OSEKos\cfg.c)(0x58EC9757)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\cfg.o --omf_browse .\objects\cfg.crf --depend .\objects\cfg.d)
+F (.\OSEKos\cfg.c)(0x58EF13CF)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\cfg.o --omf_browse .\objects\cfg.crf --depend .\objects\cfg.d)
 I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
@@ -457,7 +457,7 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
-F (.\OSEKos\osekTarget.c)(0x58EC8071)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osektarget.o --omf_browse .\objects\osektarget.crf --depend .\objects\osektarget.d)
+F (.\OSEKos\osekTarget.c)(0x58EF195E)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\osektarget.o --omf_browse .\objects\osektarget.crf --depend .\objects\osektarget.d)
 I (.\OSEKos\inc\osprop.h)(0x58EC97C3)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekOccConfig.h)(0x58DE0D92)
@@ -499,7 +499,7 @@ I (.\OSEKos\inc\osekEvent.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekDebug.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekMessage.h)(0x58DA0EE0)
 I (F:\LouisSoftware\Keil5\ARM\ARMCC\include\string.h)(0x57F606B8)
-F (.\Main\main.c)(0x58EC98FA)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Main\main.c)(0x58EF2AEE)(-c --cpu Cortex-M0 -D__EVAL --li -g -W -O0 --apcs=interwork --split_sections -I .\BSP -I .\CMSIS -I .\Drivers\inc -I .\NUC1xx-LB_002\inc -I .\OSEKos\inc -I .\Ports\inc -I .\Ports -I .\RTE\_Target_1 -IF:/LouisSoftware/Keil5/ARM/RV31/INC-I.\RTE\_Target_1-IF:\LouisSoftware\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-IF:\LouisSoftware\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\OSEKos\inc\osapi.h)(0x58DA0EE0)
 I (.\OSEKos\inc\osekTurboConfig.h)(0x58E48C54)
 I (.\OSEKos\inc\osekTarget.h)(0x58EC7F26)

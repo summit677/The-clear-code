@@ -574,7 +574,6 @@ Removing Unused input sections from the image.
     Removing osektarget.o(i.int_mask_restore), (2 bytes).
     Removing osektarget.o(i.int_mask_save), (6 bytes).
     Removing osektarget.o(i.int_vector_save), (2 bytes).
-    Removing osektask.o(i.ActivateTask), (80 bytes).
     Removing osektask.o(i.AddTask2ReadyTableAtHead), (32 bytes).
     Removing osektask.o(i.ChainTask), (196 bytes).
     Removing osektask.o(i.GetTaskID), (32 bytes).
@@ -594,7 +593,7 @@ Removing Unused input sections from the image.
     Removing main.o(i.StartupHook), (2 bytes).
     Removing main.o(i.read_timer_value), (14 bytes).
 
-571 unused section(s) (total 47871 bytes) removed from the image.
+570 unused section(s) (total 47791 bytes) removed from the image.
 
 ==============================================================================
 
@@ -605,62 +604,62 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      192  startup_nuc1xx.o(RESET)
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
-    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
     ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
-    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
     ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
     ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
-    ../clib/memcpset.c                       0x00000000   Number         0  aeabi_memset.o ABSOLUTE
-    ../clib/memcpset.c                       0x00000000   Number         0  rt_memclr.o ABSOLUTE
     ../clib/memcpset.c                       0x00000000   Number         0  rt_memcpy.o ABSOLUTE
+    ../clib/memcpset.c                       0x00000000   Number         0  rt_memclr.o ABSOLUTE
+    ../clib/memcpset.c                       0x00000000   Number         0  aeabi_memset.o ABSOLUTE
     ../clib/memcpset.c                       0x00000000   Number         0  rt_memcpy.o ABSOLUTE
     ../clib/misc.s                           0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
     ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
@@ -750,116 +749,117 @@ Image Symbol Table
     .ARM.Collect$$rtexit$$00000002           0x00000158   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     .ARM.Collect$$rtexit$$00000003           0x00000158   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
     .ARM.Collect$$rtexit$$00000004           0x0000015c   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
-    .emb_text                                0x00000164   Section      372  osektarget.o(.emb_text)
-    .emb_text                                0x000002d8   Section       56  rt_memcpy.o(.emb_text)
-    .text                                    0x00000310   Section      100  startup_nuc1xx.o(.text)
-    Default_Handler                          0x0000033b   Thumb Code     2  startup_nuc1xx.o(.text)
-    .text                                    0x00000374   Section        0  aeabi_memset.o(.text)
-    .text                                    0x00000386   Section      346  aeabi_sdiv.o(.text)
-    .text                                    0x000004e0   Section        0  heapauxi.o(.text)
-    .text                                    0x000004e6   Section        0  rt_memclr.o(.text)
-    .text                                    0x00000526   Section       62  sys_stackheap_outer.o(.text)
-    .text                                    0x00000564   Section        0  exit.o(.text)
-    .text                                    0x00000574   Section        8  libspace.o(.text)
-    .text                                    0x0000057c   Section        0  sys_exit.o(.text)
-    .text                                    0x00000588   Section        2  use_no_semi.o(.text)
-    .text                                    0x0000058a   Section        0  indicate_semi.o(.text)
-    i.ADC_IRQHandler                         0x0000058c   Section        0  drvadc.o(i.ADC_IRQHandler)
-    i.AddTask2ReadyTableAtTail               0x00000628   Section        0  osektask.o(i.AddTask2ReadyTableAtTail)
-    AddTask2ReadyTableAtTail                 0x00000629   Thumb Code    38  osektask.o(i.AddTask2ReadyTableAtTail)
-    i.AddaReadyBlock                         0x00000654   Section        0  osektask.o(i.AddaReadyBlock)
-    AddaReadyBlock                           0x00000655   Thumb Code   116  osektask.o(i.AddaReadyBlock)
-    i.BOD_IRQHandler                         0x000006d4   Section        0  drvsys.o(i.BOD_IRQHandler)
-    i.CAN0_IRQHandler                        0x000006fc   Section        0  drvcan.o(i.CAN0_IRQHandler)
-    i.CalTimerInitValue                      0x000007ec   Section        0  drvtimer.o(i.CalTimerInitValue)
-    CalTimerInitValue                        0x000007ed   Thumb Code    70  drvtimer.o(i.CalTimerInitValue)
-    i.ClearPriorityMap                       0x00000834   Section        0  osektask.o(i.ClearPriorityMap)
-    ClearPriorityMap                         0x00000835   Thumb Code    58  osektask.o(i.ClearPriorityMap)
-    i.CounterTrigger                         0x0000087c   Section        0  osekcounter.o(i.CounterTrigger)
-    i.DrvCAN_ClrIntPnd                       0x000008c8   Section        0  drvcan.o(i.DrvCAN_ClrIntPnd)
-    i.DrvGPIO_ClrBit                         0x00000900   Section        0  drvgpio.o(i.DrvGPIO_ClrBit)
-    i.DrvGPIO_InitFunction                   0x0000092c   Section        0  drvgpio.o(i.DrvGPIO_InitFunction)
-    i.DrvGPIO_SetBit                         0x00001084   Section        0  drvgpio.o(i.DrvGPIO_SetBit)
-    i.DrvSYS_GetExtClockFreq                 0x000010b0   Section        0  drvsys.o(i.DrvSYS_GetExtClockFreq)
-    i.DrvSYS_GetHCLKFreq                     0x000010b8   Section        0  drvsys.o(i.DrvSYS_GetHCLKFreq)
-    i.DrvSYS_GetPLLClockFreq                 0x00001128   Section        0  drvsys.o(i.DrvSYS_GetPLLClockFreq)
-    i.DrvTIMER_EnableInt                     0x000011a0   Section        0  drvtimer.o(i.DrvTIMER_EnableInt)
-    i.DrvTIMER_Init                          0x000011fc   Section        0  drvtimer.o(i.DrvTIMER_Init)
-    i.DrvTIMER_Open                          0x00001220   Section        0  drvtimer.o(i.DrvTIMER_Open)
-    i.EINT0_IRQHandler                       0x00001514   Section        0  drvgpio.o(i.EINT0_IRQHandler)
-    i.EINT1_IRQHandler                       0x00001538   Section        0  drvgpio.o(i.EINT1_IRQHandler)
-    i.FuncTask1                              0x0000155c   Section        0  main.o(i.FuncTask1)
-    i.FuncTask2                              0x000015a4   Section        0  main.o(i.FuncTask2)
-    i.FuncTask3                              0x000015d8   Section        0  main.o(i.FuncTask3)
-    i.FuncTaskError                          0x00001608   Section        0  main.o(i.FuncTaskError)
-    i.GPAB_IRQHandler                        0x0000160c   Section        0  drvgpio.o(i.GPAB_IRQHandler)
-    i.GPCDE_IRQHandler                       0x00001650   Section        0  drvgpio.o(i.GPCDE_IRQHandler)
-    i.GetFreeIF                              0x0000169c   Section        0  drvcan.o(i.GetFreeIF)
-    GetFreeIF                                0x0000169d   Thumb Code    36  drvcan.o(i.GetFreeIF)
-    i.GetTimerClock                          0x000016c4   Section        0  drvtimer.o(i.GetTimerClock)
-    GetTimerClock                            0x000016c5   Thumb Code   114  drvtimer.o(i.GetTimerClock)
-    i.I2C0_IRQHandler                        0x00001744   Section        0  drvi2c.o(i.I2C0_IRQHandler)
-    i.I2C1_IRQHandler                        0x000017c0   Section        0  drvi2c.o(i.I2C1_IRQHandler)
-    i.I2S_IRQHandler                         0x0000183c   Section        0  drvi2s.o(i.I2S_IRQHandler)
-    i.InitCOM                                0x000019b8   Section        0  osekmessage.o(i.InitCOM)
-    i.Initial_pannel                         0x000019bc   Section        0  lcd_driver.o(i.Initial_pannel)
-    i.Ir_RealTimInt                          0x00001bd4   Section        0  cfg.o(i.Ir_RealTimInt)
-    i.MoveTaskFromReadyTable                 0x00001be0   Section        0  osektask.o(i.MoveTaskFromReadyTable)
-    MoveTaskFromReadyTable                   0x00001be1   Thumb Code    24  osektask.o(i.MoveTaskFromReadyTable)
-    i.NVIC_EnableIRQ                         0x00001bfc   Section        0  drvtimer.o(i.NVIC_EnableIRQ)
-    NVIC_EnableIRQ                           0x00001bfd   Thumb Code    14  drvtimer.o(i.NVIC_EnableIRQ)
-    i.NVIC_SetPriority                       0x00001c10   Section        0  drvtimer.o(i.NVIC_SetPriority)
-    NVIC_SetPriority                         0x00001c11   Thumb Code   110  drvtimer.o(i.NVIC_SetPriority)
-    i.NotifyAlarm                            0x00001c88   Section        0  osekalarm.o(i.NotifyAlarm)
-    NotifyAlarm                              0x00001c89   Thumb Code    22  osekalarm.o(i.NotifyAlarm)
-    i.OSEK_CPU_INIT                          0x00001ca4   Section        0  init.o(i.OSEK_CPU_INIT)
-    i.OSEK_TARGET_SaveBTSP                   0x00001cc4   Section        0  osektarget.o(i.OSEK_TARGET_SaveBTSP)
-    i.PDMA_IRQHandler                        0x00001cd4   Section        0  drvpdma.o(i.PDMA_IRQHandler)
-    i.PS2_IRQHandler                         0x00001d7c   Section        0  drvps2.o(i.PS2_IRQHandler)
-    i.PWMA_IRQHandler                        0x00001da4   Section        0  drvpwm.o(i.PWMA_IRQHandler)
-    i.PWMB_IRQHandler                        0x00001f20   Section        0  drvpwm.o(i.PWMB_IRQHandler)
-    i.PWRWU_IRQHandler                       0x0000209c   Section        0  drvsys.o(i.PWRWU_IRQHandler)
-    i.RTC_IRQHandler                         0x000020c4   Section        0  drvrtc.o(i.RTC_IRQHandler)
-    i.ReleaseReadyBlock                      0x00002124   Section        0  osektask.o(i.ReleaseReadyBlock)
-    ReleaseReadyBlock                        0x00002125   Thumb Code    12  osektask.o(i.ReleaseReadyBlock)
-    i.SPI0_IRQHandler                        0x00002134   Section        0  drvspi.o(i.SPI0_IRQHandler)
-    i.SPI1_IRQHandler                        0x00002198   Section        0  drvspi.o(i.SPI1_IRQHandler)
-    i.SPI2_IRQHandler                        0x000021fc   Section        0  drvspi.o(i.SPI2_IRQHandler)
-    i.SPI3_IRQHandler                        0x00002260   Section        0  drvspi.o(i.SPI3_IRQHandler)
-    i.SetEvent                               0x000022c4   Section        0  osekevent.o(i.SetEvent)
-    i.SetPACA                                0x0000231c   Section        0  lcd_driver.o(i.SetPACA)
-    i.StartOS                                0x00002410   Section        0  osekexecution.o(i.StartOS)
-    i.SystemInit                             0x0000244c   Section        0  system_nuc1xx.o(i.SystemInit)
-    i.TMR0_IRQHandler                        0x0000244e   Section        0  drvtimer.o(i.TMR0_IRQHandler)
-    i.TMR1_IRQHandler                        0x00002458   Section        0  drvtimer.o(i.TMR1_IRQHandler)
-    i.TMR2_IRQHandler                        0x000024f4   Section        0  drvtimer.o(i.TMR2_IRQHandler)
-    i.TMR3_IRQHandler                        0x00002590   Section        0  drvtimer.o(i.TMR3_IRQHandler)
-    i.TerminateTask                          0x0000262c   Section        0  osektask.o(i.TerminateTask)
-    i.UART02_IRQHandler                      0x00002680   Section        0  drvuart.o(i.UART02_IRQHandler)
-    i.UART1_IRQHandler                       0x000026bc   Section        0  drvuart.o(i.UART1_IRQHandler)
-    i.WDT_IRQHandler                         0x000026dc   Section        0  drvtimer.o(i.WDT_IRQHandler)
-    i.WaitEvent                              0x00002710   Section        0  osekevent.o(i.WaitEvent)
-    i.WriteData                              0x00002780   Section        0  lcd_driver.o(i.WriteData)
-    i.__ARM_common_switch8                   0x000027d8   Section        0  drvcan.o(i.__ARM_common_switch8)
-    i.close_seven_segment                    0x000027f4   Section        0  seven_segment.o(i.close_seven_segment)
-    i.clr_all_pannal                         0x00002818   Section        0  lcd_driver.o(i.clr_all_pannal)
-    i.main                                   0x00002840   Section        0  main.o(i.main)
-    i.osekAlarm_Check1                       0x00002888   Section        0  osekalarm.o(i.osekAlarm_Check1)
-    i.osekAlarm_Check2                       0x000028c4   Section        0  osekalarm.o(i.osekAlarm_Check2)
-    i.osekAlarm_Initialize                   0x00002918   Section        0  osekalarm.o(i.osekAlarm_Initialize)
-    i.osekCounter_Initialize                 0x00002954   Section        0  osekcounter.o(i.osekCounter_Initialize)
-    i.osekEvent_SetEvent                     0x00002980   Section        0  osekevent.o(i.osekEvent_SetEvent)
-    i.osekInterrupt_Initialize               0x000029c0   Section        0  osekinterrupt.o(i.osekInterrupt_Initialize)
-    i.osekTask_ActiveTask                    0x000029d0   Section        0  osektask.o(i.osekTask_ActiveTask)
-    i.osekTask_Dispatch                      0x00002a38   Section        0  osektask.o(i.osekTask_Dispatch)
-    i.osekTask_Initialize                    0x00002b04   Section        0  osektask.o(i.osekTask_Initialize)
-    i.osekTask_TerminateDispatch             0x00002bc0   Section        0  osektask.o(i.osekTask_TerminateDispatch)
-    i.osekTask_WaitTask                      0x00002c54   Section        0  osektask.o(i.osekTask_WaitTask)
-    i.osekTask_WakeTask                      0x00002c84   Section        0  osektask.o(i.osekTask_WakeTask)
-    i.show_seven_segment                     0x00002cdc   Section        0  seven_segment.o(i.show_seven_segment)
-    .constdata                               0x00002d1c   Section       16  drvsys.o(.constdata)
-    .constdata                               0x00002d2c   Section       16  drvtimer.o(.constdata)
-    .constdata                               0x00002d3c   Section      132  cfg.o(.constdata)
+    .emb_text                                0x00000164   Section      368  osektarget.o(.emb_text)
+    .emb_text                                0x000002d4   Section       56  rt_memcpy.o(.emb_text)
+    .text                                    0x0000030c   Section      100  startup_nuc1xx.o(.text)
+    Default_Handler                          0x00000337   Thumb Code     2  startup_nuc1xx.o(.text)
+    .text                                    0x00000370   Section        0  aeabi_memset.o(.text)
+    .text                                    0x00000382   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x000004dc   Section        0  heapauxi.o(.text)
+    .text                                    0x000004e2   Section        0  rt_memclr.o(.text)
+    .text                                    0x00000522   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x00000560   Section        0  exit.o(.text)
+    .text                                    0x00000570   Section        8  libspace.o(.text)
+    .text                                    0x00000578   Section        0  sys_exit.o(.text)
+    .text                                    0x00000584   Section        2  use_no_semi.o(.text)
+    .text                                    0x00000586   Section        0  indicate_semi.o(.text)
+    i.ADC_IRQHandler                         0x00000588   Section        0  drvadc.o(i.ADC_IRQHandler)
+    i.ActivateTask                           0x00000624   Section        0  osektask.o(i.ActivateTask)
+    i.AddTask2ReadyTableAtTail               0x00000674   Section        0  osektask.o(i.AddTask2ReadyTableAtTail)
+    AddTask2ReadyTableAtTail                 0x00000675   Thumb Code    38  osektask.o(i.AddTask2ReadyTableAtTail)
+    i.AddaReadyBlock                         0x000006a0   Section        0  osektask.o(i.AddaReadyBlock)
+    AddaReadyBlock                           0x000006a1   Thumb Code   116  osektask.o(i.AddaReadyBlock)
+    i.BOD_IRQHandler                         0x00000720   Section        0  drvsys.o(i.BOD_IRQHandler)
+    i.CAN0_IRQHandler                        0x00000748   Section        0  drvcan.o(i.CAN0_IRQHandler)
+    i.CalTimerInitValue                      0x00000838   Section        0  drvtimer.o(i.CalTimerInitValue)
+    CalTimerInitValue                        0x00000839   Thumb Code    70  drvtimer.o(i.CalTimerInitValue)
+    i.ClearPriorityMap                       0x00000880   Section        0  osektask.o(i.ClearPriorityMap)
+    ClearPriorityMap                         0x00000881   Thumb Code    58  osektask.o(i.ClearPriorityMap)
+    i.CounterTrigger                         0x000008c8   Section        0  osekcounter.o(i.CounterTrigger)
+    i.DrvCAN_ClrIntPnd                       0x00000914   Section        0  drvcan.o(i.DrvCAN_ClrIntPnd)
+    i.DrvGPIO_ClrBit                         0x0000094c   Section        0  drvgpio.o(i.DrvGPIO_ClrBit)
+    i.DrvGPIO_InitFunction                   0x00000978   Section        0  drvgpio.o(i.DrvGPIO_InitFunction)
+    i.DrvGPIO_SetBit                         0x000010d0   Section        0  drvgpio.o(i.DrvGPIO_SetBit)
+    i.DrvSYS_GetExtClockFreq                 0x000010fc   Section        0  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    i.DrvSYS_GetHCLKFreq                     0x00001104   Section        0  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    i.DrvSYS_GetPLLClockFreq                 0x00001174   Section        0  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    i.DrvTIMER_EnableInt                     0x000011ec   Section        0  drvtimer.o(i.DrvTIMER_EnableInt)
+    i.DrvTIMER_Init                          0x00001248   Section        0  drvtimer.o(i.DrvTIMER_Init)
+    i.DrvTIMER_Open                          0x0000126c   Section        0  drvtimer.o(i.DrvTIMER_Open)
+    i.EINT0_IRQHandler                       0x00001560   Section        0  drvgpio.o(i.EINT0_IRQHandler)
+    i.EINT1_IRQHandler                       0x00001584   Section        0  drvgpio.o(i.EINT1_IRQHandler)
+    i.FuncTask1                              0x000015a8   Section        0  main.o(i.FuncTask1)
+    i.FuncTask2                              0x000015ec   Section        0  main.o(i.FuncTask2)
+    i.FuncTask3                              0x00001674   Section        0  main.o(i.FuncTask3)
+    i.FuncTaskError                          0x000016b0   Section        0  main.o(i.FuncTaskError)
+    i.GPAB_IRQHandler                        0x000016b4   Section        0  drvgpio.o(i.GPAB_IRQHandler)
+    i.GPCDE_IRQHandler                       0x000016f8   Section        0  drvgpio.o(i.GPCDE_IRQHandler)
+    i.GetFreeIF                              0x00001744   Section        0  drvcan.o(i.GetFreeIF)
+    GetFreeIF                                0x00001745   Thumb Code    36  drvcan.o(i.GetFreeIF)
+    i.GetTimerClock                          0x0000176c   Section        0  drvtimer.o(i.GetTimerClock)
+    GetTimerClock                            0x0000176d   Thumb Code   114  drvtimer.o(i.GetTimerClock)
+    i.I2C0_IRQHandler                        0x000017ec   Section        0  drvi2c.o(i.I2C0_IRQHandler)
+    i.I2C1_IRQHandler                        0x00001868   Section        0  drvi2c.o(i.I2C1_IRQHandler)
+    i.I2S_IRQHandler                         0x000018e4   Section        0  drvi2s.o(i.I2S_IRQHandler)
+    i.InitCOM                                0x00001a60   Section        0  osekmessage.o(i.InitCOM)
+    i.Initial_pannel                         0x00001a64   Section        0  lcd_driver.o(i.Initial_pannel)
+    i.Ir_RealTimInt                          0x00001c7c   Section        0  cfg.o(i.Ir_RealTimInt)
+    i.MoveTaskFromReadyTable                 0x00001c88   Section        0  osektask.o(i.MoveTaskFromReadyTable)
+    MoveTaskFromReadyTable                   0x00001c89   Thumb Code    24  osektask.o(i.MoveTaskFromReadyTable)
+    i.NVIC_EnableIRQ                         0x00001ca4   Section        0  drvtimer.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x00001ca5   Thumb Code    14  drvtimer.o(i.NVIC_EnableIRQ)
+    i.NVIC_SetPriority                       0x00001cb8   Section        0  drvtimer.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00001cb9   Thumb Code   110  drvtimer.o(i.NVIC_SetPriority)
+    i.NotifyAlarm                            0x00001d30   Section        0  osekalarm.o(i.NotifyAlarm)
+    NotifyAlarm                              0x00001d31   Thumb Code    22  osekalarm.o(i.NotifyAlarm)
+    i.OSEK_CPU_INIT                          0x00001d4c   Section        0  init.o(i.OSEK_CPU_INIT)
+    i.OSEK_TARGET_SaveBTSP                   0x00001d6c   Section        0  osektarget.o(i.OSEK_TARGET_SaveBTSP)
+    i.PDMA_IRQHandler                        0x00001d7c   Section        0  drvpdma.o(i.PDMA_IRQHandler)
+    i.PS2_IRQHandler                         0x00001e24   Section        0  drvps2.o(i.PS2_IRQHandler)
+    i.PWMA_IRQHandler                        0x00001e4c   Section        0  drvpwm.o(i.PWMA_IRQHandler)
+    i.PWMB_IRQHandler                        0x00001fc8   Section        0  drvpwm.o(i.PWMB_IRQHandler)
+    i.PWRWU_IRQHandler                       0x00002144   Section        0  drvsys.o(i.PWRWU_IRQHandler)
+    i.RTC_IRQHandler                         0x0000216c   Section        0  drvrtc.o(i.RTC_IRQHandler)
+    i.ReleaseReadyBlock                      0x000021cc   Section        0  osektask.o(i.ReleaseReadyBlock)
+    ReleaseReadyBlock                        0x000021cd   Thumb Code    12  osektask.o(i.ReleaseReadyBlock)
+    i.SPI0_IRQHandler                        0x000021dc   Section        0  drvspi.o(i.SPI0_IRQHandler)
+    i.SPI1_IRQHandler                        0x00002240   Section        0  drvspi.o(i.SPI1_IRQHandler)
+    i.SPI2_IRQHandler                        0x000022a4   Section        0  drvspi.o(i.SPI2_IRQHandler)
+    i.SPI3_IRQHandler                        0x00002308   Section        0  drvspi.o(i.SPI3_IRQHandler)
+    i.SetEvent                               0x0000236c   Section        0  osekevent.o(i.SetEvent)
+    i.SetPACA                                0x000023c4   Section        0  lcd_driver.o(i.SetPACA)
+    i.StartOS                                0x000024b8   Section        0  osekexecution.o(i.StartOS)
+    i.SystemInit                             0x000024f4   Section        0  system_nuc1xx.o(i.SystemInit)
+    i.TMR0_IRQHandler                        0x000024f6   Section        0  drvtimer.o(i.TMR0_IRQHandler)
+    i.TMR1_IRQHandler                        0x00002500   Section        0  drvtimer.o(i.TMR1_IRQHandler)
+    i.TMR2_IRQHandler                        0x0000259c   Section        0  drvtimer.o(i.TMR2_IRQHandler)
+    i.TMR3_IRQHandler                        0x00002638   Section        0  drvtimer.o(i.TMR3_IRQHandler)
+    i.TerminateTask                          0x000026d4   Section        0  osektask.o(i.TerminateTask)
+    i.UART02_IRQHandler                      0x00002728   Section        0  drvuart.o(i.UART02_IRQHandler)
+    i.UART1_IRQHandler                       0x00002764   Section        0  drvuart.o(i.UART1_IRQHandler)
+    i.WDT_IRQHandler                         0x00002784   Section        0  drvtimer.o(i.WDT_IRQHandler)
+    i.WaitEvent                              0x000027b8   Section        0  osekevent.o(i.WaitEvent)
+    i.WriteData                              0x00002828   Section        0  lcd_driver.o(i.WriteData)
+    i.__ARM_common_switch8                   0x00002880   Section        0  drvcan.o(i.__ARM_common_switch8)
+    i.close_seven_segment                    0x0000289c   Section        0  seven_segment.o(i.close_seven_segment)
+    i.clr_all_pannal                         0x000028c0   Section        0  lcd_driver.o(i.clr_all_pannal)
+    i.main                                   0x000028e8   Section        0  main.o(i.main)
+    i.osekAlarm_Check1                       0x00002930   Section        0  osekalarm.o(i.osekAlarm_Check1)
+    i.osekAlarm_Check2                       0x0000296c   Section        0  osekalarm.o(i.osekAlarm_Check2)
+    i.osekAlarm_Initialize                   0x000029c0   Section        0  osekalarm.o(i.osekAlarm_Initialize)
+    i.osekCounter_Initialize                 0x000029fc   Section        0  osekcounter.o(i.osekCounter_Initialize)
+    i.osekEvent_SetEvent                     0x00002a28   Section        0  osekevent.o(i.osekEvent_SetEvent)
+    i.osekInterrupt_Initialize               0x00002a68   Section        0  osekinterrupt.o(i.osekInterrupt_Initialize)
+    i.osekTask_ActiveTask                    0x00002a78   Section        0  osektask.o(i.osekTask_ActiveTask)
+    i.osekTask_Dispatch                      0x00002ae0   Section        0  osektask.o(i.osekTask_Dispatch)
+    i.osekTask_Initialize                    0x00002bac   Section        0  osektask.o(i.osekTask_Initialize)
+    i.osekTask_TerminateDispatch             0x00002c68   Section        0  osektask.o(i.osekTask_TerminateDispatch)
+    i.osekTask_WaitTask                      0x00002cfc   Section        0  osektask.o(i.osekTask_WaitTask)
+    i.osekTask_WakeTask                      0x00002d2c   Section        0  osektask.o(i.osekTask_WakeTask)
+    i.show_seven_segment                     0x00002d84   Section        0  seven_segment.o(i.show_seven_segment)
+    .constdata                               0x00002dc4   Section       16  drvsys.o(.constdata)
+    .constdata                               0x00002dd4   Section       16  drvtimer.o(.constdata)
+    .constdata                               0x00002de4   Section      132  cfg.o(.constdata)
     .data                                    0x20000000   Section       12  drvadc.o(.data)
     g_ptADCCallBack                          0x20000000   Data           4  drvadc.o(.data)
     g_ptADCMP0CallBack                       0x20000004   Data           4  drvadc.o(.data)
@@ -964,7 +964,7 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
     __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
     __Vectors                                0x00000000   Data           4  startup_nuc1xx.o(RESET)
     _printf_flags                            0x00000000   Number         0  printf_stubs.o ABSOLUTE
@@ -1048,128 +1048,129 @@ Image Symbol Table
     __rt_exit_prels_1                        0x00000159   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     __rt_exit_exit                           0x0000015d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
     osekTarget_SaveContext                   0x00000165   Thumb Code    42  osektarget.o(.emb_text)
-    osekTarget_RestoreContext                0x0000018f   Thumb Code    42  osektarget.o(.emb_text)
-    osekTarget_LoadBTSP                      0x000001b9   Thumb Code     8  osektarget.o(.emb_text)
-    osekTarget_LoadETSP                      0x000001c5   Thumb Code     4  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableOSInt_func            0x000001c9   Thumb Code    16  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableOSInt                  0x000001e5   Thumb Code    14  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableAllInt                0x00000201   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableAllInt                 0x00000225   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableNestedAllInt          0x00000249   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableNestedAllInt           0x0000026d   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_DisableNestedOsInt           0x00000291   Thumb Code    18  osektarget.o(.emb_text)
-    OSEK_TARGET_EnableNestedOsInt            0x000002b5   Thumb Code    18  osektarget.o(.emb_text)
-    __aeabi_memcpy4                          0x000002d9   Thumb Code    56  rt_memcpy.o(.emb_text)
-    __aeabi_memcpy8                          0x000002d9   Thumb Code     0  rt_memcpy.o(.emb_text)
-    Reset_Handler                            0x00000311   Thumb Code    32  startup_nuc1xx.o(.text)
-    NMI_Handler                              0x00000331   Thumb Code     2  startup_nuc1xx.o(.text)
-    HardFault_Handler                        0x00000333   Thumb Code     2  startup_nuc1xx.o(.text)
-    SVC_Handler                              0x00000335   Thumb Code     2  startup_nuc1xx.o(.text)
-    PendSV_Handler                           0x00000337   Thumb Code     2  startup_nuc1xx.o(.text)
-    SysTick_Handler                          0x00000339   Thumb Code     2  startup_nuc1xx.o(.text)
-    ACMP_IRQHandler                          0x0000033b   Thumb Code     0  startup_nuc1xx.o(.text)
-    USBD_IRQHandler                          0x0000033b   Thumb Code     0  startup_nuc1xx.o(.text)
-    __user_initial_stackheap                 0x0000033d   Thumb Code     0  startup_nuc1xx.o(.text)
-    __aeabi_memset                           0x00000375   Thumb Code    18  aeabi_memset.o(.text)
-    __aeabi_uidiv                            0x00000387   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_uidivmod                         0x00000387   Thumb Code    20  aeabi_sdiv.o(.text)
-    __aeabi_idiv                             0x0000039b   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_idivmod                          0x0000039b   Thumb Code   326  aeabi_sdiv.o(.text)
-    __use_two_region_memory                  0x000004e1   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_escrow$2region                 0x000004e3   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_expand$2region                 0x000004e5   Thumb Code     2  heapauxi.o(.text)
-    _memset_w                                0x000004e7   Thumb Code    26  rt_memclr.o(.text)
-    _memset                                  0x00000501   Thumb Code    30  rt_memclr.o(.text)
-    __aeabi_memclr                           0x0000051f   Thumb Code     4  rt_memclr.o(.text)
-    __rt_memclr                              0x0000051f   Thumb Code     0  rt_memclr.o(.text)
-    __aeabi_memclr4                          0x00000523   Thumb Code     0  rt_memclr.o(.text)
-    __aeabi_memclr8                          0x00000523   Thumb Code     0  rt_memclr.o(.text)
-    __rt_memclr_w                            0x00000523   Thumb Code     4  rt_memclr.o(.text)
-    __user_setup_stackheap                   0x00000527   Thumb Code    62  sys_stackheap_outer.o(.text)
-    exit                                     0x00000565   Thumb Code    16  exit.o(.text)
-    __user_libspace                          0x00000575   Thumb Code     8  libspace.o(.text)
-    __user_perproc_libspace                  0x00000575   Thumb Code     0  libspace.o(.text)
-    __user_perthread_libspace                0x00000575   Thumb Code     0  libspace.o(.text)
-    _sys_exit                                0x0000057d   Thumb Code     8  sys_exit.o(.text)
-    __I$use$semihosting                      0x00000589   Thumb Code     0  use_no_semi.o(.text)
-    __use_no_semihosting_swi                 0x00000589   Thumb Code     2  use_no_semi.o(.text)
-    __semihosting_library_function           0x0000058b   Thumb Code     0  indicate_semi.o(.text)
-    ADC_IRQHandler                           0x0000058d   Thumb Code   136  drvadc.o(i.ADC_IRQHandler)
-    BOD_IRQHandler                           0x000006d5   Thumb Code    36  drvsys.o(i.BOD_IRQHandler)
-    CAN0_IRQHandler                          0x000006fd   Thumb Code   228  drvcan.o(i.CAN0_IRQHandler)
-    CounterTrigger                           0x0000087d   Thumb Code    66  osekcounter.o(i.CounterTrigger)
-    DrvCAN_ClrIntPnd                         0x000008c9   Thumb Code    48  drvcan.o(i.DrvCAN_ClrIntPnd)
-    DrvGPIO_ClrBit                           0x00000901   Thumb Code    36  drvgpio.o(i.DrvGPIO_ClrBit)
-    DrvGPIO_InitFunction                     0x0000092d   Thumb Code  1864  drvgpio.o(i.DrvGPIO_InitFunction)
-    DrvGPIO_SetBit                           0x00001085   Thumb Code    36  drvgpio.o(i.DrvGPIO_SetBit)
-    DrvSYS_GetExtClockFreq                   0x000010b1   Thumb Code     4  drvsys.o(i.DrvSYS_GetExtClockFreq)
-    DrvSYS_GetHCLKFreq                       0x000010b9   Thumb Code    94  drvsys.o(i.DrvSYS_GetHCLKFreq)
-    DrvSYS_GetPLLClockFreq                   0x00001129   Thumb Code   104  drvsys.o(i.DrvSYS_GetPLLClockFreq)
-    DrvTIMER_EnableInt                       0x000011a1   Thumb Code    78  drvtimer.o(i.DrvTIMER_EnableInt)
-    DrvTIMER_Init                            0x000011fd   Thumb Code    20  drvtimer.o(i.DrvTIMER_Init)
-    DrvTIMER_Open                            0x00001221   Thumb Code   660  drvtimer.o(i.DrvTIMER_Open)
-    EINT0_IRQHandler                         0x00001515   Thumb Code    26  drvgpio.o(i.EINT0_IRQHandler)
-    EINT1_IRQHandler                         0x00001539   Thumb Code    26  drvgpio.o(i.EINT1_IRQHandler)
-    FuncTask1                                0x0000155d   Thumb Code    62  main.o(i.FuncTask1)
-    FuncTask2                                0x000015a5   Thumb Code    46  main.o(i.FuncTask2)
-    FuncTask3                                0x000015d9   Thumb Code    42  main.o(i.FuncTask3)
-    FuncTaskError                            0x00001609   Thumb Code     2  main.o(i.FuncTaskError)
-    GPAB_IRQHandler                          0x0000160d   Thumb Code    60  drvgpio.o(i.GPAB_IRQHandler)
-    GPCDE_IRQHandler                         0x00001651   Thumb Code    68  drvgpio.o(i.GPCDE_IRQHandler)
-    I2C0_IRQHandler                          0x00001745   Thumb Code   114  drvi2c.o(i.I2C0_IRQHandler)
-    I2C1_IRQHandler                          0x000017c1   Thumb Code   114  drvi2c.o(i.I2C1_IRQHandler)
-    I2S_IRQHandler                           0x0000183d   Thumb Code   370  drvi2s.o(i.I2S_IRQHandler)
-    InitCOM                                  0x000019b9   Thumb Code     4  osekmessage.o(i.InitCOM)
-    Initial_pannel                           0x000019bd   Thumb Code   526  lcd_driver.o(i.Initial_pannel)
-    Ir_RealTimInt                            0x00001bd5   Thumb Code    10  cfg.o(i.Ir_RealTimInt)
-    OSEK_CPU_INIT                            0x00001ca5   Thumb Code    32  init.o(i.OSEK_CPU_INIT)
-    OSEK_TARGET_SaveBTSP                     0x00001cc5   Thumb Code    10  osektarget.o(i.OSEK_TARGET_SaveBTSP)
-    PDMA_IRQHandler                          0x00001cd5   Thumb Code   156  drvpdma.o(i.PDMA_IRQHandler)
-    PS2_IRQHandler                           0x00001d7d   Thumb Code    30  drvps2.o(i.PS2_IRQHandler)
-    PWMA_IRQHandler                          0x00001da5   Thumb Code   358  drvpwm.o(i.PWMA_IRQHandler)
-    PWMB_IRQHandler                          0x00001f21   Thumb Code   358  drvpwm.o(i.PWMB_IRQHandler)
-    PWRWU_IRQHandler                         0x0000209d   Thumb Code    32  drvsys.o(i.PWRWU_IRQHandler)
-    RTC_IRQHandler                           0x000020c5   Thumb Code    78  drvrtc.o(i.RTC_IRQHandler)
-    SPI0_IRQHandler                          0x00002135   Thumb Code    92  drvspi.o(i.SPI0_IRQHandler)
-    SPI1_IRQHandler                          0x00002199   Thumb Code    92  drvspi.o(i.SPI1_IRQHandler)
-    SPI2_IRQHandler                          0x000021fd   Thumb Code    92  drvspi.o(i.SPI2_IRQHandler)
-    SPI3_IRQHandler                          0x00002261   Thumb Code    92  drvspi.o(i.SPI3_IRQHandler)
-    SetEvent                                 0x000022c5   Thumb Code    80  osekevent.o(i.SetEvent)
-    SetPACA                                  0x0000231d   Thumb Code   240  lcd_driver.o(i.SetPACA)
-    StartOS                                  0x00002411   Thumb Code    46  osekexecution.o(i.StartOS)
-    SystemInit                               0x0000244d   Thumb Code     2  system_nuc1xx.o(i.SystemInit)
-    TMR0_IRQHandler                          0x0000244f   Thumb Code    10  drvtimer.o(i.TMR0_IRQHandler)
-    TMR1_IRQHandler                          0x00002459   Thumb Code   144  drvtimer.o(i.TMR1_IRQHandler)
-    TMR2_IRQHandler                          0x000024f5   Thumb Code   144  drvtimer.o(i.TMR2_IRQHandler)
-    TMR3_IRQHandler                          0x00002591   Thumb Code   144  drvtimer.o(i.TMR3_IRQHandler)
-    TerminateTask                            0x0000262d   Thumb Code    76  osektask.o(i.TerminateTask)
-    UART02_IRQHandler                        0x00002681   Thumb Code    44  drvuart.o(i.UART02_IRQHandler)
-    UART1_IRQHandler                         0x000026bd   Thumb Code    24  drvuart.o(i.UART1_IRQHandler)
-    WDT_IRQHandler                           0x000026dd   Thumb Code    44  drvtimer.o(i.WDT_IRQHandler)
-    WaitEvent                                0x00002711   Thumb Code    94  osekevent.o(i.WaitEvent)
-    WriteData                                0x00002781   Thumb Code    82  lcd_driver.o(i.WriteData)
-    __ARM_common_switch8                     0x000027d9   Thumb Code    28  drvcan.o(i.__ARM_common_switch8)
-    close_seven_segment                      0x000027f5   Thumb Code    36  seven_segment.o(i.close_seven_segment)
-    clr_all_pannal                           0x00002819   Thumb Code    40  lcd_driver.o(i.clr_all_pannal)
-    main                                     0x00002841   Thumb Code    64  main.o(i.main)
-    osekAlarm_Check1                         0x00002889   Thumb Code    56  osekalarm.o(i.osekAlarm_Check1)
-    osekAlarm_Check2                         0x000028c5   Thumb Code    84  osekalarm.o(i.osekAlarm_Check2)
-    osekAlarm_Initialize                     0x00002919   Thumb Code    50  osekalarm.o(i.osekAlarm_Initialize)
-    osekCounter_Initialize                   0x00002955   Thumb Code    36  osekcounter.o(i.osekCounter_Initialize)
-    osekEvent_SetEvent                       0x00002981   Thumb Code    64  osekevent.o(i.osekEvent_SetEvent)
-    osekInterrupt_Initialize                 0x000029c1   Thumb Code     8  osekinterrupt.o(i.osekInterrupt_Initialize)
-    osekTask_ActiveTask                      0x000029d1   Thumb Code    92  osektask.o(i.osekTask_ActiveTask)
-    osekTask_Dispatch                        0x00002a39   Thumb Code   176  osektask.o(i.osekTask_Dispatch)
-    osekTask_Initialize                      0x00002b05   Thumb Code   154  osektask.o(i.osekTask_Initialize)
-    osekTask_TerminateDispatch               0x00002bc1   Thumb Code   126  osektask.o(i.osekTask_TerminateDispatch)
-    osekTask_WaitTask                        0x00002c55   Thumb Code    42  osektask.o(i.osekTask_WaitTask)
-    osekTask_WakeTask                        0x00002c85   Thumb Code    76  osektask.o(i.osekTask_WakeTask)
-    show_seven_segment                       0x00002cdd   Thumb Code    60  seven_segment.o(i.show_seven_segment)
-    CH_OFFSET                                0x00002d2c   Data          16  drvtimer.o(.constdata)
-    osekConfig_TaskTable                     0x00002d3c   Data         100  cfg.o(.constdata)
-    osekConfig_MsgTable                      0x00002da0   Data          32  cfg.o(.constdata)
-    Region$$Table$$Base                      0x00002dc0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00002de0   Number         0  anon$$obj.o(Region$$Table)
+    osekTarget_RestoreContext                0x0000018f   Thumb Code    38  osektarget.o(.emb_text)
+    osekTarget_LoadBTSP                      0x000001b5   Thumb Code     8  osektarget.o(.emb_text)
+    osekTarget_LoadETSP                      0x000001c1   Thumb Code     4  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableOSInt_func            0x000001c5   Thumb Code    16  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableOSInt                  0x000001e1   Thumb Code    14  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableAllInt                0x000001fd   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableAllInt                 0x00000221   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableNestedAllInt          0x00000245   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableNestedAllInt           0x00000269   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_DisableNestedOsInt           0x0000028d   Thumb Code    18  osektarget.o(.emb_text)
+    OSEK_TARGET_EnableNestedOsInt            0x000002b1   Thumb Code    18  osektarget.o(.emb_text)
+    __aeabi_memcpy4                          0x000002d5   Thumb Code    56  rt_memcpy.o(.emb_text)
+    __aeabi_memcpy8                          0x000002d5   Thumb Code     0  rt_memcpy.o(.emb_text)
+    Reset_Handler                            0x0000030d   Thumb Code    32  startup_nuc1xx.o(.text)
+    NMI_Handler                              0x0000032d   Thumb Code     2  startup_nuc1xx.o(.text)
+    HardFault_Handler                        0x0000032f   Thumb Code     2  startup_nuc1xx.o(.text)
+    SVC_Handler                              0x00000331   Thumb Code     2  startup_nuc1xx.o(.text)
+    PendSV_Handler                           0x00000333   Thumb Code     2  startup_nuc1xx.o(.text)
+    SysTick_Handler                          0x00000335   Thumb Code     2  startup_nuc1xx.o(.text)
+    ACMP_IRQHandler                          0x00000337   Thumb Code     0  startup_nuc1xx.o(.text)
+    USBD_IRQHandler                          0x00000337   Thumb Code     0  startup_nuc1xx.o(.text)
+    __user_initial_stackheap                 0x00000339   Thumb Code     0  startup_nuc1xx.o(.text)
+    __aeabi_memset                           0x00000371   Thumb Code    18  aeabi_memset.o(.text)
+    __aeabi_uidiv                            0x00000383   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x00000383   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x00000397   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x00000397   Thumb Code   326  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x000004dd   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x000004df   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x000004e1   Thumb Code     2  heapauxi.o(.text)
+    _memset_w                                0x000004e3   Thumb Code    26  rt_memclr.o(.text)
+    _memset                                  0x000004fd   Thumb Code    30  rt_memclr.o(.text)
+    __aeabi_memclr                           0x0000051b   Thumb Code     4  rt_memclr.o(.text)
+    __rt_memclr                              0x0000051b   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr4                          0x0000051f   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr8                          0x0000051f   Thumb Code     0  rt_memclr.o(.text)
+    __rt_memclr_w                            0x0000051f   Thumb Code     4  rt_memclr.o(.text)
+    __user_setup_stackheap                   0x00000523   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x00000561   Thumb Code    16  exit.o(.text)
+    __user_libspace                          0x00000571   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x00000571   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x00000571   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x00000579   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000585   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000585   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x00000587   Thumb Code     0  indicate_semi.o(.text)
+    ADC_IRQHandler                           0x00000589   Thumb Code   136  drvadc.o(i.ADC_IRQHandler)
+    ActivateTask                             0x00000625   Thumb Code    72  osektask.o(i.ActivateTask)
+    BOD_IRQHandler                           0x00000721   Thumb Code    36  drvsys.o(i.BOD_IRQHandler)
+    CAN0_IRQHandler                          0x00000749   Thumb Code   228  drvcan.o(i.CAN0_IRQHandler)
+    CounterTrigger                           0x000008c9   Thumb Code    66  osekcounter.o(i.CounterTrigger)
+    DrvCAN_ClrIntPnd                         0x00000915   Thumb Code    48  drvcan.o(i.DrvCAN_ClrIntPnd)
+    DrvGPIO_ClrBit                           0x0000094d   Thumb Code    36  drvgpio.o(i.DrvGPIO_ClrBit)
+    DrvGPIO_InitFunction                     0x00000979   Thumb Code  1864  drvgpio.o(i.DrvGPIO_InitFunction)
+    DrvGPIO_SetBit                           0x000010d1   Thumb Code    36  drvgpio.o(i.DrvGPIO_SetBit)
+    DrvSYS_GetExtClockFreq                   0x000010fd   Thumb Code     4  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    DrvSYS_GetHCLKFreq                       0x00001105   Thumb Code    94  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    DrvSYS_GetPLLClockFreq                   0x00001175   Thumb Code   104  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    DrvTIMER_EnableInt                       0x000011ed   Thumb Code    78  drvtimer.o(i.DrvTIMER_EnableInt)
+    DrvTIMER_Init                            0x00001249   Thumb Code    20  drvtimer.o(i.DrvTIMER_Init)
+    DrvTIMER_Open                            0x0000126d   Thumb Code   660  drvtimer.o(i.DrvTIMER_Open)
+    EINT0_IRQHandler                         0x00001561   Thumb Code    26  drvgpio.o(i.EINT0_IRQHandler)
+    EINT1_IRQHandler                         0x00001585   Thumb Code    26  drvgpio.o(i.EINT1_IRQHandler)
+    FuncTask1                                0x000015a9   Thumb Code    60  main.o(i.FuncTask1)
+    FuncTask2                                0x000015ed   Thumb Code   122  main.o(i.FuncTask2)
+    FuncTask3                                0x00001675   Thumb Code    54  main.o(i.FuncTask3)
+    FuncTaskError                            0x000016b1   Thumb Code     2  main.o(i.FuncTaskError)
+    GPAB_IRQHandler                          0x000016b5   Thumb Code    60  drvgpio.o(i.GPAB_IRQHandler)
+    GPCDE_IRQHandler                         0x000016f9   Thumb Code    68  drvgpio.o(i.GPCDE_IRQHandler)
+    I2C0_IRQHandler                          0x000017ed   Thumb Code   114  drvi2c.o(i.I2C0_IRQHandler)
+    I2C1_IRQHandler                          0x00001869   Thumb Code   114  drvi2c.o(i.I2C1_IRQHandler)
+    I2S_IRQHandler                           0x000018e5   Thumb Code   370  drvi2s.o(i.I2S_IRQHandler)
+    InitCOM                                  0x00001a61   Thumb Code     4  osekmessage.o(i.InitCOM)
+    Initial_pannel                           0x00001a65   Thumb Code   526  lcd_driver.o(i.Initial_pannel)
+    Ir_RealTimInt                            0x00001c7d   Thumb Code    10  cfg.o(i.Ir_RealTimInt)
+    OSEK_CPU_INIT                            0x00001d4d   Thumb Code    32  init.o(i.OSEK_CPU_INIT)
+    OSEK_TARGET_SaveBTSP                     0x00001d6d   Thumb Code    10  osektarget.o(i.OSEK_TARGET_SaveBTSP)
+    PDMA_IRQHandler                          0x00001d7d   Thumb Code   156  drvpdma.o(i.PDMA_IRQHandler)
+    PS2_IRQHandler                           0x00001e25   Thumb Code    30  drvps2.o(i.PS2_IRQHandler)
+    PWMA_IRQHandler                          0x00001e4d   Thumb Code   358  drvpwm.o(i.PWMA_IRQHandler)
+    PWMB_IRQHandler                          0x00001fc9   Thumb Code   358  drvpwm.o(i.PWMB_IRQHandler)
+    PWRWU_IRQHandler                         0x00002145   Thumb Code    32  drvsys.o(i.PWRWU_IRQHandler)
+    RTC_IRQHandler                           0x0000216d   Thumb Code    78  drvrtc.o(i.RTC_IRQHandler)
+    SPI0_IRQHandler                          0x000021dd   Thumb Code    92  drvspi.o(i.SPI0_IRQHandler)
+    SPI1_IRQHandler                          0x00002241   Thumb Code    92  drvspi.o(i.SPI1_IRQHandler)
+    SPI2_IRQHandler                          0x000022a5   Thumb Code    92  drvspi.o(i.SPI2_IRQHandler)
+    SPI3_IRQHandler                          0x00002309   Thumb Code    92  drvspi.o(i.SPI3_IRQHandler)
+    SetEvent                                 0x0000236d   Thumb Code    80  osekevent.o(i.SetEvent)
+    SetPACA                                  0x000023c5   Thumb Code   240  lcd_driver.o(i.SetPACA)
+    StartOS                                  0x000024b9   Thumb Code    46  osekexecution.o(i.StartOS)
+    SystemInit                               0x000024f5   Thumb Code     2  system_nuc1xx.o(i.SystemInit)
+    TMR0_IRQHandler                          0x000024f7   Thumb Code    10  drvtimer.o(i.TMR0_IRQHandler)
+    TMR1_IRQHandler                          0x00002501   Thumb Code   144  drvtimer.o(i.TMR1_IRQHandler)
+    TMR2_IRQHandler                          0x0000259d   Thumb Code   144  drvtimer.o(i.TMR2_IRQHandler)
+    TMR3_IRQHandler                          0x00002639   Thumb Code   144  drvtimer.o(i.TMR3_IRQHandler)
+    TerminateTask                            0x000026d5   Thumb Code    76  osektask.o(i.TerminateTask)
+    UART02_IRQHandler                        0x00002729   Thumb Code    44  drvuart.o(i.UART02_IRQHandler)
+    UART1_IRQHandler                         0x00002765   Thumb Code    24  drvuart.o(i.UART1_IRQHandler)
+    WDT_IRQHandler                           0x00002785   Thumb Code    44  drvtimer.o(i.WDT_IRQHandler)
+    WaitEvent                                0x000027b9   Thumb Code    94  osekevent.o(i.WaitEvent)
+    WriteData                                0x00002829   Thumb Code    82  lcd_driver.o(i.WriteData)
+    __ARM_common_switch8                     0x00002881   Thumb Code    28  drvcan.o(i.__ARM_common_switch8)
+    close_seven_segment                      0x0000289d   Thumb Code    36  seven_segment.o(i.close_seven_segment)
+    clr_all_pannal                           0x000028c1   Thumb Code    40  lcd_driver.o(i.clr_all_pannal)
+    main                                     0x000028e9   Thumb Code    64  main.o(i.main)
+    osekAlarm_Check1                         0x00002931   Thumb Code    56  osekalarm.o(i.osekAlarm_Check1)
+    osekAlarm_Check2                         0x0000296d   Thumb Code    84  osekalarm.o(i.osekAlarm_Check2)
+    osekAlarm_Initialize                     0x000029c1   Thumb Code    50  osekalarm.o(i.osekAlarm_Initialize)
+    osekCounter_Initialize                   0x000029fd   Thumb Code    36  osekcounter.o(i.osekCounter_Initialize)
+    osekEvent_SetEvent                       0x00002a29   Thumb Code    64  osekevent.o(i.osekEvent_SetEvent)
+    osekInterrupt_Initialize                 0x00002a69   Thumb Code     8  osekinterrupt.o(i.osekInterrupt_Initialize)
+    osekTask_ActiveTask                      0x00002a79   Thumb Code    92  osektask.o(i.osekTask_ActiveTask)
+    osekTask_Dispatch                        0x00002ae1   Thumb Code   176  osektask.o(i.osekTask_Dispatch)
+    osekTask_Initialize                      0x00002bad   Thumb Code   154  osektask.o(i.osekTask_Initialize)
+    osekTask_TerminateDispatch               0x00002c69   Thumb Code   126  osektask.o(i.osekTask_TerminateDispatch)
+    osekTask_WaitTask                        0x00002cfd   Thumb Code    42  osektask.o(i.osekTask_WaitTask)
+    osekTask_WakeTask                        0x00002d2d   Thumb Code    76  osektask.o(i.osekTask_WakeTask)
+    show_seven_segment                       0x00002d85   Thumb Code    60  seven_segment.o(i.show_seven_segment)
+    CH_OFFSET                                0x00002dd4   Data          16  drvtimer.o(.constdata)
+    osekConfig_TaskTable                     0x00002de4   Data         100  cfg.o(.constdata)
+    osekConfig_MsgTable                      0x00002e48   Data          32  cfg.o(.constdata)
+    Region$$Table$$Base                      0x00002e68   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00002e88   Number         0  anon$$obj.o(Region$$Table)
     bIsTimer0Initial                         0x2000007c   Data           4  drvtimer.o(.data)
     bIsTimer1Initial                         0x20000080   Data           4  drvtimer.o(.data)
     bIsTimer2Initial                         0x20000084   Data           4  drvtimer.o(.data)
@@ -1229,11 +1230,11 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x00000311
+  Image Entry point : 0x0000030d
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x000032d8, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00003380, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x00000000, Size: 0x00002de0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00002e88, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1285,109 +1286,110 @@ Memory Map of the image
     0x00000158   0x00000004   Code   RO         4638    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
     0x0000015c   0x00000006   Code   RO         4639    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
     0x00000162   0x00000002   PAD
-    0x00000164   0x00000174   Code   RO         4161    .emb_text           osektarget.o
-    0x000002d8   0x00000038   Code   RO         4524    .emb_text           c_p.l(rt_memcpy.o)
-    0x00000310   0x00000064   Code   RO           20  * .text               startup_nuc1xx.o
-    0x00000374   0x00000012   Code   RO         4528    .text               c_p.l(aeabi_memset.o)
-    0x00000386   0x0000015a   Code   RO         4530    .text               c_p.l(aeabi_sdiv.o)
-    0x000004e0   0x00000006   Code   RO         4534    .text               c_p.l(heapauxi.o)
-    0x000004e6   0x00000040   Code   RO         4543    .text               c_p.l(rt_memclr.o)
-    0x00000526   0x0000003e   Code   RO         4562    .text               c_p.l(sys_stackheap_outer.o)
-    0x00000564   0x00000010   Code   RO         4565    .text               c_p.l(exit.o)
-    0x00000574   0x00000008   Code   RO         4577    .text               c_p.l(libspace.o)
-    0x0000057c   0x0000000c   Code   RO         4634    .text               c_p.l(sys_exit.o)
-    0x00000588   0x00000002   Code   RO         4651    .text               c_p.l(use_no_semi.o)
-    0x0000058a   0x00000000   Code   RO         4653    .text               c_p.l(indicate_semi.o)
-    0x0000058a   0x00000002   PAD
-    0x0000058c   0x0000009c   Code   RO          224    i.ADC_IRQHandler    drvadc.o
-    0x00000628   0x0000002c   Code   RO         4269    i.AddTask2ReadyTableAtTail  osektask.o
-    0x00000654   0x00000080   Code   RO         4270    i.AddaReadyBlock    osektask.o
-    0x000006d4   0x00000028   Code   RO         2297    i.BOD_IRQHandler    drvsys.o
-    0x000006fc   0x000000f0   Code   RO          462    i.CAN0_IRQHandler   drvcan.o
-    0x000007ec   0x00000046   Code   RO         2600    i.CalTimerInitValue  drvtimer.o
-    0x00000832   0x00000002   PAD
-    0x00000834   0x00000048   Code   RO         4272    i.ClearPriorityMap  osektask.o
-    0x0000087c   0x0000004c   Code   RO         3599    i.CounterTrigger    osekcounter.o
-    0x000008c8   0x00000038   Code   RO          466    i.DrvCAN_ClrIntPnd  drvcan.o
-    0x00000900   0x0000002c   Code   RO          885    i.DrvGPIO_ClrBit    drvgpio.o
-    0x0000092c   0x00000758   Code   RO          907    i.DrvGPIO_InitFunction  drvgpio.o
-    0x00001084   0x0000002c   Code   RO          909    i.DrvGPIO_SetBit    drvgpio.o
-    0x000010b0   0x00000008   Code   RO         2315    i.DrvSYS_GetExtClockFreq  drvsys.o
-    0x000010b8   0x00000070   Code   RO         2316    i.DrvSYS_GetHCLKFreq  drvsys.o
-    0x00001128   0x00000078   Code   RO         2317    i.DrvSYS_GetPLLClockFreq  drvsys.o
-    0x000011a0   0x0000005c   Code   RO         2617    i.DrvTIMER_EnableInt  drvtimer.o
-    0x000011fc   0x00000024   Code   RO         2624    i.DrvTIMER_Init     drvtimer.o
-    0x00001220   0x000002f4   Code   RO         2625    i.DrvTIMER_Open     drvtimer.o
-    0x00001514   0x00000024   Code   RO          915    i.EINT0_IRQHandler  drvgpio.o
-    0x00001538   0x00000024   Code   RO          916    i.EINT1_IRQHandler  drvgpio.o
-    0x0000155c   0x00000048   Code   RO         4424    i.FuncTask1         main.o
-    0x000015a4   0x00000034   Code   RO         4425    i.FuncTask2         main.o
-    0x000015d8   0x00000030   Code   RO         4426    i.FuncTask3         main.o
-    0x00001608   0x00000002   Code   RO         4428    i.FuncTaskError     main.o
-    0x0000160a   0x00000002   PAD
-    0x0000160c   0x00000044   Code   RO          917    i.GPAB_IRQHandler   drvgpio.o
-    0x00001650   0x0000004c   Code   RO          918    i.GPCDE_IRQHandler  drvgpio.o
-    0x0000169c   0x00000028   Code   RO          498    i.GetFreeIF         drvcan.o
-    0x000016c4   0x00000080   Code   RO         2639    i.GetTimerClock     drvtimer.o
-    0x00001744   0x0000007c   Code   RO         1139    i.I2C0_IRQHandler   drvi2c.o
-    0x000017c0   0x0000007c   Code   RO         1140    i.I2C1_IRQHandler   drvi2c.o
-    0x0000183c   0x0000017c   Code   RO         1298    i.I2S_IRQHandler    drvi2s.o
-    0x000019b8   0x00000004   Code   RO         4003    i.InitCOM           osekmessage.o
-    0x000019bc   0x00000218   Code   RO         3196    i.Initial_pannel    lcd_driver.o
-    0x00001bd4   0x0000000a   Code   RO         3375    i.Ir_RealTimInt     cfg.o
-    0x00001bde   0x00000002   PAD
-    0x00001be0   0x0000001c   Code   RO         4275    i.MoveTaskFromReadyTable  osektask.o
-    0x00001bfc   0x00000014   Code   RO         2643    i.NVIC_EnableIRQ    drvtimer.o
-    0x00001c10   0x00000078   Code   RO         2644    i.NVIC_SetPriority  drvtimer.o
-    0x00001c88   0x0000001c   Code   RO         3469    i.NotifyAlarm       osekalarm.o
-    0x00001ca4   0x00000020   Code   RO           66    i.OSEK_CPU_INIT     init.o
-    0x00001cc4   0x00000010   Code   RO         4167    i.OSEK_TARGET_SaveBTSP  osektarget.o
-    0x00001cd4   0x000000a8   Code   RO         1480    i.PDMA_IRQHandler   drvpdma.o
-    0x00001d7c   0x00000028   Code   RO         1647    i.PS2_IRQHandler    drvps2.o
-    0x00001da4   0x0000017c   Code   RO         1746    i.PWMA_IRQHandler   drvpwm.o
-    0x00001f20   0x0000017c   Code   RO         1747    i.PWMB_IRQHandler   drvpwm.o
-    0x0000209c   0x00000028   Code   RO         2345    i.PWRWU_IRQHandler  drvsys.o
-    0x000020c4   0x00000060   Code   RO         1897    i.RTC_IRQHandler    drvrtc.o
-    0x00002124   0x00000010   Code   RO         4276    i.ReleaseReadyBlock  osektask.o
-    0x00002134   0x00000064   Code   RO         2034    i.SPI0_IRQHandler   drvspi.o
-    0x00002198   0x00000064   Code   RO         2035    i.SPI1_IRQHandler   drvspi.o
-    0x000021fc   0x00000064   Code   RO         2036    i.SPI2_IRQHandler   drvspi.o
-    0x00002260   0x00000064   Code   RO         2037    i.SPI3_IRQHandler   drvspi.o
-    0x000022c4   0x00000058   Code   RO         3765    i.SetEvent          osekevent.o
-    0x0000231c   0x000000f4   Code   RO         3197    i.SetPACA           lcd_driver.o
-    0x00002410   0x0000003c   Code   RO         3830    i.StartOS           osekexecution.o
-    0x0000244c   0x00000002   Code   RO           25    i.SystemInit        system_nuc1xx.o
-    0x0000244e   0x0000000a   Code   RO         2646    i.TMR0_IRQHandler   drvtimer.o
-    0x00002458   0x0000009c   Code   RO         2647    i.TMR1_IRQHandler   drvtimer.o
-    0x000024f4   0x0000009c   Code   RO         2648    i.TMR2_IRQHandler   drvtimer.o
-    0x00002590   0x0000009c   Code   RO         2649    i.TMR3_IRQHandler   drvtimer.o
-    0x0000262c   0x00000054   Code   RO         4278    i.TerminateTask     osektask.o
-    0x00002680   0x0000003c   Code   RO         2981    i.UART02_IRQHandler  drvuart.o
-    0x000026bc   0x00000020   Code   RO         2982    i.UART1_IRQHandler  drvuart.o
-    0x000026dc   0x00000034   Code   RO         2651    i.WDT_IRQHandler    drvtimer.o
-    0x00002710   0x00000070   Code   RO         3766    i.WaitEvent         osekevent.o
-    0x00002780   0x00000058   Code   RO         3200    i.WriteData         lcd_driver.o
-    0x000027d8   0x0000001c   Code   RO          693    i.__ARM_common_switch8  drvcan.o
-    0x000027f4   0x00000024   Code   RO         3347    i.close_seven_segment  seven_segment.o
-    0x00002818   0x00000028   Code   RO         3201    i.clr_all_pannal    lcd_driver.o
-    0x00002840   0x00000048   Code   RO         4434    i.main              main.o
-    0x00002888   0x0000003c   Code   RO         3474    i.osekAlarm_Check1  osekalarm.o
-    0x000028c4   0x00000054   Code   RO         3475    i.osekAlarm_Check2  osekalarm.o
-    0x00002918   0x0000003c   Code   RO         3476    i.osekAlarm_Initialize  osekalarm.o
-    0x00002954   0x0000002c   Code   RO         3605    i.osekCounter_Initialize  osekcounter.o
-    0x00002980   0x00000040   Code   RO         3767    i.osekEvent_SetEvent  osekevent.o
-    0x000029c0   0x00000010   Code   RO         3925    i.osekInterrupt_Initialize  osekinterrupt.o
-    0x000029d0   0x00000068   Code   RO         4279    i.osekTask_ActiveTask  osektask.o
-    0x00002a38   0x000000cc   Code   RO         4281    i.osekTask_Dispatch  osektask.o
-    0x00002b04   0x000000bc   Code   RO         4282    i.osekTask_Initialize  osektask.o
-    0x00002bc0   0x00000094   Code   RO         4283    i.osekTask_TerminateDispatch  osektask.o
-    0x00002c54   0x00000030   Code   RO         4284    i.osekTask_WaitTask  osektask.o
-    0x00002c84   0x00000058   Code   RO         4285    i.osekTask_WakeTask  osektask.o
-    0x00002cdc   0x00000040   Code   RO         3348    i.show_seven_segment  seven_segment.o
-    0x00002d1c   0x00000010   Data   RO         2346    .constdata          drvsys.o
-    0x00002d2c   0x00000010   Data   RO         2653    .constdata          drvtimer.o
-    0x00002d3c   0x00000084   Data   RO         3380    .constdata          cfg.o
-    0x00002dc0   0x00000020   Data   RO         4703    Region$$Table       anon$$obj.o
+    0x00000164   0x00000170   Code   RO         4161    .emb_text           osektarget.o
+    0x000002d4   0x00000038   Code   RO         4524    .emb_text           c_p.l(rt_memcpy.o)
+    0x0000030c   0x00000064   Code   RO           20  * .text               startup_nuc1xx.o
+    0x00000370   0x00000012   Code   RO         4528    .text               c_p.l(aeabi_memset.o)
+    0x00000382   0x0000015a   Code   RO         4530    .text               c_p.l(aeabi_sdiv.o)
+    0x000004dc   0x00000006   Code   RO         4534    .text               c_p.l(heapauxi.o)
+    0x000004e2   0x00000040   Code   RO         4543    .text               c_p.l(rt_memclr.o)
+    0x00000522   0x0000003e   Code   RO         4562    .text               c_p.l(sys_stackheap_outer.o)
+    0x00000560   0x00000010   Code   RO         4565    .text               c_p.l(exit.o)
+    0x00000570   0x00000008   Code   RO         4577    .text               c_p.l(libspace.o)
+    0x00000578   0x0000000c   Code   RO         4634    .text               c_p.l(sys_exit.o)
+    0x00000584   0x00000002   Code   RO         4651    .text               c_p.l(use_no_semi.o)
+    0x00000586   0x00000000   Code   RO         4653    .text               c_p.l(indicate_semi.o)
+    0x00000586   0x00000002   PAD
+    0x00000588   0x0000009c   Code   RO          224    i.ADC_IRQHandler    drvadc.o
+    0x00000624   0x00000050   Code   RO         4267    i.ActivateTask      osektask.o
+    0x00000674   0x0000002c   Code   RO         4269    i.AddTask2ReadyTableAtTail  osektask.o
+    0x000006a0   0x00000080   Code   RO         4270    i.AddaReadyBlock    osektask.o
+    0x00000720   0x00000028   Code   RO         2297    i.BOD_IRQHandler    drvsys.o
+    0x00000748   0x000000f0   Code   RO          462    i.CAN0_IRQHandler   drvcan.o
+    0x00000838   0x00000046   Code   RO         2600    i.CalTimerInitValue  drvtimer.o
+    0x0000087e   0x00000002   PAD
+    0x00000880   0x00000048   Code   RO         4272    i.ClearPriorityMap  osektask.o
+    0x000008c8   0x0000004c   Code   RO         3599    i.CounterTrigger    osekcounter.o
+    0x00000914   0x00000038   Code   RO          466    i.DrvCAN_ClrIntPnd  drvcan.o
+    0x0000094c   0x0000002c   Code   RO          885    i.DrvGPIO_ClrBit    drvgpio.o
+    0x00000978   0x00000758   Code   RO          907    i.DrvGPIO_InitFunction  drvgpio.o
+    0x000010d0   0x0000002c   Code   RO          909    i.DrvGPIO_SetBit    drvgpio.o
+    0x000010fc   0x00000008   Code   RO         2315    i.DrvSYS_GetExtClockFreq  drvsys.o
+    0x00001104   0x00000070   Code   RO         2316    i.DrvSYS_GetHCLKFreq  drvsys.o
+    0x00001174   0x00000078   Code   RO         2317    i.DrvSYS_GetPLLClockFreq  drvsys.o
+    0x000011ec   0x0000005c   Code   RO         2617    i.DrvTIMER_EnableInt  drvtimer.o
+    0x00001248   0x00000024   Code   RO         2624    i.DrvTIMER_Init     drvtimer.o
+    0x0000126c   0x000002f4   Code   RO         2625    i.DrvTIMER_Open     drvtimer.o
+    0x00001560   0x00000024   Code   RO          915    i.EINT0_IRQHandler  drvgpio.o
+    0x00001584   0x00000024   Code   RO          916    i.EINT1_IRQHandler  drvgpio.o
+    0x000015a8   0x00000044   Code   RO         4424    i.FuncTask1         main.o
+    0x000015ec   0x00000088   Code   RO         4425    i.FuncTask2         main.o
+    0x00001674   0x0000003c   Code   RO         4426    i.FuncTask3         main.o
+    0x000016b0   0x00000002   Code   RO         4428    i.FuncTaskError     main.o
+    0x000016b2   0x00000002   PAD
+    0x000016b4   0x00000044   Code   RO          917    i.GPAB_IRQHandler   drvgpio.o
+    0x000016f8   0x0000004c   Code   RO          918    i.GPCDE_IRQHandler  drvgpio.o
+    0x00001744   0x00000028   Code   RO          498    i.GetFreeIF         drvcan.o
+    0x0000176c   0x00000080   Code   RO         2639    i.GetTimerClock     drvtimer.o
+    0x000017ec   0x0000007c   Code   RO         1139    i.I2C0_IRQHandler   drvi2c.o
+    0x00001868   0x0000007c   Code   RO         1140    i.I2C1_IRQHandler   drvi2c.o
+    0x000018e4   0x0000017c   Code   RO         1298    i.I2S_IRQHandler    drvi2s.o
+    0x00001a60   0x00000004   Code   RO         4003    i.InitCOM           osekmessage.o
+    0x00001a64   0x00000218   Code   RO         3196    i.Initial_pannel    lcd_driver.o
+    0x00001c7c   0x0000000a   Code   RO         3375    i.Ir_RealTimInt     cfg.o
+    0x00001c86   0x00000002   PAD
+    0x00001c88   0x0000001c   Code   RO         4275    i.MoveTaskFromReadyTable  osektask.o
+    0x00001ca4   0x00000014   Code   RO         2643    i.NVIC_EnableIRQ    drvtimer.o
+    0x00001cb8   0x00000078   Code   RO         2644    i.NVIC_SetPriority  drvtimer.o
+    0x00001d30   0x0000001c   Code   RO         3469    i.NotifyAlarm       osekalarm.o
+    0x00001d4c   0x00000020   Code   RO           66    i.OSEK_CPU_INIT     init.o
+    0x00001d6c   0x00000010   Code   RO         4167    i.OSEK_TARGET_SaveBTSP  osektarget.o
+    0x00001d7c   0x000000a8   Code   RO         1480    i.PDMA_IRQHandler   drvpdma.o
+    0x00001e24   0x00000028   Code   RO         1647    i.PS2_IRQHandler    drvps2.o
+    0x00001e4c   0x0000017c   Code   RO         1746    i.PWMA_IRQHandler   drvpwm.o
+    0x00001fc8   0x0000017c   Code   RO         1747    i.PWMB_IRQHandler   drvpwm.o
+    0x00002144   0x00000028   Code   RO         2345    i.PWRWU_IRQHandler  drvsys.o
+    0x0000216c   0x00000060   Code   RO         1897    i.RTC_IRQHandler    drvrtc.o
+    0x000021cc   0x00000010   Code   RO         4276    i.ReleaseReadyBlock  osektask.o
+    0x000021dc   0x00000064   Code   RO         2034    i.SPI0_IRQHandler   drvspi.o
+    0x00002240   0x00000064   Code   RO         2035    i.SPI1_IRQHandler   drvspi.o
+    0x000022a4   0x00000064   Code   RO         2036    i.SPI2_IRQHandler   drvspi.o
+    0x00002308   0x00000064   Code   RO         2037    i.SPI3_IRQHandler   drvspi.o
+    0x0000236c   0x00000058   Code   RO         3765    i.SetEvent          osekevent.o
+    0x000023c4   0x000000f4   Code   RO         3197    i.SetPACA           lcd_driver.o
+    0x000024b8   0x0000003c   Code   RO         3830    i.StartOS           osekexecution.o
+    0x000024f4   0x00000002   Code   RO           25    i.SystemInit        system_nuc1xx.o
+    0x000024f6   0x0000000a   Code   RO         2646    i.TMR0_IRQHandler   drvtimer.o
+    0x00002500   0x0000009c   Code   RO         2647    i.TMR1_IRQHandler   drvtimer.o
+    0x0000259c   0x0000009c   Code   RO         2648    i.TMR2_IRQHandler   drvtimer.o
+    0x00002638   0x0000009c   Code   RO         2649    i.TMR3_IRQHandler   drvtimer.o
+    0x000026d4   0x00000054   Code   RO         4278    i.TerminateTask     osektask.o
+    0x00002728   0x0000003c   Code   RO         2981    i.UART02_IRQHandler  drvuart.o
+    0x00002764   0x00000020   Code   RO         2982    i.UART1_IRQHandler  drvuart.o
+    0x00002784   0x00000034   Code   RO         2651    i.WDT_IRQHandler    drvtimer.o
+    0x000027b8   0x00000070   Code   RO         3766    i.WaitEvent         osekevent.o
+    0x00002828   0x00000058   Code   RO         3200    i.WriteData         lcd_driver.o
+    0x00002880   0x0000001c   Code   RO          693    i.__ARM_common_switch8  drvcan.o
+    0x0000289c   0x00000024   Code   RO         3347    i.close_seven_segment  seven_segment.o
+    0x000028c0   0x00000028   Code   RO         3201    i.clr_all_pannal    lcd_driver.o
+    0x000028e8   0x00000048   Code   RO         4434    i.main              main.o
+    0x00002930   0x0000003c   Code   RO         3474    i.osekAlarm_Check1  osekalarm.o
+    0x0000296c   0x00000054   Code   RO         3475    i.osekAlarm_Check2  osekalarm.o
+    0x000029c0   0x0000003c   Code   RO         3476    i.osekAlarm_Initialize  osekalarm.o
+    0x000029fc   0x0000002c   Code   RO         3605    i.osekCounter_Initialize  osekcounter.o
+    0x00002a28   0x00000040   Code   RO         3767    i.osekEvent_SetEvent  osekevent.o
+    0x00002a68   0x00000010   Code   RO         3925    i.osekInterrupt_Initialize  osekinterrupt.o
+    0x00002a78   0x00000068   Code   RO         4279    i.osekTask_ActiveTask  osektask.o
+    0x00002ae0   0x000000cc   Code   RO         4281    i.osekTask_Dispatch  osektask.o
+    0x00002bac   0x000000bc   Code   RO         4282    i.osekTask_Initialize  osektask.o
+    0x00002c68   0x00000094   Code   RO         4283    i.osekTask_TerminateDispatch  osektask.o
+    0x00002cfc   0x00000030   Code   RO         4284    i.osekTask_WaitTask  osektask.o
+    0x00002d2c   0x00000058   Code   RO         4285    i.osekTask_WakeTask  osektask.o
+    0x00002d84   0x00000040   Code   RO         3348    i.show_seven_segment  seven_segment.o
+    0x00002dc4   0x00000010   Data   RO         2346    .constdata          drvsys.o
+    0x00002dd4   0x00000010   Data   RO         2653    .constdata          drvtimer.o
+    0x00002de4   0x00000084   Data   RO         3380    .constdata          cfg.o
+    0x00002e68   0x00000020   Data   RO         4703    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x20000000, Size: 0x000004f8, Max: 0xffffffff, ABSOLUTE)
@@ -1460,21 +1462,21 @@ Image component sizes
         92         24          0         12          0       1583   drvuart.o
         32          0          0          0          0     129852   init.o
        908         20          0         16          0       2643   lcd_driver.o
-       246         30          0          1          0       2174   main.o
+       338         36          0          1          0       2326   main.o
        232         20          0          0         28      12784   osekalarm.o
        120         18          0          0         20      11709   osekcounter.o
        264         26          0          0          0       2132   osekevent.o
         60         14          0          1          0        677   osekexecution.o
         16          8          0         14       1024       1036   osekinterrupt.o
          4          0          0          0          0      10482   osekmessage.o
-       388        144          0         40          0      11813   osektarget.o
-      1152        162          0        277        776      16728   osektask.o
+       384        144          0         40          0      11805   osektarget.o
+      1232        170          0        277        776      17391   osektask.o
        100          4          0         10          0       1821   seven_segment.o
        100         46        192          0       1024        580   startup_nuc1xx.o
          2          0          0          0          0        361   system_nuc1xx.o
 
     ----------------------------------------------------------------------
-     10600       1092        388       1272       4024     402288   Object Totals
+     10768       1106        388       1272       4024     403095   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          6          0          0          6          0          0   (incl. Padding)
 
@@ -1527,15 +1529,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     11356       1108        388       1272       4120     399404   Grand Totals
-     11356       1108        388       1272       4120     399404   ELF Image Totals
-     11356       1108        388       1272          0          0   ROM Totals
+     11524       1122        388       1272       4120     400167   Grand Totals
+     11524       1122        388       1272       4120     400167   ELF Image Totals
+     11524       1122        388       1272          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                11744 (  11.47kB)
+    Total RO  Size (Code + RO Data)                11912 (  11.63kB)
     Total RW  Size (RW Data + ZI Data)              5392 (   5.27kB)
-    Total ROM Size (Code + RO Data + RW Data)      13016 (  12.71kB)
+    Total ROM Size (Code + RO Data + RW Data)      13184 (  12.88kB)
 
 ==============================================================================
 

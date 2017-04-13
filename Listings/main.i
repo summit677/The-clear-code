@@ -14377,32 +14377,44 @@ void FuncTask1( void )
 	if(flag == 0)
 		flag = 1;
 	else 
-		WaitEvent(0x10);
-	close_seven_segment();
-	while(1)
-	{
-		show_seven_segment(0,1);
-		SetEvent(1, 0x30);
-		for(i = 0; i < 1000000;i++);
-		TerminateTask();
 		
-	}
+	close_seven_segment();
+	
+		show_seven_segment(0,1);
+		
+		for(i = 0; i < 60000;i++);
+	  for(i = 0; i < 60000;i++);
+		TerminateTask();
+
+	
 	
 }
 
 void FuncTask2( void )
 {
 	int i;
+	if(flag == 0)
+		flag = 1;
+	else
 	WaitEvent(0x30);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(1,2);
 		SetEvent(2, 0x40);
-		for(i = 0; i < 1000000;i++);
+	  for(i = 0; i < 60000;i++);
+		for(i = 0; i < 60000;i++)
+		{
+			if(i == 50000)
+				ActivateTask(0);
+		}
+		close_seven_segment();
+	
+		show_seven_segment(1,2);
+		for(i = 0; i < 60000;i++);
+		for(i = 0; i < 60000;i++);
 		TerminateTask();
 		
-	}
+	
 	
 }
 void FuncTask3( void )
@@ -14410,15 +14422,15 @@ void FuncTask3( void )
 	int i;
 	WaitEvent(0x40);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(2,3);
 		SetEvent(3, 0x50);
-		for(i = 0; i < 1000000;i++);
+		for(i = 0; i < 60000;i++);
+	  for(i = 0; i < 60000;i++);
 		
 		
 		
-	}
+	
 	
 }
 void FuncTask4( void )
@@ -14426,14 +14438,13 @@ void FuncTask4( void )
 	int i;
 	WaitEvent(0x50);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(3,4);
-		for(i = 0; i < 1000000;i++);
+		for(i = 0; i < 60000;i++);
 		SetEvent(0, 0x10);
 		TerminateTask();
 		
-	}
+	
 	
 }
 void FuncTaskError( void )

@@ -53,32 +53,44 @@ TASK(Task1)
 	if(flag == 0)
 		flag = 1;
 	else 
-		WaitEvent(0x10);
+		//WaitEvent(0x10);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(0,1);
-		SetEvent(Task2, 0x30);
-		for(i = 0; i < 1000000;i++);
+		//SetEvent(Task2, 0x30);
+		for(i = 0; i < 60000;i++);
+	  for(i = 0; i < 60000;i++);
 		TerminateTask();
-		//osekTask_Dispatch();
-	}
+
+	
 	
 }
 
 TASK(Task2)
 {
 	int i;
+	if(flag == 0)
+		flag = 1;
+	else
 	WaitEvent(0x30);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(1,2);
 		SetEvent(Task3, 0x40);
-		for(i = 0; i < 1000000;i++);
+	  for(i = 0; i < 60000;i++);
+		for(i = 0; i < 60000;i++)
+		{
+			if(i == 50000)
+				ActivateTask(Task1);
+		}
+		close_seven_segment();
+	
+		show_seven_segment(1,2);
+		for(i = 0; i < 60000;i++);
+		for(i = 0; i < 60000;i++);
 		TerminateTask();
 		//osekTask_Dispatch();
-	}
+	
 	
 }
 TASK(Task3)
@@ -86,15 +98,15 @@ TASK(Task3)
 	int i;
 	WaitEvent(0x40);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(2,3);
 		SetEvent(Task4, 0x50);
-		for(i = 0; i < 1000000;i++);
+		for(i = 0; i < 60000;i++);
+	  for(i = 0; i < 60000;i++);
 		//TerminateTask();
 		//osekTask_Dispatch();
 		
-	}
+	
 	
 }
 TASK(Task4)
@@ -102,14 +114,13 @@ TASK(Task4)
 	int i;
 	WaitEvent(0x50);
 	close_seven_segment();
-	while(1)
-	{
+	
 		show_seven_segment(3,4);
-		for(i = 0; i < 1000000;i++);
+		for(i = 0; i < 60000;i++);
 		SetEvent(Task1, 0x10);
 		TerminateTask();
 		//osekTask_Dispatch();
-	}
+	
 	
 }
 TASK(TaskError)

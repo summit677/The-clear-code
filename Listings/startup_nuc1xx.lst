@@ -550,8 +550,8 @@ ARM Macro Assembler    Page 9
 ]
   298 00000022                 IF               SEMIHOSTED
   310                          ENDIF
-  311 00000022         ;B       .
-  312 00000022 4770            BX               LR
+  311 00000022 E7FE            B                .
+  312 00000024         ;BX     LR
   313 00000024                 ENDP
   314 00000024         SVC_Handler
                                PROC

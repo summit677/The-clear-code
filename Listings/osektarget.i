@@ -10877,18 +10877,6 @@ __asm OSDWORD osekTarget_SaveContext( void *context)
 	MOV r1,r11
 	STR r1,[r0,#44] ;store R11
 	
-	;MRS r4,APSR ;	store APSR
-	;STR r4,[r0,#12] ;store APSR
-	
-	;MRS r4,IPSR ;	store IPSR
-	;STR r4,[r0,#52] ;store IPSR
-	
-	;MRS r4,EPSR ;	store EPSR
-	;STR r4,[r0,#56] ;store EPSR
-	
-	;MRS r4,PRIMASK ;	store primask
-	;STR r4,[r0,#48] ;store primask
-	
 	MOVS r0,#0 ;函数返回值是0
 	BX LR;
 	
@@ -10902,18 +10890,7 @@ __asm void osekTarget_RestoreContext( void *context )
 		
 		LDR r1,[r0,#4] ;Restore LR
 		MOV lr,r1
-	
-		;LDR r1,[r0,#12] ;Restore APSR
-		;MSR APSR,r1 ;	Restore APSR
-	
-		;LDR r1,[r0,#52] ;Restore IPSR
-		;MSR IPSR,r1 ;	Restore IPSR
-	
-		;LDR r1,[r0,#56] ;Restore EPSR
-		;MSR EPSR,r1 ;	Restore EPSR
-		
-		;LDR r1,[r0,#48] ;Restore primask
-		;MSR PRIMASK,r1 ;	Restore primask
+
 			
 		LDR r4,[r0,#16] ;Restore R4
 		LDR r5,[r0,#20] ;Restore R5
@@ -10928,9 +10905,6 @@ __asm void osekTarget_RestoreContext( void *context )
 		MOV r10,r1
 		LDR r1,[r0,#44] ;Restore R11
 		MOV r11,r1
-		
-		LDR r1,[r0,#8] ;Restore pc
-		PUSH {r1} ;Restore pc
 		
 		MOVS r0,#1 ;函数返回值是1
 		BX LR;

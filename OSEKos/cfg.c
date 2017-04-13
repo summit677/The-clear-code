@@ -308,7 +308,7 @@ const		T_OSEK_TASK_ConfigTable_Struct		osekConfig_TaskTable[OCC_NTSKS]=
 {
 	{
 		(T_OSEK_TASK_Entry)FuncTask1,  Task1,
-		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED ,
+		0 | OSEK_TASK_EXTENDED ,
 		&taskStack[Task1][TASK_STACK_SIZE-1], 
 		&taskStack[Task1][0]
 	},			/*Task1	*/

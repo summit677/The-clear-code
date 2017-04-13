@@ -3328,7 +3328,7 @@ const		T_OSEK_TASK_ConfigTable_Struct		osekConfig_TaskTable[5]=
 {
 	{
 		(T_OSEK_TASK_Entry)FuncTask1,  0,
-		0 | ( (OSBYTE)0x08 ) | ( (OSBYTE)0x80 ) ,
+		0 | ( (OSBYTE)0x80 ) ,
 		&taskStack[0][120-1], 
 		&taskStack[0][0]
 	},			 

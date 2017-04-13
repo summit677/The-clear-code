@@ -145,25 +145,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>804</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>398</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\OSEKos\osekTarget.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\TestProject\OSEKos/osekTarget.c\804</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
           <LineNumber>312</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>818</Address>
+          <Address>814</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -175,7 +159,7 @@
           <Expression>\\TestProject\CMSIS/startup_NUC1xx.s\312</Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>1</Number>
           <Type>0</Type>
           <LineNumber>0</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -191,11 +175,11 @@
           <Expression>0x00000162</Expression>
         </Bp>
         <Bp>
-          <Number>3</Number>
+          <Number>2</Number>
           <Type>0</Type>
           <LineNumber>684</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>10326</Address>
+          <Address>10930</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -207,11 +191,11 @@
           <Expression>\\TestProject\OSEKos/osekTask.c\684</Expression>
         </Bp>
         <Bp>
-          <Number>4</Number>
+          <Number>3</Number>
           <Type>0</Type>
           <LineNumber>722</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>10402</Address>
+          <Address>11006</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -223,11 +207,11 @@
           <Expression>\\TestProject\OSEKos/osekTask.c\722</Expression>
         </Bp>
         <Bp>
-          <Number>5</Number>
+          <Number>4</Number>
           <Type>0</Type>
           <LineNumber>753</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>10464</Address>
+          <Address>11068</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -239,27 +223,11 @@
           <Expression>\\TestProject\OSEKos/osekTask.c\753</Expression>
         </Bp>
         <Bp>
-          <Number>6</Number>
-          <Type>0</Type>
-          <LineNumber>860</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>456</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\OSEKos\osekTarget.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\TestProject\OSEKos/osekTarget.c\860</Expression>
-        </Bp>
-        <Bp>
-          <Number>7</Number>
+          <Number>5</Number>
           <Type>0</Type>
           <LineNumber>772</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>10476</Address>
+          <Address>11080</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -271,11 +239,11 @@
           <Expression>\\TestProject\OSEKos/osekTask.c\772</Expression>
         </Bp>
         <Bp>
-          <Number>8</Number>
+          <Number>6</Number>
           <Type>0</Type>
           <LineNumber>776</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>10478</Address>
+          <Address>11082</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -285,6 +253,166 @@
           <Filename>.\OSEKos\osekTask.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\TestProject\OSEKos/osekTask.c\776</Expression>
+        </Bp>
+        <Bp>
+          <Number>7</Number>
+          <Type>0</Type>
+          <LineNumber>62</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>5586</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\Main\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\Main/main.c\62</Expression>
+        </Bp>
+        <Bp>
+          <Number>8</Number>
+          <Type>0</Type>
+          <LineNumber>792</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>398</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\OSEKos\osekTarget.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\OSEKos/osekTarget.c\792</Expression>
+        </Bp>
+        <Bp>
+          <Number>9</Number>
+          <Type>0</Type>
+          <LineNumber>82</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>5654</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\Main\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\Main/main.c\82</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>781</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>11094</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\OSEKos\osekTask.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\OSEKos/osekTask.c\781</Expression>
+        </Bp>
+        <Bp>
+          <Number>11</Number>
+          <Type>0</Type>
+          <LineNumber>802</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>414</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\OSEKos\osekTarget.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\OSEKos/osekTarget.c\802</Expression>
+        </Bp>
+        <Bp>
+          <Number>12</Number>
+          <Type>0</Type>
+          <LineNumber>813</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>432</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\OSEKos\osekTarget.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\OSEKos/osekTarget.c\813</Expression>
+        </Bp>
+        <Bp>
+          <Number>13</Number>
+          <Type>0</Type>
+          <LineNumber>84</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>5668</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\Main\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\TestProject\Main/main.c\84</Expression>
+        </Bp>
+        <Bp>
+          <Number>14</Number>
+          <Type>0</Type>
+          <LineNumber>63</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\Main\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>15</Number>
+          <Type>0</Type>
+          <LineNumber>86</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\Main\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>16</Number>
+          <Type>0</Type>
+          <LineNumber>846</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\OSEKos\osekTarget.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -308,12 +436,17 @@
           <WinNumber>1</WinNumber>
           <ItemText>osIntSave_pending</ItemText>
         </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>osekInterrupt_NestedLevl</ItemText>
+        </Ww>
       </WatchWindow1>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x20001240</ItemText>
+          <ItemText>0x20000f98</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>

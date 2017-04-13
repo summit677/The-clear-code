@@ -308,8 +308,8 @@ HardFault_Handler\
                 BX     LR
 HardFault_Handler_Ret
     ENDIF
-                ;B       .
-				BX     LR
+                B       .
+				;BX     LR
                 ENDP
 SVC_Handler     PROC
                 EXPORT  SVC_Handler               [WEAK]
