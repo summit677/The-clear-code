@@ -52,11 +52,11 @@ TASK(Task1)
 	int i;
 	if(flag == 0)
 		flag = 1;
-	else 
+	//else 
 		//WaitEvent(0x10);
 	close_seven_segment();
 	
-		show_seven_segment(0,1);
+		show_seven_segment(3,1);
 		//SetEvent(Task2, 0x30);
 		for(i = 0; i < 60000;i++);
 	  for(i = 0; i < 60000;i++);
@@ -103,7 +103,7 @@ TASK(Task3)
 		SetEvent(Task4, 0x50);
 		for(i = 0; i < 60000;i++);
 	  for(i = 0; i < 60000;i++);
-		//TerminateTask();
+		TerminateTask();
 		//osekTask_Dispatch();
 		
 	
@@ -117,7 +117,7 @@ TASK(Task4)
 	
 		show_seven_segment(3,4);
 		for(i = 0; i < 60000;i++);
-		SetEvent(Task1, 0x10);
+		//SetEvent(Task1, 0x10);
 		TerminateTask();
 		//osekTask_Dispatch();
 	
@@ -133,9 +133,11 @@ void read_timer_value(unsigned int *value)
 {
 	*value = DrvTIMER_GetCounters(E_TMR0);
 }
+int my_test_num;
 int main()
 {
 	unsigned char err=err;
+	my_test_num = 0;
 	//防止误操作，所以对系统的控制寄存器锁定，需要修改，如下，则必须用户解锁
 	//http://bbs.21ic.com/icview-291211-1-1.html
 	UNLOCKREG();
@@ -147,12 +149,12 @@ int main()
 	//BSP_UartInit(); 
 	OSEK_CPU_INIT();
 	//BSP_TimerInit();
-	//OSEK_TIMER_START();
+	OSEK_TIMER_START();
 	__enable_irq();
 	//showLogo();
 	
 	StartOS(OSDEFAULTAPPMODE);
-	
+	//while(1){}
 	
 	return 0;
 }

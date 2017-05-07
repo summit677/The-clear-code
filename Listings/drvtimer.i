@@ -11315,7 +11315,2343 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 #line 19 "Drivers\\src\\DrvTIMER.c"
 #line 20 "Drivers\\src\\DrvTIMER.c"
+#line 1 ".\\Ports\\inc\\includes.h"
 
+
+
+
+
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#line 38 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
+
+
+      
+      typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+ 
+typedef int *__va_list[1];        
+
+typedef struct __fpos_t_struct
+{ unsigned long __lo;              
+} fpos_t;
+   
+
+
+ 
+
+typedef struct __FILE FILE;
+   
+
+
+
+
+
+
+ 
+
+
+
+
+
+    
+
+
+ 
+
+
+     
+
+
+
+
+
+
+   
+
+
+ 
+
+   
+
+ 
+
+   
+
+
+ 
+
+
+   
+
+
+ 
+
+   
+
+
+
+ 
+
+
+
+
+
+
+   
+
+
+ 
+
+extern FILE __stdin, __stdout, __stderr;
+
+
+    
+
+    
+
+    
+
+extern int remove(const char *  );
+   
+
+
+
+
+
+ 
+extern int rename(const char *  , const char *  );
+   
+
+
+
+
+
+
+
+
+ 
+extern FILE *tmpfile(void);
+   
+
+
+
+
+ 
+extern char *tmpnam(char *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern int fclose(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern int fflush(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern FILE *fopen(const char *  , const char *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern FILE *freopen(const char *  , const char *  ,
+                     FILE *  );
+   
+
+
+
+
+
+
+
+
+ 
+extern void setbuf(FILE *  , char *  );
+   
+
+
+
+
+ 
+extern int setvbuf(FILE *  , char *  ,
+                   int  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+#pragma __printf_args
+
+
+
+extern int fprintf(FILE *  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _fprintf(FILE *  , const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int printf(const char *  , ...);
+   
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _printf(const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int sprintf(char *  , const char *  , ...);
+   
+
+
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _sprintf(char *  , const char *  , ...);
+   
+
+
+
+ 
+
+
+#pragma __printf_args
+
+extern int snprintf(char *  , size_t  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#pragma __printf_args
+
+extern int _snprintf(char *  , size_t  , const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __scanf_args
+
+
+
+
+extern int fscanf(FILE *  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern int _fscanf(FILE *  , const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __scanf_args
+
+extern int scanf(const char *  , ...);
+   
+
+
+
+
+
+
+ 
+
+#pragma __scanf_args
+
+extern int _scanf(const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __scanf_args
+
+extern int sscanf(const char *  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+ 
+
+#pragma __scanf_args
+
+extern int _sscanf(const char *  , const char *  , ...);
+   
+
+
+
+ 
+
+
+
+
+extern int vprintf(const char *  , __va_list  );
+   
+
+
+
+
+
+ 
+extern int _vprintf(const char *  , __va_list  );
+   
+
+
+
+ 
+extern int vfprintf(FILE *  ,
+                    const char *  , __va_list  );
+   
+
+
+
+
+
+
+ 
+extern int vsprintf(char *  , const char *  , __va_list  );
+   
+
+
+
+
+
+
+ 
+
+extern int vsnprintf(char *  , size_t  ,
+                     const char *  , __va_list  );
+   
+
+
+
+
+
+
+
+ 
+
+
+
+
+extern int _vsprintf(char *  , const char *  , __va_list  );
+   
+
+
+
+ 
+extern int _vfprintf(FILE *  ,
+                     const char *  , __va_list  );
+   
+
+
+
+ 
+extern int _vsnprintf(char *  , size_t  ,
+                      const char *  , __va_list  );
+   
+
+
+
+ 
+extern int fgetc(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern char *fgets(char *  , int  , FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+ 
+extern int fputc(int  , FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern int fputs(const char *  , FILE *  );
+   
+
+
+
+
+ 
+extern int getc(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+
+
+
+
+    extern int (getchar)(void);
+
+   
+
+
+
+
+
+ 
+extern char *gets(char *  );
+   
+
+
+
+
+
+
+
+
+
+ 
+extern int putc(int  , FILE *  );
+   
+
+
+
+
+
+ 
+
+
+
+
+    extern int (putchar)(int  );
+
+   
+
+
+
+ 
+extern int puts(const char *  );
+   
+
+
+
+
+
+ 
+extern int ungetc(int  , FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern size_t fread(void *  ,
+                    size_t  , size_t  , FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern size_t __fread_bytes_avail(void *  ,
+                    size_t  , FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern size_t fwrite(const void *  ,
+                    size_t  , size_t  , FILE *  );
+   
+
+
+
+
+
+
+
+ 
+
+extern int fgetpos(FILE *  , fpos_t *  );
+   
+
+
+
+
+
+
+
+
+ 
+extern int fseek(FILE *  , long int  , int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern int fsetpos(FILE *  , const fpos_t *  );
+   
+
+
+
+
+
+
+
+
+
+
+ 
+extern long int ftell(FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void rewind(FILE *  );
+   
+
+
+
+
+
+ 
+
+extern void clearerr(FILE *  );
+   
+
+
+
+
+ 
+
+extern int feof(FILE *  );
+   
+
+
+ 
+extern int ferror(FILE *  );
+   
+
+
+ 
+extern void perror(const char *  );
+   
+
+
+
+
+
+
+
+
+
+ 
+
+extern int _fisatty(FILE *   );
+    
+ 
+
+extern void __use_no_semihosting_swi(void);
+    
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+#line 893 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
+
+
+
+ 
+#line 7 ".\\Ports\\inc\\includes.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#line 40 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+
+
+  
+  typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+extern void *memcpy(void *  , const void *  , size_t  );
+   
+
+
+
+
+ 
+extern void *memmove(void *  , const void *  , size_t  );
+   
+
+
+
+
+
+
+
+ 
+extern char *strcpy(char *  , const char *  );
+   
+
+
+
+
+ 
+extern char *strncpy(char *  , const char *  , size_t  );
+   
+
+
+
+
+
+ 
+
+extern char *strcat(char *  , const char *  );
+   
+
+
+
+
+ 
+extern char *strncat(char *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+extern int memcmp(const void *  , const void *  , size_t  );
+   
+
+
+
+
+
+ 
+extern int strcmp(const char *  , const char *  );
+   
+
+
+
+
+ 
+extern int strncmp(const char *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+ 
+extern int strcoll(const char *  , const char *  );
+   
+
+
+
+
+
+
+
+ 
+
+extern size_t strxfrm(char *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#line 168 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern void *memchr(const void *  , int  , size_t  );
+
+   
+
+
+
+
+
+ 
+
+#line 184 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strchr(const char *  , int  );
+
+   
+
+
+
+
+ 
+
+extern size_t strcspn(const char *  , const char *  );
+   
+
+
+
+
+ 
+
+#line 207 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strpbrk(const char *  , const char *  );
+
+   
+
+
+
+
+ 
+
+#line 222 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strrchr(const char *  , int  );
+
+   
+
+
+
+
+
+ 
+
+extern size_t strspn(const char *  , const char *  );
+   
+
+
+
+ 
+
+#line 245 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strstr(const char *  , const char *  );
+
+   
+
+
+
+
+
+ 
+
+extern char *strtok(char *  , const char *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern void *memset(void *  , int  , size_t  );
+   
+
+
+
+ 
+extern char *strerror(int  );
+   
+
+
+
+
+
+ 
+extern size_t strlen(const char *  );
+   
+
+
+
+ 
+
+extern void __use_iso8859_locale(void);
+extern void __use_iso8859_ctype(void);
+extern void __use_iso8859_collate(void);
+extern void __use_iso8859_monetary(void);
+extern void __use_iso8859_numeric(void);
+
+
+
+
+
+
+
+
+
+
+#line 352 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+
+
+
+ 
+
+
+
+
+#line 8 ".\\Ports\\inc\\includes.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#line 39 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
+
+ 
+
+#line 50 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
+
+extern __pure unsigned char **__rt_ctype_table(void);
+
+
+
+
+
+
+
+    extern int (isalnum)(int  );
+
+     
+
+
+
+
+
+    extern int (isalpha)(int  );
+
+     
+
+
+
+
+
+    extern int (iscntrl)(int  );
+
+     
+     
+
+
+
+
+
+    extern int (isdigit)(int  );
+
+     
+
+
+
+
+
+    extern int (isgraph)(int  );
+
+     
+
+
+
+
+
+    extern int (islower)(int  );
+
+     
+
+
+
+
+
+    extern int (isprint)(int  );
+
+     
+     
+
+
+
+
+
+    extern int (ispunct)(int  );
+
+     
+
+
+
+
+
+    extern int (isspace)(int  );
+
+     
+
+
+
+
+
+    extern int (isupper)(int  );
+
+     
+
+
+
+
+
+    extern int (isxdigit)(int  );
+
+     
+
+extern int tolower(int  );
+     
+     
+
+extern int toupper(int  );
+     
+     
+
+extern void __use_iso8859_locale(void);
+extern void __use_iso8859_ctype(void);
+extern void __use_iso8859_collate(void);
+extern void __use_iso8859_monetary(void);
+extern void __use_iso8859_numeric(void);
+
+
+
+
+
+
+
+
+
+
+#line 190 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
+
+
+
+ 
+
+
+#line 9 ".\\Ports\\inc\\includes.h"
+#line 10 ".\\Ports\\inc\\includes.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#line 35 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+
+
+  
+  typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+
+
+    
+    typedef unsigned short wchar_t;  
+
+
+
+
+
+
+typedef struct div_t { int quot, rem; } div_t;
+    
+typedef struct ldiv_t { long int quot, rem; } ldiv_t;
+    
+
+typedef struct lldiv_t { long long quot, rem; } lldiv_t;
+    
+
+
+#line 77 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+   
+
+
+
+ 
+
+   
+
+
+
+
+ 
+#line 96 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+   
+
+
+ 
+
+   
+
+
+
+
+ 
+
+extern double atof(const char *  );
+   
+
+
+
+ 
+extern int atoi(const char *  );
+   
+
+
+
+ 
+extern long int atol(const char *  );
+   
+
+
+
+ 
+
+extern long long int atoll(const char *  );
+   
+
+
+
+ 
+
+
+extern double strtod(const char *  , char **  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern long int strtol(const char *  , char ** , int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern unsigned long int strtoul(const char *  ,
+                                       char **  , int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+extern long long int strtoll(const char *    ,
+                             char **    , int  );
+   
+
+
+
+
+ 
+extern unsigned long long int strtoull(const char *    ,
+                                       char **    , int  );
+   
+
+
+
+ 
+
+
+extern int rand(void);
+   
+
+
+
+
+
+
+
+ 
+extern void srand(unsigned int  );
+   
+
+
+
+
+
+
+ 
+
+extern void *calloc(size_t  , size_t  );
+   
+
+
+
+ 
+extern void free(void *  );
+   
+
+
+
+
+
+ 
+extern void *malloc(size_t  );
+   
+
+
+
+ 
+extern void *realloc(void *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef int (*__heapprt)(void *, char const *, ...);
+extern void __heapstats(int (*  )(void *  ,
+                                           char const *  , ...),
+                        void *  );
+   
+
+
+
+
+
+
+
+
+
+
+ 
+extern int __heapvalid(int (*  )(void *  ,
+                                           char const *  , ...),
+                       void *  , int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void abort(void);
+   
+
+
+
+
+
+
+
+ 
+extern int atexit(void (*  )(void));
+   
+
+
+
+
+ 
+extern void exit(int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern char *getenv(const char *  );
+   
+
+
+
+
+
+
+
+
+
+ 
+extern int  system(const char *  );
+   
+
+
+
+
+
+
+
+
+
+ 
+
+extern void *bsearch(const void *  , const void *  ,
+              size_t  , size_t  ,
+              int (*  )(const void *, const void *));
+   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void qsort(void *  , size_t  , size_t  ,
+           int (*  )(const void *, const void *));
+   
+
+
+
+
+
+
+
+
+
+ 
+
+extern int abs(int  );
+   
+
+
+
+ 
+
+extern div_t div(int  , int  );
+   
+
+
+
+
+
+
+
+
+
+ 
+extern long int labs(long int  );
+   
+
+
+
+ 
+
+
+
+
+extern ldiv_t ldiv(long int  , long int  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+extern long long llabs(long long  );
+   
+
+
+
+ 
+
+
+
+
+extern lldiv_t lldiv(long long  , long long  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 494 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+
+
+
+ 
+typedef struct __sdiv32by16 { int quot, rem; } __sdiv32by16;
+typedef struct __udiv32by16 { unsigned int quot, rem; } __udiv32by16;
+    
+typedef struct __sdiv64by32 { int rem, quot; } __sdiv64by32;
+
+__value_in_regs extern __sdiv32by16 __rt_sdiv32by16(
+     int  ,
+     short int  );
+   
+
+ 
+__value_in_regs extern __udiv32by16 __rt_udiv32by16(
+     unsigned int  ,
+     unsigned short  );
+   
+
+ 
+__value_in_regs extern __sdiv64by32 __rt_sdiv64by32(
+     int  , unsigned int  ,
+     int  );
+   
+
+ 
+
+
+
+ 
+extern unsigned int __fp_status(unsigned int  , unsigned int  );
+   
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern int mblen(const char *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern int mbtowc(wchar_t *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern int wctomb(char *  , wchar_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+extern size_t mbstowcs(wchar_t *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern size_t wcstombs(char *  , const wchar_t *  , size_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+extern void __use_realtime_heap(void);
+extern void __use_realtime_division(void);
+extern void __use_two_region_memory(void);
+extern void __use_no_heap(void);
+extern void __use_no_heap_region(void);
+
+extern char const *__C_library_version_string(void);
+extern int __C_library_version_number(void);
+
+
+
+
+
+
+
+
+
+
+#line 727 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
+ 
+#line 11 ".\\Ports\\inc\\includes.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdarg.h"
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#line 31 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdarg.h"
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+typedef int *va_list[1];
+   
+
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+   
+
+
+
+
+ 
+
+
+
+
+   
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 12 ".\\Ports\\inc\\includes.h"
+
+#line 1 ".\\BSP\\Init.h"
+
+
+
+
+void OSEK_CPU_INIT(void);
+void OSEK_TIMER_START(void);
+void Delay(int count);
+
+
+
+#line 14 ".\\Ports\\inc\\includes.h"
+#line 1 ".\\NUC1xx-LB_002\\inc\\LCD_Driver.h"
+
+
+     
+extern void SysTimerDelay(uint32_t us);
+extern void Initial_pannel(void);
+extern void Disable_Buzzer(void);
+
+extern void Show_Word(unsigned char x, unsigned char y,unsigned char ascii_word);
+
+extern void print_lcd(unsigned char line, char *str);
+
+
+extern void clr_all_pannal(void);
+#line 15 ".\\Ports\\inc\\includes.h"
+#line 16 ".\\Ports\\inc\\includes.h"
+#line 1 ".\\Drivers\\inc\\DrvUART.h"
+ 
+ 
+ 
+ 
+ 
+
+
+
+#line 10 ".\\Drivers\\inc\\DrvUART.h"
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+
+							   
+ 
+ 
+ 
+
+
+
+
+
+
+
+#line 46 ".\\Drivers\\inc\\DrvUART.h"
+
+      
+typedef void (PFN_DRVUART_CALLBACK)(uint32_t userData);
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+typedef enum 
+{
+	UART_PORT0 = 0x000, 
+	UART_PORT1 = 0x100000,
+	UART_PORT2 = 0x104000
+} E_UART_PORT;
+
+ 
+ 
+ 
+typedef enum 
+{
+	 DRVUART_LININT   	=    0x00000100,	     
+     DRVUART_WAKEUPINT  =    0x00000080,       
+     DRVUART_BUFERRINT  =	 0x00000020,		 
+     DRVUART_TOUTINT   	=	 0x00000010,	     
+	 DRVUART_MOSINT   	=	 0x00000008,	     
+	 DRVUART_RLSINT   	=	 0x00000004,	     
+	 DRVUART_THREINT   	=	 0x00000002,	     
+	 DRVUART_RDAINT   	=	 0x00000001		 
+} E_INT_SOURCE;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+	 DRVUART_LININT_FLAG   	 =   0x00008000,	     
+     DRVUART_BUFERRINT_FLAG  =	 0x00002000,		 
+     DRVUART_TOUTINT_FLAG    =	 0x00001000,	     
+	 DRVUART_MOSINT_FLAG   	 =	 0x00000800,	     
+	 DRVUART_RLSINT_FLAG   	 =	 0x00000400,	     
+	 DRVUART_THREINT_FLAG    =	 0x00000200,	     
+	 DRVUART_RDAINT_FLAG   	 =	 0x00000100		 
+} E_INT_FLAG;
+
+ 
+ 
+ 
+typedef enum 
+{
+	 DRVUART_DATABITS_5   =    0x0,
+	 DRVUART_DATABITS_6	  =	   0x1,
+     DRVUART_DATABITS_7   =	   0x2,
+     DRVUART_DATABITS_8   =	   0x3
+
+} E_DATABITS_SETTINS;
+
+ 
+ 
+ 
+
+typedef enum 
+{
+	 DRVUART_PARITY_NONE   =    0x0,
+	 DRVUART_PARITY_ODD	   =	0x1,
+     DRVUART_PARITY_EVEN   =	0x3,
+     DRVUART_PARITY_MARK   =	0x5,
+     DRVUART_PARITY_SPACE  =	0x7
+} E_PARITY_SETTINS;
+
+ 
+ 
+ 
+
+typedef enum 
+{
+	 DRVUART_STOPBITS_1  	=   0x0,
+	 DRVUART_STOPBITS_1_5	=   0x1,
+     DRVUART_STOPBITS_2   	=   0x1
+} E_STOPBITS_SETTINS;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+	DRVUART_FIFO_1BYTES 	= 0x0, 
+	DRVUART_FIFO_4BYTES 	= 0x1,
+	DRVUART_FIFO_8BYTES 	= 0x2,
+	DRVUART_FIFO_14BYTES 	= 0x3,
+	DRVUART_FIFO_30BYTES 	= 0x4,
+	DRVUART_FIFO_46BYTES 	= 0x5,
+	DRVUART_FIFO_62BYTES 	= 0x6
+} E_FIFO_SETTINGS;
+
+
+
+
+ 
+ 
+ 
+
+typedef enum 
+{
+	FUN_UART 	= 0, 
+	FUN_LIN 	= 1,
+	FUN_IRCR 	= 2,
+	FUN_RS485 	= 3
+} E_UART_FUNC;
+
+ 
+ 
+ 
+
+typedef enum 
+{
+	MODE_RS485_NMM = 1, 
+	MODE_RS485_AAD = 2,
+	MODE_RS485_AUD = 4
+} E_MODE_RS485;
+									
+
+
+ 
+ 
+ 
+
+typedef struct DRVUART_STRUCT
+{
+    uint32_t            u32BaudRate;
+    E_DATABITS_SETTINS  u8cDataBits;
+    E_STOPBITS_SETTINS  u8cStopBits;
+    E_PARITY_SETTINS 	u8cParity;
+    E_FIFO_SETTINGS     u8cRxTriggerLevel;
+    uint8_t             u8TimeOut ;
+}STR_UART_T;
+
+ 
+ 
+ 
+
+typedef struct IRCR_STRUCT
+{
+    uint8_t   	    u8cTXSelect;
+    uint8_t			u8cInvTX;
+    uint8_t	        u8cInvRX;
+}STR_IRCR_T;
+
+ 
+ 
+ 
+
+typedef struct RS485_STRUCT
+{
+    uint8_t   	    u8cModeSelect;
+    uint8_t			u8cAddrEnable;
+    uint8_t	        u8cAddrValue;
+	uint8_t	        u8cDelayTime;
+	uint8_t	        u8cRxDisable;
+}STR_RS485_T;
+
+
+ 
+ 
+ 
+ 
+void DrvUART_Close(E_UART_PORT u32Port);
+void DrvUART_EnableInt(E_UART_PORT u32Port,uint32_t u32InterruptFlag,PFN_DRVUART_CALLBACK pfncallback);
+void DrvUART_DisableInt(E_UART_PORT u32Port,uint32_t u32InterruptFlag);
+void DrvUART_GetClcok(uint8_t *pu8ClcokSrc, uint8_t *pu8ClcokDiv);
+void DrvUART_GetCTSInfo(E_UART_PORT u32Port,uint8_t *pu8CTSValue,uint8_t *pu8CTSChangeState);
+void DrvUART_SetClcok(uint8_t u8ClcokSrc, uint8_t u8ClcokDiv);
+void DrvUART_SetRTSTrigLevel(E_UART_PORT u32Port,uint16_t u16TriggerLevel);
+void DrvUART_SetRTS(E_UART_PORT u32Port,uint8_t u8Value,uint16_t u16TriggerLevel);
+
+int32_t DrvUART_Write(E_UART_PORT u32Port,uint8_t *pu8TxBuf,uint32_t u32WriteBytes);
+int32_t DrvUART_Read(E_UART_PORT u32Port,uint8_t *pu8RxBuf,uint32_t	u32ReadBytes);
+int32_t DrvUART_Open(E_UART_PORT u32Port, STR_UART_T *sParam);
+int32_t DrvUART_GetIntStatus(E_UART_PORT u32Port,uint32_t u32InterruptFlag);
+int32_t DrvUART_GetVersion(void);
+
+uint32_t DrvUART_ClearIntFlag(E_UART_PORT u32Port,uint32_t u32InterruptFlag);
+void DrvUART_EnablePDMA(E_UART_PORT u32Port);
+void DrvUART_DisalbePDMA(E_UART_PORT u32Port);
+
+void DrvUART_SetFnIRDA(E_UART_PORT u32Port,STR_IRCR_T *str_IRCR );
+void DrvUART_SetFnLIN(E_UART_PORT u32Port,uint16_t u16Mode,uint16_t u16BreakLength);
+void DrvUART_SetFnRS485(E_UART_PORT u32Port,STR_RS485_T *str_RS485);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 17 ".\\Ports\\inc\\includes.h"
+#line 18 ".\\Ports\\inc\\includes.h"
+#line 19 ".\\Ports\\inc\\includes.h"
+
+#line 21 ".\\Ports\\inc\\includes.h"
+#line 22 ".\\Ports\\inc\\includes.h"
+
+#line 21 "Drivers\\src\\DrvTIMER.c"
  
  
  
@@ -11458,29 +13794,28 @@ static uint32_t CalTimerInitValue(uint32_t u32ClockValue, uint32_t u32TicksPerSe
  
 
 
-
+extern int my_test_num;
 void TMR0_IRQHandler(void)
 {   
+    if ((((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TCSR.IE == 1) && (((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TISR.TIF == 1))
+        ((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TISR.TIF = 1;
 
+    if ((((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TEXCON.TEXEN == 1) && (((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TEXCON.TEXIEN == 1) && (((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TEXISR.TEXIF == 1))
+        ((TIMER_T *) ((( uint32_t)0x40000000) + 0x10000))->TEXISR.TEXIF = 1;
+		
+    if (tTime0Event[0].active)
+    {
+        tTime0Event[0].curTick--;
+        if (tTime0Event[0].curTick == 0)
+        {
+            (*tTime0Event[0].funPtr)(tTime0Event[0].transParam);
+            tTime0Event[0].curTick = tTime0Event[0].initTick;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	CounterTrigger(0);
+	
+	
 
 
 
@@ -11488,8 +13823,6 @@ void TMR0_IRQHandler(void)
 
  
 
-
-	CounterTrigger(0);
 }
 
 
@@ -11569,6 +13902,7 @@ void TMR2_IRQHandler(void)
  
 void TMR3_IRQHandler(void)
 {
+	
     if ((((TIMER_T *) ((( uint32_t)0x40100000) + 0x10020))->TCSR.IE == 1) && (((TIMER_T *) ((( uint32_t)0x40100000) + 0x10020))->TISR.TIF == 1))
         ((TIMER_T *) ((( uint32_t)0x40100000) + 0x10020))->TISR.TIF = 1;
 
@@ -11586,6 +13920,8 @@ void TMR3_IRQHandler(void)
             tTime3Event[0].curTick = tTime3Event[0].initTick;
         }
     }
+
+	
 }
 
  

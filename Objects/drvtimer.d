@@ -26,3 +26,12 @@
 .\objects\drvtimer.o: .\OSEKos\inc\osekEvent.h
 .\objects\drvtimer.o: .\OSEKos\inc\osekDebug.h
 .\objects\drvtimer.o: .\OSEKos\inc\osekMessage.h
+.\objects\drvtimer.o: .\Ports\inc\includes.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\string.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\ctype.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\stdlib.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\stdarg.h
+.\objects\drvtimer.o: .\BSP\Init.h
+.\objects\drvtimer.o: .\NUC1xx-LB_002\inc\LCD_Driver.h
+.\objects\drvtimer.o: .\Drivers\inc\DrvUART.h

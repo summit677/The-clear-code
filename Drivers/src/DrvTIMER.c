@@ -17,7 +17,7 @@
 #include "osprop.h"
 #include "osapi.h"
 #include "cfg.h"
-
+#include "includes.h"
 /*---------------------------------------------------------------------------------------------------------*/
 /* Macro, type and constant definitions                                                                    */
 /*---------------------------------------------------------------------------------------------------------*/
@@ -160,12 +160,9 @@ static uint32_t CalTimerInitValue(uint32_t u32ClockValue, uint32_t u32TicksPerSe
 /*---------------------------------------------------------------------------------------------------------*/
 
 
-
+extern int my_test_num;
 void TMR0_IRQHandler(void)
 {   
-/*	
-//  ***************TMR0_IRQHandler of UCOS **************** //
-	      OS_CPU_SR  cpu_sr;
     if ((TIMER0->TCSR.IE == 1) && (TIMER0->TISR.TIF == 1))
         TIMER0->TISR.TIF = 1;
 
@@ -181,17 +178,17 @@ void TMR0_IRQHandler(void)
             tTime0Event[0].curTick = tTime0Event[0].initTick;
         }
     }
-	
-		
-    OS_ENTER_CRITICAL();                         // Tell uC/OS-II that we are starting an ISR          
-    OSIntNesting++;
-    OS_EXIT_CRITICAL();
-    OSTimeTick();                                // Call uC/OS-II's OSTimeTick()                       
-    OSIntExit();                                 // Tell uC/OS-II that we are leaving the ISR          
-*/
-
 //  ***************TMR0_IRQHandler of OSEK **************** //
 	CounterTrigger(SysCounter);
+	//========================= my test code , if it worked , the segment will light ===============
+	/*
+		my_test_num = my_test_num + 1;
+		if(my_test_num >= 10)
+			my_test_num = 0;
+		close_seven_segment();
+		show_seven_segment(0,my_test_num);
+		*/
+
 }
 
 
@@ -271,6 +268,7 @@ void TMR2_IRQHandler(void)
 /*---------------------------------------------------------------------------------------------------------*/
 void TMR3_IRQHandler(void)
 {
+	
     if ((TIMER3->TCSR.IE == 1) && (TIMER3->TISR.TIF == 1))
         TIMER3->TISR.TIF = 1;
 
@@ -288,6 +286,8 @@ void TMR3_IRQHandler(void)
             tTime3Event[0].curTick = tTime3Event[0].initTick;
         }
     }
+
+	
 }
 
 /*---------------------------------------------------------------------------------------------------------*/

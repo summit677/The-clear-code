@@ -14027,11 +14027,11 @@ void FuncTask1( void )
 	int i;
 	if(flag == 0)
 		flag = 1;
-	else 
+	
 		
 	close_seven_segment();
 	
-		show_seven_segment(0,1);
+		show_seven_segment(3,1);
 		
 		for(i = 0; i < 60000;i++);
 	  for(i = 0; i < 60000;i++);
@@ -14078,7 +14078,7 @@ void FuncTask3( void )
 		SetEvent(3, 0x50);
 		for(i = 0; i < 60000;i++);
 	  for(i = 0; i < 60000;i++);
-		
+		TerminateTask();
 		
 		
 	
@@ -14092,7 +14092,7 @@ void FuncTask4( void )
 	
 		show_seven_segment(3,4);
 		for(i = 0; i < 60000;i++);
-		SetEvent(0, 0x10);
+		
 		TerminateTask();
 		
 	
@@ -14108,9 +14108,11 @@ void read_timer_value(unsigned int *value)
 {
 	*value = DrvTIMER_GetCounters(E_TMR0);
 }
+int my_test_num;
 int main()
 {
 	unsigned char err=err;
+	my_test_num = 0;
 	
 	
 	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x59;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x16;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x88;
@@ -14122,7 +14124,7 @@ int main()
 	
 	OSEK_CPU_INIT();
 	
-	
+	OSEK_TIMER_START();
 	__enable_irq();
 	
 	
