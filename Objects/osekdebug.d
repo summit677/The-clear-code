@@ -3,7 +3,7 @@
 .\objects\osekdebug.o: .\OSEKos\inc\osapi.h
 .\objects\osekdebug.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekdebug.o: .\OSEKos\inc\osekTarget.h
-.\objects\osekdebug.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\osekdebug.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\osekdebug.o: .\OSEKos\inc\osapi.h
 .\objects\osekdebug.o: .\OSEKos\inc\cfg.h
 .\objects\osekdebug.o: .\OSEKos\inc\userMSG.h

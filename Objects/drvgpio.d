@@ -1,9 +1,10 @@
 .\objects\drvgpio.o: Drivers\src\DrvGPIO.c
-.\objects\drvgpio.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvgpio.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
 .\objects\drvgpio.o: .\CMSIS\NUC1xx.h
 .\objects\drvgpio.o: .\CMSIS\core_cm0.h
-.\objects\drvgpio.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvgpio.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\drvgpio.o: .\CMSIS\system_NUC1xx.h
 .\objects\drvgpio.o: .\CMSIS\SysInfra.h
 .\objects\drvgpio.o: .\Drivers\inc\ModuleID.h
+.\objects\drvgpio.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\drvgpio.o: .\Drivers\inc\DrvGPIO.h

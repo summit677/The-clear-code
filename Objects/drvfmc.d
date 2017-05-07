@@ -1,10 +1,11 @@
 .\objects\drvfmc.o: Drivers\src\DrvFMC.c
-.\objects\drvfmc.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvfmc.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
 .\objects\drvfmc.o: .\Drivers\inc\DrvFMC.h
 .\objects\drvfmc.o: .\CMSIS\NUC1xx.h
 .\objects\drvfmc.o: .\CMSIS\core_cm0.h
-.\objects\drvfmc.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvfmc.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\drvfmc.o: .\CMSIS\system_NUC1xx.h
 .\objects\drvfmc.o: .\CMSIS\SysInfra.h
 .\objects\drvfmc.o: .\Drivers\inc\ModuleID.h
+.\objects\drvfmc.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\drvfmc.o: .\Drivers\inc\DrvSYS.h

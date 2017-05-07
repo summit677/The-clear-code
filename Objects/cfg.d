@@ -3,7 +3,7 @@
 .\objects\cfg.o: .\OSEKos\inc\osapi.h
 .\objects\cfg.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\cfg.o: .\OSEKos\inc\osekTarget.h
-.\objects\cfg.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\cfg.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\cfg.o: .\OSEKos\inc\osapi.h
 .\objects\cfg.o: .\OSEKos\inc\cfg.h
 .\objects\cfg.o: .\OSEKos\inc\userMSG.h

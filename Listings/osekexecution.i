@@ -785,7 +785,7 @@ typedef OSBYTE  OSSERVICEIDTYPE;
  
 
 
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
  
  
 
@@ -795,17 +795,7 @@ typedef OSBYTE  OSSERVICEIDTYPE;
 
  
 
-
-
-
-
-
-
-
-
-     
-#line 27 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-     
+ 
 
 
 
@@ -815,9 +805,9 @@ typedef OSBYTE  OSSERVICEIDTYPE;
 
 
 
+#line 32 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
-#line 46 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
 
 
@@ -869,37 +859,12 @@ typedef unsigned           int uint_fast32_t;
 typedef unsigned       __int64 uint_fast64_t;
 
      
-
-
-
-
 typedef   signed           int intptr_t;
 typedef unsigned           int uintptr_t;
 
-
      
-typedef   signed     long long intmax_t;
-typedef unsigned     long long uintmax_t;
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
+typedef   signed       __int64 intmax_t;
+typedef unsigned       __int64 uintmax_t;
 
 
 
@@ -952,16 +917,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
      
 
 
 
 
 
-
      
-
 
 
 
@@ -981,7 +943,15 @@ typedef unsigned     long long uintmax_t;
      
 
      
-#line 216 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+
+
+     
+
+
+     
+
+
+     
 
      
 
@@ -991,26 +961,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-
-
      
-    
- 
 
-
-
-#line 241 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
      
 
 
 
-
-
-
-
-     
 
 
 
@@ -1032,15 +989,28 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-#line 305 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-
+     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#line 262 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
 
  
+
+
 #line 26 ".\\OSEKos\\inc\\osekTarget.h"
 #line 27 ".\\OSEKos\\inc\\osekTarget.h"
 #line 1 ".\\OSEKos\\inc\\osapi.h"
@@ -3046,7 +3016,7 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 
 #line 29 "OSEKos\\osekExecution.c"
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
  
  
  
@@ -3074,65 +3044,27 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 
 
-
-
-
-#line 38 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+#line 40 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
 
 
   
-
-
-
-    typedef unsigned int size_t;    
-#line 54 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+  typedef unsigned int size_t;
 
 
 
 
-extern __declspec(__nothrow) void *memcpy(void * __restrict  ,
-                    const void * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+
+
+
+
+extern void *memcpy(void *  , const void *  , size_t  );
    
 
 
 
 
  
-extern __declspec(__nothrow) void *memmove(void *  ,
-                    const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) char *strcpy(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncpy(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) char *strcat(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern void *memmove(void *  , const void *  , size_t  );
    
 
 
@@ -3140,16 +3072,16 @@ extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __r
 
 
 
- 
-
-
-
-
-
 
  
+extern char *strcpy(char *  , const char *  );
+   
 
-extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
+
+
+
+ 
+extern char *strncpy(char *  , const char *  , size_t  );
    
 
 
@@ -3157,14 +3089,15 @@ extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  
 
 
  
-extern __declspec(__nothrow) int strcmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+extern char *strcat(char *  , const char *  );
    
 
 
 
 
  
-extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern char *strncat(char *  , const char *  , size_t  );
    
 
 
@@ -3173,16 +3106,6 @@ extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t 
 
 
  
-extern __declspec(__nothrow) int strcasecmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
 
 
 
@@ -3190,7 +3113,32 @@ extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , siz
 
 
  
-extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+extern int memcmp(const void *  , const void *  , size_t  );
+   
+
+
+
+
+
+ 
+extern int strcmp(const char *  , const char *  );
+   
+
+
+
+
+ 
+extern int strncmp(const char *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+ 
+extern int strcoll(const char *  , const char *  );
    
 
 
@@ -3201,7 +3149,7 @@ extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attri
 
  
 
-extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
+extern size_t strxfrm(char *  , const char *  , size_t  );
    
 
 
@@ -3219,8 +3167,8 @@ extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __
  
 
 
-#line 193 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+#line 168 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern void *memchr(const void *  , int  , size_t  );
 
    
 
@@ -3230,8 +3178,8 @@ extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __att
 
  
 
-#line 209 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((__nonnull__(1)));
+#line 184 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strchr(const char *  , int  );
 
    
 
@@ -3240,7 +3188,7 @@ extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((
 
  
 
-extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+extern size_t strcspn(const char *  , const char *  );
    
 
 
@@ -3248,8 +3196,8 @@ extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __at
 
  
 
-#line 232 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+#line 207 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strpbrk(const char *  , const char *  );
 
    
 
@@ -3258,26 +3206,8 @@ extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __att
 
  
 
-#line 247 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strrchr(const char *  , int  ) __attribute__((__nonnull__(1)));
-
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-
-#line 270 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+#line 222 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strrchr(const char *  , int  );
 
    
 
@@ -3287,11 +3217,25 @@ extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attr
 
  
 
-extern __declspec(__nothrow) char *strtok(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(2)));
-extern __declspec(__nothrow) char *_strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
+extern size_t strspn(const char *  , const char *  );
+   
 
-extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
 
+
+ 
+
+#line 245 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strstr(const char *  , const char *  );
+
+   
+
+
+
+
+
+ 
+
+extern char *strtok(char *  , const char *  );
    
 
 
@@ -3316,25 +3260,15 @@ extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  )
 
 
 
-
-
-
-
-
-
-
-
-
-
  
 
-extern __declspec(__nothrow) void *memset(void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+extern void *memset(void *  , int  , size_t  );
    
 
 
 
  
-extern __declspec(__nothrow) char *strerror(int  );
+extern char *strerror(int  );
    
 
 
@@ -3342,15 +3276,18 @@ extern __declspec(__nothrow) char *strerror(int  );
 
 
  
-extern __declspec(__nothrow) size_t strlen(const char *  ) __attribute__((__nonnull__(1)));
+extern size_t strlen(const char *  );
    
 
 
 
  
 
-extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
+extern void __use_iso8859_locale(void);
+extern void __use_iso8859_ctype(void);
+extern void __use_iso8859_collate(void);
+extern void __use_iso8859_monetary(void);
+extern void __use_iso8859_numeric(void);
 
 
 
@@ -3361,112 +3298,14 @@ extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) 
 
 
 
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strlcat(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#line 352 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
 
 
 
  
 
-extern __declspec(__nothrow) void _membitcpybl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpybb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-#line 502 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-
-
-
- 
 
 #line 30 "OSEKos\\osekExecution.c"
 

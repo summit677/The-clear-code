@@ -3,7 +3,7 @@
 .\objects\osekresource.o: .\OSEKos\inc\osapi.h
 .\objects\osekresource.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekresource.o: .\OSEKos\inc\osekTarget.h
-.\objects\osekresource.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\osekresource.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\osekresource.o: .\OSEKos\inc\osapi.h
 .\objects\osekresource.o: .\OSEKos\inc\cfg.h
 .\objects\osekresource.o: .\OSEKos\inc\userMSG.h
@@ -17,4 +17,4 @@
 .\objects\osekresource.o: .\OSEKos\inc\osekEvent.h
 .\objects\osekresource.o: .\OSEKos\inc\osekDebug.h
 .\objects\osekresource.o: .\OSEKos\inc\osekMessage.h
-.\objects\osekresource.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\osekresource.o: C:\GraduationDesign\SoftWare\INCLUDE\string.h

@@ -4,7 +4,7 @@
  
  
  
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
  
  
 
@@ -14,17 +14,7 @@
 
  
 
-
-
-
-
-
-
-
-
-     
-#line 27 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-     
+ 
 
 
 
@@ -34,9 +24,9 @@
 
 
 
+#line 32 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
-#line 46 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
 
 
@@ -88,37 +78,12 @@ typedef unsigned           int uint_fast32_t;
 typedef unsigned       __int64 uint_fast64_t;
 
      
-
-
-
-
 typedef   signed           int intptr_t;
 typedef unsigned           int uintptr_t;
 
-
      
-typedef   signed     long long intmax_t;
-typedef unsigned     long long uintmax_t;
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
+typedef   signed       __int64 intmax_t;
+typedef unsigned       __int64 uintmax_t;
 
 
 
@@ -171,16 +136,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
      
 
 
 
 
 
-
      
-
 
 
 
@@ -200,7 +162,15 @@ typedef unsigned     long long uintmax_t;
      
 
      
-#line 216 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+
+
+     
+
+
+     
+
+
+     
 
      
 
@@ -210,26 +180,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-
-
      
-    
- 
 
-
-
-#line 241 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
      
 
 
 
-
-
-
-
-     
 
 
 
@@ -251,15 +208,28 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-#line 305 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-
+     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#line 262 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
 
  
+
+
 #line 7 "CMSIS\\system_NUC1xx.c"
 #line 1 "CMSIS\\NUC1xx.h"
  
@@ -1271,6 +1241,22 @@ typedef enum
 
 
 #line 15 "CMSIS\\SysInfra.h"
+#line 1 "C:\\GraduationDesign\\Keil_mdk_5.11\\ARM\\ARMCC\\include\\stdint.h"
+ 
+ 
+
+
+
+
+
+ 
+
+#line 274 "C:\\GraduationDesign\\Keil_mdk_5.11\\ARM\\ARMCC\\include\\stdint.h"
+
+ 
+
+
+
 #line 16 "CMSIS\\SysInfra.h"
 #line 17 "CMSIS\\SysInfra.h"
 

@@ -605,7 +605,7 @@ typedef OSBYTE  OSSERVICEIDTYPE;
  
 
 
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
  
  
 
@@ -615,17 +615,7 @@ typedef OSBYTE  OSSERVICEIDTYPE;
 
  
 
-
-
-
-
-
-
-
-
-     
-#line 27 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-     
+ 
 
 
 
@@ -635,9 +625,9 @@ typedef OSBYTE  OSSERVICEIDTYPE;
 
 
 
+#line 32 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
-#line 46 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
 
 
@@ -689,37 +679,12 @@ typedef unsigned           int uint_fast32_t;
 typedef unsigned       __int64 uint_fast64_t;
 
      
-
-
-
-
 typedef   signed           int intptr_t;
 typedef unsigned           int uintptr_t;
 
-
      
-typedef   signed     long long intmax_t;
-typedef unsigned     long long uintmax_t;
-
-
-
-
-     
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-     
-
+typedef   signed       __int64 intmax_t;
+typedef unsigned       __int64 uintmax_t;
 
 
 
@@ -772,16 +737,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
      
 
 
 
 
 
-
      
-
 
 
 
@@ -801,7 +763,15 @@ typedef unsigned     long long uintmax_t;
      
 
      
-#line 216 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
+
+
+     
+
+
+     
+
+
+     
 
      
 
@@ -811,26 +781,13 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-
-
      
-    
- 
 
-
-
-#line 241 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
 
      
 
 
 
-
-
-
-
-     
 
 
 
@@ -852,15 +809,28 @@ typedef unsigned     long long uintmax_t;
 
 
 
-
-#line 305 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdint.h"
-
+     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#line 262 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdint.h"
 
 
 
  
+
+
 #line 26 ".\\OSEKos\\inc\\osekTarget.h"
 #line 1 ".\\OSEKos\\inc\\osprop.h"
  
@@ -3368,7 +3338,7 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 
 
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
  
  
  
@@ -3392,30 +3362,13 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 
 
- 
 
 
+#line 38 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
 
 
-  
- 
-
-
-
-
-
-
-
-
-#line 47 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
-
-
-  
-
-
-
-    typedef unsigned int size_t;    
-
+      
+      typedef unsigned int size_t;
 
 
 
@@ -3425,47 +3378,13 @@ extern const T_OSEK_MESSAGE_ConfigTable osekConfig_MsgTable[];
 
 
  
- 
+typedef int *__va_list[1];        
 
- 
-
-
-
-    typedef struct __va_list __va_list;
-
-
-
-
-
-
-   
-
-
-
-
- 
-
-
-
-
-typedef struct __fpos_t_struct {
-    unsigned __int64 __pos;
-    
-
-
-
- 
-    struct {
-        unsigned int __state1, __state2;
-    } __mbstate;
+typedef struct __fpos_t_struct
+{ unsigned long __lo;              
 } fpos_t;
    
 
-
- 
-
-
-   
 
  
 
@@ -3479,31 +3398,21 @@ typedef struct __FILE FILE;
 
  
 
-#line 136 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
 
 
-extern FILE __stdin, __stdout, __stderr;
-extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
 
-#line 166 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
-    
-
-    
 
     
 
 
-
+ 
 
 
      
 
 
 
-   
 
-
- 
 
 
    
@@ -3513,8 +3422,6 @@ extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
 
    
 
-
-
  
 
    
@@ -3523,6 +3430,20 @@ extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
  
 
 
+   
+
+
+ 
+
+   
+
+
+
+ 
+
+
+
+
 
 
    
@@ -3530,21 +3451,16 @@ extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
 
  
 
-
-
+extern FILE __stdin, __stdout, __stderr;
 
 
     
 
+    
 
- 
+    
 
-
-
-
-
-
-extern __declspec(__nothrow) int remove(const char *  ) __attribute__((__nonnull__(1)));
+extern int remove(const char *  );
    
 
 
@@ -3552,25 +3468,7 @@ extern __declspec(__nothrow) int remove(const char *  ) __attribute__((__nonnull
 
 
  
-extern __declspec(__nothrow) int rename(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) FILE *tmpfile(void);
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *tmpnam(char *  );
+extern int rename(const char *  , const char *  );
    
 
 
@@ -3580,33 +3478,15 @@ extern __declspec(__nothrow) char *tmpnam(char *  );
 
 
 
-
-
-
  
-
-extern __declspec(__nothrow) int fclose(FILE *  ) __attribute__((__nonnull__(1)));
+extern FILE *tmpfile(void);
    
 
 
 
 
-
-
-
  
-extern __declspec(__nothrow) int fflush(FILE *  );
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) FILE *fopen(const char * __restrict  ,
-                           const char * __restrict  ) __attribute__((__nonnull__(1,2)));
+extern char *tmpnam(char *  );
    
 
 
@@ -3619,39 +3499,9 @@ extern __declspec(__nothrow) FILE *fopen(const char * __restrict  ,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
-extern __declspec(__nothrow) FILE *freopen(const char * __restrict  ,
-                    const char * __restrict  ,
-                    FILE * __restrict  ) __attribute__((__nonnull__(2,3)));
+
+extern int fclose(FILE *  );
    
 
 
@@ -3660,19 +3510,8 @@ extern __declspec(__nothrow) FILE *freopen(const char * __restrict  ,
 
 
 
-
  
-extern __declspec(__nothrow) void setbuf(FILE * __restrict  ,
-                    char * __restrict  ) __attribute__((__nonnull__(1)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) int setvbuf(FILE * __restrict  ,
-                   char * __restrict  ,
-                   int  , size_t  ) __attribute__((__nonnull__(1)));
+extern int fflush(FILE *  );
    
 
 
@@ -3681,18 +3520,8 @@ extern __declspec(__nothrow) int setvbuf(FILE * __restrict  ,
 
 
 
-
-
-
-
-
-
-
-
  
-#pragma __printf_args
-extern __declspec(__nothrow) int fprintf(FILE * __restrict  ,
-                    const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+extern FILE *fopen(const char *  , const char *  );
    
 
 
@@ -3712,56 +3541,50 @@ extern __declspec(__nothrow) int fprintf(FILE * __restrict  ,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-#pragma __printf_args
-extern __declspec(__nothrow) int _fprintf(FILE * __restrict  ,
-                     const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+extern FILE *freopen(const char *  , const char *  ,
+                     FILE *  );
    
 
 
 
+
+
+
+
+
  
-#pragma __printf_args
-extern __declspec(__nothrow) int printf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+extern void setbuf(FILE *  , char *  );
    
 
 
 
 
  
-#pragma __printf_args
-extern __declspec(__nothrow) int _printf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
-   
-
-
-
- 
-#pragma __printf_args
-extern __declspec(__nothrow) int sprintf(char * __restrict  , const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
- 
-#pragma __printf_args
-extern __declspec(__nothrow) int _sprintf(char * __restrict  , const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-
-#pragma __printf_args
-extern __declspec(__nothrow) int __ARM_snprintf(char * __restrict  , size_t  ,
-                     const char * __restrict  , ...) __attribute__((__nonnull__(3)));
-
-
-#pragma __printf_args
-extern __declspec(__nothrow) int snprintf(char * __restrict  , size_t  ,
-                     const char * __restrict  , ...) __attribute__((__nonnull__(3)));
+extern int setvbuf(FILE *  , char *  ,
+                   int  , size_t  );
    
 
 
@@ -3781,16 +3604,118 @@ extern __declspec(__nothrow) int snprintf(char * __restrict  , size_t  ,
  
 
 #pragma __printf_args
-extern __declspec(__nothrow) int _snprintf(char * __restrict  , size_t  ,
-                      const char * __restrict  , ...) __attribute__((__nonnull__(3)));
+
+
+
+extern int fprintf(FILE *  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _fprintf(FILE *  , const char *  , ...);
    
 
 
 
  
+
+#pragma __printf_args
+
+extern int printf(const char *  , ...);
+   
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _printf(const char *  , ...);
+   
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int sprintf(char *  , const char *  , ...);
+   
+
+
+
+
+
+
+ 
+
+#pragma __printf_args
+
+extern int _sprintf(char *  , const char *  , ...);
+   
+
+
+
+ 
+
+
+#pragma __printf_args
+
+extern int snprintf(char *  , size_t  , const char *  , ...);
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#pragma __printf_args
+
+extern int _snprintf(char *  , size_t  , const char *  , ...);
+   
+
+
+
+ 
+
 #pragma __scanf_args
-extern __declspec(__nothrow) int fscanf(FILE * __restrict  ,
-                    const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+extern int fscanf(FILE *  , const char *  , ...);
    
 
 
@@ -3823,64 +3748,61 @@ extern __declspec(__nothrow) int fscanf(FILE * __restrict  ,
 
 
  
+extern int _fscanf(FILE *  , const char *  , ...);
+   
+
+
+
+ 
+
 #pragma __scanf_args
-extern __declspec(__nothrow) int _fscanf(FILE * __restrict  ,
-                     const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+
+extern int scanf(const char *  , ...);
    
 
 
 
+
+
+
  
+
 #pragma __scanf_args
-extern __declspec(__nothrow) int scanf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+
+extern int _scanf(const char *  , ...);
    
 
 
 
-
-
-
  
+
 #pragma __scanf_args
-extern __declspec(__nothrow) int _scanf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+
+extern int sscanf(const char *  , const char *  , ...);
    
 
 
 
+
+
+
+
+
  
+
 #pragma __scanf_args
-extern __declspec(__nothrow) int sscanf(const char * __restrict  ,
-                    const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
-   
 
-
-
-
-
-
-
-
- 
-#pragma __scanf_args
-extern __declspec(__nothrow) int _sscanf(const char * __restrict  ,
-                     const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+extern int _sscanf(const char *  , const char *  , ...);
    
 
 
 
  
 
- 
-extern __declspec(__nothrow) int vfscanf(FILE * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) int vscanf(const char * __restrict  , __va_list) __attribute__((__nonnull__(1)));
-extern __declspec(__nothrow) int vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
 
-extern __declspec(__nothrow) int _vfscanf(FILE * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) int _vscanf(const char * __restrict  , __va_list) __attribute__((__nonnull__(1)));
-extern __declspec(__nothrow) int _vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) int __ARM_vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
 
-extern __declspec(__nothrow) int vprintf(const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1)));
+
+extern int vprintf(const char *  , __va_list  );
    
 
 
@@ -3888,14 +3810,14 @@ extern __declspec(__nothrow) int vprintf(const char * __restrict  , __va_list  )
 
 
  
-extern __declspec(__nothrow) int _vprintf(const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1)));
+extern int _vprintf(const char *  , __va_list  );
    
 
 
 
  
-extern __declspec(__nothrow) int vfprintf(FILE * __restrict  ,
-                    const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1,2)));
+extern int vfprintf(FILE *  ,
+                    const char *  , __va_list  );
    
 
 
@@ -3904,8 +3826,7 @@ extern __declspec(__nothrow) int vfprintf(FILE * __restrict  ,
 
 
  
-extern __declspec(__nothrow) int vsprintf(char * __restrict  ,
-                     const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1,2)));
+extern int vsprintf(char *  , const char *  , __va_list  );
    
 
 
@@ -3914,103 +3835,9 @@ extern __declspec(__nothrow) int vsprintf(char * __restrict  ,
 
 
  
-extern __declspec(__nothrow) int __ARM_vsnprintf(char * __restrict  , size_t  ,
-                     const char * __restrict  , __va_list  ) __attribute__((__nonnull__(3)));
 
-extern __declspec(__nothrow) int vsnprintf(char * __restrict  , size_t  ,
-                     const char * __restrict  , __va_list  ) __attribute__((__nonnull__(3)));
-   
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) int _vsprintf(char * __restrict  ,
-                      const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-extern __declspec(__nothrow) int _vfprintf(FILE * __restrict  ,
-                     const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-extern __declspec(__nothrow) int _vsnprintf(char * __restrict  , size_t  ,
-                      const char * __restrict  , __va_list  ) __attribute__((__nonnull__(3)));
-   
-
-
-
- 
-
-#pragma __printf_args
-extern __declspec(__nothrow) int asprintf(char **  , const char * __restrict  , ...) __attribute__((__nonnull__(2)));
-extern __declspec(__nothrow) int vasprintf(char **  , const char * __restrict  , __va_list  ) __attribute__((__nonnull__(2)));
-
-#pragma __printf_args
-extern __declspec(__nothrow) int __ARM_asprintf(char **  , const char * __restrict  , ...) __attribute__((__nonnull__(2)));
-extern __declspec(__nothrow) int __ARM_vasprintf(char **  , const char * __restrict  , __va_list  ) __attribute__((__nonnull__(2)));
-   
-
-
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) int fgetc(FILE *  ) __attribute__((__nonnull__(1)));
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) char *fgets(char * __restrict  , int  ,
-                    FILE * __restrict  ) __attribute__((__nonnull__(1,3)));
-   
-
-
-
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int fputc(int  , FILE *  ) __attribute__((__nonnull__(2)));
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int fputs(const char * __restrict  , FILE * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) int getc(FILE *  ) __attribute__((__nonnull__(1)));
+extern int vsnprintf(char *  , size_t  ,
+                     const char *  , __va_list  );
    
 
 
@@ -4024,7 +3851,81 @@ extern __declspec(__nothrow) int getc(FILE *  ) __attribute__((__nonnull__(1)));
 
 
 
-    extern __declspec(__nothrow) int (getchar)(void);
+extern int _vsprintf(char *  , const char *  , __va_list  );
+   
+
+
+
+ 
+extern int _vfprintf(FILE *  ,
+                     const char *  , __va_list  );
+   
+
+
+
+ 
+extern int _vsnprintf(char *  , size_t  ,
+                      const char *  , __va_list  );
+   
+
+
+
+ 
+extern int fgetc(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern char *fgets(char *  , int  , FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+ 
+extern int fputc(int  , FILE *  );
+   
+
+
+
+
+
+
+
+ 
+extern int fputs(const char *  , FILE *  );
+   
+
+
+
+
+ 
+extern int getc(FILE *  );
+   
+
+
+
+
+
+
+
+ 
+
+
+
+
+    extern int (getchar)(void);
 
    
 
@@ -4033,7 +3934,7 @@ extern __declspec(__nothrow) int getc(FILE *  ) __attribute__((__nonnull__(1)));
 
 
  
-extern __declspec(__nothrow) char *gets(char *  ) __attribute__((__nonnull__(1)));
+extern char *gets(char *  );
    
 
 
@@ -4045,7 +3946,7 @@ extern __declspec(__nothrow) char *gets(char *  ) __attribute__((__nonnull__(1))
 
 
  
-extern __declspec(__nothrow) int putc(int  , FILE *  ) __attribute__((__nonnull__(2)));
+extern int putc(int  , FILE *  );
    
 
 
@@ -4057,14 +3958,14 @@ extern __declspec(__nothrow) int putc(int  , FILE *  ) __attribute__((__nonnull_
 
 
 
-    extern __declspec(__nothrow) int (putchar)(int  );
+    extern int (putchar)(int  );
 
    
 
 
 
  
-extern __declspec(__nothrow) int puts(const char *  ) __attribute__((__nonnull__(1)));
+extern int puts(const char *  );
    
 
 
@@ -4072,7 +3973,7 @@ extern __declspec(__nothrow) int puts(const char *  ) __attribute__((__nonnull__
 
 
  
-extern __declspec(__nothrow) int ungetc(int  , FILE *  ) __attribute__((__nonnull__(2)));
+extern int ungetc(int  , FILE *  );
    
 
 
@@ -4098,8 +3999,8 @@ extern __declspec(__nothrow) int ungetc(int  , FILE *  ) __attribute__((__nonnul
 
  
 
-extern __declspec(__nothrow) size_t fread(void * __restrict  ,
-                    size_t  , size_t  , FILE * __restrict  ) __attribute__((__nonnull__(1,4)));
+extern size_t fread(void *  ,
+                    size_t  , size_t  , FILE *  );
    
 
 
@@ -4114,8 +4015,8 @@ extern __declspec(__nothrow) size_t fread(void * __restrict  ,
 
  
 
-extern __declspec(__nothrow) size_t __fread_bytes_avail(void * __restrict  ,
-                    size_t  , FILE * __restrict  ) __attribute__((__nonnull__(1,3)));
+extern size_t __fread_bytes_avail(void *  ,
+                    size_t  , FILE *  );
    
 
 
@@ -4130,8 +4031,8 @@ extern __declspec(__nothrow) size_t __fread_bytes_avail(void * __restrict  ,
 
  
 
-extern __declspec(__nothrow) size_t fwrite(const void * __restrict  ,
-                    size_t  , size_t  , FILE * __restrict  ) __attribute__((__nonnull__(1,4)));
+extern size_t fwrite(const void *  ,
+                    size_t  , size_t  , FILE *  );
    
 
 
@@ -4142,7 +4043,7 @@ extern __declspec(__nothrow) size_t fwrite(const void * __restrict  ,
 
  
 
-extern __declspec(__nothrow) int fgetpos(FILE * __restrict  , fpos_t * __restrict  ) __attribute__((__nonnull__(1,2)));
+extern int fgetpos(FILE *  , fpos_t *  );
    
 
 
@@ -4153,37 +4054,7 @@ extern __declspec(__nothrow) int fgetpos(FILE * __restrict  , fpos_t * __restric
 
 
  
-extern __declspec(__nothrow) int fseek(FILE *  , long int  , int  ) __attribute__((__nonnull__(1)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int fsetpos(FILE * __restrict  , const fpos_t * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) long int ftell(FILE *  ) __attribute__((__nonnull__(1)));
+extern int fseek(FILE *  , long int  , int  );
    
 
 
@@ -4196,35 +4067,11 @@ extern __declspec(__nothrow) long int ftell(FILE *  ) __attribute__((__nonnull__
 
 
 
- 
-extern __declspec(__nothrow) void rewind(FILE *  ) __attribute__((__nonnull__(1)));
-   
-
-
 
 
 
  
-
-extern __declspec(__nothrow) void clearerr(FILE *  ) __attribute__((__nonnull__(1)));
-   
-
-
-
-
- 
-
-extern __declspec(__nothrow) int feof(FILE *  ) __attribute__((__nonnull__(1)));
-   
-
-
- 
-extern __declspec(__nothrow) int ferror(FILE *  ) __attribute__((__nonnull__(1)));
-   
-
-
- 
-extern __declspec(__nothrow) void perror(const char *  );
+extern int fsetpos(FILE *  , const fpos_t *  );
    
 
 
@@ -4235,20 +4082,72 @@ extern __declspec(__nothrow) void perror(const char *  );
 
 
 
+
+ 
+extern long int ftell(FILE *  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void rewind(FILE *  );
+   
+
+
+
+
+
  
 
-extern __declspec(__nothrow) int _fisatty(FILE *   ) __attribute__((__nonnull__(1)));
+extern void clearerr(FILE *  );
+   
+
+
+
+
+ 
+
+extern int feof(FILE *  );
+   
+
+
+ 
+extern int ferror(FILE *  );
+   
+
+
+ 
+extern void perror(const char *  );
+   
+
+
+
+
+
+
+
+
+
+ 
+
+extern int _fisatty(FILE *   );
     
  
 
-extern __declspec(__nothrow) void __use_no_semihosting_swi(void);
-extern __declspec(__nothrow) void __use_no_semihosting(void);
+extern void __use_no_semihosting_swi(void);
     
 
 
 
 
-
  
 
 
@@ -4260,15 +4159,13 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
 
 
-
-#line 1021 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
+#line 893 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdio.h"
 
 
 
  
-
 #line 7 ".\\Ports\\inc\\includes.h"
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
  
  
  
@@ -4296,65 +4193,27 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
 
 
-
-
-
-#line 38 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+#line 40 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
 
 
   
-
-
-
-    typedef unsigned int size_t;    
-#line 54 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
+  typedef unsigned int size_t;
 
 
 
 
-extern __declspec(__nothrow) void *memcpy(void * __restrict  ,
-                    const void * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+
+
+
+
+extern void *memcpy(void *  , const void *  , size_t  );
    
 
 
 
 
  
-extern __declspec(__nothrow) void *memmove(void *  ,
-                    const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) char *strcpy(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncpy(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) char *strcat(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
- 
-extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern void *memmove(void *  , const void *  , size_t  );
    
 
 
@@ -4362,16 +4221,16 @@ extern __declspec(__nothrow) char *strncat(char * __restrict  , const char * __r
 
 
 
- 
-
-
-
-
-
 
  
+extern char *strcpy(char *  , const char *  );
+   
 
-extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  ) __attribute__((__nonnull__(1,2)));
+
+
+
+ 
+extern char *strncpy(char *  , const char *  , size_t  );
    
 
 
@@ -4379,14 +4238,15 @@ extern __declspec(__nothrow) int memcmp(const void *  , const void *  , size_t  
 
 
  
-extern __declspec(__nothrow) int strcmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+extern char *strcat(char *  , const char *  );
    
 
 
 
 
  
-extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
+extern char *strncat(char *  , const char *  , size_t  );
    
 
 
@@ -4395,16 +4255,6 @@ extern __declspec(__nothrow) int strncmp(const char *  , const char *  , size_t 
 
 
  
-extern __declspec(__nothrow) int strcasecmp(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
- 
-extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
 
 
 
@@ -4412,7 +4262,32 @@ extern __declspec(__nothrow) int strncasecmp(const char *  , const char *  , siz
 
 
  
-extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+
+extern int memcmp(const void *  , const void *  , size_t  );
+   
+
+
+
+
+
+ 
+extern int strcmp(const char *  , const char *  );
+   
+
+
+
+
+ 
+extern int strncmp(const char *  , const char *  , size_t  );
+   
+
+
+
+
+
+
+ 
+extern int strcoll(const char *  , const char *  );
    
 
 
@@ -4423,7 +4298,7 @@ extern __declspec(__nothrow) int strcoll(const char *  , const char *  ) __attri
 
  
 
-extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
+extern size_t strxfrm(char *  , const char *  , size_t  );
    
 
 
@@ -4441,8 +4316,8 @@ extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __
  
 
 
-#line 193 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+#line 168 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern void *memchr(const void *  , int  , size_t  );
 
    
 
@@ -4452,8 +4327,8 @@ extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __att
 
  
 
-#line 209 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((__nonnull__(1)));
+#line 184 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strchr(const char *  , int  );
 
    
 
@@ -4462,7 +4337,7 @@ extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((
 
  
 
-extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+extern size_t strcspn(const char *  , const char *  );
    
 
 
@@ -4470,8 +4345,8 @@ extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __at
 
  
 
-#line 232 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+#line 207 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strpbrk(const char *  , const char *  );
 
    
 
@@ -4480,26 +4355,8 @@ extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __att
 
  
 
-#line 247 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strrchr(const char *  , int  ) __attribute__((__nonnull__(1)));
-
-   
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strspn(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
- 
-
-#line 270 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+#line 222 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strrchr(const char *  , int  );
 
    
 
@@ -4509,11 +4366,25 @@ extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attr
 
  
 
-extern __declspec(__nothrow) char *strtok(char * __restrict  , const char * __restrict  ) __attribute__((__nonnull__(2)));
-extern __declspec(__nothrow) char *_strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
+extern size_t strspn(const char *  , const char *  );
+   
 
-extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  ) __attribute__((__nonnull__(2,3)));
 
+
+ 
+
+#line 245 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
+extern char *strstr(const char *  , const char *  );
+
+   
+
+
+
+
+
+ 
+
+extern char *strtok(char *  , const char *  );
    
 
 
@@ -4538,25 +4409,15 @@ extern __declspec(__nothrow) char *strtok_r(char *  , const char *  , char **  )
 
 
 
-
-
-
-
-
-
-
-
-
-
  
 
-extern __declspec(__nothrow) void *memset(void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
+extern void *memset(void *  , int  , size_t  );
    
 
 
 
  
-extern __declspec(__nothrow) char *strerror(int  );
+extern char *strerror(int  );
    
 
 
@@ -4564,15 +4425,18 @@ extern __declspec(__nothrow) char *strerror(int  );
 
 
  
-extern __declspec(__nothrow) size_t strlen(const char *  ) __attribute__((__nonnull__(1)));
+extern size_t strlen(const char *  );
    
 
 
 
  
 
-extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
+extern void __use_iso8859_locale(void);
+extern void __use_iso8859_ctype(void);
+extern void __use_iso8859_collate(void);
+extern void __use_iso8859_monetary(void);
+extern void __use_iso8859_numeric(void);
 
 
 
@@ -4583,115 +4447,17 @@ extern __declspec(__nothrow) size_t strlcpy(char *  , const char *  , size_t  ) 
 
 
 
-
-
-
-
-
-
- 
-
-extern __declspec(__nothrow) size_t strlcat(char *  , const char *  , size_t  ) __attribute__((__nonnull__(1,2)));
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#line 352 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\string.h"
 
 
 
  
 
-extern __declspec(__nothrow) void _membitcpybl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpybb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpyhb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitcpywb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovebb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovehb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewl(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  , int  , size_t  ) __attribute__((__nonnull__(1,2)));
-    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-#line 502 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\string.h"
-
-
-
- 
 
 #line 8 ".\\Ports\\inc\\includes.h"
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
  
  
  
@@ -4717,39 +4483,14 @@ extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  ,
 
 
 
-#line 35 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
 
-
-
-
-
-
-#line 49 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
+#line 39 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
 
  
-#line 59 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
 
- 
- 
+#line 50 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
 
-
-
-
-
-
-
-
-
- 
-#line 81 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
-
-
-
-
-
-#line 133 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
-
-extern __declspec(__nothrow) __attribute__((const)) unsigned char **__rt_ctype_table(void);
+extern __pure unsigned char **__rt_ctype_table(void);
 
 
 
@@ -4778,18 +4519,12 @@ extern __declspec(__nothrow) __attribute__((const)) unsigned char **__rt_ctype_t
      
      
 
- 
 
 
 
 
     extern int (isdigit)(int  );
 
-     
-
-    extern int (isblank)(int  );
-     
-     
      
 
 
@@ -4841,10 +4576,6 @@ extern __declspec(__nothrow) __attribute__((const)) unsigned char **__rt_ctype_t
 
      
 
- 
- 
-
-__inline int __isxdigit_helper(int __t) { return (__t ^ (__t << 2)); }
 
 
 
@@ -4852,8 +4583,6 @@ __inline int __isxdigit_helper(int __t) { return (__t ^ (__t << 2)); }
     extern int (isxdigit)(int  );
 
      
-
-
 
 extern int tolower(int  );
      
@@ -4863,21 +4592,31 @@ extern int toupper(int  );
      
      
 
+extern void __use_iso8859_locale(void);
+extern void __use_iso8859_ctype(void);
+extern void __use_iso8859_collate(void);
+extern void __use_iso8859_monetary(void);
+extern void __use_iso8859_numeric(void);
 
 
 
 
 
 
-#line 272 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\ctype.h"
+
+
+
+
+#line 190 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\ctype.h"
 
 
 
  
+
 
 #line 9 ".\\Ports\\inc\\includes.h"
 #line 10 ".\\Ports\\inc\\includes.h"
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
  
  
  
@@ -4897,42 +4636,18 @@ extern int toupper(int  );
 
 
 
-   
 
 
 
-
-
-
-
-
-
-
-
-
+#line 35 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
 
 
   
-
-
- 
-
+  typedef unsigned int size_t;
 
 
 
 
-
-
-
-#line 54 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
-
-
-  
-
-
-
-    typedef unsigned int size_t;    
-#line 70 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
 
 
 
@@ -4940,11 +4655,12 @@ extern int toupper(int  );
 
 
     
-
-
-
     typedef unsigned short wchar_t;  
-#line 91 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
+
+
+
+
+
 
 typedef struct div_t { int quot, rem; } div_t;
     
@@ -4955,7 +4671,7 @@ typedef struct lldiv_t { long long quot, rem; } lldiv_t;
     
 
 
-#line 112 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
+#line 77 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
    
 
 
@@ -4968,16 +4684,8 @@ typedef struct lldiv_t { long long quot, rem; } lldiv_t;
 
 
  
-#line 131 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
+#line 96 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
    
-
-
- 
-extern __declspec(__nothrow) int __aeabi_MB_CUR_MAX(void);
-
-   
-
-
 
 
  
@@ -4989,37 +4697,34 @@ extern __declspec(__nothrow) int __aeabi_MB_CUR_MAX(void);
 
  
 
-
-
-
-extern __declspec(__nothrow) double atof(const char *  ) __attribute__((__nonnull__(1)));
+extern double atof(const char *  );
    
 
 
 
  
-extern __declspec(__nothrow) int atoi(const char *  ) __attribute__((__nonnull__(1)));
+extern int atoi(const char *  );
    
 
 
 
  
-extern __declspec(__nothrow) long int atol(const char *  ) __attribute__((__nonnull__(1)));
-   
-
-
-
- 
-
-extern __declspec(__nothrow) long long atoll(const char *  ) __attribute__((__nonnull__(1)));
+extern long int atol(const char *  );
    
 
 
 
  
 
+extern long long int atoll(const char *  );
+   
 
-extern __declspec(__nothrow) double strtod(const char * __restrict  , char ** __restrict  ) __attribute__((__nonnull__(1)));
+
+
+ 
+
+
+extern double strtod(const char *  , char **  );
    
 
 
@@ -5039,15 +4744,7 @@ extern __declspec(__nothrow) double strtod(const char * __restrict  , char ** __
 
 
  
-
-extern __declspec(__nothrow) float strtof(const char * __restrict  , char ** __restrict  ) __attribute__((__nonnull__(1)));
-extern __declspec(__nothrow) long double strtold(const char * __restrict  , char ** __restrict  ) __attribute__((__nonnull__(1)));
-   
-
- 
-
-extern __declspec(__nothrow) long int strtol(const char * __restrict  ,
-                        char ** __restrict  , int  ) __attribute__((__nonnull__(1)));
+extern long int strtol(const char *  , char ** , int  );
    
 
 
@@ -5077,8 +4774,8 @@ extern __declspec(__nothrow) long int strtol(const char * __restrict  ,
 
 
  
-extern __declspec(__nothrow) unsigned long int strtoul(const char * __restrict  ,
-                                       char ** __restrict  , int  ) __attribute__((__nonnull__(1)));
+extern unsigned long int strtoul(const char *  ,
+                                       char **  , int  );
    
 
 
@@ -5108,36 +4805,25 @@ extern __declspec(__nothrow) unsigned long int strtoul(const char * __restrict  
 
  
 
- 
-extern __declspec(__nothrow) long long strtoll(const char * __restrict  ,
-                                  char ** __restrict  , int  )
-                          __attribute__((__nonnull__(1)));
+
+extern long long int strtoll(const char *    ,
+                             char **    , int  );
    
 
 
 
 
  
-extern __declspec(__nothrow) unsigned long long strtoull(const char * __restrict  ,
-                                            char ** __restrict  , int  )
-                                   __attribute__((__nonnull__(1)));
+extern unsigned long long int strtoull(const char *    ,
+                                       char **    , int  );
    
 
 
 
  
 
-extern __declspec(__nothrow) int rand(void);
-   
 
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) void srand(unsigned int  );
+extern int rand(void);
    
 
 
@@ -5145,40 +4831,39 @@ extern __declspec(__nothrow) void srand(unsigned int  );
 
 
 
- 
-
-struct _rand_state { int __x[57]; };
-extern __declspec(__nothrow) int _rand_r(struct _rand_state *);
-extern __declspec(__nothrow) void _srand_r(struct _rand_state *, unsigned int);
-struct _ANSI_rand_state { int __x[1]; };
-extern __declspec(__nothrow) int _ANSI_rand_r(struct _ANSI_rand_state *);
-extern __declspec(__nothrow) void _ANSI_srand_r(struct _ANSI_rand_state *, unsigned int);
-   
-
 
  
-
-extern __declspec(__nothrow) void *calloc(size_t  , size_t  );
-   
-
-
-
- 
-extern __declspec(__nothrow) void free(void *  );
+extern void srand(unsigned int  );
    
 
 
 
 
 
+
  
-extern __declspec(__nothrow) void *malloc(size_t  );
+
+extern void *calloc(size_t  , size_t  );
    
 
 
 
  
-extern __declspec(__nothrow) void *realloc(void *  , size_t  );
+extern void free(void *  );
+   
+
+
+
+
+
+ 
+extern void *malloc(size_t  );
+   
+
+
+
+ 
+extern void *realloc(void *  , size_t  );
    
 
 
@@ -5194,24 +4879,10 @@ extern __declspec(__nothrow) void *realloc(void *  , size_t  );
 
 
  
-
-extern __declspec(__nothrow) int posix_memalign(void **  , size_t  , size_t  );
-   
-
-
-
-
-
-
-
-
-
- 
-
 typedef int (*__heapprt)(void *, char const *, ...);
-extern __declspec(__nothrow) void __heapstats(int (*  )(void *  ,
+extern void __heapstats(int (*  )(void *  ,
                                            char const *  , ...),
-                        void *  ) __attribute__((__nonnull__(1)));
+                        void *  );
    
 
 
@@ -5224,9 +4895,9 @@ extern __declspec(__nothrow) void __heapstats(int (*  )(void *  ,
 
 
  
-extern __declspec(__nothrow) int __heapvalid(int (*  )(void *  ,
+extern int __heapvalid(int (*  )(void *  ,
                                            char const *  , ...),
-                       void *  , int  ) __attribute__((__nonnull__(1)));
+                       void *  , int  );
    
 
 
@@ -5243,7 +4914,7 @@ extern __declspec(__nothrow) int __heapvalid(int (*  )(void *  ,
 
 
  
-extern __declspec(__nothrow) __declspec(__noreturn) void abort(void);
+extern void abort(void);
    
 
 
@@ -5253,18 +4924,14 @@ extern __declspec(__nothrow) __declspec(__noreturn) void abort(void);
 
 
  
-
-extern __declspec(__nothrow) int atexit(void (*  )(void)) __attribute__((__nonnull__(1)));
+extern int atexit(void (*  )(void));
    
 
 
 
 
  
-#line 436 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
-
-
-extern __declspec(__nothrow) __declspec(__noreturn) void exit(int  );
+extern void exit(int  );
    
 
 
@@ -5280,7 +4947,7 @@ extern __declspec(__nothrow) __declspec(__noreturn) void exit(int  );
 
  
 
-extern __declspec(__nothrow) __declspec(__noreturn) void _Exit(int  );
+extern char *getenv(const char *  );
    
 
 
@@ -5289,9 +4956,10 @@ extern __declspec(__nothrow) __declspec(__noreturn) void _Exit(int  );
 
 
 
-      
 
-extern __declspec(__nothrow) char *getenv(const char *  ) __attribute__((__nonnull__(1)));
+
+ 
+extern int  system(const char *  );
    
 
 
@@ -5304,22 +4972,9 @@ extern __declspec(__nothrow) char *getenv(const char *  ) __attribute__((__nonnu
 
  
 
-extern __declspec(__nothrow) int  system(const char *  );
-   
-
-
-
-
-
-
-
-
-
- 
-
-extern  void *bsearch(const void *  , const void *  ,
+extern void *bsearch(const void *  , const void *  ,
               size_t  , size_t  ,
-              int (*  )(const void *, const void *)) __attribute__((__nonnull__(1,2,5)));
+              int (*  )(const void *, const void *));
    
 
 
@@ -5334,11 +4989,8 @@ extern  void *bsearch(const void *  , const void *  ,
 
 
  
-#line 524 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
-
-
-extern  void qsort(void *  , size_t  , size_t  ,
-           int (*  )(const void *, const void *)) __attribute__((__nonnull__(1,4)));
+extern void qsort(void *  , size_t  , size_t  ,
+           int (*  )(const void *, const void *));
    
 
 
@@ -5351,16 +5003,14 @@ extern  void qsort(void *  , size_t  , size_t  ,
 
  
 
-#line 553 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
-
-extern __declspec(__nothrow) __attribute__((const)) int abs(int  );
+extern int abs(int  );
    
 
 
 
  
 
-extern __declspec(__nothrow) __attribute__((const)) div_t div(int  , int  );
+extern div_t div(int  , int  );
    
 
 
@@ -5372,7 +5022,7 @@ extern __declspec(__nothrow) __attribute__((const)) div_t div(int  , int  );
 
 
  
-extern __declspec(__nothrow) __attribute__((const)) long int labs(long int  );
+extern long int labs(long int  );
    
 
 
@@ -5382,38 +5032,7 @@ extern __declspec(__nothrow) __attribute__((const)) long int labs(long int  );
 
 
 
-extern __declspec(__nothrow) __attribute__((const)) ldiv_t ldiv(long int  , long int  );
-   
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-extern __declspec(__nothrow) __attribute__((const)) long long llabs(long long  );
-   
-
-
-
- 
-
-
-
-
-extern __declspec(__nothrow) __attribute__((const)) lldiv_t lldiv(long long  , long long  );
+extern ldiv_t ldiv(long int  , long int  );
    
 
 
@@ -5427,8 +5046,38 @@ extern __declspec(__nothrow) __attribute__((const)) lldiv_t lldiv(long long  , l
 
 
  
-#line 634 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
 
+
+
+
+
+
+
+extern long long llabs(long long  );
+   
+
+
+
+ 
+
+
+
+
+extern lldiv_t lldiv(long long  , long long  );
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 494 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
 
 
 
@@ -5438,19 +5087,19 @@ typedef struct __udiv32by16 { unsigned int quot, rem; } __udiv32by16;
     
 typedef struct __sdiv64by32 { int rem, quot; } __sdiv64by32;
 
-__value_in_regs extern __declspec(__nothrow) __attribute__((const)) __sdiv32by16 __rt_sdiv32by16(
+__value_in_regs extern __sdiv32by16 __rt_sdiv32by16(
      int  ,
      short int  );
    
 
  
-__value_in_regs extern __declspec(__nothrow) __attribute__((const)) __udiv32by16 __rt_udiv32by16(
+__value_in_regs extern __udiv32by16 __rt_udiv32by16(
      unsigned int  ,
      unsigned short  );
    
 
  
-__value_in_regs extern __declspec(__nothrow) __attribute__((const)) __sdiv64by32 __rt_sdiv64by32(
+__value_in_regs extern __sdiv64by32 __rt_sdiv64by32(
      int  , unsigned int  ,
      int  );
    
@@ -5459,9 +5108,8 @@ __value_in_regs extern __declspec(__nothrow) __attribute__((const)) __sdiv64by32
 
 
 
-
  
-extern __declspec(__nothrow) unsigned int __fp_status(unsigned int  , unsigned int  );
+extern unsigned int __fp_status(unsigned int  , unsigned int  );
    
 
 
@@ -5495,7 +5143,7 @@ extern __declspec(__nothrow) unsigned int __fp_status(unsigned int  , unsigned i
 
 
  
-extern __declspec(__nothrow) int mblen(const char *  , size_t  );
+extern int mblen(const char *  , size_t  );
    
 
 
@@ -5510,49 +5158,7 @@ extern __declspec(__nothrow) int mblen(const char *  , size_t  );
 
 
  
-extern __declspec(__nothrow) int mbtowc(wchar_t * __restrict  ,
-                   const char * __restrict  , size_t  );
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-extern __declspec(__nothrow) int wctomb(char *  , wchar_t  );
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
- 
-extern __declspec(__nothrow) size_t mbstowcs(wchar_t * __restrict  ,
-                      const char * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
+extern int mbtowc(wchar_t *  , const char *  , size_t  );
    
 
 
@@ -5568,9 +5174,31 @@ extern __declspec(__nothrow) size_t mbstowcs(wchar_t * __restrict  ,
 
 
 
+
  
-extern __declspec(__nothrow) size_t wcstombs(char * __restrict  ,
-                      const wchar_t * __restrict  , size_t  ) __attribute__((__nonnull__(2)));
+extern int wctomb(char *  , wchar_t  );
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+extern size_t mbstowcs(wchar_t *  , const char *  , size_t  );
    
 
 
@@ -5587,15 +5215,8 @@ extern __declspec(__nothrow) size_t wcstombs(char * __restrict  ,
 
 
  
-
-extern __declspec(__nothrow) void __use_realtime_heap(void);
-extern __declspec(__nothrow) void __use_realtime_division(void);
-extern __declspec(__nothrow) void __use_two_region_memory(void);
-extern __declspec(__nothrow) void __use_no_heap(void);
-extern __declspec(__nothrow) void __use_no_heap_region(void);
-
-extern __declspec(__nothrow) char const *__C_library_version_string(void);
-extern __declspec(__nothrow) int __C_library_version_number(void);
+extern size_t wcstombs(char *  , const wchar_t *  , size_t  );
+   
 
 
 
@@ -5607,15 +5228,33 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-#line 892 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdlib.h"
+
+
+
+ 
+
+extern void __use_realtime_heap(void);
+extern void __use_realtime_division(void);
+extern void __use_two_region_memory(void);
+extern void __use_no_heap(void);
+extern void __use_no_heap_region(void);
+
+extern char const *__C_library_version_string(void);
+extern int __C_library_version_number(void);
 
 
 
 
 
+
+
+
+
+
+#line 727 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdlib.h"
  
 #line 11 ".\\Ports\\inc\\includes.h"
-#line 1 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdarg.h"
+#line 1 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdarg.h"
  
  
  
@@ -5634,9 +5273,7 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-
-#line 27 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdarg.h"
-
+#line 31 "C:\\GraduationDesign\\SoftWare\\INCLUDE\\stdarg.h"
 
 
 
@@ -5644,13 +5281,12 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
- 
 
  
- 
-#line 57 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdarg.h"
-    typedef struct __va_list { void *__ap; } va_list;
 
+ 
+ 
+typedef int *va_list[1];
    
 
 
@@ -5695,18 +5331,13 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-
-   
-
- 
-
-
    
 
 
 
 
  
+
 
 
 
@@ -5724,14 +5355,18 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-#line 138 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdarg.h"
 
 
 
-#line 147 "F:\\LouisSoftware\\Keil5\\ARM\\ARMCC\\Bin\\..\\include\\stdarg.h"
+
+
+
+
+
+
+
 
  
-
 #line 12 ".\\Ports\\inc\\includes.h"
 
 #line 1 ".\\BSP\\Init.h"
@@ -6780,6 +6415,22 @@ typedef enum
 
 
 #line 15 ".\\CMSIS\\SysInfra.h"
+#line 1 "C:\\GraduationDesign\\Keil_mdk_5.11\\ARM\\ARMCC\\include\\stdint.h"
+ 
+ 
+
+
+
+
+
+ 
+
+#line 274 "C:\\GraduationDesign\\Keil_mdk_5.11\\ARM\\ARMCC\\include\\stdint.h"
+
+ 
+
+
+
 #line 16 ".\\CMSIS\\SysInfra.h"
 #line 17 ".\\CMSIS\\SysInfra.h"
 
@@ -14461,9 +14112,11 @@ int main()
 {
 	unsigned char err=err;
 	
+	
 	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x59;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x16;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x88;
+	
 	((SYSCLK_T *) ((( uint32_t)0x50000000) + 0x00200))->PWRCON.XTL12M_EN = 1; 	
-	((SYSCLK_T *) ((( uint32_t)0x50000000) + 0x00200))->CLKSEL0.HCLK_S = 0;
+	((SYSCLK_T *) ((( uint32_t)0x50000000) + 0x00200))->CLKSEL0.HCLK_S = 0;			
 	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x00;;		
 	
 	

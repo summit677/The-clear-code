@@ -1,11 +1,12 @@
 .\objects\eeprom_24lc64.o: NUC1xx-LB_002\src\EEPROM_24LC64.c
-.\objects\eeprom_24lc64.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\eeprom_24lc64.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
 .\objects\eeprom_24lc64.o: .\CMSIS\NUC1xx.h
 .\objects\eeprom_24lc64.o: .\CMSIS\core_cm0.h
-.\objects\eeprom_24lc64.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\eeprom_24lc64.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\eeprom_24lc64.o: .\CMSIS\system_NUC1xx.h
 .\objects\eeprom_24lc64.o: .\CMSIS\SysInfra.h
 .\objects\eeprom_24lc64.o: .\Drivers\inc\ModuleID.h
+.\objects\eeprom_24lc64.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\eeprom_24lc64.o: .\Drivers\inc\DrvGPIO.h
 .\objects\eeprom_24lc64.o: .\Drivers\inc\DrvI2C.h
 .\objects\eeprom_24lc64.o: .\Drivers\inc\DrvSYS.h

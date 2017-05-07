@@ -3,7 +3,7 @@
 .\objects\osekcounter.o: .\OSEKos\inc\osapi.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekTarget.h
-.\objects\osekcounter.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\osekcounter.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\osekcounter.o: .\OSEKos\inc\osapi.h
 .\objects\osekcounter.o: .\OSEKos\inc\cfg.h
 .\objects\osekcounter.o: .\OSEKos\inc\userMSG.h
@@ -17,4 +17,4 @@
 .\objects\osekcounter.o: .\OSEKos\inc\osekEvent.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekDebug.h
 .\objects\osekcounter.o: .\OSEKos\inc\osekMessage.h
-.\objects\osekcounter.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\osekcounter.o: C:\GraduationDesign\SoftWare\INCLUDE\string.h

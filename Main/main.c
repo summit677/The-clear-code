@@ -136,10 +136,12 @@ void read_timer_value(unsigned int *value)
 int main()
 {
 	unsigned char err=err;
-	
+	//防止误操作，所以对系统的控制寄存器锁定，需要修改，如下，则必须用户解锁
+	//http://bbs.21ic.com/icview-291211-1-1.html
 	UNLOCKREG();
+	//选择外部时钟为系统时钟源
 	SYSCLK->PWRCON.XTL12M_EN = 1; 	//Enable 12Mhz and set HCLK->12Mhz
-	SYSCLK->CLKSEL0.HCLK_S = 0;
+	SYSCLK->CLKSEL0.HCLK_S = 0;			//选择4-24MHz的外部晶振
 	LOCKREG();		
 	
 	//BSP_UartInit(); 

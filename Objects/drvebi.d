@@ -1,10 +1,11 @@
 .\objects\drvebi.o: Drivers\src\DrvEBI.c
-.\objects\drvebi.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\drvebi.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
 .\objects\drvebi.o: .\CMSIS\NUC1xx.h
 .\objects\drvebi.o: .\CMSIS\core_cm0.h
-.\objects\drvebi.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvebi.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\drvebi.o: .\CMSIS\system_NUC1xx.h
 .\objects\drvebi.o: .\CMSIS\SysInfra.h
 .\objects\drvebi.o: .\Drivers\inc\ModuleID.h
+.\objects\drvebi.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\drvebi.o: .\Drivers\inc\DrvGPIO.h
 .\objects\drvebi.o: .\Drivers\inc\DrvEBI.h

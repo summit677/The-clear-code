@@ -2,7 +2,7 @@
 .\objects\main.o: .\OSEKos\inc\osapi.h
 .\objects\main.o: .\OSEKos\inc\osekTurboConfig.h
 .\objects\main.o: .\OSEKos\inc\osekTarget.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\main.o: .\OSEKos\inc\osprop.h
 .\objects\main.o: .\OSEKos\inc\osapi.h
 .\objects\main.o: .\OSEKos\inc\osekOccConfig.h
@@ -19,11 +19,11 @@
 .\objects\main.o: .\OSEKos\inc\osekDebug.h
 .\objects\main.o: .\OSEKos\inc\osekMessage.h
 .\objects\main.o: .\Ports\inc\includes.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\ctype.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\main.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\stdio.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\string.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\ctype.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\stdlib.h
+.\objects\main.o: C:\GraduationDesign\SoftWare\INCLUDE\stdarg.h
 .\objects\main.o: .\BSP\Init.h
 .\objects\main.o: .\NUC1xx-LB_002\inc\LCD_Driver.h
 .\objects\main.o: .\Drivers\inc\DrvTIMER.h
@@ -32,6 +32,7 @@
 .\objects\main.o: .\CMSIS\system_NUC1xx.h
 .\objects\main.o: .\CMSIS\SysInfra.h
 .\objects\main.o: .\Drivers\inc\ModuleID.h
+.\objects\main.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\main.o: .\Drivers\inc\DrvUART.h
 .\objects\main.o: .\Drivers\inc\DrvGPIO.h
 .\objects\main.o: .\Drivers\inc\DrvSYS.h

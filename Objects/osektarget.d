@@ -3,7 +3,7 @@
 .\objects\osektarget.o: .\OSEKos\inc\osapi.h
 .\objects\osektarget.o: .\OSEKos\inc\osekOccConfig.h
 .\objects\osektarget.o: .\OSEKos\inc\osekTarget.h
-.\objects\osektarget.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\osektarget.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\osektarget.o: .\OSEKos\inc\osapi.h
 .\objects\osektarget.o: .\OSEKos\inc\cfg.h
 .\objects\osektarget.o: .\OSEKos\inc\userMSG.h
@@ -22,3 +22,4 @@
 .\objects\osektarget.o: .\CMSIS\system_NUC1xx.h
 .\objects\osektarget.o: .\CMSIS\SysInfra.h
 .\objects\osektarget.o: .\Drivers\inc\ModuleID.h
+.\objects\osektarget.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h

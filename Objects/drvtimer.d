@@ -2,10 +2,11 @@
 .\objects\drvtimer.o: .\Drivers\inc\DrvTIMER.h
 .\objects\drvtimer.o: .\CMSIS\NUC1xx.h
 .\objects\drvtimer.o: .\CMSIS\core_cm0.h
-.\objects\drvtimer.o: F:\LouisSoftware\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvtimer.o: C:\GraduationDesign\SoftWare\INCLUDE\stdint.h
 .\objects\drvtimer.o: .\CMSIS\system_NUC1xx.h
 .\objects\drvtimer.o: .\CMSIS\SysInfra.h
 .\objects\drvtimer.o: .\Drivers\inc\ModuleID.h
+.\objects\drvtimer.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h
 .\objects\drvtimer.o: .\Drivers\inc\DrvSYS.h
 .\objects\drvtimer.o: .\Drivers\inc\DrvGPIO.h
 .\objects\drvtimer.o: .\OSEKos\inc\osprop.h
