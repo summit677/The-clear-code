@@ -10,8 +10,8 @@ void OSEK_CPU_INIT()
   DrvTIMER_Open(E_TMR0, 1000, E_PERIODIC_MODE);//E_PERIODIC_MODE == 周期模式
   DrvTIMER_EnableInt(E_TMR0);
 	
-	//DrvTIMER_Open(E_TMR3, 1, E_PERIODIC_MODE);//E_PERIODIC_MODE == 周期模式
-  //DrvTIMER_EnableInt(E_TMR3);
+	DrvTIMER_Open(E_TMR3, 1, E_PERIODIC_MODE);//E_PERIODIC_MODE == 周期模式
+  DrvTIMER_EnableInt(E_TMR3);
   
 	//LCD初始化
   Initial_pannel();
@@ -23,7 +23,7 @@ void OSEK_TIMER_START()
 {
 
 	DrvTIMER_Start(E_TMR0);
-	//DrvTIMER_Start(E_TMR3);
+	DrvTIMER_Start(E_TMR3);
 
 }
 

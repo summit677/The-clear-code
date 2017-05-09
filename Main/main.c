@@ -4,6 +4,10 @@
 #include "includes.h"
 #include "system_NUC1xx.h"
 
+
+int my_test_num;
+int test_second;
+
 void ErrorHook( StatusType error )
 {
 	/*
@@ -49,6 +53,7 @@ void ShutdownHook( StatusType error )
 uint8 flag = 0;
 TASK(Task1)
 {
+	/*
 	int i;
 	if(flag == 0)
 		flag = 1;
@@ -61,13 +66,34 @@ TASK(Task1)
 		for(i = 0; i < 60000;i++);
 	  for(i = 0; i < 60000;i++);
 		TerminateTask();
-
+*/
+	int flag = 0;
+	int test_context = 1;
+	flag = test_second;
+	while(1)
+	{
+		if(flag != test_second && (test_second >= 0 && test_second < 10))
+		{
+			flag = test_second;
+			close_seven_segment();
+			//show_seven_segment(0,test_second);
+			show_seven_segment(0,test_context);
+		}
+		else if(test_second >= 10 && test_second < 20)
+		{
+			//ChainTask(Task2);
+			test_context = test_context + 1;
+			//ActivateTask(Task2);
+			TerminateTask();
+		}
+	}
 	
 	
 }
 
 TASK(Task2)
 {
+	/*
 	int i;
 	if(flag == 0)
 		flag = 1;
@@ -83,14 +109,35 @@ TASK(Task2)
 			if(i == 50000)
 				ActivateTask(Task1);
 		}
+		
 		close_seven_segment();
 	
-		show_seven_segment(1,2);
+		show_seven_segment(1,test_second);
 		for(i = 0; i < 60000;i++);
 		for(i = 0; i < 60000;i++);
 		TerminateTask();
 		//osekTask_Dispatch();
-	
+	*/
+	int flag = 0;
+	int test_context = 2;
+	flag = test_second;
+	while(1)
+	{
+		if(test_second >= 0 && test_second < 10)
+		{
+			test_context = test_context + 1;
+			ActivateTask(Task1);
+			//TerminateTask();
+		}
+		else if((test_second >= 10 && test_second < 20) && flag != test_second)
+		{
+			flag = test_second;
+			close_seven_segment();
+			//show_seven_segment(1,test_second-10);
+			show_seven_segment(1,test_context);
+		}
+		
+	}
 	
 }
 TASK(Task3)
@@ -133,11 +180,12 @@ void read_timer_value(unsigned int *value)
 {
 	*value = DrvTIMER_GetCounters(E_TMR0);
 }
-int my_test_num;
+
 int main()
 {
 	unsigned char err=err;
 	my_test_num = 0;
+	test_second = 0;
 	//防止误操作，所以对系统的控制寄存器锁定，需要修改，如下，则必须用户解锁
 	//http://bbs.21ic.com/icview-291211-1-1.html
 	UNLOCKREG();

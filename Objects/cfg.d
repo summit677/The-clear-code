@@ -17,3 +17,10 @@
 .\objects\cfg.o: .\OSEKos\inc\osekEvent.h
 .\objects\cfg.o: .\OSEKos\inc\osekDebug.h
 .\objects\cfg.o: .\OSEKos\inc\osekMessage.h
+.\objects\cfg.o: .\Drivers\inc\DrvTIMER.h
+.\objects\cfg.o: .\CMSIS\NUC1xx.h
+.\objects\cfg.o: .\CMSIS\core_cm0.h
+.\objects\cfg.o: .\CMSIS\system_NUC1xx.h
+.\objects\cfg.o: .\CMSIS\SysInfra.h
+.\objects\cfg.o: .\Drivers\inc\ModuleID.h
+.\objects\cfg.o: C:\GraduationDesign\Keil_mdk_5.11\ARM\ARMCC\include\stdint.h

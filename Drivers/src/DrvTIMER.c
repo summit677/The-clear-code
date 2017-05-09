@@ -204,6 +204,7 @@ void TMR0_IRQHandler(void)
 /* Description:                                                                                            */
 /*                  The TIMER1 default IRQ, declared in startup_NUC1xx.s                                   */
 /*---------------------------------------------------------------------------------------------------------*/
+extern int test_second;
 void TMR1_IRQHandler(void)
 {    
     if ((TIMER1->TCSR.IE == 1) && (TIMER1->TISR.TIF == 1))
@@ -223,6 +224,8 @@ void TMR1_IRQHandler(void)
             tTime1Event[0].curTick = tTime1Event[0].initTick;
         }
     }
+		//===========================  timer1 µÄÖĞ¶Ï =============================================
+		
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -286,8 +289,12 @@ void TMR3_IRQHandler(void)
             tTime3Event[0].curTick = tTime3Event[0].initTick;
         }
     }
-
-	
+		test_second = test_second + 1;
+		if(test_second >= 20)
+			test_second = 0;
+		//close_seven_segment();
+		//show_seven_segment(1,test_second);
+		
 }
 
 /*---------------------------------------------------------------------------------------------------------*/

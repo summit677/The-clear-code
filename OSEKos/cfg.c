@@ -8,6 +8,8 @@
 #include "osprop.h"
 #include "osapi.h"
 #include "cfg.h"
+#include "DrvTIMER.h"
+
 /************************* 声明部分 ***********************************/
 #define TASK_STACK_SIZE		120 		//栈大小定义
 #define	MESSAGE_BUF_SIZE	30			//消息缓冲大小定义
@@ -165,11 +167,11 @@ OSBYTE	osekConfig_InterruptTypeTable[OCC_ISRLEVELNUM] =
 		2,
 		2,
 };
-
+void TMR3_IRQHandler(void);
 //中断入口函数配置列表
 T_OSEK_TASK_Entry	osekConfig_InterruptEntryTable[OCC_ISRLEVELNUM] = 
 {
-		0,
+		(T_OSEK_TASK_Entry)TMR3_IRQHandler,
 		0,
 		0,
 		0,
@@ -307,16 +309,64 @@ T_OSEK_TASK_Entry	osekConfig_InterruptEntryTable[OCC_ISRLEVELNUM] =
 const		T_OSEK_TASK_ConfigTable_Struct		osekConfig_TaskTable[OCC_NTSKS]=	
 {
 	{
-		(T_OSEK_TASK_Entry)FuncTask1,  Task1,
-		0 | OSEK_TASK_EXTENDED ,
+		//=====任务入口=====
+		(T_OSEK_TASK_Entry)FuncTask1,
+		
+		//=====任务ID=====
+		Task1,
+		
+		//=====应用模式=====
+		//
+		
+		//=====任务属性=====  
+				//启动时激活  OSEK_TASK_ACTIVE
+				//是扩展任务  OSEK_TASK_EXTENDED
+				//非抢占任务	OSEK_TASK_NONPREEMPT
+		0 |OSEK_TASK_EXTENDED ,
+		
+		//=====扩展任务栈顶=====
 		&taskStack[Task1][TASK_STACK_SIZE-1], 
-		&taskStack[Task1][0]
+		
+		//=====扩展任务栈底=====
+		&taskStack[Task1][0],
+		
+		//=====使用内部资源时优先级=====
+		//
+		//=====任务优先级=====
+		3,
+		
+		//=====基本任务最大激活次数=====
+		10
 	},			/*Task1	*/
 	{
-		(T_OSEK_TASK_Entry)FuncTask2,  Task2,
+		//=====任务入口=====
+		(T_OSEK_TASK_Entry)FuncTask2,
+		
+		//=====任务ID=====
+		Task2,
+		
+		//=====应用模式=====
+		//
+		
+		//=====任务属性=====  
+				//启动时激活  OSEK_TASK_ACTIVE
+				//是扩展任务  OSEK_TASK_EXTENDED
+				//非抢占任务	OSEK_TASK_NONPREEMPT
 		0 | OSEK_TASK_ACTIVE | OSEK_TASK_EXTENDED ,
-		&taskStack[Task2][TASK_STACK_SIZE-1], //?????
-		&taskStack[Task2][0]
+		
+		//=====扩展任务栈顶=====
+		&taskStack[Task2][TASK_STACK_SIZE-1], 
+		
+		//=====扩展任务栈底=====
+		&taskStack[Task2][0],
+		
+		//=====使用内部资源时优先级=====
+		//
+		//=====任务优先级=====
+		2,
+		
+		//=====基本任务最大激活次数=====
+		10
 	},			/*Task2	*/
 	{
 		(T_OSEK_TASK_Entry)FuncTask3,  Task3,

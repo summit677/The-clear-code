@@ -1759,7 +1759,12 @@ typedef struct T_OSEK_TASK_ConfigTable_Struct
 
 
 
-#line 191 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	OSPRIOTYPE basePriority;
+	
+	OSBYTE maxActive;
+
 
 }T_OSEK_TASK_ConfigTable_Struct;
 
@@ -1773,8 +1778,8 @@ typedef struct T_OSEK_TASK_ControlBlock_Struct
 
 
 
-
-
+	
+	OSBYTE curActiveNum;
 
 
 	
@@ -1899,9 +1904,9 @@ static  void AddTask2ReadyTableAtTail( T_OSEK_TASK_ReadyBlock *readyblockptr)
 
 	
 
+	chain = &osekTask_ReadyTaskTable[readyblockptr->taskControlBlock->configTable.basePriority];
 
 
-	chain = &osekTask_ReadyTaskTable[(32 - (readyblockptr->taskControlBlock->configTable . taskId) - 1)];
 
 
 	(readyblockptr)->nextTask = ((void *)0) ;
@@ -1953,9 +1958,9 @@ static  StatusType AddaReadyBlock( T_OSEK_TASK_ControlBlock *tcbPtr )
 
 		
 
+		do { osekTask_PriorityBitMap[(tcbPtr->configTable . basePriority)>>3] |= (1<<((tcbPtr->configTable . basePriority)&7)) ; osekTask_PriorityBitMapMajor |= (1 << ((tcbPtr->configTable . basePriority)>>3)); }while(0);
 
 
-		do { osekTask_PriorityBitMap[((32 - (tcbPtr->configTable . taskId) - 1))>>3] |= (1<<(((32 - (tcbPtr->configTable . taskId) - 1))&7)) ; osekTask_PriorityBitMapMajor |= (1 << (((32 - (tcbPtr->configTable . taskId) - 1))>>3)); }while(0);
 
 		(AddTask2ReadyTableAtTail(readyBlock));
 

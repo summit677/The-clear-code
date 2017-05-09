@@ -127,8 +127,8 @@ void OSEK_TARGET_EnableOSInt(OSWORD osIntSave);
 
 //========================================================================================================
 //------------------------------------    OSIntWithoutSave     -------------------------------------------
-#define OSEK_TARGET_DisableOSIntWithoutSave()  __enable_irq() //asm("CPSID I\n\t") 
-#define OSEK_TARGET_EnableOSIntWithoutSave()   __disable_irq() //asm("CPSIE I\n\t")
+#define OSEK_TARGET_DisableOSIntWithoutSave()  __disable_irq() //asm("CPSID I\n\t") 
+#define OSEK_TARGET_EnableOSIntWithoutSave()   __enable_irq() //asm("CPSIE I\n\t")
 //********************************************************************************************************
 
 //========================================================================================================

@@ -2075,7 +2075,12 @@ typedef struct T_OSEK_TASK_ConfigTable_Struct
 
 
 
-#line 191 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	OSPRIOTYPE basePriority;
+	
+	OSBYTE maxActive;
+
 
 }T_OSEK_TASK_ConfigTable_Struct;
 
@@ -2089,8 +2094,8 @@ typedef struct T_OSEK_TASK_ControlBlock_Struct
 
 
 
-
-
+	
+	OSBYTE curActiveNum;
 
 
 	
@@ -2215,9 +2220,9 @@ static  void AddTask2ReadyTableAtTail( T_OSEK_TASK_ReadyBlock *readyblockptr)
 
 	
 
+	chain = &osekTask_ReadyTaskTable[readyblockptr->taskControlBlock->configTable.basePriority];
 
 
-	chain = &osekTask_ReadyTaskTable[(32 - (readyblockptr->taskControlBlock->configTable . taskId) - 1)];
 
 
 	(readyblockptr)->nextTask = ((void *)0) ;
@@ -2269,9 +2274,9 @@ static  StatusType AddaReadyBlock( T_OSEK_TASK_ControlBlock *tcbPtr )
 
 		
 
+		do { osekTask_PriorityBitMap[(tcbPtr->configTable . basePriority)>>3] |= (1<<((tcbPtr->configTable . basePriority)&7)) ; osekTask_PriorityBitMapMajor |= (1 << ((tcbPtr->configTable . basePriority)>>3)); }while(0);
 
 
-		do { osekTask_PriorityBitMap[((32 - (tcbPtr->configTable . taskId) - 1))>>3] |= (1<<(((32 - (tcbPtr->configTable . taskId) - 1))&7)) ; osekTask_PriorityBitMapMajor |= (1 << (((32 - (tcbPtr->configTable . taskId) - 1))>>3)); }while(0);
 
 		(AddTask2ReadyTableAtTail(readyBlock));
 
@@ -13979,6 +13984,10 @@ int32_t  DrvSYS_UnlockProtectedReg(void);
 #line 5 "Main\\main.c"
 #line 6 "Main\\main.c"
 
+
+int my_test_num;
+int test_second;
+
 void ErrorHook( StatusType error )
 {
 	
@@ -14024,48 +14033,91 @@ void ShutdownHook( StatusType error )
 unsigned char flag = 0;
 void FuncTask1( void )
 {
-	int i;
-	if(flag == 0)
-		flag = 1;
 	
-		
-	close_seven_segment();
-	
-		show_seven_segment(3,1);
-		
-		for(i = 0; i < 60000;i++);
-	  for(i = 0; i < 60000;i++);
-		TerminateTask();
 
+
+
+
+
+
+
+
+
+
+
+
+ 
+	int flag = 0;
+	int test_context = 1;
+	flag = test_second;
+	while(1)
+	{
+		if(flag != test_second && (test_second >= 0 && test_second < 10))
+		{
+			flag = test_second;
+			close_seven_segment();
+			
+			show_seven_segment(0,test_context);
+		}
+		else if(test_second >= 10 && test_second < 20)
+		{
+			
+			test_context = test_context + 1;
+			
+			TerminateTask();
+		}
+	}
 	
 	
 }
 
 void FuncTask2( void )
 {
-	int i;
-	if(flag == 0)
-		flag = 1;
-	else
-	WaitEvent(0x30);
-	close_seven_segment();
 	
-		show_seven_segment(1,2);
-		SetEvent(2, 0x40);
-	  for(i = 0; i < 60000;i++);
-		for(i = 0; i < 60000;i++)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	int flag = 0;
+	int test_context = 2;
+	flag = test_second;
+	while(1)
+	{
+		if(test_second >= 0 && test_second < 10)
 		{
-			if(i == 50000)
-				ActivateTask(0);
+			test_context = test_context + 1;
+			ActivateTask(0);
+			
 		}
-		close_seven_segment();
-	
-		show_seven_segment(1,2);
-		for(i = 0; i < 60000;i++);
-		for(i = 0; i < 60000;i++);
-		TerminateTask();
+		else if((test_second >= 10 && test_second < 20) && flag != test_second)
+		{
+			flag = test_second;
+			close_seven_segment();
+			
+			show_seven_segment(1,test_context);
+		}
 		
-	
+	}
 	
 }
 void FuncTask3( void )
@@ -14108,11 +14160,12 @@ void read_timer_value(unsigned int *value)
 {
 	*value = DrvTIMER_GetCounters(E_TMR0);
 }
-int my_test_num;
+
 int main()
 {
 	unsigned char err=err;
 	my_test_num = 0;
+	test_second = 0;
 	
 	
 	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x59;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x16;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x88;

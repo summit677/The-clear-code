@@ -24,7 +24,7 @@
 #define		OCC_EXTSTATUS
 
 //符合类定义
-#define		OCC_ECC1
+#define		OCC_ECC2
 
 //调试级别定义
 #define		OCC_ORTIDEBUGLEVEL		

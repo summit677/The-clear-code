@@ -1760,7 +1760,12 @@ typedef struct T_OSEK_TASK_ConfigTable_Struct
 
 
 
-#line 191 ".\\OSEKos\\inc\\osekTask.h"
+
+	
+	OSPRIOTYPE basePriority;
+	
+	OSBYTE maxActive;
+
 
 }T_OSEK_TASK_ConfigTable_Struct;
 
@@ -1774,8 +1779,8 @@ typedef struct T_OSEK_TASK_ControlBlock_Struct
 
 
 
-
-
+	
+	OSBYTE curActiveNum;
 
 
 	
@@ -1900,9 +1905,9 @@ static  void AddTask2ReadyTableAtTail( T_OSEK_TASK_ReadyBlock *readyblockptr)
 
 	
 
+	chain = &osekTask_ReadyTaskTable[readyblockptr->taskControlBlock->configTable.basePriority];
 
 
-	chain = &osekTask_ReadyTaskTable[(32 - (readyblockptr->taskControlBlock->configTable . taskId) - 1)];
 
 
 	(readyblockptr)->nextTask = ((void *)0) ;
@@ -1954,9 +1959,9 @@ static  StatusType AddaReadyBlock( T_OSEK_TASK_ControlBlock *tcbPtr )
 
 		
 
+		do { osekTask_PriorityBitMap[(tcbPtr->configTable . basePriority)>>3] |= (1<<((tcbPtr->configTable . basePriority)&7)) ; osekTask_PriorityBitMapMajor |= (1 << ((tcbPtr->configTable . basePriority)>>3)); }while(0);
 
 
-		do { osekTask_PriorityBitMap[((32 - (tcbPtr->configTable . taskId) - 1))>>3] |= (1<<(((32 - (tcbPtr->configTable . taskId) - 1))&7)) ; osekTask_PriorityBitMapMajor |= (1 << (((32 - (tcbPtr->configTable . taskId) - 1))>>3)); }while(0);
 
 		(AddTask2ReadyTableAtTail(readyBlock));
 
@@ -3420,8 +3425,25 @@ StatusType osekTask_ActiveTask(T_OSEK_TASK_ControlBlock *tcbPtr)
 	
 	if( tcbPtr->status != ((TaskStateType)3) )
 	{
-#line 170 "OSEKos\\osekTask.c"
-		return ( (StatusType)4 ) ;
+
+		if(tcbPtr->curActiveNum < tcbPtr->configTable.maxActive)
+		{
+			if( (AddaReadyBlock(tcbPtr)) == ( (StatusType)0 ) )
+			{
+				tcbPtr->curActiveNum++;
+				return ( (StatusType)0 );
+			}
+			else
+			{
+				return ( (StatusType)4 );
+			}
+		}
+		else
+		{
+			return ( (StatusType)4 ) ;
+		}
+
+
 
 	}
 
@@ -3437,7 +3459,7 @@ StatusType osekTask_ActiveTask(T_OSEK_TASK_ControlBlock *tcbPtr)
 		return ( (StatusType)4 );
 	}
 
-
+	tcbPtr->curActiveNum = 1;
 
 	tcbPtr->status = ((TaskStateType)4) | ((TaskStateType)2);
 
@@ -3613,7 +3635,7 @@ StatusType TerminateTask( void )
 
 
 	
-	__enable_irq();
+	__disable_irq();
 
 	
 	;
@@ -3623,14 +3645,21 @@ StatusType TerminateTask( void )
 	(ReleaseReadyBlock(osekTask_RunningTask));
 	(ClearPriorityMap(tcbPtr->curPriority));
 
-#line 414 "OSEKos\\osekTask.c"
 
+	tcbPtr->curActiveNum-- ;
 	
-	osekTask_RunningTask->taskControlBlock->status = ((TaskStateType)3) ;
+	if( tcbPtr->curActiveNum != 0)
+	{
+		tcbPtr->status = ((TaskStateType)4) | ((TaskStateType)2);
+	}
 	
-	tcbPtr->curPriority = (32 - (tcbPtr->configTable . taskId) - 1);
-
-
+	else
+	{
+		tcbPtr->status = ((TaskStateType)3) ;
+	}
+	
+	tcbPtr->curPriority = tcbPtr->configTable.basePriority ;
+#line 421 "OSEKos\\osekTask.c"
 
 	
 	osekTask_TerminateDispatch();
@@ -3699,9 +3728,15 @@ StatusType ChainTask( TaskType taskId )
 		
 		if( tcbPtr->status != ((TaskStateType)3) )
 		{
-#line 531 "OSEKos\\osekTask.c"
-			OSEK_TARGET_EnableOSInt(osIntSave);
-			return ( (StatusType)4 ) ;
+
+			if(tcbPtr->curActiveNum == tcbPtr->configTable.maxActive)
+			{
+				OSEK_TARGET_EnableOSInt(osIntSave);
+				return ( (StatusType)4 ) ;
+			}
+
+
+
 
 		}
 
@@ -3713,14 +3748,22 @@ StatusType ChainTask( TaskType taskId )
 		(ReleaseReadyBlock(osekTask_RunningTask));
 		(ClearPriorityMap(runningTcb->curPriority));
 
-#line 560 "OSEKos\\osekTask.c"
 
+		runningTcb->curActiveNum-- ;
 		
-		osekTask_RunningTask->taskControlBlock->status = ((TaskStateType)3) ;
+		if( runningTcb->curActiveNum != 0)
+		{
+			runningTcb->status = ((TaskStateType)4) | ((TaskStateType)2);
+		}
 		
-		runningTcb->curPriority = (32 - (runningTcb->configTable . taskId) - 1);
+		else
+		{
+			runningTcb->status = ((TaskStateType)3) ;
+		}
+		
+		runningTcb->curPriority = runningTcb->configTable.basePriority ;
 
-
+#line 567 "OSEKos\\osekTask.c"
 
 		
 		if( (AddaReadyBlock(tcbPtr)) == ( (StatusType)4 ) )
@@ -3729,7 +3772,7 @@ StatusType ChainTask( TaskType taskId )
 			return ( (StatusType)4 );	
 		}
 
-
+		tcbPtr->curActiveNum++ ;
 
 		if( tcbPtr->status == ((TaskStateType)3) )
 		{
@@ -3875,7 +3918,7 @@ void osekTask_Dispatch( void )
 			;
 
 			
-			__disable_irq();
+			__enable_irq();
 			
 
 			
@@ -3932,7 +3975,7 @@ void osekTask_TerminateDispatch( void )
 
 		
 		;
-		__disable_irq();
+		__enable_irq();
 		(*(osekTask_RunningTask->taskControlBlock->configTable . entry))();
 	}
 	else	
@@ -4050,9 +4093,9 @@ void osekTask_Initialize( void )
 
 		
 
+		tcbPtr->curPriority = tcbPtr->configTable.basePriority ;
 
 
-		tcbPtr->curPriority =(32 - (tcbPtr->configTable . taskId) - 1);
 
 
 		
@@ -4064,7 +4107,7 @@ void osekTask_Initialize( void )
 		{
 			(AddaReadyBlock(tcbPtr));	
 
-
+			tcbPtr->curActiveNum = 1;
 
 			tcbPtr->status = ((TaskStateType)4) | ((TaskStateType)2);
 		}
