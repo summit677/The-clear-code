@@ -821,12 +821,14 @@ __asm void osekTarget_LoadBTSP()
 	LDR r0,=__cpp(&osekTarget_SavedBTSP);
 	LDR r1,[r0];
 	msr msp,r1
+	bx lr
 }
 
 __asm void osekTarget_LoadETSP(OSBYTEPTR sp)
 {
 	;LDR r1,[r0]
 	msr msp,r0
+	bx lr
 }
 
 __asm void OSEK_TARGET_DisableOSInt_func()
@@ -840,6 +842,7 @@ __asm void OSEK_TARGET_DisableOSInt_func()
 	LDR r0,=__cpp(&osIntSave_pending)
 	STR r1,[r0]
 	CPSID I
+	bx lr
 }	
 __asm void OSEK_TARGET_EnableOSInt(OSWORD osIntSave)
 {
@@ -852,6 +855,7 @@ __asm void OSEK_TARGET_EnableOSInt(OSWORD osIntSave)
 	LDR r0,=0xE000E200
 	STR r1,[r0]
 	CPSIE I
+	bx lr
 }
 __asm void OSEK_TARGET_DisableAllInt()
 {
@@ -864,6 +868,7 @@ __asm void OSEK_TARGET_DisableAllInt()
 	LDR r0,=__cpp(&osekTarget_AllIntMask_pending)
 	STR r1,[r0]
 	CPSID I
+	bx lr
 }
 __asm void OSEK_TARGET_EnableAllInt()
 {
@@ -876,6 +881,7 @@ __asm void OSEK_TARGET_EnableAllInt()
 	LDR r0,=0xE000E200
 	STR r1,[r0]
 	CPSIE I
+	bx lr
 }
 __asm void OSEK_TARGET_DisableNestedAllInt()
 {
@@ -888,6 +894,7 @@ __asm void OSEK_TARGET_DisableNestedAllInt()
 	LDR r0,=__cpp(&osekTarget_NestedAllIntMask_pending)
 	STR r1,[r0]
 	CPSID I
+	bx lr
 }
 __asm void OSEK_TARGET_EnableNestedAllInt()
 {
@@ -900,6 +907,7 @@ __asm void OSEK_TARGET_EnableNestedAllInt()
 	LDR r0,=0xE000E200
 	STR r1,[r0]
 	CPSIE I
+	bx lr
 }
 __asm void OSEK_TARGET_DisableNestedOsInt()
 {
@@ -912,6 +920,7 @@ __asm void OSEK_TARGET_DisableNestedOsInt()
 	LDR r0,=__cpp(&osekTarget_NestedOsIntMask_pending)
 	STR r1,[r0]
 	CPSID I
+	bx lr
 }
 __asm void OSEK_TARGET_EnableNestedOsInt()
 {
@@ -924,6 +933,7 @@ __asm void OSEK_TARGET_EnableNestedOsInt()
 	LDR r0,=0xE000E200
 	STR r1,[r0]
 	CPSIE I
+	bx lr
 }
 //==========================================================================================
 void int_mask_save(unsigned int *value) {
